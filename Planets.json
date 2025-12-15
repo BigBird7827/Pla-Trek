@@ -2,7 +2,7 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 2,
+    "Build": 3,
     "Version": 1,
     "LastUpdated": "2025-12-15",
     "Scope": "Travel guide worlds only (enough on-screen canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
@@ -974,6 +974,275 @@
         "HighHaggleCulture",
         "HumidityPreparednessRequired",
         "TouristScamRisk"
+      ]
+    },
+    {
+      "PlanetID": "planet-risa",
+      "Name": "Risa",
+      "AlternateNames": [],
+      "TypeTags": [
+        "ResortWorld",
+        "FederationWorld",
+        "TourismHub",
+        "PleasurePlanet",
+        "ClimateControlled"
+      ],
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Risa.png",
+        "Gallery": []
+      },
+      "Location": {
+        "Quadrant": "Beta Quadrant",
+        "QuadrantNotes": "Federation resort world in the Epsilon Ceti system; commonly cited as approximately 93 light-years from Sol.",
+        "StarSystem": "Epsilon Ceti system",
+        "Sector": null,
+        "Region": "Federation space"
+      },
+      "QuickFacts": {
+        "Class": "Class M",
+        "PrimaryInhabitants": [
+          "Risians"
+        ],
+        "PrimaryLanguageNotes": [
+          "Federation Standard is widely used in tourism districts; local language and customs remain prominent in cultural settings."
+        ],
+        "LocalTimekeeping": {
+          "DayLengthHours": null,
+          "TimeFormat": "Local standards; resort schedules and Starfleet visitors commonly operate on shipboard chronometers."
+        }
+      },
+      "TravelSummary": "Risa is the Federation’s best-known vacation world: warm surf, lush gardens, and a famously welcoming culture built around relaxation, consent-forward romance, and curated leisure. Its paradise weather is maintained by planet-wide systems, so the experience is intentionally consistent—sun, breezes, and comfortable temperatures—unless a system disruption or political incident forces the ‘real’ climate to break through.",
+      "Appearance": {
+        "GeneralLook": "A tropical resort planet of beaches, lagoons, palm-lined promenades, and low-rise leisure architecture—often open-air, shaded, and designed to feel effortless and indulgent.",
+        "FromOrbit": [
+          "Bright ocean expanses with frequent cloud bands",
+          "Approach routes are dense during peak travel seasons",
+          "Tourism hubs produce distinctive night-side illumination clusters around resort belts"
+        ],
+        "NotableLandscapes": [
+          "White-sand beaches and shallow coastal shelves",
+          "Warm lagoons and reef-like shallows near resort districts",
+          "Garden complexes and landscaped courtyards integrated into hotels and villas"
+        ],
+        "SurfaceNotes": [
+          "Public spaces prioritize walkability: covered paths, misting arches, and shaded plazas.",
+          "Dress norms are relaxed in resort zones, but guests should still respect posted rules for sacred/cultural sites."
+        ]
+      },
+      "Geography": {
+        "Biomes": [
+          {
+            "Name": "Tropical coast",
+            "Notes": "Beaches, palms, warm surf, and high UV—plan sun protection even in ‘perfect weather’ conditions."
+          },
+          {
+            "Name": "Lagoon and garden districts",
+            "Notes": "Landscaped water features and curated greenery dominate near major resorts."
+          }
+        ],
+        "Landmarks": [
+          {
+            "Name": "Tembiti Lagoon (Resort complex)",
+            "Category": "Resort / Lagoon",
+            "CityOrRegion": "Primary resort belt",
+            "VisitorNotes": [
+              "A flagship lagoon-side destination frequently used for offworlder vacations.",
+              "Check local event calendars for festivals, mixers, and cultural nights."
+            ]
+          },
+          {
+            "Name": "Shore Leave Promenade",
+            "Category": "Leisure district",
+            "CityOrRegion": "Resort waterfront",
+            "VisitorNotes": [
+              "Main pedestrian artery lined with shops, clubs, and tour kiosks.",
+              "Prime spot for people-watching, day passes, and booking curated experiences."
+            ]
+          },
+          {
+            "Name": "Horga'hn Plaza (Jamaharon district)",
+            "Category": "Cultural / Social",
+            "CityOrRegion": "Resort core",
+            "VisitorNotes": [
+              "A social hub associated with Risian romance customs; expect playful symbolism and lots of flirtation.",
+              "Consent etiquette is essential—Risa’s openness does not mean anything is assumed."
+            ]
+          },
+          {
+            "Name": "Weather Control Grid / Control Centers (restricted)",
+            "Category": "Infrastructure",
+            "CityOrRegion": "Planet-wide network",
+            "VisitorNotes": [
+              "Not a tourist attraction; access is restricted.",
+              "System disruptions can dramatically change conditions—monitor advisories if you’re on multi-day excursions."
+            ]
+          }
+        ],
+        "Cities": [
+          {
+            "Name": "Resort Belt (capital tourism district)",
+            "Role": "Primary visitor zone and hospitality core",
+            "Highlights": [
+              "Lagoon resorts and villas",
+              "Beach clubs and cultural events",
+              "High-capacity transit loops and concierge hubs"
+            ],
+            "LocalVibe": "Festive, relaxed, flirtatious, and service-forward—designed to make visitors forget they’re on a schedule."
+          }
+        ]
+      },
+      "Inhabitants": {
+        "Primary": [
+          {
+            "Species": "Risian",
+            "Notes": "A hospitality-forward culture with famously open attitudes toward pleasure, romance, and leisure—balanced by strong social rules around consent and respect."
+          }
+        ],
+        "NotableCultures": [
+          {
+            "Name": "Hospitality guild culture",
+            "Notes": "Tourism work is highly respected; many services are ritualized into ‘experiences’ rather than simple transactions."
+          },
+          {
+            "Name": "Jamaharon tradition (symbolic courtship custom)",
+            "Notes": "Often referenced through the horga'hn statuette; treated playfully in resort zones but still grounded in local etiquette."
+          }
+        ],
+        "VisitorEtiquette": [
+          "Consent-first: flirting is common, but never assume interest; follow clear verbal or behavioral cues.",
+          "If you accept an invitation, clarify expectations—Risians often treat communication as part of the experience.",
+          "Respect local symbols (including the horga'hn) and avoid using them to embarrass others.",
+          "Dress norms are relaxed, but resorts still post rules for dining, ceremonies, and formal events—follow them.",
+          "Don’t mock leisure culture; on Risa, relaxation is treated as a serious civic priority."
+        ]
+      },
+      "Weather": {
+        "ClimateType": "Tropical, artificially stabilized by planet-wide weather control (with supplemental seismic regulation in some eras).",
+        "Seasonality": "Under normal operations, seasonality is intentionally muted to maintain near-constant ‘ideal’ vacation conditions; disruptions can restore storms and unstable patterns quickly.",
+        "TypicalConditions": [
+          {
+            "Region": "Resort coasts",
+            "Conditions": [
+              "Warm, comfortable temperatures",
+              "Gentle breezes",
+              "Clear skies",
+              "Short, controlled showers (when scheduled)"
+            ]
+          },
+          {
+            "Region": "Interior garden districts",
+            "Conditions": [
+              "Humid but comfortable air",
+              "Filtered sunlight",
+              "Evening warmth",
+              "Low wind"
+            ]
+          }
+        ],
+        "Hazards": [
+          {
+            "Type": "Weather control failure",
+            "Notes": "Can produce sudden heavy storms, rough seas, and travel delays; follow resort advisories and shelter guidance."
+          },
+          {
+            "Type": "Security incidents affecting infrastructure",
+            "Notes": "Sabotage or political unrest can cause localized outages and crowd surges—avoid restricted areas and keep to official routes."
+          },
+          {
+            "Type": "Sun exposure",
+            "Notes": "Even with perfect weather, UV exposure can be intense; use protection and hydrate."
+          }
+        ],
+        "TravelGear": [
+          "Light breathable clothing plus one dry layer for sudden storms",
+          "Sun protection (hat/visor, sunscreen)",
+          "Waterproof pouch for comm devices",
+          "Comfort footwear for long promenade walks"
+        ]
+      },
+      "Tourism": {
+        "TopAttractions": [
+          {
+            "Name": "Lagoon resort days",
+            "WhyGo": "Iconic Risa: warm water, shaded cabanas, and effortless service culture."
+          },
+          {
+            "Name": "Shore Leave Promenade evenings",
+            "WhyGo": "Social nights, music, food, and spontaneous meetups with travelers from across Federation space."
+          },
+          {
+            "Name": "Cultural ‘experience’ bookings",
+            "WhyGo": "Guided leisure events designed by Risians—dance, cuisine, crafts, and romance-themed festivals."
+          },
+          {
+            "Name": "Private villa retreats",
+            "WhyGo": "Quiet, curated relaxation away from peak promenade crowds."
+          }
+        ],
+        "Activities": [
+          "Beach and lagoon swimming",
+          "Sailing and small-craft excursions (conditions permitting)",
+          "Resort spa circuits and wellness programs",
+          "Nightlife: clubs, live music, and themed social events",
+          "Guided cultural tours focusing on Risian customs and hospitality traditions"
+        ],
+        "Restrictions": [
+          "Weather control and planetary infrastructure sites are restricted.",
+          "Some events have explicit participation rules; resorts may enforce conduct standards tightly to protect guests."
+        ],
+        "SafetyNotes": [
+          "Use official booking channels—tourist zones can attract opportunistic scams and counterfeit ‘exclusive’ passes.",
+          "If storms hit, leave the water immediately and follow resort shelter instructions.",
+          "Set boundaries clearly; if someone ignores them, contact resort security—Risa prioritizes guest safety and consent."
+        ]
+      },
+      "Logistics": {
+        "Entry": [
+          "Federation-friendly arrival procedures; peak seasons can produce heavy traffic and longer berth allocation times.",
+          "Resorts often handle customs/registration through pre-arrival concierge workflows."
+        ],
+        "LocalTransport": [
+          "Resort transit loops (shuttles, trams, and pedestrian corridors)",
+          "Licensed watercraft and charter excursions",
+          "Transporter use varies by venue and local security posture"
+        ],
+        "CurrencyNotes": [
+          "Resort packages and Federation-standard payments are common; confirm what’s included vs. premium add-ons before arrival."
+        ],
+        "Lodging": [
+          "Lagoon resorts, beach hotels, and private villas",
+          "Quiet retreat properties away from main nightlife zones"
+        ],
+        "Communications": [
+          "Excellent tourism communications coverage; most visitors operate comfortably in Federation Standard with translator support for nuance."
+        ]
+      },
+      "CanonAppearances": {
+        "FirstSeen": {
+          "Series": "TNG",
+          "EpisodeOrFilm": "Captain's Holiday",
+          "YearInUniverse": null
+        },
+        "Key": [
+          {
+            "SeriesOrFilm": "TNG: Captain's Holiday",
+            "Notes": "Introduces Risa as the Federation’s premier pleasure planet; resort culture and shore leave norms are central."
+          },
+          {
+            "SeriesOrFilm": "DS9: Let He Who Is Without Sin...",
+            "Notes": "Explores resort politics, sabotage of weather systems, and Risa’s role as a cultural flashpoint for visitors."
+          },
+          {
+            "SeriesOrFilm": "ENT: Two Days and Two Nights",
+            "Notes": "Early-era shore leave depiction; Risa as a destination for offworld travelers."
+          }
+        ]
+      },
+      "Tags": [
+        "ParadiseByDesign",
+        "ConsentCulture",
+        "HighTourismDensity",
+        "InfrastructureDependentWeather"
       ]
     }
   ]
