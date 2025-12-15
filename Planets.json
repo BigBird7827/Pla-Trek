@@ -2,29 +2,9 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 8,
+    "Build": 9,
     "Version": 1,
-    "LastUpdated": "2025-12-15",
-    "Scope": "Travel guide worlds only (enough canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
-    "CanonPolicy": "Canon-first: on-screen (TOS/TAS/TNG/DS9/VOY/ENT/DIS/PIC/SNW + films) plus sanctioned reference works and official sources when needed.",
-    "Notes": [
-      "All fields are designed for travel-guide readability; deeper lore can be appended later without changing structure.",
-      "Location quadrants can be ambiguous in canon charts; use Location.QuadrantNotes when needed."
-    ],
-    "ResearchSourcesAllowed": [
-      "memory-alpha.fandom.com (canon index; cite on-screen episodes/films and listed reference works)",
-      "ex-astris-scientia.org (production/visual deep dive; cross-check against on-screen)",
-      "johnstonsarchive.net/startrek/ (historical/cartographic reference; use cautiously and cite)",
-      "startrek.com (official franchise site)",
-      "trekcore.com (HD screenshots / production references)",
-      "trekmovie.com (news/interviews; production context only)",
-      "trektoday.com (news/community; use cautiously)",
-      "st-minutiae.com (script/minutiae; useful for draft-script details)",
-      "Klingon Language Institute (kli.org; language/culture references when relevant)",
-      "chakoteya.net / Star Trek Transcripts (dialogue reference)",
-      "Wikipedia (broad context; cross-check)",
-      "IMDb (cast/crew only; not used for planet canon)"
-    ]
+    "LastUpdated": "2025-12-15"
   },
   "Planets": [
     {
