@@ -2,7 +2,7 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 0,
+    "Build": 1,
     "Version": 1,
     "LastUpdated": "2025-12-15",
     "Scope": "Travel guide worlds only (enough on-screen canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
@@ -341,7 +341,11 @@
         "CoreWorld",
         "HighInfrastructure",
         "HighSecurityPotential"
-      ]
+      ],
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png",
+        "Gallery": []
+      }
     },
     {
       "PlanetID": "planet-vulcan",
@@ -635,7 +639,11 @@
         "HeatPreparednessRequired",
         "EtiquetteCritical",
         "GuidesRecommendedForWilderness"
-      ]
+      ],
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Vulcan.png",
+        "Gallery": []
+      }
     }
   ]
 }
