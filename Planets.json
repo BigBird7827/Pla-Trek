@@ -2,7 +2,7 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 3,
+    "Build": 4,
     "Version": 1,
     "LastUpdated": "2025-12-15",
     "Scope": "Travel guide worlds only (enough on-screen canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
@@ -1243,6 +1243,282 @@
         "ConsentCulture",
         "HighTourismDensity",
         "InfrastructureDependentWeather"
+      ]
+    },
+    {
+      "PlanetID": "planet-qonos",
+      "Name": "Qo'noS",
+      "AlternateNames": [
+        "Kronos",
+        "The Klingon Homeworld"
+      ],
+      "TypeTags": [
+        "Homeworld",
+        "CapitalWorld",
+        "PoliticalCenter",
+        "CulturalDestination",
+        "HighSecurity",
+        "VolcanicGeology"
+      ],
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Qo'noS.png",
+        "Gallery": []
+      },
+      "Location": {
+        "Quadrant": "Beta Quadrant",
+        "QuadrantNotes": "Qo'noS is located in the Qo'noS system within Klingon space (Sector 70 / the Qo'noS sector). It had one moon, Praxis, which was destroyed in 2293.",
+        "StarSystem": "Qo'noS system",
+        "Sector": "Sector 70 (Qo'noS sector)",
+        "Region": "Klingon space"
+      },
+      "QuickFacts": {
+        "Class": "Class M",
+        "PrimaryInhabitants": [
+          "Klingons"
+        ],
+        "PrimaryLanguageNotes": [
+          "Klingon (tlhIngan Hol) is dominant; Federation Standard is understood in diplomatic, trade, and offworlder-facing contexts."
+        ],
+        "LocalTimekeeping": {
+          "DayLengthHours": null,
+          "TimeFormat": "Local standards; visitors often rely on shipboard chronometers when coordinating with offworld schedules."
+        }
+      },
+      "TravelSummary": "Qo'noS is the seat of Klingon power: a world where politics, honor, and public ritual intertwine in the shadow of the Great Hall. For visitors, it’s less a carefree destination and more a place to witness imperial ceremony, architecture built like fortresses, and a culture that expects confidence, clarity, and respect for rank. Travel is best planned around security rules, diplomatic climates, and regional conditions that can feel harsh compared to Federation resort worlds.",
+      "Appearance": {
+        "GeneralLook": "A rugged, imposing world often associated with green-tinged skies and dramatic, austere cityscapes—massive stone-and-metal structures, monumental civic halls, and streets designed for processions and guard presence as much as daily life.",
+        "FromOrbit": [
+          "Approach corridors are tightly managed, with traffic patterns shaped by Klingon security and military priorities",
+          "Major population centers present dense night-side illumination clusters, with heavy emphasis around the capital region"
+        ],
+        "NotableLandscapes": [
+          "Volcanic regions and basaltic terrain",
+          "Extensive cave systems and subterranean networks",
+          "Rugged highlands and broad plains outside major urban centers"
+        ],
+        "SurfaceNotes": [
+          "Many civic buildings are designed for spectacle: grand entrances, wide courtyards, and intimidating vertical scale.",
+          "Expect visible security—uniformed guards, checkpoints, and restricted zones near government sites."
+        ]
+      },
+      "Geography": {
+        "Biomes": [
+          {
+            "Name": "Volcanic zones and basaltic fields",
+            "Notes": "Volcanic features and lava-formed terrain are a recurring part of the planet’s portrayal; some regions connect to large subterranean systems."
+          },
+          {
+            "Name": "Cave networks and subterranean complexes",
+            "Notes": "Described as a 'planet of caves' in some depictions, with long-dormant subterranean volcano systems and cavern spaces large enough to support significant activity."
+          },
+          {
+            "Name": "Urban and industrial corridors (capital region)",
+            "Notes": "Capital-adjacent districts blend civic monumentalism with heavy infrastructure; conditions can feel harsh, especially during periods of political or environmental stress."
+          }
+        ],
+        "Landmarks": [
+          {
+            "Name": "First City",
+            "Category": "Capital city",
+            "CityOrRegion": "Southern hemisphere",
+            "VisitorNotes": [
+              "The imperial capital and the primary hub for government, ceremony, and major hearings.",
+              "Movement in and around civic cores is often controlled; keep identification and travel authorization readily available."
+            ]
+          },
+          {
+            "Name": "Great Hall",
+            "Category": "Government / ceremonial",
+            "CityOrRegion": "First City",
+            "VisitorNotes": [
+              "Iconic Klingon seat of ceremony and political assembly, associated with the Klingon High Council.",
+              "Access is typically restricted; when permitted, visitors should expect formal conduct rules and tight security screening."
+            ]
+          },
+          {
+            "Name": "Klingon High Council Chamber",
+            "Category": "Government",
+            "CityOrRegion": "First City",
+            "VisitorNotes": [
+              "A highly controlled interior zone linked to Klingon governance and major proceedings.",
+              "Photography/recording rules (if any) are set case-by-case—assume prohibited unless explicitly authorized."
+            ]
+          }
+        ],
+        "Cities": [
+          {
+            "Name": "First City",
+            "Role": "Imperial capital and primary civic center",
+            "Highlights": [
+              "Great Hall",
+              "High Council-associated districts",
+              "Monumental architecture and guarded civic plazas"
+            ],
+            "LocalVibe": "Intense, formal, and security-forward—public spaces feel ceremonial, with visible rank culture and tightly policed boundaries."
+          }
+        ]
+      },
+      "Inhabitants": {
+        "Primary": [
+          {
+            "Species": "Klingon",
+            "Notes": "A warrior society where honor, reputation, and directness shape social life; public ritual and political allegiance are strongly tied to House and status."
+          }
+        ],
+        "NotableCultures": [
+          {
+            "Name": "Great House politics",
+            "Notes": "Major families (Houses) hold power, influence, and obligation networks; visitors should avoid casually taking sides in disputes."
+          },
+          {
+            "Name": "Ritual honor culture",
+            "Notes": "Many interactions are framed through public respect, challenge etiquette, and visible confidence—ambiguity can be read as weakness or deception."
+          }
+        ],
+        "VisitorEtiquette": [
+          "Use correct titles and names; show respect for rank and House affiliation when it is declared.",
+          "Be direct and keep promises—backing out of agreements can be treated as dishonorable.",
+          "Avoid public mockery or sarcasm about Klingon tradition; it can escalate quickly.",
+          "Do not touch weapons, ceremonial objects, or House insignia without permission.",
+          "Follow checkpoint instructions immediately; arguing with guards is a fast way to end your trip.",
+          "If invited to a ritual or ceremony, ask a local liaison about expected conduct beforehand."
+        ]
+      },
+      "Weather": {
+        "ClimateType": "Regionally variable; conditions are often portrayed as turbulent and capable of harsh swings depending on location and era.",
+        "Seasonality": "Seasonal variation is treated as significant in some portrayals; visitors should plan for sudden changes and pack for both cool and warm conditions unless traveling with a local-season briefing.",
+        "TypicalConditions": [
+          {
+            "Region": "Capital region / First City",
+            "Conditions": [
+              "Overcast or green-tinged skies in some depictions",
+              "Windy periods",
+              "Cool evenings",
+              "Occasional storms"
+            ]
+          },
+          {
+            "Region": "Volcanic and cave-adjacent zones",
+            "Conditions": [
+              "Dry heat near active features",
+              "Rapid temperature shifts",
+              "Sulfurous haze in localized pockets",
+              "Low visibility around vents"
+            ]
+          }
+        ],
+        "Hazards": [
+          {
+            "Type": "Security closures during unrest",
+            "Notes": "Political events can lock down transit corridors and public squares with little notice; keep alternate routes and shelter options."
+          },
+          {
+            "Type": "Volcanic / geothermal activity",
+            "Notes": "Avoid unescorted travel near vents, unstable rock, and restricted cavern systems."
+          },
+          {
+            "Type": "Environmental stress (historical)",
+            "Notes": "In late-23rd-century contexts, the Praxis disaster created planet-wide environmental strain and heightened controls."
+          }
+        ],
+        "TravelGear": [
+          "Layered clothing for variable temperatures",
+          "Weather-sealed bag for comm devices",
+          "Sturdy boots with good traction",
+          "A formal outfit if attending civic events (as advised by your liaison)"
+        ]
+      },
+      "Tourism": {
+        "TopAttractions": [
+          {
+            "Name": "First City civic panorama",
+            "WhyGo": "A rare look at Klingon monumental architecture and public ceremony (when observation zones are open)."
+          },
+          {
+            "Name": "Cultural halls and memorial spaces (permitted zones)",
+            "WhyGo": "Klingon history is performed as much as recorded—guided visits can provide context for House symbols, oaths, and honor rites."
+          },
+          {
+            "Name": "Approved cuisine and music venues",
+            "WhyGo": "Public houses and performance spaces can be welcoming if you respect etiquette and don’t treat tradition as a joke."
+          }
+        ],
+        "Activities": [
+          "Guided city walks in authorized districts",
+          "Ceremony observation (when permitted)",
+          "Curated cultural briefings with a local liaison",
+          "Supervised excursions to geological viewpoints away from restricted zones"
+        ],
+        "Restrictions": [
+          "Government buildings and High Council-adjacent areas are frequently restricted to authorized visitors.",
+          "Security conditions can change rapidly based on House politics or imperial events."
+        ],
+        "SafetyNotes": [
+          "Travel with a vetted liaison if you plan to visit civic centers—this is not a casual walk-up destination.",
+          "Avoid bartering with unauthorized agents offering 'Council access' or 'House introductions'.",
+          "If challenged or provoked, disengage and leave—do not escalate without local guidance."
+        ]
+      },
+      "Logistics": {
+        "Entry": [
+          "Entry requirements vary with the Klingon Empire’s diplomatic posture; visitors may need sponsorship, permits, or escort arrangements.",
+          "Expect strict inspections for weapons, recording equipment, and contraband."
+        ],
+        "LocalTransport": [
+          "Guarded transit corridors and checkpointed routes in capital districts",
+          "Ground transport and shuttle links between authorized zones",
+          "Access restrictions are common near ceremonial sites and government compounds"
+        ],
+        "CurrencyNotes": [
+          "Trade rules depend on era and local policy; confirm what exchanges are permitted before arrival."
+        ],
+        "Lodging": [
+          "Guest quarters in authorized districts (often arranged through sponsors)",
+          "Diplomatic accommodations for official travelers"
+        ],
+        "Communications": [
+          "Translator support is strongly recommended for formal proceedings and legal terms; direct language is culturally preferred."
+        ]
+      },
+      "CanonAppearances": {
+        "FirstSeen": {
+          "Series": "TNG",
+          "EpisodeOrFilm": "Sins of the Father",
+          "YearInUniverse": null
+        },
+        "Key": [
+          {
+            "SeriesOrFilm": "TNG: Sins of the Father",
+            "Notes": "First on-screen depiction of the Klingon homeworld; establishes the capital-city look and Great Hall context."
+          },
+          {
+            "SeriesOrFilm": "TNG: Redemption / Redemption II",
+            "Notes": "Qo'noS is central during the Klingon civil war period and High Council politics."
+          },
+          {
+            "SeriesOrFilm": "DS9: The House of Quark",
+            "Notes": "Returns to Qo'noS for Klingon legal and political stakes."
+          },
+          {
+            "SeriesOrFilm": "ENT: Broken Bow",
+            "Notes": "Qo'noS is referenced as a strategic destination early in the 22nd century."
+          },
+          {
+            "SeriesOrFilm": "DIS: Will You Take My Hand?",
+            "Notes": "Features Qo'noS in the context of conflict and political transition."
+          },
+          {
+            "SeriesOrFilm": "Star Trek VI: The Undiscovered Country",
+            "Notes": "Praxis’ destruction drives an environmental and political crisis tied to Qo'noS."
+          }
+        ]
+      },
+      "Tags": [
+        "HonorCulture",
+        "HighSecurity",
+        "CeremonyHeavy",
+        "VolcanicGeology",
+        "PoliticalFlashpoint"
       ]
     }
   ]
