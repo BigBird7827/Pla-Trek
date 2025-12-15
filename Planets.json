@@ -2,7 +2,7 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 6,
+    "Build": 7,
     "Version": 1,
     "LastUpdated": "2025-12-15",
     "Scope": "Travel guide worlds only (enough on-screen canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
@@ -21,17 +21,14 @@
         "Terra"
       ],
       "TypeTags": [
-        "Homeworld",
-        "CapitalWorld",
-        "FederationCore",
-        "TourismHub"
+        "Homeworld"
       ],
       "Location": {
-        "Quadrant": "Alpha Quadrant",
-        "QuadrantNotes": "Earth is within Sector 001; the Sol system sits near the Alpha/Beta border in some charts, but is generally treated as Alpha.",
-        "StarSystem": "Sol system",
-        "Sector": "Sector 001",
-        "Region": "Federation core worlds"
+        "Quadrant": "",
+        "QuadrantNotes": "",
+        "StarSystem": "Sol",
+        "Sector": "",
+        "Region": "United Federation of Planets (member world)"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -46,9 +43,9 @@
           "TimeFormat": "24-hour commonly used in Starfleet contexts"
         }
       },
-      "TravelSummary": "Earth is the political and cultural heart of the United Federation of Planets for much of the 22nd–25th centuries, and the administrative center of Starfleet. Visitors can comfortably mix historic landmarks, restored natural spaces, and modern Federation civic districts—especially around San Francisco Bay and Paris—while enjoying famously diverse food, arts, and museums.",
+      "TravelSummary": "Earth is the human homeworld and a major Federation political and cultural center, frequently visited by Starfleet crews.",
       "Appearance": {
-        "GeneralLook": "A blue-and-green world with extensive oceans, varied continents, and dense urban corridors balanced by preserved and restored natural environments.",
+        "GeneralLook": "Blue oceans, varied continents, and extensive cloud systems; large urban regions and preserved natural areas are shown across eras.",
         "FromOrbit": [
           "High-density orbital traffic and infrastructure during major Starfleet periods",
           "Major approach lanes into the Sol system and Earth orbit are tightly controlled during alerts"
@@ -66,121 +63,36 @@
       "Geography": {
         "Biomes": [
           {
-            "Name": "Coastal temperate",
-            "Notes": "Common along many major port cities and Starfleet-era coastal hubs."
+            "Name": "Oceans and coastlines",
+            "Notes": ""
           },
           {
-            "Name": "Mediterranean",
-            "Notes": "Typical of California’s coastal belt; fog and cool evenings are common near the Bay."
+            "Name": "Temperate regions",
+            "Notes": ""
           },
           {
-            "Name": "Temperate continental",
-            "Notes": "Large seasonal swing inland across many northern landmasses."
+            "Name": "Arid regions",
+            "Notes": ""
           },
           {
-            "Name": "Subtropical",
-            "Notes": "Humid summers and storm seasons in some coastal lowlands."
+            "Name": "Polar regions",
+            "Notes": ""
           }
         ],
         "Landmarks": [
           {
-            "Name": "Starfleet Headquarters",
-            "Category": "Civic / Government",
-            "CityOrRegion": "San Francisco Bay area",
-            "VisitorNotes": [
-              "Public access varies by era and security posture.",
-              "Viewing areas can offer iconic skyline and bay vistas."
-            ]
-          },
-          {
-            "Name": "Starfleet Academy (Earth campus)",
-            "Category": "Education / Historic",
-            "CityOrRegion": "San Francisco, California",
-            "VisitorNotes": [
-              "A major destination for tours, ceremonies, and alumni events.",
-              "Some grounds and exhibits may be restricted during cadet training cycles."
-            ]
-          },
-          {
-            "Name": "Golden Gate Bridge",
-            "Category": "Historic landmark",
-            "CityOrRegion": "San Francisco",
-            "VisitorNotes": [
-              "Frequently visible in Starfleet-era shoreline panoramas.",
-              "Best enjoyed on foot or via scenic transit routes along the Bay."
-            ]
-          },
-          {
-            "Name": "Office of the Federation President (Paris)",
-            "Category": "Civic / Government",
-            "CityOrRegion": "Paris, France",
-            "VisitorNotes": [
-              "A high-security district—plan for screenings, cordons, and restricted airspace when delegations are present."
-            ]
-          },
-          {
-            "Name": "Eiffel Tower",
-            "Category": "Historic landmark",
-            "CityOrRegion": "Paris, France",
-            "VisitorNotes": [
-              "A long-standing symbol of Paris; viewpoints and cafés nearby are popular with travelers."
-            ]
-          },
-          {
-            "Name": "First Contact heritage sites (Bozeman region)",
-            "Category": "Historic / Museum",
-            "CityOrRegion": "Montana, North America",
-            "VisitorNotes": [
-              "Key pilgrimage for history enthusiasts; guided tours often focus on the Phoenix program and early warp era."
-            ]
-          },
-          {
-            "Name": "San Francisco Fleet Yards / Spacedock approach zones",
-            "Category": "Industrial / Orbital interface",
-            "CityOrRegion": "San Francisco Bay area / Earth orbit",
-            "VisitorNotes": [
-              "Observation is often possible from designated public platforms, but access to controlled zones requires authorization."
-            ]
+            "Name": "San Francisco (Starfleet Headquarters area)",
+            "Category": "City / Government",
+            "CityOrRegion": "North America",
+            "VisitorNotes": []
           }
         ],
         "Cities": [
           {
             "Name": "San Francisco",
-            "Role": "Starfleet administrative and educational hub",
-            "Highlights": [
-              "Starfleet Headquarters grounds",
-              "Starfleet Academy campus",
-              "Bayfront promenades and historic districts"
-            ],
-            "LocalVibe": "Cosmopolitan waterfront city with strong Federation civic identity."
-          },
-          {
-            "Name": "Paris",
-            "Role": "Federation executive district (President’s office) and cultural capital",
-            "Highlights": [
-              "Historic architecture alongside modern Federation buildings",
-              "Eiffel Tower views",
-              "Cafés near civic districts"
-            ],
-            "LocalVibe": "Historic European metropolis with prestige institutions and ceremonial spaces."
-          },
-          {
-            "Name": "New Orleans",
-            "Role": "Culinary destination",
-            "Highlights": [
-              "Creole cuisine and family-run restaurants",
-              "Riverfront music and festivals"
-            ],
-            "LocalVibe": "Food, music, and tradition-forward city with a relaxed rhythm."
-          },
-          {
-            "Name": "London",
-            "Role": "Major historic and diplomatic city",
-            "Highlights": [
-              "Museums and archives",
-              "Civic districts and transport hubs"
-            ],
-            "LocalVibe": "Dense cultural heritage blended with modern urban life."
+            "Role": "Starfleet/Federation administrative hub (frequently depicted)",
+            "Highlights": [],
+            "LocalVibe": ""
           }
         ]
       },
@@ -188,7 +100,7 @@
         "Primary": [
           {
             "Species": "Human",
-            "Notes": "Earth’s dominant native population; society is strongly Federation-integrated."
+            "Notes": ""
           }
         ],
         "NotableCultures": [
@@ -209,8 +121,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Highly variable (planetwide diversity by region)",
-        "Seasonality": "Standard seasonal cycles in many regions; local microclimates are common near coasts and major bays.",
+        "ClimateType": "Varies widely by region (Earth-like seasons and climates).",
+        "Seasonality": "",
         "TypicalConditions": [
           {
             "Region": "San Francisco Bay",
@@ -251,20 +163,8 @@
       "Tourism": {
         "TopAttractions": [
           {
-            "Name": "Starfleet waterfront district tours",
-            "WhyGo": "Iconic Federation-era vistas and civic architecture."
-          },
-          {
-            "Name": "Academy ceremonies and public exhibits",
-            "WhyGo": "A front-row view into Starfleet tradition and training culture."
-          },
-          {
-            "Name": "Paris civic + historic walk",
-            "WhyGo": "A blend of deep history and Federation executive geography."
-          },
-          {
-            "Name": "First Contact history circuit",
-            "WhyGo": "Museums and guided routes focused on the warp era and early interstellar diplomacy."
+            "Name": "Starfleet/Federation civic district (San Francisco)",
+            "WhyGo": "Frequently depicted Federation/Starfleet hub with recognizable waterfront setting."
           }
         ],
         "Activities": [
@@ -306,36 +206,11 @@
       },
       "CanonAppearances": {
         "FirstSeen": {
-          "Series": null,
-          "EpisodeOrFilm": null,
+          "Series": "TOS",
+          "EpisodeOrFilm": "The Cage (as referenced) / later visits",
           "YearInUniverse": null
         },
-        "Key": [
-          {
-            "SeriesOrFilm": "Star Trek II: The Wrath of Khan",
-            "Notes": "Starfleet Academy is explicitly identified on Earth in San Francisco."
-          },
-          {
-            "SeriesOrFilm": "DS9: Homefront / Paradise Lost",
-            "Notes": "Federation President’s office is located in Paris; Earth security posture becomes a central theme."
-          },
-          {
-            "SeriesOrFilm": "Star Trek: First Contact",
-            "Notes": "First Contact history in the Bozeman region is central; Earth is a strategic target."
-          },
-          {
-            "SeriesOrFilm": "Star Trek IV: The Voyage Home",
-            "Notes": "Earth experiences oceanic ecological crisis driven by an alien probe."
-          },
-          {
-            "SeriesOrFilm": "TNG: Family",
-            "Notes": "Earth (France) is depicted as a personal, cultural home base for Starfleet officers."
-          },
-          {
-            "SeriesOrFilm": "PIC (Season 3 finale arc)",
-            "Notes": "Sol system security and orbital threat scenarios are central to the plot."
-          }
-        ]
+        "Key": []
       },
       "Tags": [
         "CoreWorld",
@@ -354,18 +229,14 @@
         "Ni'Var (later era)"
       ],
       "TypeTags": [
-        "Homeworld",
-        "CulturalDestination",
-        "SpiritualDestination",
-        "HarshClimate",
-        "FederationFounderWorld"
+        "Homeworld"
       ],
       "Location": {
-        "Quadrant": "Beta Quadrant",
-        "QuadrantNotes": "Canon charts and references vary; modern on-screen star charts often place the Vulcan system in Beta. Treat as near the Alpha/Beta border in many practical travel contexts.",
-        "StarSystem": "Vulcan system (40 Eridani A)",
-        "Sector": "Vulcan sector",
-        "Region": "Vulcan space"
+        "Quadrant": "",
+        "QuadrantNotes": "",
+        "StarSystem": "",
+        "Sector": "",
+        "Region": "United Federation of Planets (member world)"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -380,9 +251,9 @@
           "TimeFormat": "Local standards; visitors commonly rely on shipboard chronometers and civic time beacons."
         }
       },
-      "TravelSummary": "Vulcan is a world of austere beauty—deserts, volcanic badlands, and sacred mountains tied to Surak’s legacy. Tourism centers on cultural immersion: meditation retreats, historical sanctuaries, and guided routes through cities built to endure harsh climates. It’s rewarding, but requires preparation for heat, dust, and strict local etiquette around privacy and emotional control.",
+      "TravelSummary": "Vulcan is the Vulcan homeworld, known on-screen for its heat, arid landscapes, and ancient cultural sites.",
       "Appearance": {
-        "GeneralLook": "An arid world with broad deserts, volcanic regions, and rugged mountain landmarks; architecture often emphasizes shaded courtyards, stone, and heat-resilient design.",
+        "GeneralLook": "Predominantly arid terrain with desert vistas and stark rocky landscapes; settlements and ceremonial locations are shown in multiple eras.",
         "FromOrbit": [
           "Desert belts and highland contours are visually dominant",
           "The Vulcan system’s companion world relationships are a notable feature of local cartography"
@@ -400,52 +271,22 @@
       "Geography": {
         "Biomes": [
           {
-            "Name": "Hot desert",
-            "Notes": "Large stretches of exposed sand and rock; travel is best at dawn/dusk with proper seals."
-          },
-          {
-            "Name": "Volcanic desert / badlands",
-            "Notes": "Harsh terrain with geomagnetic instability and electrical storm risk in certain regions."
-          },
-          {
-            "Name": "Highlands and mountain corridors",
-            "Notes": "Sacred routes, monasteries, and pilgrimage trails; temperatures can vary sharply with elevation."
+            "Name": "Desert and rocky plains",
+            "Notes": ""
           }
         ],
         "Landmarks": [
           {
-            "Name": "Vulcan's Forge",
-            "Category": "Wilderness / Extreme environment",
-            "CityOrRegion": "Forge region",
-            "VisitorNotes": [
-              "Known for electrical sandstorms and geomagnetic interference that can disrupt scanners and transporters in certain eras.",
-              "Guided excursions are strongly recommended; permits may be required depending on local governance."
-            ]
+            "Name": "Forge",
+            "Category": "Desert region",
+            "CityOrRegion": "Vulcan",
+            "VisitorNotes": []
           },
           {
-            "Name": "Mount Seleya",
-            "Category": "Sacred site / Pilgrimage",
-            "CityOrRegion": "Far end of Vulcan's Forge",
-            "VisitorNotes": [
-              "Major spiritual destination; temple structures and ceremonial spaces are present in some eras.",
-              "Respect access rules, silence protocols, and restricted ceremonial zones."
-            ]
-          },
-          {
-            "Name": "T'Karath Sanctuary (region)",
-            "Category": "Sacred site",
-            "CityOrRegion": "Near Mount Seleya region",
-            "VisitorNotes": [
-              "Associated with Surak-era legacy and key cultural events; access may be limited to authorized visitors."
-            ]
-          },
-          {
-            "Name": "Hall of Ancient Thought (Mount Seleya complex)",
-            "Category": "Cultural / Historic",
-            "CityOrRegion": "Mount Seleya",
-            "VisitorNotes": [
-              "A destination for scholars and pilgrims; follow guidance about photography, recording, and artifact proximity."
-            ]
+            "Name": "Vulcan High Command / government district (era-dependent)",
+            "Category": "Government",
+            "CityOrRegion": "Vulcan",
+            "VisitorNotes": []
           }
         ],
         "Cities": [
@@ -473,7 +314,7 @@
         "Primary": [
           {
             "Species": "Vulcan",
-            "Notes": "Native population; cultural norms emphasize logic, privacy, and emotional discipline."
+            "Notes": ""
           }
         ],
         "NotableCultures": [
@@ -500,7 +341,7 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Arid to desert; localized extreme environments",
+        "ClimateType": "Hot, arid conditions are frequently depicted.",
         "Seasonality": "Heat dominance with significant day–night swings; seasonal variation exists but is less visually dramatic than on Earth.",
         "TypicalConditions": [
           {
@@ -546,20 +387,8 @@
       "Tourism": {
         "TopAttractions": [
           {
-            "Name": "Pilgrimage and meditation itineraries",
-            "WhyGo": "Direct immersion in Surak-era cultural legacy and modern contemplative practice."
-          },
-          {
-            "Name": "City cultural walks (ShiKahr region)",
-            "WhyGo": "Desert-adapted urban design and curated heritage routes near the Forge boundary."
-          },
-          {
-            "Name": "Sacred mountain excursions (Mount Seleya)",
-            "WhyGo": "One of the most iconic spiritual destinations with well-known ceremonial associations."
-          },
-          {
-            "Name": "Scholarly events and public lectures",
-            "WhyGo": "Vulcan academic culture can be a highlight for science-forward travelers."
+            "Name": "Cultural and ceremonial sites (visit via approved protocols)",
+            "WhyGo": "Vulcan culture and rituals are central to many stories; access is portrayed as formal."
           }
         ],
         "Activities": [
@@ -608,32 +437,7 @@
           "EpisodeOrFilm": "Amok Time",
           "YearInUniverse": null
         },
-        "Key": [
-          {
-            "SeriesOrFilm": "TOS: Amok Time",
-            "Notes": "Vulcan surface and cultural rites are central."
-          },
-          {
-            "SeriesOrFilm": "TAS: Yesteryear",
-            "Notes": "ShiKahr and desert-edge travel context; companion-world sky imagery is featured."
-          },
-          {
-            "SeriesOrFilm": "ENT: The Forge / Awakening / Kir'Shara",
-            "Notes": "Forge hazards, sacred routes, and political-cultural conflicts are explored in depth."
-          },
-          {
-            "SeriesOrFilm": "Star Trek III: The Search for Spock",
-            "Notes": "Mount Seleya ceremonial site (fal-tor-pan) is depicted."
-          },
-          {
-            "SeriesOrFilm": "Star Trek: The Motion Picture",
-            "Notes": "Vulcan cultural and philosophical context is central to Spock’s arc."
-          },
-          {
-            "SeriesOrFilm": "SNW: Charades",
-            "Notes": "Modern-era Vulcan system display canonizes T'Khut and system details."
-          }
-        ]
+        "Key": []
       },
       "Tags": [
         "HeatPreparednessRequired",
@@ -650,22 +454,18 @@
       "Name": "Ferenginar",
       "AlternateNames": [],
       "TypeTags": [
-        "Homeworld",
-        "CapitalWorld",
-        "CulturalDestination",
-        "CommerceHub",
-        "ExtremeWeather"
+        "Homeworld"
       ],
       "Media": {
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Ferenginar.png",
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "Alpha Quadrant",
-        "QuadrantNotes": "Seat of the Ferengi Alliance; on-screen cartography and references place Ferenginar in the Alpha Quadrant. It is described on a tactical/okudagram context as approximately sixty light years from the Bajoran system.",
-        "StarSystem": "Ferenginar system",
-        "Sector": null,
-        "Region": "Ferengi Alliance core"
+        "Quadrant": "",
+        "QuadrantNotes": "",
+        "StarSystem": "",
+        "Sector": "",
+        "Region": "Ferengi Alliance"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -680,9 +480,9 @@
           "TimeFormat": "Local standards; visitors typically rely on shipboard chronometers and civic time beacons for appointments."
         }
       },
-      "TravelSummary": "Ferenginar is a rain-soaked commercial capital where weather, architecture, and etiquette revolve around staying dry and doing business. Visitors come for the Sacred Marketplace, museums dedicated to Ferengi deal-craft, and a front-row look at the Alliance’s profit-driven civic culture—while learning quickly that climate, crowds, and opportunistic sales tactics shape every outing.",
+      "TravelSummary": "Ferenginar is the Ferengi homeworld, depicted on-screen as a world of relentless rain, heavy humidity, and commerce-centered civic life.",
       "Appearance": {
-        "GeneralLook": "A humid, overcast world of slick streets, domed structures, and market districts built to function through near-constant rainfall. City vistas emphasize layered canopies, covered walkways, and vertical civic spires rising above a dense marketplace.",
+        "GeneralLook": "Overcast skies and frequent downpours; wet streets and covered market spaces are prominent in depictions.",
         "FromOrbit": [
           "Persistent cloud cover and broad weather systems are common",
           "Approach traffic concentrates around major commercial hubs and government districts"
@@ -700,113 +500,28 @@
       "Geography": {
         "Biomes": [
           {
-            "Name": "Wetlands and swamp",
-            "Notes": "Humid lowlands, saturated soil, and standing water are common; vegetation is often described as damp and prone to rot in persistent rain."
+            "Name": "Humid lowlands",
+            "Notes": ""
           },
           {
-            "Name": "Rainy urban lowlands",
-            "Notes": "Cities are designed around drainage, covered walkways, and domed market spaces to mitigate constant precipitation."
+            "Name": "Wetlands / muddy basins",
+            "Notes": ""
           }
         ],
         "Landmarks": [
           {
-            "Name": "Sacred Marketplace",
-            "Category": "Civic / Commercial",
-            "CityOrRegion": "Capital city center",
-            "VisitorNotes": [
-              "The central market district and symbolic heart of Ferengi commerce.",
-              "High-density crowds; keep valuables secured and arrange meetups at fixed landmarks."
-            ]
-          },
-          {
             "Name": "Tower of Commerce",
-            "Category": "Government / Commercial",
-            "CityOrRegion": "Sacred Marketplace",
-            "VisitorNotes": [
-              "Seat of the Grand Nagus and Alliance governance; also houses Ferengi Commerce Authority offices.",
-              "Public access varies by political climate and security posture; expect screening and restricted floors.",
-              "Viewing areas offer iconic skyline shots of the market district in the rain."
-            ]
-          },
-          {
-            "Name": "Museum of Bribery",
-            "Category": "Museum",
+            "Category": "Government / Commerce",
             "CityOrRegion": "Capital district",
-            "VisitorNotes": [
-              "A culture-focused museum highlighting Ferengi history of influence, incentives, and negotiation norms.",
-              "Treat exhibits as cultural education; do not interpret displays as guidance for illegal activity offworld."
-            ]
-          },
-          {
-            "Name": "Museum of Gambling",
-            "Category": "Museum / Entertainment",
-            "CityOrRegion": "Capital district",
-            "VisitorNotes": [
-              "Showcases Ferengi gaming culture and risk-taking traditions.",
-              "Use reputable venues for any sanctioned games; avoid unlicensed street offers."
-            ]
-          },
-          {
-            "Name": "Museum of Haggling",
-            "Category": "Museum / Cultural",
-            "CityOrRegion": "Capital district",
-            "VisitorNotes": [
-              "Practical history of Ferengi bargaining styles; useful primer before shopping.",
-              "Some tours include staged negotiations—confirm prices and terms in advance."
-            ]
-          },
-          {
-            "Name": "Ferengi Hall of Fame",
-            "Category": "Cultural / Historic",
-            "CityOrRegion": "Capital district",
-            "VisitorNotes": [
-              "Profiles notable Ferengi figures and landmark business achievements.",
-              "Guided tours often frame events through the Rules of Acquisition."
-            ]
-          },
-          {
-            "Name": "Ferengi Center for Forged Arts",
-            "Category": "Arts / Cultural",
-            "CityOrRegion": "Capital district",
-            "VisitorNotes": [
-              "Art venue emphasizing craftsmanship and commerce; verify authenticity certificates for purchases."
-            ]
-          },
-          {
-            "Name": "Ferenginar Historic Public Library",
-            "Category": "Education / Archive",
-            "CityOrRegion": "Capital district",
-            "VisitorNotes": [
-              "Archive access may require registration; keep equipment protected from humidity."
-            ]
-          },
-          {
-            "Name": "Dominion War Memorial",
-            "Category": "Memorial",
-            "CityOrRegion": "Capital district",
-            "VisitorNotes": [
-              "A solemn civic site; observe quiet conduct and local protocols."
-            ]
-          },
-          {
-            "Name": "Nagal Residence",
-            "Category": "Residential / Notable home",
-            "CityOrRegion": "Capital region",
-            "VisitorNotes": [
-              "Associated with the Grand Nagus; public viewing is typically limited to designated areas or special events."
-            ]
+            "VisitorNotes": []
           }
         ],
         "Cities": [
           {
-            "Name": "Capital City (Sacred Marketplace district)",
-            "Role": "Alliance administrative and commercial center",
-            "Highlights": [
-              "Sacred Marketplace",
-              "Tower of Commerce",
-              "Museums dedicated to Ferengi trade culture"
-            ],
-            "LocalVibe": "Crowded, deal-driven, and perpetually damp—fast-paced commerce under awnings, domes, and covered arcades."
+            "Name": "Capital market district",
+            "Role": "Government and commerce center (as depicted)",
+            "Highlights": [],
+            "LocalVibe": ""
           }
         ]
       },
@@ -814,7 +529,7 @@
         "Primary": [
           {
             "Species": "Ferengi",
-            "Notes": "A mercantile culture where status is tied to profit, contracts, and negotiation skill."
+            "Notes": ""
           }
         ],
         "NotableCultures": [
@@ -837,25 +552,15 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Humid, near-constant rain",
+        "ClimateType": "Persistent rain and high humidity (frequently referenced on-screen).",
         "Seasonality": "Rain is described as persistent and pervasive; local weather variation is more about intensity and storm bursts than clear dry seasons.",
         "TypicalConditions": [
           {
-            "Region": "Capital lowlands",
+            "Region": "Capital districts",
             "Conditions": [
-              "Frequent heavy downpours",
-              "High humidity",
+              "Heavy rain",
               "Overcast skies",
-              "Wet streets and covered walkways"
-            ]
-          },
-          {
-            "Region": "Wetland basins",
-            "Conditions": [
-              "Standing water",
-              "Misty rain",
-              "Dense damp vegetation",
-              "Muddy runoff"
+              "High humidity"
             ]
           }
         ],
@@ -883,20 +588,8 @@
       "Tourism": {
         "TopAttractions": [
           {
-            "Name": "Sacred Marketplace day pass",
-            "WhyGo": "The core Ferengi shopping and negotiation experience under domes and awnings."
-          },
-          {
-            "Name": "Tower of Commerce observation + civic tour",
-            "WhyGo": "The symbolic and governmental center of the Alliance, dominated by the Grand Nagus’ palace complex."
-          },
-          {
-            "Name": "Ferengi museums circuit",
-            "WhyGo": "A guided route through museums of bribery, gambling, and haggling—ideal for understanding local deal culture."
-          },
-          {
-            "Name": "Deal-craft workshops (licensed)",
-            "WhyGo": "Structured lessons in bargaining etiquette and contract basics for offworld visitors."
+            "Name": "Tower of Commerce (exterior / authorized areas)",
+            "WhyGo": "Iconic seat of Ferengi leadership and a recognizable skyline feature."
           }
         ],
         "Activities": [
@@ -945,27 +638,15 @@
         "Key": [
           {
             "SeriesOrFilm": "DS9: Family Business",
-            "Notes": "First on-screen depiction of Ferenginar; rain-soaked homeworld context."
+            "Notes": ""
           },
           {
             "SeriesOrFilm": "DS9: Prophet Motive",
-            "Notes": "Tower of Commerce named and described; Nagus’ palace complex."
-          },
-          {
-            "SeriesOrFilm": "DS9: Bar Association",
-            "Notes": "References to the Tower of Commerce and FCA; harsh enforcement practices are mentioned."
-          },
-          {
-            "SeriesOrFilm": "DS9: Ferengi Love Songs",
-            "Notes": "Tower of Commerce offices and Ferengi political/commercial life."
+            "Notes": ""
           },
           {
             "SeriesOrFilm": "DS9: The Magnificent Ferengi",
-            "Notes": "Ferenginar described as torrential rain, dampness, rotting vegetation, and rivers of muck."
-          },
-          {
-            "SeriesOrFilm": "VOY: False Profits",
-            "Notes": "Ferengi Alliance politics and Ferengi homeworld context referenced."
+            "Notes": ""
           }
         ]
       },
@@ -981,21 +662,17 @@
       "Name": "Risa",
       "AlternateNames": [],
       "TypeTags": [
-        "ResortWorld",
-        "FederationWorld",
-        "TourismHub",
-        "PleasurePlanet",
-        "ClimateControlled"
+        "ResortWorld"
       ],
       "Media": {
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Risa.png",
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "Beta Quadrant",
-        "QuadrantNotes": "Federation resort world in the Epsilon Ceti system; commonly cited as approximately 93 light-years from Sol.",
-        "StarSystem": "Epsilon Ceti system",
-        "Sector": null,
+        "Quadrant": "",
+        "QuadrantNotes": "",
+        "StarSystem": "",
+        "Sector": "",
         "Region": "Federation space"
       },
       "QuickFacts": {
@@ -1011,9 +688,9 @@
           "TimeFormat": "Local standards; resort schedules and Starfleet visitors commonly operate on shipboard chronometers."
         }
       },
-      "TravelSummary": "Risa is the Federation’s best-known vacation world: warm surf, lush gardens, and a famously welcoming culture built around relaxation, consent-forward romance, and curated leisure. Its paradise weather is maintained by planet-wide systems, so the experience is intentionally consistent—sun, breezes, and comfortable temperatures—unless a system disruption or political incident forces the ‘real’ climate to break through.",
+      "TravelSummary": "Risa is depicted as a Federation pleasure/resort world known for beaches, leisure culture, and climate engineered to stay pleasant.",
       "Appearance": {
-        "GeneralLook": "A tropical resort planet of beaches, lagoons, palm-lined promenades, and low-rise leisure architecture—often open-air, shaded, and designed to feel effortless and indulgent.",
+        "GeneralLook": "Tropical resort architecture, beaches, lagoons, and lush landscaping are prominent on-screen.",
         "FromOrbit": [
           "Bright ocean expanses with frequent cloud bands",
           "Approach routes are dense during peak travel seasons",
@@ -1032,50 +709,20 @@
       "Geography": {
         "Biomes": [
           {
-            "Name": "Tropical coast",
-            "Notes": "Beaches, palms, warm surf, and high UV—plan sun protection even in ‘perfect weather’ conditions."
+            "Name": "Tropical coasts and beaches",
+            "Notes": ""
           },
           {
-            "Name": "Lagoon and garden districts",
-            "Notes": "Landscaped water features and curated greenery dominate near major resorts."
+            "Name": "Lagoon / resort districts",
+            "Notes": ""
           }
         ],
         "Landmarks": [
           {
-            "Name": "Tembiti Lagoon (Resort complex)",
-            "Category": "Resort / Lagoon",
-            "CityOrRegion": "Primary resort belt",
-            "VisitorNotes": [
-              "A flagship lagoon-side destination frequently used for offworlder vacations.",
-              "Check local event calendars for festivals, mixers, and cultural nights."
-            ]
-          },
-          {
-            "Name": "Shore Leave Promenade",
-            "Category": "Leisure district",
-            "CityOrRegion": "Resort waterfront",
-            "VisitorNotes": [
-              "Main pedestrian artery lined with shops, clubs, and tour kiosks.",
-              "Prime spot for people-watching, day passes, and booking curated experiences."
-            ]
-          },
-          {
-            "Name": "Horga'hn Plaza (Jamaharon district)",
-            "Category": "Cultural / Social",
-            "CityOrRegion": "Resort core",
-            "VisitorNotes": [
-              "A social hub associated with Risian romance customs; expect playful symbolism and lots of flirtation.",
-              "Consent etiquette is essential—Risa’s openness does not mean anything is assumed."
-            ]
-          },
-          {
-            "Name": "Weather Control Grid / Control Centers (restricted)",
-            "Category": "Infrastructure",
-            "CityOrRegion": "Planet-wide network",
-            "VisitorNotes": [
-              "Not a tourist attraction; access is restricted.",
-              "System disruptions can dramatically change conditions—monitor advisories if you’re on multi-day excursions."
-            ]
+            "Name": "Resort districts (various)",
+            "Category": "Resort",
+            "CityOrRegion": "Primary visitor zones",
+            "VisitorNotes": []
           }
         ],
         "Cities": [
@@ -1095,7 +742,7 @@
         "Primary": [
           {
             "Species": "Risian",
-            "Notes": "A hospitality-forward culture with famously open attitudes toward pleasure, romance, and leisure—balanced by strong social rules around consent and respect."
+            "Notes": ""
           }
         ],
         "NotableCultures": [
@@ -1117,7 +764,7 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Tropical, artificially stabilized by planet-wide weather control (with supplemental seismic regulation in some eras).",
+        "ClimateType": "Pleasant, stabilized weather maintained by planetary systems (on-screen).",
         "Seasonality": "Under normal operations, seasonality is intentionally muted to maintain near-constant ‘ideal’ vacation conditions; disruptions can restore storms and unstable patterns quickly.",
         "TypicalConditions": [
           {
@@ -1141,16 +788,8 @@
         ],
         "Hazards": [
           {
-            "Type": "Weather control failure",
-            "Notes": "Can produce sudden heavy storms, rough seas, and travel delays; follow resort advisories and shelter guidance."
-          },
-          {
-            "Type": "Security incidents affecting infrastructure",
-            "Notes": "Sabotage or political unrest can cause localized outages and crowd surges—avoid restricted areas and keep to official routes."
-          },
-          {
-            "Type": "Sun exposure",
-            "Notes": "Even with perfect weather, UV exposure can be intense; use protection and hydrate."
+            "Type": "Weather-control disruption (story-dependent)",
+            "Notes": ""
           }
         ],
         "TravelGear": [
@@ -1163,20 +802,12 @@
       "Tourism": {
         "TopAttractions": [
           {
-            "Name": "Lagoon resort days",
-            "WhyGo": "Iconic Risa: warm water, shaded cabanas, and effortless service culture."
+            "Name": "Beach and resort stay",
+            "WhyGo": "Core on-screen depiction: leisure, warm water, and resort culture."
           },
           {
-            "Name": "Shore Leave Promenade evenings",
-            "WhyGo": "Social nights, music, food, and spontaneous meetups with travelers from across Federation space."
-          },
-          {
-            "Name": "Cultural ‘experience’ bookings",
-            "WhyGo": "Guided leisure events designed by Risians—dance, cuisine, crafts, and romance-themed festivals."
-          },
-          {
-            "Name": "Private villa retreats",
-            "WhyGo": "Quiet, curated relaxation away from peak promenade crowds."
+            "Name": "Horga'hn custom (cultural symbol)",
+            "WhyGo": "Recurring on-screen element associated with Risian romance culture."
           }
         ],
         "Activities": [
@@ -1226,15 +857,15 @@
         "Key": [
           {
             "SeriesOrFilm": "TNG: Captain's Holiday",
-            "Notes": "Introduces Risa as the Federation’s premier pleasure planet; resort culture and shore leave norms are central."
+            "Notes": ""
           },
           {
             "SeriesOrFilm": "DS9: Let He Who Is Without Sin...",
-            "Notes": "Explores resort politics, sabotage of weather systems, and Risa’s role as a cultural flashpoint for visitors."
+            "Notes": ""
           },
           {
             "SeriesOrFilm": "ENT: Two Days and Two Nights",
-            "Notes": "Early-era shore leave depiction; Risa as a destination for offworld travelers."
+            "Notes": ""
           }
         ]
       },
@@ -1254,22 +885,18 @@
       ],
       "TypeTags": [
         "Homeworld",
-        "CapitalWorld",
-        "PoliticalCenter",
-        "CulturalDestination",
-        "HighSecurity",
-        "VolcanicGeology"
+        "CapitalWorld"
       ],
       "Media": {
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Qo'noS.png",
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "Beta Quadrant",
-        "QuadrantNotes": "Qo'noS is located in the Qo'noS system within Klingon space (Sector 70 / the Qo'noS sector). It had one moon, Praxis, which was destroyed in 2293.",
-        "StarSystem": "Qo'noS system",
-        "Sector": "Sector 70 (Qo'noS sector)",
-        "Region": "Klingon space"
+        "Quadrant": "",
+        "QuadrantNotes": "",
+        "StarSystem": "",
+        "Sector": "",
+        "Region": "Klingon Empire"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -1284,9 +911,9 @@
           "TimeFormat": "Local standards; visitors often rely on shipboard chronometers when coordinating with offworld schedules."
         }
       },
-      "TravelSummary": "Qo'noS is the seat of Klingon power: a world where politics, honor, and public ritual intertwine in the shadow of the Great Hall. For visitors, it’s less a carefree destination and more a place to witness imperial ceremony, architecture built like fortresses, and a culture that expects confidence, clarity, and respect for rank. Travel is best planned around security rules, diplomatic climates, and regional conditions that can feel harsh compared to Federation resort worlds.",
+      "TravelSummary": "Qo'noS is the Klingon homeworld and seat of imperial politics, shown on-screen through the First City and the Great Hall.",
       "Appearance": {
-        "GeneralLook": "A rugged, imposing world often associated with green-tinged skies and dramatic, austere cityscapes—massive stone-and-metal structures, monumental civic halls, and streets designed for processions and guard presence as much as daily life.",
+        "GeneralLook": "Rugged, austere landscapes and monumental civic architecture are central in depictions of the capital.",
         "FromOrbit": [
           "Approach corridors are tightly managed, with traffic patterns shaped by Klingon security and military priorities",
           "Major population centers present dense night-side illumination clusters, with heavy emphasis around the capital region"
@@ -1304,57 +931,30 @@
       "Geography": {
         "Biomes": [
           {
-            "Name": "Volcanic zones and basaltic fields",
-            "Notes": "Volcanic features and lava-formed terrain are a recurring part of the planet’s portrayal; some regions connect to large subterranean systems."
-          },
-          {
-            "Name": "Cave networks and subterranean complexes",
-            "Notes": "Described as a 'planet of caves' in some depictions, with long-dormant subterranean volcano systems and cavern spaces large enough to support significant activity."
-          },
-          {
-            "Name": "Urban and industrial corridors (capital region)",
-            "Notes": "Capital-adjacent districts blend civic monumentalism with heavy infrastructure; conditions can feel harsh, especially during periods of political or environmental stress."
+            "Name": "Rugged plains and rocky terrain",
+            "Notes": ""
           }
         ],
         "Landmarks": [
           {
             "Name": "First City",
             "Category": "Capital city",
-            "CityOrRegion": "Southern hemisphere",
-            "VisitorNotes": [
-              "The imperial capital and the primary hub for government, ceremony, and major hearings.",
-              "Movement in and around civic cores is often controlled; keep identification and travel authorization readily available."
-            ]
+            "CityOrRegion": "Qo'noS",
+            "VisitorNotes": []
           },
           {
             "Name": "Great Hall",
-            "Category": "Government / ceremonial",
+            "Category": "Government / Ceremonial",
             "CityOrRegion": "First City",
-            "VisitorNotes": [
-              "Iconic Klingon seat of ceremony and political assembly, associated with the Klingon High Council.",
-              "Access is typically restricted; when permitted, visitors should expect formal conduct rules and tight security screening."
-            ]
-          },
-          {
-            "Name": "Klingon High Council Chamber",
-            "Category": "Government",
-            "CityOrRegion": "First City",
-            "VisitorNotes": [
-              "A highly controlled interior zone linked to Klingon governance and major proceedings.",
-              "Photography/recording rules (if any) are set case-by-case—assume prohibited unless explicitly authorized."
-            ]
+            "VisitorNotes": []
           }
         ],
         "Cities": [
           {
             "Name": "First City",
-            "Role": "Imperial capital and primary civic center",
-            "Highlights": [
-              "Great Hall",
-              "High Council-associated districts",
-              "Monumental architecture and guarded civic plazas"
-            ],
-            "LocalVibe": "Intense, formal, and security-forward—public spaces feel ceremonial, with visible rank culture and tightly policed boundaries."
+            "Role": "Imperial capital (as depicted)",
+            "Highlights": [],
+            "LocalVibe": ""
           }
         ]
       },
@@ -1362,7 +962,7 @@
         "Primary": [
           {
             "Species": "Klingon",
-            "Notes": "A warrior society where honor, reputation, and directness shape social life; public ritual and political allegiance are strongly tied to House and status."
+            "Notes": ""
           }
         ],
         "NotableCultures": [
@@ -1385,8 +985,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Regionally variable; conditions are often portrayed as turbulent and capable of harsh swings depending on location and era.",
-        "Seasonality": "Seasonal variation is treated as significant in some portrayals; visitors should plan for sudden changes and pack for both cool and warm conditions unless traveling with a local-season briefing.",
+        "ClimateType": "",
+        "Seasonality": "",
         "TypicalConditions": [
           {
             "Region": "Capital region / First City",
@@ -1431,16 +1031,8 @@
       "Tourism": {
         "TopAttractions": [
           {
-            "Name": "First City civic panorama",
-            "WhyGo": "A rare look at Klingon monumental architecture and public ceremony (when observation zones are open)."
-          },
-          {
-            "Name": "Cultural halls and memorial spaces (permitted zones)",
-            "WhyGo": "Klingon history is performed as much as recorded—guided visits can provide context for House symbols, oaths, and honor rites."
-          },
-          {
-            "Name": "Approved cuisine and music venues",
-            "WhyGo": "Public houses and performance spaces can be welcoming if you respect etiquette and don’t treat tradition as a joke."
+            "Name": "Great Hall (authorized access)",
+            "WhyGo": "Central on-screen location for Klingon ceremony and High Council politics."
           }
         ],
         "Activities": [
@@ -1489,27 +1081,15 @@
         "Key": [
           {
             "SeriesOrFilm": "TNG: Sins of the Father",
-            "Notes": "First on-screen depiction of the Klingon homeworld; establishes the capital-city look and Great Hall context."
+            "Notes": ""
           },
           {
             "SeriesOrFilm": "TNG: Redemption / Redemption II",
-            "Notes": "Qo'noS is central during the Klingon civil war period and High Council politics."
+            "Notes": ""
           },
           {
-            "SeriesOrFilm": "DS9: The House of Quark",
-            "Notes": "Returns to Qo'noS for Klingon legal and political stakes."
-          },
-          {
-            "SeriesOrFilm": "ENT: Broken Bow",
-            "Notes": "Qo'noS is referenced as a strategic destination early in the 22nd century."
-          },
-          {
-            "SeriesOrFilm": "DIS: Will You Take My Hand?",
-            "Notes": "Features Qo'noS in the context of conflict and political transition."
-          },
-          {
-            "SeriesOrFilm": "Star Trek VI: The Undiscovered Country",
-            "Notes": "Praxis’ destruction drives an environmental and political crisis tied to Qo'noS."
+            "SeriesOrFilm": "Star Trek VI: The Undiscovered Country (Praxis disaster context)",
+            "Notes": ""
           }
         ]
       },
@@ -1529,25 +1109,21 @@
       ],
       "TypeTags": [
         "Homeworld",
-        "FederationFoundingWorld",
-        "IceWorld",
-        "CulturalDestination",
-        "HighLatitudeTravel",
-        "StrategicWorld"
+        "IceWorld"
       ],
       "Media": {
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Andoria.png",
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "Beta Quadrant",
-        "QuadrantNotes": "Andorian homeworld in Federation space. On-screen references place it within or near key Federation travel corridors; published cartography commonly treats it as a core member world. Andoria is often depicted with a prominent nearby companion body visible in the sky (moon/primary companion, depending on depiction).",
-        "StarSystem": "Andoria system",
-        "Sector": null,
-        "Region": "Federation space"
+        "Quadrant": "",
+        "QuadrantNotes": "",
+        "StarSystem": "",
+        "Sector": "",
+        "Region": "Federation space (member world in later eras)"
       },
       "QuickFacts": {
-        "Class": "Class M (glaciated)",
+        "Class": "Class M",
         "PrimaryInhabitants": [
           "Andorians",
           "Aenar"
@@ -1560,9 +1136,9 @@
           "TimeFormat": "Local standards; visitors commonly coordinate via shipboard chronometers for tours and transport windows."
         }
       },
-      "TravelSummary": "Andoria is the cold, proud homeworld of the Andorians—an ice-dominant planet of glaciers, wind-scoured ridges, and cities built for survival and ceremony. Visitors come for the stark beauty of the polar landscapes, distinctive Andorian architecture, and a chance to experience a Federation founding culture that prizes duty and directness. Travel here is rewarding but demanding: weather can be severe, daylight can be seasonal, and access to sensitive sites may depend on diplomatic conditions.",
+      "TravelSummary": "Andoria is depicted as the Andorian homeworld: an ice-dominant planet with severe cold and distinctive Andorian culture.",
       "Appearance": {
-        "GeneralLook": "A bright, icy world with sweeping glacier fields, blue-white plains, and rugged mountain chains. Settlements tend to be compact and insulated, with prominent civic structures and enclosed transit designed to handle constant cold and wind.",
+        "GeneralLook": "Bright ice fields, glaciers, and stormy skies dominate; many facilities and settlements are built for extreme cold.",
         "FromOrbit": [
           "Large reflective ice sheets dominate the surface coloration",
           "Storm bands and polar cloud systems are common",
@@ -1581,38 +1157,15 @@
       "Geography": {
         "Biomes": [
           {
-            "Name": "Glacier fields and ice plains",
-            "Notes": "Vast, reflective surfaces with crevasses and pressure ridges; travel is typically guided or routed along maintained corridors."
+            "Name": "Glaciers and ice plains",
+            "Notes": ""
           },
           {
-            "Name": "Frozen highlands and mountain ridges",
-            "Notes": "Windy and exposed with sudden whiteouts; scenic viewpoints are dramatic but require proper gear and local advisories."
-          },
-          {
-            "Name": "Subsurface/cavern-adjacent regions",
-            "Notes": "Associated with Aenar habitation in canon; access is sensitive and often controlled to protect privacy and security."
+            "Name": "Polar and highland regions",
+            "Notes": ""
           }
         ],
-        "Landmarks": [
-          {
-            "Name": "Andorian capital district (surface civic core)",
-            "Category": "Civic / Government",
-            "CityOrRegion": "Primary population center",
-            "VisitorNotes": [
-              "Iconic for formal architecture and public ceremony spaces.",
-              "Access to government buildings can require advance authorization depending on political climate."
-            ]
-          },
-          {
-            "Name": "Aenar enclave regions (restricted cultural areas)",
-            "Category": "Cultural / Sensitive site",
-            "CityOrRegion": "Subsurface / remote zones",
-            "VisitorNotes": [
-              "Aenar communities are culturally protected; visits are typically invitation-only or routed through approved cultural exchanges.",
-              "Treat access rules as non-negotiable and do not attempt unescorted travel."
-            ]
-          }
-        ],
+        "Landmarks": [],
         "Cities": [
           {
             "Name": "Capital city (primary civic hub)",
@@ -1630,11 +1183,11 @@
         "Primary": [
           {
             "Species": "Andorian",
-            "Notes": "A Federation founding culture known for discipline, directness, and strong civic identity; many customs emphasize responsibility and honor through service."
+            "Notes": ""
           },
           {
             "Species": "Aenar",
-            "Notes": "An Andorian subspecies associated with remote/subsurface communities and strong privacy norms; interactions are often mediated through formal channels."
+            "Notes": ""
           }
         ],
         "NotableCultures": [
@@ -1652,7 +1205,7 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Severe cold, ice-dominant climate with frequent wind and snow events.",
+        "ClimateType": "Severe cold with wind and snow (on-screen).",
         "Seasonality": "High-latitude seasonality can be pronounced—expect significant daylight shifts by region and time of year, with conditions ranging from clear, brittle cold to prolonged storm cycles.",
         "TypicalConditions": [
           {
@@ -1708,16 +1261,8 @@
       "Tourism": {
         "TopAttractions": [
           {
-            "Name": "Glacier overlook tours (licensed)",
-            "WhyGo": "Classic Andoria: sweeping ice vistas, blue crevasses, and dramatic ridgelines—best experienced with a guide."
-          },
-          {
-            "Name": "Capital civic walk (authorized districts)",
-            "WhyGo": "Architecture, ceremony spaces, and a grounded introduction to a Federation founding culture."
-          },
-          {
-            "Name": "Cultural briefings and museums (when available)",
-            "WhyGo": "Context for Andorian history, diplomacy, and traditions beyond the stereotype of cold and combativeness."
+            "Name": "Guided icefield vistas (where permitted)",
+            "WhyGo": "The ice-world environment is Andoria’s defining on-screen feature."
           }
         ],
         "Activities": [
@@ -1766,15 +1311,11 @@
         "Key": [
           {
             "SeriesOrFilm": "ENT: The Andorian Incident",
-            "Notes": "First on-screen visit; establishes Andoria’s icy environment and political/security context."
-          },
-          {
-            "SeriesOrFilm": "ENT: Proving Ground",
-            "Notes": "Links Andoria to major strategic developments; reinforces Andorian military and diplomatic presence."
+            "Notes": ""
           },
           {
             "SeriesOrFilm": "ENT: United",
-            "Notes": "Highlights the Andorians’ role in coalition-era diplomacy leading toward the Federation."
+            "Notes": ""
           }
         ]
       },
@@ -1784,6 +1325,437 @@
         "SevereWeather",
         "PermitSensitiveAreas",
         "GuidedExcursionsRecommended"
+      ]
+    },
+    {
+      "PlanetID": "planet-bajor",
+      "Name": "Bajor",
+      "AlternateNames": [
+        "Bajora"
+      ],
+      "TypeTags": [
+        "Homeworld"
+      ],
+      "Media": {
+        "HeroImageURL": null,
+        "Gallery": []
+      },
+      "Location": {
+        "Quadrant": "",
+        "QuadrantNotes": "",
+        "StarSystem": "Bajoran system",
+        "Sector": "",
+        "Region": "Bajoran space"
+      },
+      "QuickFacts": {
+        "Class": "Class M",
+        "PrimaryInhabitants": [
+          "Bajorans"
+        ],
+        "PrimaryLanguageNotes": [
+          "Bajoran is common in domestic settings; Federation Standard is widely used in government, trade, and offworld-facing contexts."
+        ],
+        "LocalTimekeeping": {
+          "DayLengthHours": null,
+          "TimeFormat": "Local standards; visitors often coordinate with Deep Space 9 schedules and shipboard chronometers."
+        }
+      },
+      "TravelSummary": "Bajor is the Bajoran homeworld, depicted as a lush world shaped by deep religious tradition and the aftermath of the Cardassian Occupation.",
+      "Appearance": {
+        "GeneralLook": "Green valleys, mountains, rivers, and warm-toned stone architecture are prominent in DS9 depictions.",
+        "FromOrbit": [
+          "Broad green landmasses and deep-blue seas with visible weather systems",
+          "Dense illumination clusters around major population centers and reconstruction corridors"
+        ],
+        "NotableLandscapes": [
+          "Mountain valleys and river deltas",
+          "Agricultural provinces and terraced farmlands",
+          "Coastal belts and inland seas",
+          "Cave and canyon systems associated with religious myth and history"
+        ],
+        "SurfaceNotes": [
+          "Rural regions can feel timeless and pastoral, while urban districts show visible modernization after the Occupation.",
+          "Travel between provinces is common for pilgrimages and memorial visits; many routes have cultural significance."
+        ]
+      },
+      "Geography": {
+        "Biomes": [
+          {
+            "Name": "Temperate valleys and riverlands",
+            "Notes": ""
+          },
+          {
+            "Name": "Mountain regions",
+            "Notes": ""
+          }
+        ],
+        "Landmarks": [
+          {
+            "Name": "Bajor City (capital)",
+            "Category": "Capital city",
+            "CityOrRegion": "Bajor",
+            "VisitorNotes": []
+          },
+          {
+            "Name": "Fire Caves",
+            "Category": "Religious site",
+            "CityOrRegion": "Bajor",
+            "VisitorNotes": []
+          }
+        ],
+        "Cities": [
+          {
+            "Name": "Bajor City",
+            "Role": "Capital (as referenced/depicted)",
+            "Highlights": [],
+            "LocalVibe": ""
+          }
+        ]
+      },
+      "Inhabitants": {
+        "Primary": [
+          {
+            "Species": "Bajoran",
+            "Notes": ""
+          }
+        ],
+        "NotableCultures": [
+          {
+            "Name": "Prophets-centered faith",
+            "Notes": "Religion is embedded in public life: shrines, monasteries, and ceremonies are common, and visitors are expected to show respect even when not participating."
+          },
+          {
+            "Name": "Post-Occupation civic identity",
+            "Notes": "Memorial culture and political vigilance remain strong; certain topics are sensitive, especially in public or around veterans."
+          }
+        ],
+        "VisitorEtiquette": [
+          "Treat shrines, monasteries, and religious symbols with respect—ask before photographing ceremonies or sacred objects.",
+          "Avoid casually debating Occupation history with strangers; many families are directly affected.",
+          "When invited into a religious space, follow host instructions on dress, voice level, and where to stand.",
+          "Use official guides for archaeological sites—Bajor values preservation and controls access to fragile ruins.",
+          "Be mindful of local politics: rallies, assemblies, and security shifts can occur around major events."
+        ]
+      },
+      "Weather": {
+        "ClimateType": "Varies by region (lush, Class-M conditions depicted).",
+        "Seasonality": "Seasonal shifts are noticeable by province; expect wetter periods in valleys and coastal belts and cooler temperatures in mountain regions.",
+        "TypicalConditions": [
+          {
+            "Region": "River valleys and farmland provinces",
+            "Conditions": [
+              "Warm days",
+              "Mild evenings",
+              "Periodic rain",
+              "Morning fog in lowlands"
+            ]
+          },
+          {
+            "Region": "Mountain passes and monastery ridges",
+            "Conditions": [
+              "Cooler air",
+              "Fast weather changes",
+              "Windy overlooks",
+              "Cloud ceilings that can drop quickly"
+            ]
+          },
+          {
+            "Region": "Coastal belts",
+            "Conditions": [
+              "Humid air",
+              "Sea breezes",
+              "Seasonal storms",
+              "Clear days alternating with rain bands"
+            ]
+          }
+        ],
+        "Hazards": [
+          {
+            "Type": "Storm bands and flash rains",
+            "Notes": "Localized downpours can affect road and shuttle timing, especially in valleys."
+          },
+          {
+            "Type": "Seismic activity (historical episodes)",
+            "Notes": "Certain periods saw major quakes tied to wormhole instability; modern advisories may still reference vulnerable zones."
+          }
+        ],
+        "TravelGear": [
+          "Light layers for warm valleys and cool ridges",
+          "Rain shell or compact poncho during wet seasons",
+          "Comfort footwear for pilgrimage routes and stone stairs",
+          "A respectful outfit for monastery visits (as advised locally)"
+        ]
+      },
+      "Tourism": {
+        "TopAttractions": [
+          {
+            "Name": "Monasteries and pilgrimage sites (where open)",
+            "WhyGo": "Bajoran faith and sacred sites are central on-screen."
+          }
+        ],
+        "Activities": [
+          "Temple and monastery visits (guided/approved)",
+          "Valley hikes and scenic overlooks (seasonal)",
+          "Cultural lectures on Bajoran history and faith (official venues)",
+          "Local food tastings (regional breads, stews, and produce-forward dishes)",
+          "Museum and memorial tours in urban districts"
+        ],
+        "Restrictions": [
+          "Certain religious sites restrict recording and limit non-participant access during ceremonies.",
+          "Some ruins and provinces have permit requirements to protect cultural heritage and sensitive recovery areas.",
+          "Fire Caves access is often restricted or culturally discouraged."
+        ],
+        "SafetyNotes": [
+          "Use licensed guides for ruins and remote routes; some areas still contain Occupation-era hazards or unstable structures.",
+          "Respect security instructions during political events—crowd control can change quickly.",
+          "Avoid buying looted artifacts; Bajor takes cultural theft seriously."
+        ]
+      },
+      "Logistics": {
+        "Entry": [
+          "Entry requirements vary by era and political climate; visitors may need permits for certain provinces, digs, or religious sites.",
+          "If arriving via Deep Space 9, expect coordination between station schedules and planet-side customs."
+        ],
+        "LocalTransport": [
+          "Shuttles and ground vehicles connecting major cities and provinces",
+          "Guided transport for archaeology routes and remote monasteries",
+          "Weather and event-driven delays are common during storms or assemblies"
+        ],
+        "CurrencyNotes": [
+          "Local commerce is active but culturally regulated around sacred objects and artifacts; confirm what is legal to purchase and export."
+        ],
+        "Lodging": [
+          "Urban hotels and guesthouses in the capital",
+          "Rural inns along pilgrimage routes (seasonal availability)",
+          "Retreat-style accommodations near approved monasteries"
+        ],
+        "Communications": [
+          "Good coverage in cities; rural valleys may require relay service or tour-provided comm support."
+        ]
+      },
+      "CanonAppearances": {
+        "FirstSeen": {
+          "Series": "DS9",
+          "EpisodeOrFilm": "Emissary",
+          "YearInUniverse": null
+        },
+        "Key": [
+          {
+            "SeriesOrFilm": "DS9: Emissary",
+            "Notes": ""
+          },
+          {
+            "SeriesOrFilm": "DS9: What You Leave Behind (Fire Caves)",
+            "Notes": ""
+          }
+        ]
+      },
+      "Tags": [
+        "PilgrimageFriendly",
+        "ArchaeologyHeavy",
+        "PermitSensitiveSites",
+        "PostOccupationContext",
+        "RespectfulTourism"
+      ]
+    },
+    {
+      "PlanetID": "planet-cardassia-prime",
+      "Name": "Cardassia Prime",
+      "AlternateNames": [
+        "Cardassia"
+      ],
+      "TypeTags": [
+        "Homeworld",
+        "CapitalWorld"
+      ],
+      "Media": {
+        "HeroImageURL": null,
+        "Gallery": []
+      },
+      "Location": {
+        "Quadrant": "",
+        "QuadrantNotes": "",
+        "StarSystem": "",
+        "Sector": "",
+        "Region": "Cardassian space"
+      },
+      "QuickFacts": {
+        "Class": "Class M",
+        "PrimaryInhabitants": [
+          "Cardassians"
+        ],
+        "PrimaryLanguageNotes": [
+          "Cardassian is dominant; Federation Standard is used in diplomatic and offworld-facing contexts."
+        ],
+        "LocalTimekeeping": {
+          "DayLengthHours": null,
+          "TimeFormat": "Local standards; visiting schedules are often coordinated through official itineraries and security checkpoints."
+        }
+      },
+      "TravelSummary": "Cardassia Prime is the Cardassian homeworld and political center of the Cardassian Union, depicted through its government institutions and Dominion War endgame.",
+      "Appearance": {
+        "GeneralLook": "",
+        "FromOrbit": [
+          "Large landmasses with muted coloration consistent with arid regions",
+          "Night-side illumination clustered around major urban centers and industrial corridors"
+        ],
+        "NotableLandscapes": [
+          "Arid plains and rocky highlands",
+          "Dusty basins and dry valleys",
+          "Heavily built urban and industrial corridors"
+        ],
+        "SurfaceNotes": [
+          "Public spaces in major cities can feel formal and surveilled; expect signage and guard presence even in civilian districts.",
+          "Outside approved visitor routes, conditions can become harsher and services sparser."
+        ]
+      },
+      "Geography": {
+        "Biomes": [],
+        "Landmarks": [
+          {
+            "Name": "Central Command (institutional seat, access restricted)",
+            "Category": "Government / Military",
+            "CityOrRegion": "Cardassia Prime",
+            "VisitorNotes": []
+          },
+          {
+            "Name": "Detapa Council (institutional seat, era-dependent)",
+            "Category": "Government",
+            "CityOrRegion": "Cardassia Prime",
+            "VisitorNotes": []
+          }
+        ],
+        "Cities": [
+          {
+            "Name": "Lakarian City",
+            "Role": "Capital and primary visitor gateway (when open)",
+            "Highlights": [
+              "Monumental civic architecture",
+              "Approved museums and public history venues",
+              "Formal plazas and government-adjacent boulevards"
+            ],
+            "LocalVibe": "Controlled, ceremonial, and security-forward—public spaces often feel designed for processions, surveillance, and state visibility."
+          }
+        ]
+      },
+      "Inhabitants": {
+        "Primary": [
+          {
+            "Species": "Cardassian",
+            "Notes": ""
+          }
+        ],
+        "NotableCultures": [
+          {
+            "Name": "State-and-service civic identity",
+            "Notes": "Public messaging and ceremony frequently highlight duty and the legitimacy of institutions; visitors should expect formal conduct norms in civic spaces."
+          }
+        ],
+        "VisitorEtiquette": [
+          "Keep documentation ready; officials may request identification frequently.",
+          "Use formal address and avoid casual jokes about the state, military, or recent conflicts.",
+          "Don’t photograph guards, checkpoints, or restricted buildings unless explicitly permitted.",
+          "If invited into a family home, follow host rules—hospitality can be formal and status-conscious.",
+          "Avoid discussing Bajoran Occupation history with strangers; it is politically and personally sensitive."
+        ]
+      },
+      "Weather": {
+        "ClimateType": "",
+        "Seasonality": "Seasonal detail varies by depiction; visitors should plan for heat and dry air as baseline assumptions and check current advisories before surface travel.",
+        "TypicalConditions": [
+          {
+            "Region": "Capital/urban corridors",
+            "Conditions": [
+              "Warm to hot days",
+              "Dry air",
+              "Haze and dust",
+              "Cooler nights depending on season"
+            ]
+          },
+          {
+            "Region": "Open plains and outskirts",
+            "Conditions": [
+              "Hot sun",
+              "Dust-laden winds",
+              "Low humidity",
+              "Rapid visibility changes during gusts"
+            ]
+          }
+        ],
+        "Hazards": [
+          {
+            "Type": "Dust storms / wind events",
+            "Notes": "Blowing dust can reduce visibility and irritate respiratory systems; use sealed eyewear and filtration when advised."
+          },
+          {
+            "Type": "Heat exposure",
+            "Notes": "Dehydration risk rises quickly in open areas; carry water and follow excursion time limits."
+          }
+        ],
+        "TravelGear": [
+          "Light, breathable clothing plus a sun-shielding outer layer",
+          "Sealed eyewear for dust",
+          "Hydration kit",
+          "Weather-sealed pouch for comm devices"
+        ]
+      },
+      "Tourism": {
+        "TopAttractions": [],
+        "Activities": [
+          "Guided city walks in authorized districts",
+          "Museum visits and public exhibitions (where open)",
+          "Officially hosted cultural talks and receptions (permit/sponsor dependent)"
+        ],
+        "Restrictions": [
+          "Government, intelligence, and military-adjacent areas are restricted.",
+          "Political conditions can close attractions and reroute tours with little notice."
+        ],
+        "SafetyNotes": [
+          "Use licensed guides and official booking channels—avoid ‘access brokers’ offering restricted entry.",
+          "Follow checkpoint instructions immediately; do not argue protocol on-site.",
+          "Stay aware of advisories related to post-war reconstruction or local unrest."
+        ]
+      },
+      "Logistics": {
+        "Entry": [
+          "Entry requirements depend heavily on diplomatic conditions; sponsorship and escorted itineraries may be required.",
+          "Expect inspections for weapons, recording equipment, and restricted materials."
+        ],
+        "LocalTransport": [
+          "Checkpointed surface routes in major cities",
+          "Licensed shuttles and controlled corridors between approved zones",
+          "Reroutes and closures are common during security escalations"
+        ],
+        "CurrencyNotes": [
+          "Exchange and purchasing rules can vary by era and policy; confirm what transactions are permitted before arrival."
+        ],
+        "Lodging": [
+          "Authorized hotels/guest quarters within controlled districts (often arranged through sponsors)",
+          "Diplomatic accommodations for official travelers"
+        ],
+        "Communications": [
+          "Translator support is recommended for formal notices and legal terms; expect monitoring in some districts."
+        ]
+      },
+      "CanonAppearances": {
+        "FirstSeen": {
+          "Series": "DS9",
+          "EpisodeOrFilm": "What You Leave Behind",
+          "YearInUniverse": null
+        },
+        "Key": [
+          {
+            "SeriesOrFilm": "DS9: What You Leave Behind",
+            "Notes": ""
+          }
+        ]
+      },
+      "Tags": [
+        "PermitSensitiveTravel",
+        "HighSecurity",
+        "MonumentalArchitecture",
+        "AridConditions",
+        "PostWarContext"
       ]
     }
   ]
