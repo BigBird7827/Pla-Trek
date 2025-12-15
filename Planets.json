@@ -2,7 +2,7 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 1,
+    "Build": 2,
     "Version": 1,
     "LastUpdated": "2025-12-15",
     "Scope": "Travel guide worlds only (enough on-screen canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
@@ -644,6 +644,337 @@
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Vulcan.png",
         "Gallery": []
       }
+    },
+    {
+      "PlanetID": "planet-ferenginar",
+      "Name": "Ferenginar",
+      "AlternateNames": [],
+      "TypeTags": [
+        "Homeworld",
+        "CapitalWorld",
+        "CulturalDestination",
+        "CommerceHub",
+        "ExtremeWeather"
+      ],
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Ferenginar.png",
+        "Gallery": []
+      },
+      "Location": {
+        "Quadrant": "Alpha Quadrant",
+        "QuadrantNotes": "Seat of the Ferengi Alliance; on-screen cartography and references place Ferenginar in the Alpha Quadrant. It is described on a tactical/okudagram context as approximately sixty light years from the Bajoran system.",
+        "StarSystem": "Ferenginar system",
+        "Sector": null,
+        "Region": "Ferengi Alliance core"
+      },
+      "QuickFacts": {
+        "Class": "Class M",
+        "PrimaryInhabitants": [
+          "Ferengi"
+        ],
+        "PrimaryLanguageNotes": [
+          "Ferengi language is common in domestic contexts; Federation Standard is widely understood in trade-facing areas."
+        ],
+        "LocalTimekeeping": {
+          "DayLengthHours": null,
+          "TimeFormat": "Local standards; visitors typically rely on shipboard chronometers and civic time beacons for appointments."
+        }
+      },
+      "TravelSummary": "Ferenginar is a rain-soaked commercial capital where weather, architecture, and etiquette revolve around staying dry and doing business. Visitors come for the Sacred Marketplace, museums dedicated to Ferengi deal-craft, and a front-row look at the Alliance’s profit-driven civic culture—while learning quickly that climate, crowds, and opportunistic sales tactics shape every outing.",
+      "Appearance": {
+        "GeneralLook": "A humid, overcast world of slick streets, domed structures, and market districts built to function through near-constant rainfall. City vistas emphasize layered canopies, covered walkways, and vertical civic spires rising above a dense marketplace.",
+        "FromOrbit": [
+          "Persistent cloud cover and broad weather systems are common",
+          "Approach traffic concentrates around major commercial hubs and government districts"
+        ],
+        "NotableLandscapes": [
+          "Lowland wetlands and swampy basins",
+          "River channels and drainage corridors carrying heavy runoff",
+          "Dense urban districts clustered around major marketplaces"
+        ],
+        "SurfaceNotes": [
+          "Expect wet ground conditions almost everywhere—non-slip footwear and sealed bags are standard.",
+          "Many high-traffic civic areas are covered or partially enclosed to keep commerce moving during downpours."
+        ]
+      },
+      "Geography": {
+        "Biomes": [
+          {
+            "Name": "Wetlands and swamp",
+            "Notes": "Humid lowlands, saturated soil, and standing water are common; vegetation is often described as damp and prone to rot in persistent rain."
+          },
+          {
+            "Name": "Rainy urban lowlands",
+            "Notes": "Cities are designed around drainage, covered walkways, and domed market spaces to mitigate constant precipitation."
+          }
+        ],
+        "Landmarks": [
+          {
+            "Name": "Sacred Marketplace",
+            "Category": "Civic / Commercial",
+            "CityOrRegion": "Capital city center",
+            "VisitorNotes": [
+              "The central market district and symbolic heart of Ferengi commerce.",
+              "High-density crowds; keep valuables secured and arrange meetups at fixed landmarks."
+            ]
+          },
+          {
+            "Name": "Tower of Commerce",
+            "Category": "Government / Commercial",
+            "CityOrRegion": "Sacred Marketplace",
+            "VisitorNotes": [
+              "Seat of the Grand Nagus and Alliance governance; also houses Ferengi Commerce Authority offices.",
+              "Public access varies by political climate and security posture; expect screening and restricted floors.",
+              "Viewing areas offer iconic skyline shots of the market district in the rain."
+            ]
+          },
+          {
+            "Name": "Museum of Bribery",
+            "Category": "Museum",
+            "CityOrRegion": "Capital district",
+            "VisitorNotes": [
+              "A culture-focused museum highlighting Ferengi history of influence, incentives, and negotiation norms.",
+              "Treat exhibits as cultural education; do not interpret displays as guidance for illegal activity offworld."
+            ]
+          },
+          {
+            "Name": "Museum of Gambling",
+            "Category": "Museum / Entertainment",
+            "CityOrRegion": "Capital district",
+            "VisitorNotes": [
+              "Showcases Ferengi gaming culture and risk-taking traditions.",
+              "Use reputable venues for any sanctioned games; avoid unlicensed street offers."
+            ]
+          },
+          {
+            "Name": "Museum of Haggling",
+            "Category": "Museum / Cultural",
+            "CityOrRegion": "Capital district",
+            "VisitorNotes": [
+              "Practical history of Ferengi bargaining styles; useful primer before shopping.",
+              "Some tours include staged negotiations—confirm prices and terms in advance."
+            ]
+          },
+          {
+            "Name": "Ferengi Hall of Fame",
+            "Category": "Cultural / Historic",
+            "CityOrRegion": "Capital district",
+            "VisitorNotes": [
+              "Profiles notable Ferengi figures and landmark business achievements.",
+              "Guided tours often frame events through the Rules of Acquisition."
+            ]
+          },
+          {
+            "Name": "Ferengi Center for Forged Arts",
+            "Category": "Arts / Cultural",
+            "CityOrRegion": "Capital district",
+            "VisitorNotes": [
+              "Art venue emphasizing craftsmanship and commerce; verify authenticity certificates for purchases."
+            ]
+          },
+          {
+            "Name": "Ferenginar Historic Public Library",
+            "Category": "Education / Archive",
+            "CityOrRegion": "Capital district",
+            "VisitorNotes": [
+              "Archive access may require registration; keep equipment protected from humidity."
+            ]
+          },
+          {
+            "Name": "Dominion War Memorial",
+            "Category": "Memorial",
+            "CityOrRegion": "Capital district",
+            "VisitorNotes": [
+              "A solemn civic site; observe quiet conduct and local protocols."
+            ]
+          },
+          {
+            "Name": "Nagal Residence",
+            "Category": "Residential / Notable home",
+            "CityOrRegion": "Capital region",
+            "VisitorNotes": [
+              "Associated with the Grand Nagus; public viewing is typically limited to designated areas or special events."
+            ]
+          }
+        ],
+        "Cities": [
+          {
+            "Name": "Capital City (Sacred Marketplace district)",
+            "Role": "Alliance administrative and commercial center",
+            "Highlights": [
+              "Sacred Marketplace",
+              "Tower of Commerce",
+              "Museums dedicated to Ferengi trade culture"
+            ],
+            "LocalVibe": "Crowded, deal-driven, and perpetually damp—fast-paced commerce under awnings, domes, and covered arcades."
+          }
+        ]
+      },
+      "Inhabitants": {
+        "Primary": [
+          {
+            "Species": "Ferengi",
+            "Notes": "A mercantile culture where status is tied to profit, contracts, and negotiation skill."
+          }
+        ],
+        "NotableCultures": [
+          {
+            "Name": "Rules of Acquisition civic culture",
+            "Notes": "Business norms and social etiquette are often framed through the Rules of Acquisition and the pursuit of profit."
+          },
+          {
+            "Name": "Ferengi Commerce Authority presence",
+            "Notes": "Regulatory enforcement exists alongside widespread graft and aggressive sales tactics; visitors should stick to reputable vendors."
+          }
+        ],
+        "VisitorEtiquette": [
+          "Assume every price is negotiable unless explicitly posted as fixed—haggling is expected in many contexts.",
+          "Get agreements in writing (or recorded contract form) before exchanging funds or goods—clarify fees, delivery, and refunds.",
+          "Avoid insulting someone’s business acumen; negotiations are social contests as much as transactions.",
+          "Keep personal financial details private; targeted upselling and ‘exclusive’ offers are common.",
+          "Respect local laws and social norms, including gender and dress restrictions in specific venues—do not assume offworld norms apply.",
+          "Be cautious with gifts and ‘samples’—confirm whether they’re free before accepting."
+        ]
+      },
+      "Weather": {
+        "ClimateType": "Humid, near-constant rain",
+        "Seasonality": "Rain is described as persistent and pervasive; local weather variation is more about intensity and storm bursts than clear dry seasons.",
+        "TypicalConditions": [
+          {
+            "Region": "Capital lowlands",
+            "Conditions": [
+              "Frequent heavy downpours",
+              "High humidity",
+              "Overcast skies",
+              "Wet streets and covered walkways"
+            ]
+          },
+          {
+            "Region": "Wetland basins",
+            "Conditions": [
+              "Standing water",
+              "Misty rain",
+              "Dense damp vegetation",
+              "Muddy runoff"
+            ]
+          }
+        ],
+        "Hazards": [
+          {
+            "Type": "Torrential rain",
+            "Notes": "Sudden downpours can flood low streets and disrupt surface travel; plan sheltered routes and flexible timing."
+          },
+          {
+            "Type": "Humidity exposure",
+            "Notes": "Electronics, paper goods, and clothing can degrade quickly without sealing and drying routines."
+          },
+          {
+            "Type": "Slippery surfaces",
+            "Notes": "Polished stone, metal walkways, and market tiles can be slick; non-slip footwear is strongly recommended."
+          }
+        ],
+        "TravelGear": [
+          "Sealed outer layer or poncho; quick-dry clothing",
+          "Waterproof bags for comm devices and padds",
+          "Non-slip footwear",
+          "Anti-fog eye protection in heavy humidity"
+        ]
+      },
+      "Tourism": {
+        "TopAttractions": [
+          {
+            "Name": "Sacred Marketplace day pass",
+            "WhyGo": "The core Ferengi shopping and negotiation experience under domes and awnings."
+          },
+          {
+            "Name": "Tower of Commerce observation + civic tour",
+            "WhyGo": "The symbolic and governmental center of the Alliance, dominated by the Grand Nagus’ palace complex."
+          },
+          {
+            "Name": "Ferengi museums circuit",
+            "WhyGo": "A guided route through museums of bribery, gambling, and haggling—ideal for understanding local deal culture."
+          },
+          {
+            "Name": "Deal-craft workshops (licensed)",
+            "WhyGo": "Structured lessons in bargaining etiquette and contract basics for offworld visitors."
+          }
+        ],
+        "Activities": [
+          "Market crawls with a vetted guide (price-checking and safe vendor lists)",
+          "Cultural lectures on the Rules of Acquisition and Ferengi economic history",
+          "Museum days (trade, gambling, negotiation exhibits)",
+          "Food and beverage tastings with humidity-resistant packaging"
+        ],
+        "Restrictions": [
+          "Government and FCA areas in the Tower of Commerce may be closed without notice during investigations or political shifts.",
+          "Some venues enforce local social norms strictly; verify dress and conduct rules before arrival."
+        ],
+        "SafetyNotes": [
+          "Avoid ‘too-good-to-be-true’ offers—use licensed vendors and confirm authentication for high-value items.",
+          "Do not carry all funds or latinum in one place; use secure accounts and incremental transfers.",
+          "If a deal becomes pressured or time-limited, walk away—high-pressure tactics are common in tourist zones."
+        ]
+      },
+      "Logistics": {
+        "Entry": [
+          "Expect customs declarations focused on trade goods, valuables, and commercial equipment.",
+          "Business-visas or transaction permits may be required for high-value buying/selling depending on era and local policy."
+        ],
+        "LocalTransport": [
+          "Covered pedestrian corridors within major market districts",
+          "Licensed ground transport and shuttle links between civic zones",
+          "Transit routes may reroute around flooded streets during heavy rain bursts"
+        ],
+        "CurrencyNotes": [
+          "Latinums and contract-based credit arrangements are common in Ferengi trade contexts; confirm exchange and fee schedules in writing."
+        ],
+        "Lodging": [
+          "Business hotels and guest houses near major market hubs",
+          "Humidity-managed suites (recommended for visitors with sensitive equipment or attire)"
+        ],
+        "Communications": [
+          "Universal translator is helpful for negotiations and contract nuance; consider using verified legal translation services for major purchases."
+        ]
+      },
+      "CanonAppearances": {
+        "FirstSeen": {
+          "Series": "DS9",
+          "EpisodeOrFilm": "Family Business",
+          "YearInUniverse": null
+        },
+        "Key": [
+          {
+            "SeriesOrFilm": "DS9: Family Business",
+            "Notes": "First on-screen depiction of Ferenginar; rain-soaked homeworld context."
+          },
+          {
+            "SeriesOrFilm": "DS9: Prophet Motive",
+            "Notes": "Tower of Commerce named and described; Nagus’ palace complex."
+          },
+          {
+            "SeriesOrFilm": "DS9: Bar Association",
+            "Notes": "References to the Tower of Commerce and FCA; harsh enforcement practices are mentioned."
+          },
+          {
+            "SeriesOrFilm": "DS9: Ferengi Love Songs",
+            "Notes": "Tower of Commerce offices and Ferengi political/commercial life."
+          },
+          {
+            "SeriesOrFilm": "DS9: The Magnificent Ferengi",
+            "Notes": "Ferenginar described as torrential rain, dampness, rotting vegetation, and rivers of muck."
+          },
+          {
+            "SeriesOrFilm": "VOY: False Profits",
+            "Notes": "Ferengi Alliance politics and Ferengi homeworld context referenced."
+          }
+        ]
+      },
+      "Tags": [
+        "RainWorld",
+        "HighHaggleCulture",
+        "HumidityPreparednessRequired",
+        "TouristScamRisk"
+      ]
     }
   ]
 }
