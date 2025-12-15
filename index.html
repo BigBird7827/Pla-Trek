@@ -388,7 +388,7 @@
           <input id="search" type="text" placeholder="Search: Earth, Vulcan…" autocomplete="off" />
         </div>
         <button class="btn secondary" id="reloadBtn">Reload</button>
-        <button class="btn" id="aboutBtn">About</button>
+        
       </div>
     </div>
 
@@ -413,28 +413,7 @@
         </div>
       </div>
     </div>
-
-    <div class="footerNote" id="footerNote"></div>
   </div>
-
-  <dialog id="aboutDialog" style="border:1px solid rgba(59,74,99,.7); border-radius: 18px; background: linear-gradient(180deg, rgba(18,27,42,.98), rgba(10,14,20,.92)); color: rgba(231,237,247,.95); box-shadow: 0 30px 100px rgba(0,0,0,.7); padding: 0; max-width: 720px; width: calc(100% - 24px);">
-    <div style="padding: 16px 16px 12px; border-bottom: 1px solid rgba(59,74,99,.5); display:flex; align-items:center; justify-content:space-between; gap: 10px;">
-      <div style="font-weight: 950; letter-spacing:.25px; font-size: 15px; text-transform: uppercase;">About</div>
-      <button class="btn secondary" id="closeAbout">Close</button>
-    </div>
-    <div style="padding: 14px 16px 16px; line-height: 1.6;">
-      <div style="font-weight: 900; font-size: 18px; margin-bottom: 8px; background: linear-gradient(180deg, var(--gold1), var(--gold2)); -webkit-background-clip: text; background-clip: text; color: transparent;">Plan‑Trek Travel Guide Console</div>
-      <div class="small">
-        This page reads a planet travel‑guide JSON file and renders a Tec‑Trek‑style console UI: left list + right detail pane.
-        Place <b>Pla‑Build‑0.json</b> in the same folder as this HTML file (or edit the <b>DATA_URLS</b> array in the script).
-      </div>
-      <div style="height:10px"></div>
-      <div class="small">
-        Intended content: location, appearance, geography, cities, inhabitants, tourism, and weather—only for worlds with enough canon detail to support a real “travel entry.”
-      </div>
-    </div>
-  </dialog>
-
   <script>
     const DATA_URLS = [
       "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Planets.json"
@@ -446,11 +425,7 @@
       search: document.getElementById("search"),
       countMeta: document.getElementById("countMeta"),
       buildMeta: document.getElementById("buildMeta"),
-      footer: document.getElementById("footerNote"),
-      reloadBtn: document.getElementById("reloadBtn"),
-      aboutBtn: document.getElementById("aboutBtn"),
-      aboutDialog: document.getElementById("aboutDialog"),
-      closeAbout: document.getElementById("closeAbout")
+      reloadBtn: document.getElementById("reloadBtn")
     };
 
     let rawData = null;
@@ -975,7 +950,6 @@
       els.detail.innerHTML = '<div class="empty">No data loaded.</div>';
       els.countMeta.textContent = "—";
       els.buildMeta.textContent = "—";
-      els.footer.textContent = "";
     }
 
     async function init(){
@@ -991,8 +965,6 @@
         const buildStr = meta.Build != null ? ("Build " + meta.Build) : (meta.Version != null ? ("v" + meta.Version) : "");
         const updStr = meta.LastUpdated ? meta.LastUpdated : "";
         els.buildMeta.textContent = [buildStr, updStr].filter(Boolean).join(" • ") || "—";
-        els.footer.textContent = (meta.Scope ? meta.Scope : "") + (meta.CanonPolicy ? ("  •  " + meta.CanonPolicy) : "");
-
         renderList();
 
         const first = planets.length ? planets[0].PlanetID : null;
@@ -1010,14 +982,6 @@
 
     els.search.addEventListener("input", applyFilter);
     els.reloadBtn.addEventListener("click", () => init());
-    els.aboutBtn.addEventListener("click", () => els.aboutDialog.showModal());
-    els.closeAbout.addEventListener("click", () => els.aboutDialog.close());
-    els.aboutDialog.addEventListener("click", (e) => {
-      const rect = els.aboutDialog.getBoundingClientRect();
-      const inDialog = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
-      if (!inDialog) els.aboutDialog.close();
-    });
-
     init();
   </script>
 </body>
