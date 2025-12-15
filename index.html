@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan-Trek — Planet Travel Guide</title>
+  <style>
+    :root{
+      --bg0:#0a0e14;
+      --bg1:#0f1724;
+      --panel:#0e1624cc;
+      --panel2:#0b1220cc;
+      --stroke:#2f3a4d;
+      --stroke2:#3b4a63;
+      --gold1:#f6d77a;
+      --gold2:#caa24a;
+      --gold3:#8a6a22;
+      --text:#e7edf7;
+      --muted:#aab6c9;
+      --accent:#76a5af;
+      --danger:#ff6b6b;
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --r1:18px;
+      --r2:24px;
+      --pad:18px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 25% 10%, rgba(118,165,175,.18), transparent 60%),
+        radial-gradient(900px 500px at 80% 20%, rgba(246,215,122,.12), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+    }
+    .wrap{
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 22px 18px 28px;
+    }
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding: 16px 18px;
+      border-radius: var(--r2);
+      background: linear-gradient(180deg, rgba(15,23,36,.9), rgba(10,14,20,.7));
+      border: 1px solid rgba(59,74,99,.7);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+      min-width: 260px;
+    }
+    .brand .title{
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: .4px;
+      background: linear-gradient(180deg, var(--gold1), var(--gold2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 18px rgba(246,215,122,.18);
+      line-height: 1.05;
+    }
+    .brand .sub{
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .controls{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex: 1;
+      justify-content:flex-end;
+      flex-wrap:wrap;
+    }
+    .pill{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, rgba(22,32,48,.92), rgba(12,18,32,.75));
+      border: 1px solid rgba(59,74,99,.7);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
+    }
+    .pill input{
+      width: min(420px, 55vw);
+      background: transparent;
+      border: 0;
+      outline: none;
+      color: var(--text);
+      font-size: 14px;
+    }
+    .pill input::placeholder{color: rgba(170,182,201,.72)}
+    .btn{
+      border: 1px solid rgba(59,74,99,.75);
+      background: linear-gradient(180deg, rgba(25,37,58,.95), rgba(12,18,32,.8));
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor:pointer;
+      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+      box-shadow: 0 10px 26px rgba(0,0,0,.35);
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      border-color: rgba(246,215,122,.55);
+      box-shadow: 0 18px 44px rgba(0,0,0,.5);
+    }
+    .btn:active{transform: translateY(0px) scale(.99)}
+    .btn.secondary{
+      background: linear-gradient(180deg, rgba(18,27,42,.95), rgba(12,18,32,.8));
+      color: var(--muted);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 420px 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr}
+      .brand{min-width:unset}
+      .controls{justify-content:flex-start}
+      .pill input{width: min(520px, 80vw)}
+    }
+
+    .panel{
+      border-radius: var(--r2);
+      background: linear-gradient(180deg, rgba(18,27,42,.92), rgba(10,14,20,.78));
+      border: 1px solid rgba(59,74,99,.7);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      overflow:hidden;
+    }
+    .panelHeader{
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid rgba(59,74,99,.45);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    .panelHeader .h{
+      font-weight: 900;
+      letter-spacing:.35px;
+      color: var(--text);
+      font-size: 14px;
+      text-transform: uppercase;
+      opacity:.95;
+    }
+    .panelHeader .meta{
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .list{
+      padding: 12px;
+      display:grid;
+      gap: 10px;
+      max-height: calc(100vh - 210px);
+      overflow:auto;
+    }
+    .list::-webkit-scrollbar{height:10px;width:10px}
+    .list::-webkit-scrollbar-thumb{background: rgba(118,165,175,.22);border-radius:999px}
+    .list::-webkit-scrollbar-track{background: rgba(255,255,255,.04);border-radius:999px}
+
+    .card{
+      border-radius: 18px;
+      border: 1px solid rgba(59,74,99,.7);
+      background: linear-gradient(180deg, rgba(10,18,34,.78), rgba(10,14,20,.65));
+      box-shadow: 0 12px 28px rgba(0,0,0,.38);
+      padding: 12px 12px 12px;
+      display:flex;
+      gap: 12px;
+      cursor:pointer;
+      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+    }
+    .card:hover{
+      transform: translateY(-1px);
+      border-color: rgba(246,215,122,.5);
+      box-shadow: 0 18px 44px rgba(0,0,0,.55);
+    }
+    .card.active{
+      border-color: rgba(246,215,122,.75);
+      box-shadow: 0 22px 60px rgba(0,0,0,.6);
+    }
+    .thumb{
+      width: 66px;
+      height: 66px;
+      border-radius: 16px;
+      border: 1px solid rgba(59,74,99,.65);
+      background:
+        radial-gradient(60px 60px at 35% 35%, rgba(246,215,122,.22), transparent 60%),
+        radial-gradient(70px 70px at 70% 60%, rgba(118,165,175,.18), transparent 62%),
+        linear-gradient(180deg, rgba(25,37,58,.9), rgba(10,14,20,.8));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .cardTitle{
+      font-weight: 900;
+      font-size: 15px;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .cardSub{
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+      line-height: 1.25;
+    }
+    .badgeRow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      margin-top: 8px;
+    }
+    .badge{
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(59,74,99,.65);
+      background: linear-gradient(180deg, rgba(12,18,32,.85), rgba(8,12,22,.75));
+      color: rgba(231,237,247,.92);
+      white-space: nowrap;
+    }
+    .badge.gold{
+      border-color: rgba(246,215,122,.45);
+      background: linear-gradient(180deg, rgba(246,215,122,.18), rgba(12,18,32,.75));
+    }
+
+    .detail{
+      padding: 16px;
+    }
+    .hero{
+      border-radius: 22px;
+      border: 1px solid rgba(59,74,99,.65);
+      background:
+        radial-gradient(600px 250px at 15% 20%, rgba(246,215,122,.18), transparent 60%),
+        radial-gradient(700px 260px at 80% 30%, rgba(118,165,175,.18), transparent 60%),
+        linear-gradient(180deg, rgba(18,27,42,.88), rgba(10,14,20,.72));
+      box-shadow: 0 18px 60px rgba(0,0,0,.55);
+      padding: 16px;
+      display:grid;
+      grid-template-columns: 170px 1fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+    @media (max-width: 700px){
+      .hero{grid-template-columns:1fr}
+    }
+    .heroImg{
+      border-radius: 18px;
+      border: 1px solid rgba(59,74,99,.65);
+      background:
+        radial-gradient(100px 100px at 35% 35%, rgba(246,215,122,.20), transparent 60%),
+        radial-gradient(140px 140px at 70% 60%, rgba(118,165,175,.18), transparent 62%),
+        linear-gradient(180deg, rgba(25,37,58,.9), rgba(10,14,20,.8));
+      overflow:hidden;
+      position:relative;
+      min-height: 170px;
+    }
+    .heroImg img{width:100%;height:100%;object-fit:cover;display:block}
+    .heroTitle{
+      margin: 0 0 6px 0;
+      font-size: 30px;
+      font-weight: 950;
+      letter-spacing:.25px;
+      line-height: 1.05;
+      background: linear-gradient(180deg, var(--gold1), var(--gold2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 18px rgba(246,215,122,.14);
+    }
+    .heroAlt{
+      color: rgba(170,182,201,.9);
+      font-size: 13px;
+      margin: 0 0 10px 0;
+    }
+    .heroBadges{margin-top: 8px; display:flex; flex-wrap:wrap; gap:6px;}
+    .heroSummary{
+      color: rgba(231,237,247,.95);
+      font-size: 14px;
+      line-height: 1.55;
+      margin-top: 10px;
+    }
+    .sectionGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    @media (max-width: 980px){
+      .sectionGrid{grid-template-columns:1fr}
+    }
+    .section{
+      border-radius: 20px;
+      border: 1px solid rgba(59,74,99,.65);
+      background: linear-gradient(180deg, rgba(10,18,34,.72), rgba(10,14,20,.62));
+      box-shadow: 0 14px 38px rgba(0,0,0,.45);
+      overflow:hidden;
+    }
+    .sectionHead{
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(59,74,99,.4);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    .sectionHead .name{
+      font-weight: 900;
+      letter-spacing:.25px;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: rgba(231,237,247,.95);
+    }
+    .sectionBody{
+      padding: 12px 14px 14px;
+      color: rgba(231,237,247,.94);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .kv{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px dashed rgba(59,74,99,.35);
+    }
+    .kv:last-child{border-bottom:0}
+    .k{color: rgba(170,182,201,.9); font-size: 12px; text-transform: uppercase; letter-spacing:.25px}
+    .v{color: rgba(231,237,247,.95)}
+    .ul{
+      margin: 8px 0 0 0;
+      padding-left: 18px;
+    }
+    .ul li{margin: 6px 0}
+    .small{color: rgba(170,182,201,.92); font-size: 12px; line-height: 1.45}
+    .empty{
+      color: rgba(170,182,201,.86);
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 18px 14px;
+    }
+    .footerNote{
+      margin-top: 14px;
+      color: rgba(170,182,201,.82);
+      font-size: 12px;
+      padding: 0 6px;
+    }
+    a{color: var(--accent); text-decoration: none}
+    a:hover{text-decoration: underline}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="title">Plan‑Trek</div>
+        <div class="sub">Planet Travel Guide Console</div>
+      </div>
+
+      <div class="controls">
+        <div class="pill" title="Search planets">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="rgba(231,237,247,.85)" stroke-width="2"/>
+            <path d="M16.5 16.5 21 21" stroke="rgba(231,237,247,.85)" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <input id="search" type="text" placeholder="Search: Earth, Vulcan…" autocomplete="off" />
+        </div>
+        <button class="btn secondary" id="reloadBtn">Reload</button>
+        <button class="btn" id="aboutBtn">About</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <div class="panelHeader">
+          <div class="h">Planets</div>
+          <div class="meta" id="countMeta">—</div>
+        </div>
+        <div class="list" id="planetList">
+          <div class="empty">Loading…</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panelHeader">
+          <div class="h">Detail</div>
+          <div class="meta" id="buildMeta">—</div>
+        </div>
+        <div class="detail" id="detail">
+          <div class="empty">Select a planet to view travel details.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerNote" id="footerNote"></div>
+  </div>
+
+  <dialog id="aboutDialog" style="border:1px solid rgba(59,74,99,.7); border-radius: 18px; background: linear-gradient(180deg, rgba(18,27,42,.98), rgba(10,14,20,.92)); color: rgba(231,237,247,.95); box-shadow: 0 30px 100px rgba(0,0,0,.7); padding: 0; max-width: 720px; width: calc(100% - 24px);">
+    <div style="padding: 16px 16px 12px; border-bottom: 1px solid rgba(59,74,99,.5); display:flex; align-items:center; justify-content:space-between; gap: 10px;">
+      <div style="font-weight: 950; letter-spacing:.25px; font-size: 15px; text-transform: uppercase;">About</div>
+      <button class="btn secondary" id="closeAbout">Close</button>
+    </div>
+    <div style="padding: 14px 16px 16px; line-height: 1.6;">
+      <div style="font-weight: 900; font-size: 18px; margin-bottom: 8px; background: linear-gradient(180deg, var(--gold1), var(--gold2)); -webkit-background-clip: text; background-clip: text; color: transparent;">Plan‑Trek Travel Guide Console</div>
+      <div class="small">
+        This page reads a planet travel‑guide JSON file and renders a Tec‑Trek‑style console UI: left list + right detail pane.
+        Place <b>Pla‑Build‑0.json</b> in the same folder as this HTML file (or edit the <b>DATA_URLS</b> array in the script).
+      </div>
+      <div style="height:10px"></div>
+      <div class="small">
+        Intended content: location, appearance, geography, cities, inhabitants, tourism, and weather—only for worlds with enough canon detail to support a real “travel entry.”
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const DATA_URLS = [
+      "Pla-Build-0.json"
+    ];
+
+    const els = {
+      list: document.getElementById("planetList"),
+      detail: document.getElementById("detail"),
+      search: document.getElementById("search"),
+      countMeta: document.getElementById("countMeta"),
+      buildMeta: document.getElementById("buildMeta"),
+      footer: document.getElementById("footerNote"),
+      reloadBtn: document.getElementById("reloadBtn"),
+      aboutBtn: document.getElementById("aboutBtn"),
+      aboutDialog: document.getElementById("aboutDialog"),
+      closeAbout: document.getElementById("closeAbout")
+    };
+
+    let rawData = null;
+    let planets = [];
+    let filtered = [];
+    let selectedId = null;
+
+    const esc = (s) => (s ?? "").toString().replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+    const norm = (s) => (s ?? "").toString().toLowerCase().trim();
+
+    const pickFirstNonEmpty = (arr) => Array.isArray(arr) && arr.length ? arr[0] : null;
+
+    async function fetchFirstWorkingUrl(urls){
+      let lastErr = null;
+      for (const url of urls){
+        try{
+          const res = await fetch(url, { cache: "no-store" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          const j = await res.json();
+          return { url, data: j };
+        }catch(e){
+          lastErr = e;
+        }
+      }
+      throw lastErr || new Error("Unable to load data.");
+    }
+
+    function buildCard(p){
+      const alt = Array.isArray(p.AlternateNames) && p.AlternateNames.length ? p.AlternateNames.join(" • ") : "";
+      const tags = Array.isArray(p.TypeTags) ? p.TypeTags : [];
+      const subBits = [];
+      if (p.Location && p.Location.StarSystem) subBits.push(p.Location.StarSystem);
+      if (p.Location && p.Location.Sector) subBits.push(p.Location.Sector);
+      if (p.Location && p.Location.Quadrant) subBits.push(p.Location.Quadrant);
+      const sub = subBits.filter(Boolean).join(" • ");
+      const imgUrl = p.Media && p.Media.HeroImageURL ? p.Media.HeroImageURL : null;
+
+      const div = document.createElement("div");
+      div.className = "card" + (p.PlanetID === selectedId ? " active" : "");
+      div.dataset.id = p.PlanetID;
+
+      const thumb = document.createElement("div");
+      thumb.className = "thumb";
+      if (imgUrl){
+        const img = document.createElement("img");
+        img.src = imgUrl;
+        img.alt = p.Name;
+        thumb.appendChild(img);
+      }
+      div.appendChild(thumb);
+
+      const info = document.createElement("div");
+      info.style.minWidth = "0";
+
+      const h = document.createElement("div");
+      h.className = "cardTitle";
+      h.textContent = p.Name || "Untitled";
+      info.appendChild(h);
+
+      const s = document.createElement("div");
+      s.className = "cardSub";
+      const line = [alt, sub].filter(Boolean).join(" — ");
+      s.textContent = line || " ";
+      info.appendChild(s);
+
+      const br = document.createElement("div");
+      br.className = "badgeRow";
+      (tags.slice(0, 6)).forEach((t, idx) => {
+        const b = document.createElement("div");
+        b.className = "badge" + (idx === 0 ? " gold" : "");
+        b.textContent = t;
+        br.appendChild(b);
+      });
+      info.appendChild(br);
+
+      div.appendChild(info);
+
+      div.addEventListener("click", () => selectPlanet(p.PlanetID, true));
+      return div;
+    }
+
+    function renderList(){
+      els.list.innerHTML = "";
+      if (!filtered.length){
+        const empty = document.createElement("div");
+        empty.className = "empty";
+        empty.textContent = "No matches.";
+        els.list.appendChild(empty);
+      } else {
+        filtered.forEach(p => els.list.appendChild(buildCard(p)));
+      }
+      els.countMeta.textContent = filtered.length + " / " + planets.length;
+    }
+
+    function kvRow(k, v){
+      const row = document.createElement("div");
+      row.className = "kv";
+      const kk = document.createElement("div");
+      kk.className = "k";
+      kk.textContent = k;
+      const vv = document.createElement("div");
+      vv.className = "v";
+      vv.innerHTML = v;
+      row.appendChild(kk);
+      row.appendChild(vv);
+      return row;
+    }
+
+    function ul(items){
+      const u = document.createElement("ul");
+      u.className = "ul";
+      items.forEach(it => {
+        const li = document.createElement("li");
+        li.innerHTML = it;
+        u.appendChild(li);
+      });
+      return u;
+    }
+
+    function section(name, bodyNode){
+      const s = document.createElement("div");
+      s.className = "section";
+      const head = document.createElement("div");
+      head.className = "sectionHead";
+      const n = document.createElement("div");
+      n.className = "name";
+      n.textContent = name;
+      head.appendChild(n);
+      s.appendChild(head);
+      const b = document.createElement("div");
+      b.className = "sectionBody";
+      b.appendChild(bodyNode);
+      s.appendChild(b);
+      return s;
+    }
+
+    function safeList(arr, mapFn){
+      if (!Array.isArray(arr) || !arr.length) return null;
+      return arr.map(mapFn);
+    }
+
+    function renderDetail(p){
+      const wrap = document.createElement("div");
+
+      const hero = document.createElement("div");
+      hero.className = "hero";
+
+      const heroImg = document.createElement("div");
+      heroImg.className = "heroImg";
+      const heroUrl = (p.Media && p.Media.HeroImageURL) ? p.Media.HeroImageURL : null;
+      if (heroUrl){
+        const img = document.createElement("img");
+        img.src = heroUrl;
+        img.alt = p.Name;
+        heroImg.appendChild(img);
+      }
+      hero.appendChild(heroImg);
+
+      const heroInfo = document.createElement("div");
+      const title = document.createElement("h1");
+      title.className = "heroTitle";
+      title.textContent = p.Name || "Planet";
+      heroInfo.appendChild(title);
+
+      const alt = Array.isArray(p.AlternateNames) && p.AlternateNames.length ? p.AlternateNames.join(" • ") : "";
+      const locBits = [];
+      if (p.Location && p.Location.StarSystem) locBits.push(p.Location.StarSystem);
+      if (p.Location && p.Location.Sector) locBits.push(p.Location.Sector);
+      if (p.Location && p.Location.Quadrant) locBits.push(p.Location.Quadrant);
+      const locLine = locBits.filter(Boolean).join(" • ");
+      const altLine = [alt, locLine].filter(Boolean).join(" — ");
+      const altEl = document.createElement("div");
+      altEl.className = "heroAlt";
+      altEl.textContent = altLine || " ";
+      heroInfo.appendChild(altEl);
+
+      const badgeRow = document.createElement("div");
+      badgeRow.className = "heroBadges";
+      (Array.isArray(p.TypeTags) ? p.TypeTags : []).forEach((t, idx) => {
+        const b = document.createElement("div");
+        b.className = "badge" + (idx === 0 ? " gold" : "");
+        b.textContent = t;
+        badgeRow.appendChild(b);
+      });
+      heroInfo.appendChild(badgeRow);
+
+      const summary = document.createElement("div");
+      summary.className = "heroSummary";
+      summary.textContent = p.TravelSummary || " ";
+      heroInfo.appendChild(summary);
+
+      hero.appendChild(heroInfo);
+      wrap.appendChild(hero);
+
+      const grid = document.createElement("div");
+      grid.className = "sectionGrid";
+
+      const locBody = document.createElement("div");
+      const loc = p.Location || {};
+      locBody.appendChild(kvRow("Quadrant", esc(loc.Quadrant || "—")));
+      if (loc.QuadrantNotes) locBody.appendChild(kvRow("Quadrant notes", esc(loc.QuadrantNotes)));
+      locBody.appendChild(kvRow("Star system", esc(loc.StarSystem || "—")));
+      locBody.appendChild(kvRow("Sector", esc(loc.Sector || "—")));
+      locBody.appendChild(kvRow("Region", esc(loc.Region || "—")));
+      grid.appendChild(section("Location", locBody));
+
+      const appBody = document.createElement("div");
+      const ap = p.Appearance || {};
+      appBody.appendChild(kvRow("General look", esc(ap.GeneralLook || "—")));
+      const orbit = safeList(ap.FromOrbit, x => esc(x));
+      if (orbit){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "From orbit:";
+        d.appendChild(ul(orbit));
+        appBody.appendChild(d);
+      }
+      const lands = safeList(ap.NotableLandscapes, x => esc(x));
+      if (lands){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Notable landscapes:";
+        d.appendChild(ul(lands));
+        appBody.appendChild(d);
+      }
+      const surface = safeList(ap.SurfaceNotes, x => esc(x));
+      if (surface){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Surface notes:";
+        d.appendChild(ul(surface));
+        appBody.appendChild(d);
+      }
+      grid.appendChild(section("Appearance", appBody));
+
+      const geoBody = document.createElement("div");
+      const g = p.Geography || {};
+      const biomes = safeList(g.Biomes, b => esc(b.Name) + (b.Notes ? " — <span class='small'>" + esc(b.Notes) + "</span>" : ""));
+      if (biomes){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Biomes:";
+        d.appendChild(ul(biomes));
+        geoBody.appendChild(d);
+      } else {
+        geoBody.appendChild(kvRow("Biomes", "—"));
+      }
+
+      const landmarks = safeList(g.Landmarks, lm => {
+        const bits = [];
+        bits.push("<b>" + esc(lm.Name || "Landmark") + "</b>");
+        const meta = [lm.Category, lm.CityOrRegion].filter(Boolean).map(esc).join(" • ");
+        if (meta) bits.push("<span class='small'>(" + meta + ")</span>");
+        if (Array.isArray(lm.VisitorNotes) && lm.VisitorNotes.length) {
+          const notes = lm.VisitorNotes.map(esc).join("; ");
+          bits.push("<div class='small'>" + notes + "</div>");
+        }
+        return bits.join(" ");
+      });
+      if (landmarks){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Landmarks:";
+        d.appendChild(ul(landmarks));
+        geoBody.appendChild(d);
+      } else {
+        geoBody.appendChild(kvRow("Landmarks", "—"));
+      }
+
+      const cities = safeList(g.Cities, c => {
+        const bits = [];
+        bits.push("<b>" + esc(c.Name || "City") + "</b>");
+        if (c.Role) bits.push("<span class='small'>— " + esc(c.Role) + "</span>");
+        const hl = Array.isArray(c.Highlights) && c.Highlights.length ? c.Highlights.map(esc) : [];
+        if (hl.length) bits.push("<div class='small'><i>Highlights:</i> " + hl.join(" • ") + "</div>");
+        if (c.LocalVibe) bits.push("<div class='small'><i>Vibe:</i> " + esc(c.LocalVibe) + "</div>");
+        return bits.join(" ");
+      });
+      if (cities){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Cities:";
+        d.appendChild(ul(cities));
+        geoBody.appendChild(d);
+      } else {
+        geoBody.appendChild(kvRow("Cities", "—"));
+      }
+      grid.appendChild(section("Geography & Cities", geoBody));
+
+      const inhBody = document.createElement("div");
+      const inh = p.Inhabitants || {};
+      const prim = safeList(inh.Primary, x => {
+        const s = x.Species ? "<b>" + esc(x.Species) + "</b>" : "<b>—</b>";
+        const n = x.Notes ? " <span class='small'>— " + esc(x.Notes) + "</span>" : "";
+        return s + n;
+      });
+      if (prim){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Primary:";
+        d.appendChild(ul(prim));
+        inhBody.appendChild(d);
+      } else {
+        inhBody.appendChild(kvRow("Primary", "—"));
+      }
+
+      const cultures = safeList(inh.NotableCultures, x => {
+        const s = "<b>" + esc(x.Name || "Culture") + "</b>";
+        const n = x.Notes ? " <span class='small'>— " + esc(x.Notes) + "</span>" : "";
+        return s + n;
+      });
+      if (cultures){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Notable cultures:";
+        d.appendChild(ul(cultures));
+        inhBody.appendChild(d);
+      }
+
+      const et = safeList(inh.VisitorEtiquette, x => esc(x));
+      if (et){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Visitor etiquette:";
+        d.appendChild(ul(et));
+        inhBody.appendChild(d);
+      } else {
+        inhBody.appendChild(kvRow("Visitor etiquette", "—"));
+      }
+      grid.appendChild(section("Inhabitants", inhBody));
+
+      const wBody = document.createElement("div");
+      const w = p.Weather || {};
+      wBody.appendChild(kvRow("Climate", esc(w.ClimateType || "—")));
+      wBody.appendChild(kvRow("Seasonality", esc(w.Seasonality || "—")));
+      const tc = safeList(w.TypicalConditions, x => {
+        const region = x.Region ? "<b>" + esc(x.Region) + ":</b> " : "";
+        const cond = Array.isArray(x.Conditions) ? x.Conditions.map(esc).join(" • ") : "";
+        return region + esc(cond);
+      });
+      if (tc){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Typical conditions:";
+        d.appendChild(ul(tc));
+        wBody.appendChild(d);
+      }
+      const hz = safeList(w.Hazards, x => {
+        const t = x.Type ? "<b>" + esc(x.Type) + "</b>" : "<b>Hazard</b>";
+        const n = x.Notes ? " <span class='small'>— " + esc(x.Notes) + "</span>" : "";
+        return t + n;
+      });
+      if (hz){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Hazards:";
+        d.appendChild(ul(hz));
+        wBody.appendChild(d);
+      }
+      grid.appendChild(section("Weather", wBody));
+
+      const tBody = document.createElement("div");
+      const t = p.Tourism || {};
+      const top = safeList(t.TopAttractions, x => {
+        const nm = "<b>" + esc(x.Name || "Attraction") + "</b>";
+        const why = x.WhyGo ? " <span class='small'>— " + esc(x.WhyGo) + "</span>" : "";
+        return nm + why;
+      });
+      if (top){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Top attractions:";
+        d.appendChild(ul(top));
+        tBody.appendChild(d);
+      } else {
+        tBody.appendChild(kvRow("Top attractions", "—"));
+      }
+
+      const acts = safeList(t.Activities, x => esc(x));
+      if (acts){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Activities:";
+        d.appendChild(ul(acts));
+        tBody.appendChild(d);
+      }
+      const restr = safeList(t.Restrictions, x => esc(x));
+      if (restr){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Restrictions:";
+        d.appendChild(ul(restr));
+        tBody.appendChild(d);
+      }
+      const sn = safeList(t.SafetyNotes, x => esc(x));
+      if (sn){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Safety notes:";
+        d.appendChild(ul(sn));
+        tBody.appendChild(d);
+      }
+      grid.appendChild(section("Tourism", tBody));
+
+      const lBody = document.createElement("div");
+      const lg = p.Logistics || {};
+      const entry = safeList(lg.Entry, x => esc(x));
+      if (entry){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Entry:";
+        d.appendChild(ul(entry));
+        lBody.appendChild(d);
+      } else {
+        lBody.appendChild(kvRow("Entry", "—"));
+      }
+
+      const trans = safeList(lg.LocalTransport, x => esc(x));
+      if (trans){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Local transport:";
+        d.appendChild(ul(trans));
+        lBody.appendChild(d);
+      }
+      const lodg = safeList(lg.Lodging, x => esc(x));
+      if (lodg){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Lodging:";
+        d.appendChild(ul(lodg));
+        lBody.appendChild(d);
+      }
+      const comm = safeList(lg.Communications, x => esc(x));
+      if (comm){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Communications:";
+        d.appendChild(ul(comm));
+        lBody.appendChild(d);
+      }
+      grid.appendChild(section("Logistics", lBody));
+
+      const cBody = document.createElement("div");
+      const ca = p.CanonAppearances || {};
+      if (ca.FirstSeen){
+        const fs = [];
+        if (ca.FirstSeen.Series) fs.push(esc(ca.FirstSeen.Series));
+        if (ca.FirstSeen.EpisodeOrFilm) fs.push(esc(ca.FirstSeen.EpisodeOrFilm));
+        const s = fs.length ? fs.join(" — ") : "—";
+        cBody.appendChild(kvRow("First seen", s));
+      } else {
+        cBody.appendChild(kvRow("First seen", "—"));
+      }
+      const key = safeList(ca.Key, x => {
+        const nm = "<b>" + esc(x.SeriesOrFilm || "Appearance") + "</b>";
+        const n = x.Notes ? " <span class='small'>— " + esc(x.Notes) + "</span>" : "";
+        return nm + n;
+      });
+      if (key){
+        const d = document.createElement("div");
+        d.appendChild(document.createElement("div")).className = "small";
+        d.firstChild.textContent = "Key appearances:";
+        d.appendChild(ul(key));
+        cBody.appendChild(d);
+      }
+      grid.appendChild(section("Canon Appearances", cBody));
+
+      wrap.appendChild(grid);
+
+      const tail = document.createElement("div");
+      tail.className = "footerNote";
+      const tags = Array.isArray(p.Tags) && p.Tags.length ? p.Tags.map(esc).join(" • ") : "";
+      tail.innerHTML = tags ? "Tags: " + tags : "";
+      wrap.appendChild(tail);
+
+      els.detail.innerHTML = "";
+      els.detail.appendChild(wrap);
+    }
+
+    function selectPlanet(id, scrollIntoView){
+      selectedId = id;
+      const p = planets.find(x => x.PlanetID === id);
+      renderList();
+      if (!p){
+        els.detail.innerHTML = '<div class="empty">Planet not found.</div>';
+        return;
+      }
+      renderDetail(p);
+      if (scrollIntoView){
+        const el = els.list.querySelector('[data-id="' + CSS.escape(id) + '"]');
+        if (el) el.scrollIntoView({ block: "nearest" });
+      }
+    }
+
+    function applyFilter(){
+      const q = norm(els.search.value);
+      if (!q){
+        filtered = planets.slice();
+      } else {
+        filtered = planets.filter(p => {
+          const hay = [
+            p.Name,
+            ...(Array.isArray(p.AlternateNames) ? p.AlternateNames : []),
+            ...(Array.isArray(p.TypeTags) ? p.TypeTags : []),
+            p.Location && p.Location.StarSystem ? p.Location.StarSystem : "",
+            p.Location && p.Location.Sector ? p.Location.Sector : "",
+            p.Location && p.Location.Quadrant ? p.Location.Quadrant : ""
+          ].join(" ").toLowerCase();
+          return hay.includes(q);
+        });
+      }
+      if (selectedId && !filtered.some(p => p.PlanetID === selectedId)){
+        selectedId = filtered.length ? filtered[0].PlanetID : null;
+      }
+      renderList();
+      if (selectedId) renderDetail(planets.find(x => x.PlanetID === selectedId));
+    }
+
+    function showLoadError(){
+      els.list.innerHTML = '<div class="empty"><b style="color: rgba(255,107,107,.95)">Failed to load data.</b><div class="small" style="margin-top:8px">Place <b>Pla-Build-0.json</b> next to this HTML file, or edit <b>DATA_URLS</b> in the script.</div></div>';
+      els.detail.innerHTML = '<div class="empty">No data loaded.</div>';
+      els.countMeta.textContent = "—";
+      els.buildMeta.textContent = "—";
+      els.footer.textContent = "";
+    }
+
+    async function init(){
+      try{
+        els.list.innerHTML = '<div class="empty">Loading…</div>';
+        const { url, data } = await fetchFirstWorkingUrl(DATA_URLS);
+        rawData = data;
+        planets = Array.isArray(data.Planets) ? data.Planets.slice() : [];
+        planets.sort((a,b) => (a.Name || "").localeCompare(b.Name || ""));
+        filtered = planets.slice();
+
+        const meta = data.Meta || {};
+        const buildStr = meta.Build != null ? ("Build " + meta.Build) : (meta.Version != null ? ("v" + meta.Version) : "");
+        const updStr = meta.LastUpdated ? meta.LastUpdated : "";
+        els.buildMeta.textContent = [buildStr, updStr].filter(Boolean).join(" • ") || "—";
+        els.footer.textContent = (meta.Scope ? meta.Scope : "") + (meta.CanonPolicy ? ("  •  " + meta.CanonPolicy) : "");
+
+        renderList();
+
+        const first = planets.length ? planets[0].PlanetID : null;
+        if (first){
+          selectedId = first;
+          renderList();
+          renderDetail(planets.find(x => x.PlanetID === selectedId));
+        } else {
+          els.detail.innerHTML = '<div class="empty">No planets found in data.</div>';
+        }
+      }catch(e){
+        showLoadError();
+      }
+    }
+
+    els.search.addEventListener("input", applyFilter);
+    els.reloadBtn.addEventListener("click", () => init());
+    els.aboutBtn.addEventListener("click", () => els.aboutDialog.showModal());
+    els.closeAbout.addEventListener("click", () => els.aboutDialog.close());
+    els.aboutDialog.addEventListener("click", (e) => {
+      const rect = els.aboutDialog.getBoundingClientRect();
+      const inDialog = e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom;
+      if (!inDialog) els.aboutDialog.close();
+    });
+
+    init();
+  </script>
+</body>
+</html>
