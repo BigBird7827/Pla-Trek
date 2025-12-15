@@ -2,7 +2,7 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 4,
+    "Build": 6,
     "Version": 1,
     "LastUpdated": "2025-12-15",
     "Scope": "Travel guide worlds only (enough on-screen canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
@@ -1519,6 +1519,271 @@
         "CeremonyHeavy",
         "VolcanicGeology",
         "PoliticalFlashpoint"
+      ]
+    },
+    {
+      "PlanetID": "planet-andoria",
+      "Name": "Andoria",
+      "AlternateNames": [
+        "Andor"
+      ],
+      "TypeTags": [
+        "Homeworld",
+        "FederationFoundingWorld",
+        "IceWorld",
+        "CulturalDestination",
+        "HighLatitudeTravel",
+        "StrategicWorld"
+      ],
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Andoria.png",
+        "Gallery": []
+      },
+      "Location": {
+        "Quadrant": "Beta Quadrant",
+        "QuadrantNotes": "Andorian homeworld in Federation space. On-screen references place it within or near key Federation travel corridors; published cartography commonly treats it as a core member world. Andoria is often depicted with a prominent nearby companion body visible in the sky (moon/primary companion, depending on depiction).",
+        "StarSystem": "Andoria system",
+        "Sector": null,
+        "Region": "Federation space"
+      },
+      "QuickFacts": {
+        "Class": "Class M (glaciated)",
+        "PrimaryInhabitants": [
+          "Andorians",
+          "Aenar"
+        ],
+        "PrimaryLanguageNotes": [
+          "Andorian is common in domestic settings; Federation Standard is widely used in government, trade, and offworlder-facing contexts."
+        ],
+        "LocalTimekeeping": {
+          "DayLengthHours": null,
+          "TimeFormat": "Local standards; visitors commonly coordinate via shipboard chronometers for tours and transport windows."
+        }
+      },
+      "TravelSummary": "Andoria is the cold, proud homeworld of the Andorians—an ice-dominant planet of glaciers, wind-scoured ridges, and cities built for survival and ceremony. Visitors come for the stark beauty of the polar landscapes, distinctive Andorian architecture, and a chance to experience a Federation founding culture that prizes duty and directness. Travel here is rewarding but demanding: weather can be severe, daylight can be seasonal, and access to sensitive sites may depend on diplomatic conditions.",
+      "Appearance": {
+        "GeneralLook": "A bright, icy world with sweeping glacier fields, blue-white plains, and rugged mountain chains. Settlements tend to be compact and insulated, with prominent civic structures and enclosed transit designed to handle constant cold and wind.",
+        "FromOrbit": [
+          "Large reflective ice sheets dominate the surface coloration",
+          "Storm bands and polar cloud systems are common",
+          "Night-side illumination clusters concentrate around major cities and protected corridors"
+        ],
+        "NotableLandscapes": [
+          "Polar ice caps and continent-scale glaciers",
+          "Jagged mountain ridges and frozen highlands",
+          "Cracked sea-ice plates and frozen coastal shelves"
+        ],
+        "SurfaceNotes": [
+          "Most public infrastructure assumes freezing temperatures—expect enclosed walkways, sealed transport, and strict safety protocols.",
+          "Visibility can shift rapidly with blowing snow and low cloud ceilings."
+        ]
+      },
+      "Geography": {
+        "Biomes": [
+          {
+            "Name": "Glacier fields and ice plains",
+            "Notes": "Vast, reflective surfaces with crevasses and pressure ridges; travel is typically guided or routed along maintained corridors."
+          },
+          {
+            "Name": "Frozen highlands and mountain ridges",
+            "Notes": "Windy and exposed with sudden whiteouts; scenic viewpoints are dramatic but require proper gear and local advisories."
+          },
+          {
+            "Name": "Subsurface/cavern-adjacent regions",
+            "Notes": "Associated with Aenar habitation in canon; access is sensitive and often controlled to protect privacy and security."
+          }
+        ],
+        "Landmarks": [
+          {
+            "Name": "Andorian capital district (surface civic core)",
+            "Category": "Civic / Government",
+            "CityOrRegion": "Primary population center",
+            "VisitorNotes": [
+              "Iconic for formal architecture and public ceremony spaces.",
+              "Access to government buildings can require advance authorization depending on political climate."
+            ]
+          },
+          {
+            "Name": "Aenar enclave regions (restricted cultural areas)",
+            "Category": "Cultural / Sensitive site",
+            "CityOrRegion": "Subsurface / remote zones",
+            "VisitorNotes": [
+              "Aenar communities are culturally protected; visits are typically invitation-only or routed through approved cultural exchanges.",
+              "Treat access rules as non-negotiable and do not attempt unescorted travel."
+            ]
+          }
+        ],
+        "Cities": [
+          {
+            "Name": "Capital city (primary civic hub)",
+            "Role": "Government, diplomacy, and cultural center",
+            "Highlights": [
+              "Civic halls and ceremonial plazas",
+              "Museums and cultural briefings (where available)",
+              "Insulated transit corridors connecting key districts"
+            ],
+            "LocalVibe": "Orderly and formal, with a strong sense of public duty; visitors are welcomed when respectful but are expected to follow rules precisely."
+          }
+        ]
+      },
+      "Inhabitants": {
+        "Primary": [
+          {
+            "Species": "Andorian",
+            "Notes": "A Federation founding culture known for discipline, directness, and strong civic identity; many customs emphasize responsibility and honor through service."
+          },
+          {
+            "Species": "Aenar",
+            "Notes": "An Andorian subspecies associated with remote/subsurface communities and strong privacy norms; interactions are often mediated through formal channels."
+          }
+        ],
+        "NotableCultures": [
+          {
+            "Name": "Service-forward civic tradition",
+            "Notes": "Government, defense, and public duty are culturally prominent; visitors should expect a more formal tone than on leisure worlds."
+          }
+        ],
+        "VisitorEtiquette": [
+          "Dress for the environment and for formality—arriving underprepared is viewed as careless.",
+          "Be direct and honest; evasive answers can be interpreted as disrespect or concealment.",
+          "Ask before photographing people, ceremonies, or security infrastructure—many locations have strict restrictions.",
+          "Respect Aenar privacy rules and any restricted-zone boundaries without debate.",
+          "Follow local safety instructions in storms without improvisation."
+        ]
+      },
+      "Weather": {
+        "ClimateType": "Severe cold, ice-dominant climate with frequent wind and snow events.",
+        "Seasonality": "High-latitude seasonality can be pronounced—expect significant daylight shifts by region and time of year, with conditions ranging from clear, brittle cold to prolonged storm cycles.",
+        "TypicalConditions": [
+          {
+            "Region": "Urban/capital corridors",
+            "Conditions": [
+              "Freezing temperatures",
+              "Wind chill",
+              "Intermittent snowfall",
+              "Low cloud ceilings"
+            ]
+          },
+          {
+            "Region": "Open glacier plains",
+            "Conditions": [
+              "Whiteouts",
+              "Blowing snow",
+              "Rapid visibility loss",
+              "Crevasse hazards under fresh snow"
+            ]
+          },
+          {
+            "Region": "High ridges and exposed overlooks",
+            "Conditions": [
+              "Strong winds",
+              "Extreme wind chill",
+              "Fast-moving squalls",
+              "Icy surfaces"
+            ]
+          }
+        ],
+        "Hazards": [
+          {
+            "Type": "Whiteout conditions",
+            "Notes": "Visibility can drop to near-zero quickly; guided routes and locator beacons are standard outside city limits."
+          },
+          {
+            "Type": "Wind chill and exposure",
+            "Notes": "Frostbite risk rises quickly in exposed zones—use layered thermal protection and adhere to time limits outdoors."
+          },
+          {
+            "Type": "Ice and crevasses",
+            "Notes": "Marked corridors exist near tourist viewpoints; do not deviate from approved paths."
+          }
+        ],
+        "TravelGear": [
+          "Thermal layers with windproof outer shell",
+          "Insulated boots with high-traction soles",
+          "Eye protection for blowing snow",
+          "Weather-sealed pouch for comm devices",
+          "Emergency heat packs for excursions"
+        ]
+      },
+      "Tourism": {
+        "TopAttractions": [
+          {
+            "Name": "Glacier overlook tours (licensed)",
+            "WhyGo": "Classic Andoria: sweeping ice vistas, blue crevasses, and dramatic ridgelines—best experienced with a guide."
+          },
+          {
+            "Name": "Capital civic walk (authorized districts)",
+            "WhyGo": "Architecture, ceremony spaces, and a grounded introduction to a Federation founding culture."
+          },
+          {
+            "Name": "Cultural briefings and museums (when available)",
+            "WhyGo": "Context for Andorian history, diplomacy, and traditions beyond the stereotype of cold and combativeness."
+          }
+        ],
+        "Activities": [
+          "Guided icefield excursions with safety beacons",
+          "Aurora viewing in clear polar nights (seasonal)",
+          "Indoor cultural events and formal receptions (by invitation/permit)",
+          "Cuisine tastings suited to cold climates (warm broths, spiced dishes, hot beverages)"
+        ],
+        "Restrictions": [
+          "Many government and security-adjacent areas require permits or sponsorship.",
+          "Aenar regions are culturally protected and typically not open to casual tourism.",
+          "Storm alerts can close surface travel rapidly."
+        ],
+        "SafetyNotes": [
+          "Do not attempt independent wilderness travel—use licensed guides and keep to marked corridors.",
+          "Carry verified shelter locations and transport fallback routes in case of closures.",
+          "Respect local security procedures; delays at checkpoints are normal and not negotiable."
+        ]
+      },
+      "Logistics": {
+        "Entry": [
+          "Federation-friendly for most visitors, but permit requirements can increase during political or security events.",
+          "Expect safety briefings for any excursion beyond protected urban districts."
+        ],
+        "LocalTransport": [
+          "Enclosed ground transit, heated corridors, and shuttle links between districts",
+          "Weather-related reroutes and temporary closures are common during storms"
+        ],
+        "CurrencyNotes": [
+          "Federation-standard payments are common in visitor districts; confirm excursion and gear rental inclusions in advance."
+        ],
+        "Lodging": [
+          "Insulated hotels and guest quarters within protected districts",
+          "Expedition lodging for guided multi-day tours (seasonal and tightly regulated)"
+        ],
+        "Communications": [
+          "Strong urban coverage; out-of-city travel should include locator services and emergency beacons as standard."
+        ]
+      },
+      "CanonAppearances": {
+        "FirstSeen": {
+          "Series": "ENT",
+          "EpisodeOrFilm": "The Andorian Incident",
+          "YearInUniverse": null
+        },
+        "Key": [
+          {
+            "SeriesOrFilm": "ENT: The Andorian Incident",
+            "Notes": "First on-screen visit; establishes Andoria’s icy environment and political/security context."
+          },
+          {
+            "SeriesOrFilm": "ENT: Proving Ground",
+            "Notes": "Links Andoria to major strategic developments; reinforces Andorian military and diplomatic presence."
+          },
+          {
+            "SeriesOrFilm": "ENT: United",
+            "Notes": "Highlights the Andorians’ role in coalition-era diplomacy leading toward the Federation."
+          }
+        ]
+      },
+      "Tags": [
+        "IceWorld",
+        "FoundingWorld",
+        "SevereWeather",
+        "PermitSensitiveAreas",
+        "GuidedExcursionsRecommended"
       ]
     }
   ]
