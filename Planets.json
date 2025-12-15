@@ -1,0 +1,641 @@
+{
+  "Meta": {
+    "Project": "Plan-Trek",
+    "DataSet": "TravelGuidePlanets",
+    "Build": 0,
+    "Version": 1,
+    "LastUpdated": "2025-12-15",
+    "Scope": "Travel guide worlds only (enough on-screen canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
+    "CanonPolicy": "On-screen canon only (TOS/TAS/TNG/DS9/VOY/ENT/PIC/SNW + films).",
+    "Notes": [
+      "All fields are designed for travel-guide readability; deeper lore can be appended later without changing structure.",
+      "Location quadrants can be ambiguous in canon charts; use Location.QuadrantNotes when needed."
+    ]
+  },
+  "Planets": [
+    {
+      "PlanetID": "planet-earth",
+      "Name": "Earth",
+      "AlternateNames": [
+        "Sol III",
+        "Terra"
+      ],
+      "TypeTags": [
+        "Homeworld",
+        "CapitalWorld",
+        "FederationCore",
+        "TourismHub"
+      ],
+      "Location": {
+        "Quadrant": "Alpha Quadrant",
+        "QuadrantNotes": "Earth is within Sector 001; the Sol system sits near the Alpha/Beta border in some charts, but is generally treated as Alpha.",
+        "StarSystem": "Sol system",
+        "Sector": "Sector 001",
+        "Region": "Federation core worlds"
+      },
+      "QuickFacts": {
+        "Class": "Class M",
+        "PrimaryInhabitants": [
+          "Humans"
+        ],
+        "PrimaryLanguageNotes": [
+          "Federation Standard is widely used; most visitors will not have communication issues."
+        ],
+        "LocalTimekeeping": {
+          "DayLengthHours": 24,
+          "TimeFormat": "24-hour commonly used in Starfleet contexts"
+        }
+      },
+      "TravelSummary": "Earth is the political and cultural heart of the United Federation of Planets for much of the 22nd–25th centuries, and the administrative center of Starfleet. Visitors can comfortably mix historic landmarks, restored natural spaces, and modern Federation civic districts—especially around San Francisco Bay and Paris—while enjoying famously diverse food, arts, and museums.",
+      "Appearance": {
+        "GeneralLook": "A blue-and-green world with extensive oceans, varied continents, and dense urban corridors balanced by preserved and restored natural environments.",
+        "FromOrbit": [
+          "High-density orbital traffic and infrastructure during major Starfleet periods",
+          "Major approach lanes into the Sol system and Earth orbit are tightly controlled during alerts"
+        ],
+        "NotableLandscapes": [
+          "San Francisco Bay area and coastline",
+          "European river valleys and historic urban cores",
+          "Rural preserves and heritage sites tied to First Contact history"
+        ],
+        "SurfaceNotes": [
+          "Civic architecture ranges from preserved pre-warp landmarks to sleek Federation-era public buildings.",
+          "Many locations prominently integrate water features, parks, and pedestrian spaces."
+        ]
+      },
+      "Geography": {
+        "Biomes": [
+          {
+            "Name": "Coastal temperate",
+            "Notes": "Common along many major port cities and Starfleet-era coastal hubs."
+          },
+          {
+            "Name": "Mediterranean",
+            "Notes": "Typical of California’s coastal belt; fog and cool evenings are common near the Bay."
+          },
+          {
+            "Name": "Temperate continental",
+            "Notes": "Large seasonal swing inland across many northern landmasses."
+          },
+          {
+            "Name": "Subtropical",
+            "Notes": "Humid summers and storm seasons in some coastal lowlands."
+          }
+        ],
+        "Landmarks": [
+          {
+            "Name": "Starfleet Headquarters",
+            "Category": "Civic / Government",
+            "CityOrRegion": "San Francisco Bay area",
+            "VisitorNotes": [
+              "Public access varies by era and security posture.",
+              "Viewing areas can offer iconic skyline and bay vistas."
+            ]
+          },
+          {
+            "Name": "Starfleet Academy (Earth campus)",
+            "Category": "Education / Historic",
+            "CityOrRegion": "San Francisco, California",
+            "VisitorNotes": [
+              "A major destination for tours, ceremonies, and alumni events.",
+              "Some grounds and exhibits may be restricted during cadet training cycles."
+            ]
+          },
+          {
+            "Name": "Golden Gate Bridge",
+            "Category": "Historic landmark",
+            "CityOrRegion": "San Francisco",
+            "VisitorNotes": [
+              "Frequently visible in Starfleet-era shoreline panoramas.",
+              "Best enjoyed on foot or via scenic transit routes along the Bay."
+            ]
+          },
+          {
+            "Name": "Office of the Federation President (Paris)",
+            "Category": "Civic / Government",
+            "CityOrRegion": "Paris, France",
+            "VisitorNotes": [
+              "A high-security district—plan for screenings, cordons, and restricted airspace when delegations are present."
+            ]
+          },
+          {
+            "Name": "Eiffel Tower",
+            "Category": "Historic landmark",
+            "CityOrRegion": "Paris, France",
+            "VisitorNotes": [
+              "A long-standing symbol of Paris; viewpoints and cafés nearby are popular with travelers."
+            ]
+          },
+          {
+            "Name": "First Contact heritage sites (Bozeman region)",
+            "Category": "Historic / Museum",
+            "CityOrRegion": "Montana, North America",
+            "VisitorNotes": [
+              "Key pilgrimage for history enthusiasts; guided tours often focus on the Phoenix program and early warp era."
+            ]
+          },
+          {
+            "Name": "San Francisco Fleet Yards / Spacedock approach zones",
+            "Category": "Industrial / Orbital interface",
+            "CityOrRegion": "San Francisco Bay area / Earth orbit",
+            "VisitorNotes": [
+              "Observation is often possible from designated public platforms, but access to controlled zones requires authorization."
+            ]
+          }
+        ],
+        "Cities": [
+          {
+            "Name": "San Francisco",
+            "Role": "Starfleet administrative and educational hub",
+            "Highlights": [
+              "Starfleet Headquarters grounds",
+              "Starfleet Academy campus",
+              "Bayfront promenades and historic districts"
+            ],
+            "LocalVibe": "Cosmopolitan waterfront city with strong Federation civic identity."
+          },
+          {
+            "Name": "Paris",
+            "Role": "Federation executive district (President’s office) and cultural capital",
+            "Highlights": [
+              "Historic architecture alongside modern Federation buildings",
+              "Eiffel Tower views",
+              "Cafés near civic districts"
+            ],
+            "LocalVibe": "Historic European metropolis with prestige institutions and ceremonial spaces."
+          },
+          {
+            "Name": "New Orleans",
+            "Role": "Culinary destination",
+            "Highlights": [
+              "Creole cuisine and family-run restaurants",
+              "Riverfront music and festivals"
+            ],
+            "LocalVibe": "Food, music, and tradition-forward city with a relaxed rhythm."
+          },
+          {
+            "Name": "London",
+            "Role": "Major historic and diplomatic city",
+            "Highlights": [
+              "Museums and archives",
+              "Civic districts and transport hubs"
+            ],
+            "LocalVibe": "Dense cultural heritage blended with modern urban life."
+          }
+        ]
+      },
+      "Inhabitants": {
+        "Primary": [
+          {
+            "Species": "Human",
+            "Notes": "Earth’s dominant native population; society is strongly Federation-integrated."
+          }
+        ],
+        "NotableCultures": [
+          {
+            "Name": "United Earth civic culture",
+            "Notes": "Visitors will find strong norms around pluralism, diplomacy, and public education."
+          },
+          {
+            "Name": "Starfleet community presence",
+            "Notes": "Academy cadets, officers, and visiting crews shape local rhythms near major facilities."
+          }
+        ],
+        "VisitorEtiquette": [
+          "Expect security screening and identity checks near Starfleet and Federation facilities.",
+          "Avoid restricted shoreline and airspace zones around major orbital-interface sites during alerts.",
+          "Respect memorials and historic sites—many are treated as solemn civic spaces.",
+          "Food culture is wide-ranging; reservations are common for renowned family restaurants."
+        ]
+      },
+      "Weather": {
+        "ClimateType": "Highly variable (planetwide diversity by region)",
+        "Seasonality": "Standard seasonal cycles in many regions; local microclimates are common near coasts and major bays.",
+        "TypicalConditions": [
+          {
+            "Region": "San Francisco Bay",
+            "Conditions": [
+              "Cool mornings/evenings",
+              "Frequent coastal fog",
+              "Mild wet season patterns"
+            ]
+          },
+          {
+            "Region": "Paris basin",
+            "Conditions": [
+              "Temperate seasons",
+              "Cool winters",
+              "Warm summers with occasional rain"
+            ]
+          },
+          {
+            "Region": "Gulf lowlands (e.g., New Orleans)",
+            "Conditions": [
+              "Hot humid summers",
+              "Heavy rain periods",
+              "Storm season precautions"
+            ]
+          }
+        ],
+        "Hazards": [
+          {
+            "Type": "Storm disruptions",
+            "Notes": "Local storms can delay shuttle schedules and outdoor events; buffer time is recommended."
+          },
+          {
+            "Type": "Security posture shifts",
+            "Notes": "During major political or military events, travel corridors may change rapidly."
+          }
+        ]
+      },
+      "Tourism": {
+        "TopAttractions": [
+          {
+            "Name": "Starfleet waterfront district tours",
+            "WhyGo": "Iconic Federation-era vistas and civic architecture."
+          },
+          {
+            "Name": "Academy ceremonies and public exhibits",
+            "WhyGo": "A front-row view into Starfleet tradition and training culture."
+          },
+          {
+            "Name": "Paris civic + historic walk",
+            "WhyGo": "A blend of deep history and Federation executive geography."
+          },
+          {
+            "Name": "First Contact history circuit",
+            "WhyGo": "Museums and guided routes focused on the warp era and early interstellar diplomacy."
+          }
+        ],
+        "Activities": [
+          "Museum and archive days (Federation history, warp-era exhibits)",
+          "Bayfront walks and scenic transit loops",
+          "Cuisine trips spanning regional Earth traditions",
+          "Seasonal festivals and cultural performances"
+        ],
+        "Restrictions": [
+          "No-fly / no-drone zones near Starfleet and Federation executive areas during high security.",
+          "Certain Academy areas are cadet-only and may be closed during training and examinations."
+        ],
+        "SafetyNotes": [
+          "Check current advisories for Sol system traffic controls before arrival.",
+          "Carry ID and travel authorization if planning visits near major government campuses.",
+          "During major anniversaries and ceremonies, crowds can be dense—plan transit accordingly."
+        ]
+      },
+      "Logistics": {
+        "Entry": [
+          "Federation standard customs procedures (varies by era and political context).",
+          "Visitors approaching through Earth orbit may be routed via controlled corridors, especially during alerts."
+        ],
+        "LocalTransport": [
+          "High-capacity urban transit networks in major cities",
+          "Shuttles and licensed air/space traffic near orbital-interface zones",
+          "Transporter use depends on local infrastructure and security rules"
+        ],
+        "CurrencyNotes": [
+          "Visitors should expect largely cashless exchange; carry travel credentials compatible with local services."
+        ],
+        "Lodging": [
+          "City-center hotels and guest facilities near major cultural districts",
+          "Outlying eco-lodges and heritage inns near historic sites"
+        ],
+        "Communications": [
+          "Dense communications infrastructure; universal translator support is generally unnecessary for Standard speech, but available for visitors."
+        ]
+      },
+      "CanonAppearances": {
+        "FirstSeen": {
+          "Series": null,
+          "EpisodeOrFilm": null,
+          "YearInUniverse": null
+        },
+        "Key": [
+          {
+            "SeriesOrFilm": "Star Trek II: The Wrath of Khan",
+            "Notes": "Starfleet Academy is explicitly identified on Earth in San Francisco."
+          },
+          {
+            "SeriesOrFilm": "DS9: Homefront / Paradise Lost",
+            "Notes": "Federation President’s office is located in Paris; Earth security posture becomes a central theme."
+          },
+          {
+            "SeriesOrFilm": "Star Trek: First Contact",
+            "Notes": "First Contact history in the Bozeman region is central; Earth is a strategic target."
+          },
+          {
+            "SeriesOrFilm": "Star Trek IV: The Voyage Home",
+            "Notes": "Earth experiences oceanic ecological crisis driven by an alien probe."
+          },
+          {
+            "SeriesOrFilm": "TNG: Family",
+            "Notes": "Earth (France) is depicted as a personal, cultural home base for Starfleet officers."
+          },
+          {
+            "SeriesOrFilm": "PIC (Season 3 finale arc)",
+            "Notes": "Sol system security and orbital threat scenarios are central to the plot."
+          }
+        ]
+      },
+      "Tags": [
+        "CoreWorld",
+        "HighInfrastructure",
+        "HighSecurityPotential"
+      ]
+    },
+    {
+      "PlanetID": "planet-vulcan",
+      "Name": "Vulcan",
+      "AlternateNames": [
+        "Ni'Var (later era)"
+      ],
+      "TypeTags": [
+        "Homeworld",
+        "CulturalDestination",
+        "SpiritualDestination",
+        "HarshClimate",
+        "FederationFounderWorld"
+      ],
+      "Location": {
+        "Quadrant": "Beta Quadrant",
+        "QuadrantNotes": "Canon charts and references vary; modern on-screen star charts often place the Vulcan system in Beta. Treat as near the Alpha/Beta border in many practical travel contexts.",
+        "StarSystem": "Vulcan system (40 Eridani A)",
+        "Sector": "Vulcan sector",
+        "Region": "Vulcan space"
+      },
+      "QuickFacts": {
+        "Class": "Class M",
+        "PrimaryInhabitants": [
+          "Vulcans"
+        ],
+        "SkyNotes": [
+          "Vulcan has no natural moons in canon references; it forms a binary pair with the companion planet T'Khut, which can be prominent in the sky under clear conditions."
+        ],
+        "LocalTimekeeping": {
+          "DayLengthHours": null,
+          "TimeFormat": "Local standards; visitors commonly rely on shipboard chronometers and civic time beacons."
+        }
+      },
+      "TravelSummary": "Vulcan is a world of austere beauty—deserts, volcanic badlands, and sacred mountains tied to Surak’s legacy. Tourism centers on cultural immersion: meditation retreats, historical sanctuaries, and guided routes through cities built to endure harsh climates. It’s rewarding, but requires preparation for heat, dust, and strict local etiquette around privacy and emotional control.",
+      "Appearance": {
+        "GeneralLook": "An arid world with broad deserts, volcanic regions, and rugged mountain landmarks; architecture often emphasizes shaded courtyards, stone, and heat-resilient design.",
+        "FromOrbit": [
+          "Desert belts and highland contours are visually dominant",
+          "The Vulcan system’s companion world relationships are a notable feature of local cartography"
+        ],
+        "NotableLandscapes": [
+          "Vulcan's Forge (desert/volcanic badlands)",
+          "Sacred mountain sites (e.g., Mount Seleya)",
+          "Desert-edge urban corridors (e.g., ShiKahr region)"
+        ],
+        "SurfaceNotes": [
+          "Visitors commonly report intense light, rapid dehydration risk, and strong day–night comfort swings.",
+          "Some wilderness zones can interfere with technology and require analog navigation backups."
+        ]
+      },
+      "Geography": {
+        "Biomes": [
+          {
+            "Name": "Hot desert",
+            "Notes": "Large stretches of exposed sand and rock; travel is best at dawn/dusk with proper seals."
+          },
+          {
+            "Name": "Volcanic desert / badlands",
+            "Notes": "Harsh terrain with geomagnetic instability and electrical storm risk in certain regions."
+          },
+          {
+            "Name": "Highlands and mountain corridors",
+            "Notes": "Sacred routes, monasteries, and pilgrimage trails; temperatures can vary sharply with elevation."
+          }
+        ],
+        "Landmarks": [
+          {
+            "Name": "Vulcan's Forge",
+            "Category": "Wilderness / Extreme environment",
+            "CityOrRegion": "Forge region",
+            "VisitorNotes": [
+              "Known for electrical sandstorms and geomagnetic interference that can disrupt scanners and transporters in certain eras.",
+              "Guided excursions are strongly recommended; permits may be required depending on local governance."
+            ]
+          },
+          {
+            "Name": "Mount Seleya",
+            "Category": "Sacred site / Pilgrimage",
+            "CityOrRegion": "Far end of Vulcan's Forge",
+            "VisitorNotes": [
+              "Major spiritual destination; temple structures and ceremonial spaces are present in some eras.",
+              "Respect access rules, silence protocols, and restricted ceremonial zones."
+            ]
+          },
+          {
+            "Name": "T'Karath Sanctuary (region)",
+            "Category": "Sacred site",
+            "CityOrRegion": "Near Mount Seleya region",
+            "VisitorNotes": [
+              "Associated with Surak-era legacy and key cultural events; access may be limited to authorized visitors."
+            ]
+          },
+          {
+            "Name": "Hall of Ancient Thought (Mount Seleya complex)",
+            "Category": "Cultural / Historic",
+            "CityOrRegion": "Mount Seleya",
+            "VisitorNotes": [
+              "A destination for scholars and pilgrims; follow guidance about photography, recording, and artifact proximity."
+            ]
+          }
+        ],
+        "Cities": [
+          {
+            "Name": "ShiKahr",
+            "Role": "Major city near the edge of the Forge",
+            "Highlights": [
+              "Desert-edge architecture optimized for shade and heat control",
+              "Cultural residences associated with prominent Vulcan families in some eras"
+            ],
+            "LocalVibe": "Orderly, quiet, and tradition-forward; visitors are expected to be self-contained and respectful."
+          },
+          {
+            "Name": "Gol",
+            "Role": "Ancient city (historic/cultural reference)",
+            "Highlights": [
+              "Referenced in Vulcan historical accounts and cautionary tales",
+              "Often approached as an educational stop rather than a leisure destination"
+            ],
+            "LocalVibe": "Austere heritage site—visit via curator-led routes if available."
+          }
+        ]
+      },
+      "Inhabitants": {
+        "Primary": [
+          {
+            "Species": "Vulcan",
+            "Notes": "Native population; cultural norms emphasize logic, privacy, and emotional discipline."
+          }
+        ],
+        "NotableCultures": [
+          {
+            "Name": "Surakian tradition",
+            "Notes": "Pilgrimage, scholarship, and meditation are central to many visitor experiences."
+          },
+          {
+            "Name": "Scientific institutions",
+            "Notes": "Academic culture is prominent; lectures and symposiums can be major tourist draws in some eras."
+          }
+        ],
+        "VisitorEtiquette": [
+          "Keep your voice low; emotional displays are often considered disruptive in public spaces.",
+          "Avoid unsolicited physical contact; ask permission before assisting someone physically.",
+          "Never attempt or request a mind meld casually—consent and cultural context are critical.",
+          "Dress for sun and dust: breathable layers, eye protection, and sealed footwear are standard.",
+          "Carry water and electrolyte supplementation for outdoor travel; dehydration can escalate quickly.",
+          "Follow shrine and sanctuary rules precisely: silence zones, footwear policies, and restricted steps are common.",
+          "Do not treat sacred symbols (e.g., IDIC iconography) as casual merchandise in solemn spaces.",
+          "When invited into a home, wait for explicit guidance on seating, food, and conversation topics.",
+          "Photography/recording may be restricted in religious and academic areas—ask before capturing images.",
+          "On guided treks, stay with your group; terrain and stormfronts can shift quickly."
+        ]
+      },
+      "Weather": {
+        "ClimateType": "Arid to desert; localized extreme environments",
+        "Seasonality": "Heat dominance with significant day–night swings; seasonal variation exists but is less visually dramatic than on Earth.",
+        "TypicalConditions": [
+          {
+            "Region": "Desert plains",
+            "Conditions": [
+              "High daytime heat",
+              "Dry air",
+              "Dust gusts"
+            ]
+          },
+          {
+            "Region": "Forge region",
+            "Conditions": [
+              "Electrical sandstorms",
+              "Geomagnetic instability",
+              "Technology interference pockets"
+            ]
+          },
+          {
+            "Region": "Mountain routes",
+            "Conditions": [
+              "Cooler temperatures at elevation",
+              "Strong winds",
+              "Rapid exposure shifts"
+            ]
+          }
+        ],
+        "Hazards": [
+          {
+            "Type": "Sandfire storms",
+            "Notes": "Fast-moving storms with blinding sand and lightning-like electrical discharges; can last hours to days and require sealed shelter."
+          },
+          {
+            "Type": "Electrical sandstorms / geomagnetic interference (Forge)",
+            "Notes": "Can interfere with scanners, communicators, and transporters (especially in 22nd-century tech contexts)."
+          },
+          {
+            "Type": "Heat injury and dehydration",
+            "Notes": "Primary day-trip risk for offworld visitors; plan shade breaks and carry water beyond Earth-normal expectations."
+          }
+        ]
+      },
+      "Tourism": {
+        "TopAttractions": [
+          {
+            "Name": "Pilgrimage and meditation itineraries",
+            "WhyGo": "Direct immersion in Surak-era cultural legacy and modern contemplative practice."
+          },
+          {
+            "Name": "City cultural walks (ShiKahr region)",
+            "WhyGo": "Desert-adapted urban design and curated heritage routes near the Forge boundary."
+          },
+          {
+            "Name": "Sacred mountain excursions (Mount Seleya)",
+            "WhyGo": "One of the most iconic spiritual destinations with well-known ceremonial associations."
+          },
+          {
+            "Name": "Scholarly events and public lectures",
+            "WhyGo": "Vulcan academic culture can be a highlight for science-forward travelers."
+          }
+        ],
+        "Activities": [
+          "Guided desert treks (non-Forge routes recommended for casual visitors)",
+          "Museum and archive visits focused on Vulcan history and philosophy",
+          "Meditation retreats and cultural workshops (by invitation or registration)",
+          "Night-sky viewing when conditions allow (companion planet visibility can be striking)"
+        ],
+        "Restrictions": [
+          "Forge-area travel may require permits, guides, and approved equipment checklists.",
+          "Sacred and governmental facilities may restrict offworld visitors during political tension or ceremonial periods.",
+          "Some rites and trials are not tourist events; do not attempt participation without formal invitation."
+        ],
+        "SafetyNotes": [
+          "Never enter the Forge without sealed shelter options and a guide familiar with storm behavior.",
+          "Carry redundant navigation and communications options; some terrain can disrupt instruments.",
+          "Plan arrivals and departures around heat peaks; dawn/dusk itineraries reduce risk.",
+          "Respect local authority immediately during advisories—Vulcan enforcement is typically strict and procedural."
+        ]
+      },
+      "Logistics": {
+        "Entry": [
+          "Expect strict customs and documentation checks; Vulcan authorities prioritize order and clarity.",
+          "Visitors may be required to declare scientific equipment, recording devices, and medical supplies."
+        ],
+        "LocalTransport": [
+          "Urban transit and regulated shuttles near major cities",
+          "Licensed ground vehicles for desert routes",
+          "Guided convoys for wilderness itineraries in higher-risk regions"
+        ],
+        "CurrencyNotes": [
+          "Visitors should plan for credential-based payment systems and pre-authorized travel accounts."
+        ],
+        "Lodging": [
+          "Quiet guest facilities with strong privacy norms near cities",
+          "Retreat-style accommodations for meditation and study travelers",
+          "Permit-based camps for guided expeditions"
+        ],
+        "Communications": [
+          "Universal translator is useful for cultural nuance, but many Vulcans are fluent in Federation Standard in Federation-era contexts."
+        ]
+      },
+      "CanonAppearances": {
+        "FirstSeen": {
+          "Series": "TOS",
+          "EpisodeOrFilm": "Amok Time",
+          "YearInUniverse": null
+        },
+        "Key": [
+          {
+            "SeriesOrFilm": "TOS: Amok Time",
+            "Notes": "Vulcan surface and cultural rites are central."
+          },
+          {
+            "SeriesOrFilm": "TAS: Yesteryear",
+            "Notes": "ShiKahr and desert-edge travel context; companion-world sky imagery is featured."
+          },
+          {
+            "SeriesOrFilm": "ENT: The Forge / Awakening / Kir'Shara",
+            "Notes": "Forge hazards, sacred routes, and political-cultural conflicts are explored in depth."
+          },
+          {
+            "SeriesOrFilm": "Star Trek III: The Search for Spock",
+            "Notes": "Mount Seleya ceremonial site (fal-tor-pan) is depicted."
+          },
+          {
+            "SeriesOrFilm": "Star Trek: The Motion Picture",
+            "Notes": "Vulcan cultural and philosophical context is central to Spock’s arc."
+          },
+          {
+            "SeriesOrFilm": "SNW: Charades",
+            "Notes": "Modern-era Vulcan system display canonizes T'Khut and system details."
+          }
+        ]
+      },
+      "Tags": [
+        "HeatPreparednessRequired",
+        "EtiquetteCritical",
+        "GuidesRecommendedForWilderness"
+      ]
+    }
+  ]
+}
