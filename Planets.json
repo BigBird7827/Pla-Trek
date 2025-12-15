@@ -1337,7 +1337,7 @@
         "Homeworld"
       ],
       "Media": {
-        "HeroImageURL": null,
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Bajor.png",
         "Gallery": []
       },
       "Location": {
@@ -1569,7 +1569,7 @@
         "CapitalWorld"
       ],
       "Media": {
-        "HeroImageURL": null,
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Cardassia%20Prime.jpg",
         "Gallery": []
       },
       "Location": {
