@@ -2,14 +2,28 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 7,
+    "Build": 8,
     "Version": 1,
     "LastUpdated": "2025-12-15",
-    "Scope": "Travel guide worlds only (enough on-screen canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
-    "CanonPolicy": "On-screen canon only (TOS/TAS/TNG/DS9/VOY/ENT/PIC/SNW + films).",
+    "Scope": "Travel guide worlds only (enough canon to support location, appearance, geography, cities, inhabitants, visitation/tourism, and weather).",
+    "CanonPolicy": "Canon-first: on-screen (TOS/TAS/TNG/DS9/VOY/ENT/DIS/PIC/SNW + films) plus sanctioned reference works and official sources when needed.",
     "Notes": [
       "All fields are designed for travel-guide readability; deeper lore can be appended later without changing structure.",
       "Location quadrants can be ambiguous in canon charts; use Location.QuadrantNotes when needed."
+    ],
+    "ResearchSourcesAllowed": [
+      "memory-alpha.fandom.com (canon index; cite on-screen episodes/films and listed reference works)",
+      "ex-astris-scientia.org (production/visual deep dive; cross-check against on-screen)",
+      "johnstonsarchive.net/startrek/ (historical/cartographic reference; use cautiously and cite)",
+      "startrek.com (official franchise site)",
+      "trekcore.com (HD screenshots / production references)",
+      "trekmovie.com (news/interviews; production context only)",
+      "trektoday.com (news/community; use cautiously)",
+      "st-minutiae.com (script/minutiae; useful for draft-script details)",
+      "Klingon Language Institute (kli.org; language/culture references when relevant)",
+      "chakoteya.net / Star Trek Transcripts (dialogue reference)",
+      "Wikipedia (broad context; cross-check)",
+      "IMDb (cast/crew only; not used for planet canon)"
     ]
   },
   "Planets": [
@@ -24,10 +38,10 @@
         "Homeworld"
       ],
       "Location": {
-        "Quadrant": "",
-        "QuadrantNotes": "",
-        "StarSystem": "Sol",
-        "Sector": "",
+        "Quadrant": "Alpha Quadrant",
+        "QuadrantNotes": "Sector 001 is defined as spanning Alpha & Beta; Sol is located at the edge of Sector 001 in the Alpha Quadrant.",
+        "StarSystem": "Sol system",
+        "Sector": "Sector 001",
         "Region": "United Federation of Planets (member world)"
       },
       "QuickFacts": {
@@ -220,23 +234,61 @@
       "Media": {
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png",
         "Gallery": []
+      },
+      "Sources": [
+        {
+          "Title": "Sol system (sector/quadrant)",
+          "URL": "https://memory-alpha.fandom.com/wiki/Sol_system",
+          "Use": "Location: quadrant & Sector 001"
+        },
+        {
+          "Title": "Sector 001",
+          "URL": "https://memory-alpha.fandom.com/wiki/Sector_001",
+          "Use": "Sector naming and quadrant-span note"
+        },
+        {
+          "Title": "Earth",
+          "URL": "https://memory-alpha.fandom.com/wiki/Earth",
+          "Use": "Core canon references & planetary context"
+        },
+        {
+          "Title": "San Francisco",
+          "URL": "https://memory-alpha.fandom.com/wiki/San_Francisco",
+          "Use": "Key visitor-facing locations (Starfleet HQ/Academy)"
+        },
+        {
+          "Title": "Paris",
+          "URL": "https://memory-alpha.fandom.com/wiki/Paris",
+          "Use": "Federation Presidency location references"
+        }
+      ],
+      "CitiesAndSites": {
+        "MajorCities": [
+          "San Francisco (Starfleet HQ/Academy precinct)",
+          "Paris (Federation Presidency)"
+        ],
+        "PointsOfInterest": [
+          "Starfleet Headquarters (near San Francisco Bay)",
+          "Starfleet Academy (San Francisco)"
+        ]
       }
     },
     {
       "PlanetID": "planet-vulcan",
       "Name": "Vulcan",
       "AlternateNames": [
+        "Ni'Var (later era name)",
         "Ni'Var (later era)"
       ],
       "TypeTags": [
         "Homeworld"
       ],
       "Location": {
-        "Quadrant": "",
-        "QuadrantNotes": "",
-        "StarSystem": "",
-        "Sector": "",
-        "Region": "United Federation of Planets (member world)"
+        "Quadrant": "Beta Quadrant",
+        "QuadrantNotes": "Vulcan’s star system is commonly identified with 40 Eridani; quadrant/sector placement follows on-screen star charts and reference material summarized by Memory Alpha.",
+        "StarSystem": "Vulcan system (40 Eridani)",
+        "Sector": "Vulcan sector",
+        "Region": "United Federation of Planets (member world; later Ni'Var)"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -447,7 +499,43 @@
       "Media": {
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Vulcan.png",
         "Gallery": []
-      }
+      },
+      "CitiesAndSites": {
+        "MajorCities": [
+          "ShiKahr (capital city)"
+        ],
+        "PointsOfInterest": [
+          "The Forge (desert region)",
+          "T'Karath Sanctuary (within the Forge)"
+        ]
+      },
+      "Sources": [
+        {
+          "Title": "Vulcan system / 40 Eridani",
+          "URL": "https://memory-alpha.fandom.com/wiki/Vulcan_system",
+          "Use": "Quadrant/sector/system identification"
+        },
+        {
+          "Title": "40 Eridani",
+          "URL": "https://memory-alpha.fandom.com/wiki/40_Eridani",
+          "Use": "Astronomical identification used in reference material"
+        },
+        {
+          "Title": "ShiKahr",
+          "URL": "https://memory-alpha.fandom.com/wiki/ShiKahr",
+          "Use": "Capital city & Vulcan High Command placement notes"
+        },
+        {
+          "Title": "The Forge",
+          "URL": "https://memory-alpha.fandom.com/wiki/The_Forge",
+          "Use": "Key geography for visitor itineraries"
+        },
+        {
+          "Title": "T'Karath Sanctuary",
+          "URL": "https://memory-alpha.fandom.com/wiki/T%27Karath_Sanctuary",
+          "Use": "Notable site within the Forge"
+        }
+      ]
     },
     {
       "PlanetID": "planet-ferenginar",
@@ -461,11 +549,11 @@
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "",
-        "QuadrantNotes": "",
-        "StarSystem": "",
+        "Quadrant": "Alpha Quadrant",
+        "QuadrantNotes": "Ferenginar is located in Ferengi space in the Alpha Quadrant; no consistent on-screen sector label is established in primary canon.",
+        "StarSystem": "Ferenginar system",
         "Sector": "",
-        "Region": "Ferengi Alliance"
+        "Region": "Ferengi Alliance (capital world)"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -655,6 +743,32 @@
         "HighHaggleCulture",
         "HumidityPreparednessRequired",
         "TouristScamRisk"
+      ],
+      "CitiesAndSites": {
+        "MajorCities": [
+          "(Capital) — commonly treated as the seat of the Grand Nagus’ government"
+        ],
+        "PointsOfInterest": [
+          "Tower of Commerce",
+          "Great Marketplace / Sacred Marketplace (public commerce district)"
+        ]
+      },
+      "Sources": [
+        {
+          "Title": "Ferenginar system",
+          "URL": "https://memory-alpha.fandom.com/wiki/Ferenginar_system",
+          "Use": "Quadrant/system location"
+        },
+        {
+          "Title": "Tower of Commerce",
+          "URL": "https://memory-alpha.fandom.com/wiki/Tower_of_Commerce",
+          "Use": "Major landmark for travel guide"
+        },
+        {
+          "Title": "Great Marketplace",
+          "URL": "https://memory-alpha.fandom.com/wiki/Great_Marketplace",
+          "Use": "Major public commerce district"
+        }
       ]
     },
     {
@@ -669,11 +783,11 @@
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "",
-        "QuadrantNotes": "",
-        "StarSystem": "",
-        "Sector": "",
-        "Region": "Federation space"
+        "Quadrant": "Beta Quadrant",
+        "QuadrantNotes": "Risa’s quadrant placement varies across on-screen cartography and reference works; recent star charts and summaries commonly place it in the Beta Quadrant.",
+        "StarSystem": "Epsilon Ceti star system (Epsilon Ceti B)",
+        "Sector": "(unspecified sector)",
+        "Region": "United Federation of Planets (member world; major tourism destination)"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -797,7 +911,8 @@
           "Sun protection (hat/visor, sunscreen)",
           "Waterproof pouch for comm devices",
           "Comfort footwear for long promenade walks"
-        ]
+        ],
+        "Summary": "Tropical ‘paradise’ conditions are largely engineered: Risa’s weather control system is used to maintain consistently pleasant temperatures, breezes, and skies for visitors."
       },
       "Tourism": {
         "TopAttractions": [
@@ -874,6 +989,40 @@
         "ConsentCulture",
         "HighTourismDensity",
         "InfrastructureDependentWeather"
+      ],
+      "CitiesAndSites": {
+        "PointsOfInterest": [
+          "Resort zones and shore-leave districts (weapons prohibited)",
+          "Weather control complex (restricted; seen during sabotage events)",
+          "Temtibi Lagoon",
+          "Suraya Bay",
+          "Eluvian Mud Baths"
+        ],
+        "MajorCities": [
+          "Nuvia (capital city; reference works)"
+        ]
+      },
+      "Sources": [
+        {
+          "Title": "Risa",
+          "URL": "https://memory-alpha.fandom.com/wiki/Risa",
+          "Use": "Location notes, weather-control concept, tourism context, and reference-work details (e.g., Nuvia/points of interest)"
+        },
+        {
+          "Title": "StarTrek.com – The Planet Risa and Roddenberry’s Unrealized Queer Vision",
+          "URL": "https://www.startrek.com/news/risa-unrealized-queer-vision",
+          "Use": "Official discussion of Risa as a weather-controlled ‘artificial paradise’ and its natural state"
+        },
+        {
+          "Title": "StarTrek.com – Below Deck with Lower Decks: The Pleasure Planet",
+          "URL": "https://www.startrek.com/news/below-deck-with-lower-decks-the-pleasure-planet",
+          "Use": "Official note that Risa uses an elaborate weather control system"
+        },
+        {
+          "Title": "Weather control system",
+          "URL": "https://memory-alpha.fandom.com/wiki/Weather_control_system",
+          "Use": "General canon context for planetary weather control and Risa as a key example"
+        }
       ]
     },
     {
@@ -892,11 +1041,11 @@
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "",
-        "QuadrantNotes": "",
-        "StarSystem": "",
-        "Sector": "",
-        "Region": "Klingon Empire"
+        "Quadrant": "Beta Quadrant",
+        "QuadrantNotes": "Sector label for Qo'noS is given in reference summaries and on-screen cartography; Klingon-space borders shift by era.",
+        "StarSystem": "Qo'noS system",
+        "Sector": "Sector 70 (Qo'noS sector)",
+        "Region": "Klingon Empire (capital world)"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -1099,6 +1248,42 @@
         "CeremonyHeavy",
         "VolcanicGeology",
         "PoliticalFlashpoint"
+      ],
+      "CitiesAndSites": {
+        "MajorCities": [
+          "First City (capital city)"
+        ],
+        "PointsOfInterest": [
+          "Great Hall",
+          "Klingon High Council chamber (in the Great Hall)"
+        ]
+      },
+      "Sources": [
+        {
+          "Title": "Qo'noS",
+          "URL": "https://memory-alpha.fandom.com/wiki/Qo%27noS",
+          "Use": "Quadrant/system/sector, Praxis moon, capital status"
+        },
+        {
+          "Title": "Sector 70 (Qo'noS sector)",
+          "URL": "https://memory-alpha.fandom.com/wiki/Sector_70",
+          "Use": "Sector labeling"
+        },
+        {
+          "Title": "First City",
+          "URL": "https://memory-alpha.fandom.com/wiki/First_City",
+          "Use": "Capital city and major landmarks"
+        },
+        {
+          "Title": "Great Hall",
+          "URL": "https://memory-alpha.fandom.com/wiki/Great_Hall",
+          "Use": "Government landmark"
+        },
+        {
+          "Title": "Klingon High Council",
+          "URL": "https://memory-alpha.fandom.com/wiki/Klingon_High_Council",
+          "Use": "Government institution location"
+        }
       ]
     },
     {
@@ -1116,11 +1301,12 @@
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "",
-        "QuadrantNotes": "",
-        "StarSystem": "",
-        "Sector": "",
-        "Region": "Federation space (member world in later eras)"
+        "Quadrant": "Beta Quadrant",
+        "QuadrantNotes": "Andoria is described as a moon in the Andorian system, ~11 ly from Sol, near the Vulcan system; ‘Andor’ is used interchangeably in some canon/reference sources.",
+        "StarSystem": "Andorian system (Procyon / Alpha Canis Minoris)",
+        "Sector": "Andorian sector",
+        "Region": "United Federation of Planets (founding member world)",
+        "DistanceFromSol_LY": 11
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -1325,6 +1511,23 @@
         "SevereWeather",
         "PermitSensitiveAreas",
         "GuidedExcursionsRecommended"
+      ],
+      "Sources": [
+        {
+          "Title": "Andoria",
+          "URL": "https://memory-alpha.fandom.com/wiki/Andoria",
+          "Use": "Quadrant/sector/distance and moon-status notes"
+        },
+        {
+          "Title": "Andorian system",
+          "URL": "https://memory-alpha.fandom.com/wiki/Andorian_system",
+          "Use": "System context, distance, neighboring systems"
+        },
+        {
+          "Title": "Procyon",
+          "URL": "https://memory-alpha.fandom.com/wiki/Procyon",
+          "Use": "System identification on charts"
+        }
       ]
     },
     {
@@ -1341,11 +1544,11 @@
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "",
-        "QuadrantNotes": "",
+        "Quadrant": "Alpha Quadrant",
+        "QuadrantNotes": "Bajor is explicitly placed in the Bajor sector of the Alpha Quadrant in reference summaries.",
         "StarSystem": "Bajoran system",
-        "Sector": "",
-        "Region": "Bajoran space"
+        "Sector": "Bajor sector",
+        "Region": "Bajoran space (Federation-aligned in later eras)"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -1358,7 +1561,11 @@
         "LocalTimekeeping": {
           "DayLengthHours": null,
           "TimeFormat": "Local standards; visitors often coordinate with Deep Space 9 schedules and shipboard chronometers."
-        }
+        },
+        "Moons": [
+          "Derna",
+          "Jeraddo"
+        ]
       },
       "TravelSummary": "Bajor is the Bajoran homeworld, depicted as a lush world shaped by deep religious tradition and the aftermath of the Cardassian Occupation.",
       "Appearance": {
@@ -1556,6 +1763,28 @@
         "PermitSensitiveSites",
         "PostOccupationContext",
         "RespectfulTourism"
+      ],
+      "CitiesAndSites": {
+        "MajorCities": [
+          "Bajor City (capital)"
+        ]
+      },
+      "Sources": [
+        {
+          "Title": "Bajor",
+          "URL": "https://memory-alpha.fandom.com/wiki/Bajor",
+          "Use": "Quadrant/sector/system, moons, travel context"
+        },
+        {
+          "Title": "Jeraddo",
+          "URL": "https://memory-alpha.fandom.com/wiki/Jeraddo",
+          "Use": "Moon and Bajor sector placement"
+        },
+        {
+          "Title": "Derna",
+          "URL": "https://memory-alpha.fandom.com/wiki/Derna",
+          "Use": "Moon reference"
+        }
       ]
     },
     {
@@ -1573,11 +1802,14 @@
         "Gallery": []
       },
       "Location": {
-        "Quadrant": "",
-        "QuadrantNotes": "",
-        "StarSystem": "",
+        "Quadrant": "Alpha Quadrant",
+        "QuadrantNotes": "Cardassia Prime is placed in Cardassian space in the Alpha Quadrant; sector naming is not consistently provided in primary canon.",
+        "StarSystem": "Cardassian system",
         "Sector": "",
-        "Region": "Cardassian space"
+        "Region": "Cardassian Union (capital world)",
+        "Nearby": [
+          "~5 light years from Bajor (system distance reference)"
+        ]
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -1756,6 +1988,28 @@
         "MonumentalArchitecture",
         "AridConditions",
         "PostWarContext"
+      ],
+      "CitiesAndSites": {
+        "MajorCities": [
+          "Lakarian City"
+        ]
+      },
+      "Sources": [
+        {
+          "Title": "Cardassia Prime",
+          "URL": "https://memory-alpha.fandom.com/wiki/Cardassia_Prime",
+          "Use": "Planet in Cardassian system, Alpha Quadrant"
+        },
+        {
+          "Title": "Cardassian system",
+          "URL": "https://memory-alpha.fandom.com/wiki/Cardassian_system",
+          "Use": "System placement and Bajor distance reference"
+        },
+        {
+          "Title": "Lakarian City",
+          "URL": "https://memory-alpha.fandom.com/wiki/Lakarian_City",
+          "Use": "Major city reference"
+        }
       ]
     }
   ]
