@@ -1,228 +1,1384 @@
 {
-  "PlanetID": "planet-earth",
-  "Name": "Earth",
-  "AlternateNames": [
-    "Sol III",
-    "Terra"
-  ],
-  "Tags": [
-    "Homeworld",
-    "Federation capital",
-    "Starfleet HQ",
-    "Core world",
-    "Federation hub",
-    "Starfleet",
-    "Human homeworld",
-    "Time travel"
-  ],
-  "TypeTags": [
-    "Homeworld",
-    "FederationCapital",
-    "StarfleetHQ",
-    "Core world"
-  ],
-  "Meta": {
-    "CanonicalName": "Earth",
-    "Classification": "Class M terrestrial planet",
-    "Affiliation": "United Federation of Planets (founding world)",
-    "NativeSpecies": [
-      "Human"
-    ]
+  "SchemaVersion": "1.1",
+  "Build": {
+    "Name": "Pla-Build-13",
+    "Generated": "2025-12-16",
+    "Notes": "Planet guide data (canon + vetted reference material)."
   },
-  "Media": {
-    "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png"
-  },
-  "TravelSummary": "Earth (also known as Terra or Sol III) is the Human homeworld and a founding world of the United Federation of Planets. It is the political and administrative heart of the Federation in many eras, and it is frequently depicted as the center of Starfleet education and command.\n\nFor visitors, Earth is less defined by a single “destination” than by density of history: pivotal first-contact milestones, major diplomatic institutions, and cultural regions that remain recognizable across centuries. The planet’s story is told repeatedly through time-travel visits (from 20th–21st-century crises to 24th-century security emergencies) and through its role as the Federation’s symbolic core.",
-  "Location": {
-    "Quadrant": "Alpha Quadrant",
-    "Sector": "Sector 001",
-    "StarSystem": "Sol system",
-    "Region": "Federation core worlds",
-    "NearbyLandmarks": [
-      "Luna",
-      "Mars",
-      "Jupiter",
-      "Saturn",
-      "Starfleet Headquarters / Starfleet Academy (San Francisco)"
-    ]
-  },
-  "Appearance": "From orbit, Earth is consistently portrayed as a blue-and-white globe with extensive oceans, swirling cloud systems, and bright polar caps. Night-side views commonly show concentrated city-light clusters and heavy orbital traffic around major facilities.\n\nOn the surface, depictions range from familiar 20th–21st-century cityscapes (San Francisco, Los Angeles, New York, Detroit) to late-23rd–24th-century futuristic skylines around Starfleet and Federation sites. Iconic landmarks such as the Golden Gate Bridge and the Parisian skyline recur as visual shorthand for the planet.",
-  "Geography": "Earth is a multi-biome Class M terrestrial planet with extensive oceans and diverse climates. In canon depictions, coastlines, river deltas, mountain ranges, deserts, forests, and polar regions are all shown as major ecological zones, supporting dense population centers and large protected natural areas.\n\nRepeated screen appearances emphasize the San Francisco Bay Area (especially the Presidio and the Golden Gate Bridge) as a strategic hub for Starfleet facilities, while Europe (notably France and Paris) appears as a locus for Federation civil governance and long-standing family estates.",
-  "CitiesAndSites": [
+  "Planets": [
     {
-      "Name": "San Francisco (Presidio) — Starfleet Headquarters & Starfleet Academy",
-      "Type": "Administrative / Academy",
-      "Description": "A recurring on-screen hub for Starfleet operations and training. The Presidio area is repeatedly associated with both Starfleet Headquarters and Starfleet Academy, often framed with the Golden Gate Bridge nearby."
-    },
-    {
-      "Name": "Paris — Office of the Federation President",
-      "Type": "Political / Executive",
-      "Description": "Paris is identified as the location of the Federation President’s office in multiple on-screen contexts, and is used as a shorthand for Federation civil authority and high-level diplomacy."
-    },
-    {
-      "Name": "Federation Council (San Francisco convening site, 2286)",
-      "Type": "Government / Legislative",
-      "Description": "The Federation Council is depicted convening in San Francisco during the events surrounding Earth’s 2286 crisis with the Whale Probe and the subsequent Federation Council proceedings."
-    },
-    {
-      "Name": "Golden Gate Bridge",
-      "Type": "Landmark",
-      "Description": "A persistent visual landmark in Earth-set stories. It is shown prominently in connection with Starfleet facilities and is canonically damaged during the Dominion War-era Breen raid on Earth."
-    },
-    {
-      "Name": "New Orleans — Joseph Sisko’s restaurant",
-      "Type": "Cultural / Civilian",
-      "Description": "A notable civilian setting tied to Benjamin Sisko’s family life, shown during Earth-focused Deep Space Nine stories about security and civil authority."
-    },
-    {
-      "Name": "Bozeman, Montana — Warp flight / First Contact region",
-      "Type": "Historical",
-      "Description": "Associated with Zefram Cochrane’s warp flight and Humanity’s first contact with Vulcans as portrayed in Star Trek: First Contact."
-    },
-    {
-      "Name": "San Francisco — Sanctuary District A (Bell Riots site, 2024)",
-      "Type": "Historical / Social Crisis",
-      "Description": "The walled “Sanctuary District” system and the Bell Riots are portrayed as pivotal early-21st-century events in San Francisco that influenced later human social development."
-    },
-    {
-      "Name": "Los Angeles — time-visit settings (1996 / 2024)",
-      "Type": "Time-Travel Setting",
-      "Description": "Depicted in multiple time-travel narratives, including late-20th-century and early-21st-century visits with major consequences for the timeline."
-    },
-    {
-      "Name": "Spacedock One (Earth orbit)",
-      "Type": "Orbital Facility",
-      "Description": "A major Starfleet spacedock in Earth orbit from the late 23rd through early 25th centuries, shown as a key shipyard/berthing facility."
-    }
-  ],
-  "Inhabitants": "Earth’s native intelligent species is Human, and Humans remain the planet’s primary population throughout the franchise. Because Earth is closely tied to Federation governance and Starfleet, it is also shown hosting substantial numbers of off‑world residents and visitors in major cities.\n\nOn-screen stories emphasize Earth’s pluralistic culture (multiple languages, traditions, and regional identities) alongside the Federation’s broader multi-species civic identity. During crises (such as infiltration scares or wartime raids) civilian life is portrayed as both resilient and politically consequential, with Earth’s population and institutions influencing Federation-wide decisions.",
-  "Tourism": {
-    "Overview": "Earth is portrayed less as an “exotic” destination and more as the Federation’s cultural anchor: a place to study, to commemorate, and to conduct diplomacy. Tourism in canon typically appears indirectly—through visits to family homes, historic sites tied to first contact, and major civic landmarks.\n\nBecause of frequent time-travel narratives, many Earth locations are also depicted as historically significant in more than one era (e.g., early-21st-century social policy sites later remembered as turning points).",
-    "RecommendedExperiences": [
-      "Visit the Starfleet Academy grounds and adjacent Presidio vistas in San Francisco (when accessible).",
-      "Walk the Golden Gate Bridge and waterfront approaches used as establishing shots for Starfleet-era San Francisco.",
-      "Explore Parisian civic districts associated with Federation executive authority.",
-      "Historical tours of First Contact-related sites associated with Cochrane-era milestones."
-    ],
-    "CulturalEtiquetteNotes": "Earth’s etiquette varies widely by region, but Starfleet and Federation civic spaces tend to emphasize formality, security protocols, and respect for multicultural norms. During heightened security periods, visitors should expect screenings and restricted access around governmental and Starfleet facilities."
-  },
-  "Logistics": "Major transport hubs connect surface cities to orbital facilities and Starfleet traffic. High-security zones around Federation and Starfleet sites may impose access restrictions; visitors should expect screening and controlled transit in sensitive areas.",
-  "Weather": {
-    "ClimateType": "Highly variable (multi-biome)",
-    "Seasonality": "Pronounced seasons at mid/high latitudes; monsoons and dry seasons in some regions; tropical belts remain warm year-round.",
-    "TypicalConditions": "Weather ranges from mild coastal fog to continental storms; conditions depend heavily on region and season.",
-    "Hazards": [
-      "Severe storms (region-dependent)",
-      "Heatwaves/cold snaps (seasonal)",
-      "Earthquakes and volcanic activity (localized)"
-    ]
-  },
-  "History": {
-    "Overview": "Earth’s canon history is repeatedly framed as a long arc from 20th–21st-century upheaval to an interstellar, post-scarcity Federation society. The planet’s role in founding the United Federation of Planets makes it a frequent backdrop for political turning points and symbolic crises.",
-    "KeyEvents": [
-      {
-        "Event": "Bell Riots and the Sanctuary District crisis (San Francisco)",
-        "Era": "21st century (2024)",
-        "Summary": "A pivotal civil disturbance tied to the Sanctuary District system; depicted as a watershed event in early-21st-century Earth social history."
+      "PlanetID": "planet-earth",
+      "Name": "Earth",
+      "AlternateNames": [
+        "Sol III",
+        "Terra"
+      ],
+      "Tags": [
+        "Homeworld",
+        "Federation capital",
+        "Starfleet HQ",
+        "Core world"
+      ],
+      "TypeTags": [
+        "Homeworld",
+        "FederationCapital",
+        "StarfleetHQ"
+      ],
+      "Meta": {
+        "CanonicalName": "Earth",
+        "Classification": "Class M terrestrial planet",
+        "Affiliation": "United Federation of Planets (founding world)",
+        "NativeSpecies": [
+          "Human"
+        ]
       },
-      {
-        "Event": "First contact era milestones (Cochrane’s warp flight; Vulcan contact)",
-        "Era": "Mid-21st century",
-        "Summary": "Earth’s transition to interstellar engagement is dramatized through the first-warp/first-contact narrative central to the Federation’s origin story."
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png"
       },
-      {
-        "Event": "V’Ger crisis",
-        "Era": "Late 23rd century (2273)",
-        "Summary": "An immense entity threatens Earth, prompting a high-stakes response by the refitted USS Enterprise."
+      "TravelSummary": "Humanity’s homeworld and one of the Federation’s principal administrative centers. Earth is a densely visited hub where interstellar diplomacy, Starfleet operations, and everyday civilian life coexist across a remarkably diverse set of climates and cultures.",
+      "Location": {
+        "Quadrant": "Alpha Quadrant",
+        "Sector": "Sector 001",
+        "StarSystem": "Sol system",
+        "Region": "Federation core worlds",
+        "NearbyLandmarks": [
+          "Luna",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Starfleet Headquarters / Starfleet Academy (San Francisco)"
+        ]
       },
-      {
-        "Event": "Whale Probe crisis",
-        "Era": "Late 23rd century (2286)",
-        "Summary": "An unknown probe disables systems and threatens planetary catastrophe until its signal is answered."
+      "Appearance": "A blue-and-white globe: broad oceans, bright cloud swirls, and varied green/brown landmasses. From orbit, night-side city-light clusters and a busy pattern of orbital traffic are common in many eras.",
+      "Geography": "A multi-biome world with extensive oceans, major continental landmasses, mountain ranges, river basins, deserts, temperate plains, and polar ice. Coastal regions and inland valleys support dense settlement, while large protected areas preserve wilderness in the Federation era.",
+      "CitiesAndSites": [
+        {
+          "Name": "San Francisco (Starfleet Headquarters / Starfleet Academy)",
+          "Type": "Administrative / Academy",
+          "Description": "Frequently depicted as the heart of Starfleet’s Earthside operations, including Academy grounds and command facilities."
+        },
+        {
+          "Name": "Paris (Federation political center)",
+          "Type": "Diplomatic / Government",
+          "Description": "Often shown or referenced as a key Federation governmental and diplomatic setting on Earth."
+        },
+        {
+          "Name": "Bozeman, Montana (First Contact site)",
+          "Type": "Historic site",
+          "Description": "Associated with Zefram Cochrane’s warp flight and Humanity’s first contact with Vulcans."
+        },
+        {
+          "Name": "La Barre, France",
+          "Type": "Rural region",
+          "Description": "A notable Federation-era rural setting associated with the Picard family."
+        }
+      ],
+      "Inhabitants": "Primarily Humans, with large numbers of off-world residents and visitors—especially around Starfleet and Federation facilities. Earth’s culture remains pluralistic, with many regional languages and traditions alongside Federation Standard.",
+      "Tourism": "Earth supports tourism at every scale: historic cities, art and cultural institutions, oceans and islands, mountains and parks, and major Federation/Starfleet landmarks (where access rules permit). Seasonal travel is significant due to wide climate variation.",
+      "Logistics": "Major transport hubs connect surface cities to orbital facilities and Starfleet traffic. High-security zones around Federation and Starfleet sites may impose access restrictions; visitors should expect screening and controlled transit in sensitive areas.",
+      "Weather": {
+        "ClimateType": "Highly variable (multi-biome)",
+        "Seasonality": "Pronounced seasons at mid/high latitudes; monsoons and dry seasons in some regions; tropical belts remain warm year-round.",
+        "TypicalConditions": "Weather ranges from mild coastal fog to continental storms; conditions depend heavily on region and season.",
+        "Hazards": [
+          "Severe storms (region-dependent)",
+          "Heatwaves/cold snaps (seasonal)",
+          "Earthquakes and volcanic activity (localized)"
+        ]
       },
-      {
-        "Event": "Changeling infiltration scare and attempted militarized takeover",
-        "Era": "24th century (2372)",
-        "Summary": "Earth undergoes severe security measures amid fears of Dominion infiltration; events include martial-law conditions and an attempted coup narrative."
+      "History": {
+        "Overview": "Earth is central to Human spaceflight history, the rise of Starfleet, and the founding and governance of the United Federation of Planets.",
+        "KeyEras": [
+          {
+            "Era": "Post-warp / First Contact era",
+            "Summary": "Zefram Cochrane’s warp flight and first contact set the stage for interstellar diplomacy and early Starfleet."
+          },
+          {
+            "Era": "Federation founding and expansion",
+            "Summary": "Earth becomes a Federation founding world and long-term political and operational center for Starfleet."
+          },
+          {
+            "Era": "24th century security crises",
+            "Summary": "Earth remains a strategic target and political flashpoint in multiple major crises."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "2063",
+            "Event": "First Human warp flight and first contact with Vulcans (associated with Bozeman, Montana)."
+          },
+          {
+            "When": "2161",
+            "Event": "Founding of the United Federation of Planets (Earth as a founding world)."
+          },
+          {
+            "When": "2372",
+            "Event": "Breen attack on Earth during the Dominion War (Earthside security and damage referenced on screen)."
+          }
+        ]
       },
-      {
-        "Event": "Battle of Sector 001 (Borg incursion)",
-        "Era": "24th century (2373)",
-        "Summary": "A Borg assault reaches Earth’s vicinity; the battle becomes a defining event in Federation security history."
+      "Government": {
+        "Polity": "United Earth (22nd century planetary government); later a core world of the United Federation of Planets.",
+        "Capital": "Not stated on-screen (Federation and Starfleet institutions are based on Earth, notably in Paris and the San Francisco Bay Area).",
+        "Institutions": [
+          "United Earth Government (22nd century)",
+          "Office of the President of the United Federation of Planets (Paris)",
+          "Starfleet Headquarters (San Francisco Bay Area)",
+          "Starfleet Academy (San Francisco Bay Area)",
+          "Federation Council (depicted meeting at Federation Headquarters in the San Francisco Bay Area)"
+        ],
+        "LawsAffectingVisitors": [
+          "Not stated on-screen (routine access/security procedures vary by site; Earth has imposed heightened security during crises)."
+        ],
+        "Notes": "On-screen sources place the Federation President’s office in Paris, and Starfleet Headquarters/Academy in the San Francisco Bay Area. The Federation Council’s primary meeting location is depicted in San Francisco in Star Trek IV, but canon evidence leaves some ambiguity about whether that is the only/primary site."
       },
-      {
-        "Event": "Breen attack on Earth",
-        "Era": "24th century (late 2375)",
-        "Summary": "A surprise raid strikes San Francisco and Starfleet Headquarters during the Dominion War, inflicting major damage including to the Golden Gate Bridge."
+      "Economy": {
+        "Overview": "A mature Federation economy with extensive infrastructure, education, research, and cultural production; replicator-era logistics reduce traditional scarcity.",
+        "PrimaryIndustries": [
+          "Education and research",
+          "Culture and media",
+          "Government and diplomacy",
+          "Starfleet support and logistics"
+        ],
+        "TradeNotes": "Interstellar traffic is heavy; official and scientific exchange is constant.",
+        "LocalCommerceNotes": "Many services focus on hospitality, cultural institutions, and supporting visiting personnel."
+      },
+      "Culture": {
+        "Overview": "Earth culture is diverse and regionally distinct, with broad Federation-era cosmopolitanism in major cities.",
+        "SocialCustoms": "Etiquette varies by region; multicultural norms are common in urban centers and around Starfleet installations.",
+        "ReligiousLife": "Multiple belief systems persist; Federation-era society generally supports pluralistic practice.",
+        "Festivals": "Seasonal and regional celebrations remain common, especially tied to local histories and climates.",
+        "ArtsAndMedia": "Earth remains a major producer of music, art, literature, and holoprogram content across the Federation.",
+        "LanguageNotes": "Federation Standard is widespread; many Earth languages are actively used."
+      },
+      "Environment": {
+        "Overview": "Ecologically varied with significant conservation and protected areas in many Federation-era depictions.",
+        "Seasons": "Strong regional seasonality outside the tropics; polar conditions persist year-round.",
+        "NaturalHazards": [
+          "Earthquakes (localized)",
+          "Hurricanes/typhoons (region-dependent)",
+          "Wildfire risk (dry seasons in some regions)"
+        ],
+        "NightSky": "Orbital traffic, satellites, and spaceports can be prominent near population centers; Luna is a dominant feature from the surface."
+      },
+      "Appearances": {
+        "Overview": "Earth appears repeatedly as the setting for Federation politics, Starfleet operations, time-travel stories, and major strategic events.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "ENT",
+            "Highlights": [
+              "United Earth and early Starfleet operations; Earthside politics and security."
+            ]
+          },
+          {
+            "Era": "TNG/DS9/VOY",
+            "Highlights": [
+              "Federation political center; security crises and diplomatic episodes; time-travel visits."
+            ]
+          },
+          {
+            "Era": "Films",
+            "Highlights": [
+              "Major Starfleet/Federation events, including key crises and historical moments."
+            ]
+          },
+          {
+            "Era": "PIC",
+            "Highlights": [
+              "Starfleet Headquarters and Federation policy settings; personal/historical Earth locations."
+            ]
+          }
+        ]
+      },
+      "CanonAppearances": {
+        "Episodes": [
+          "ENT: \"Broken Bow\" (Earthside scenes)",
+          "ENT: \"Terra Prime\"",
+          "TNG: \"Family\"",
+          "TNG: \"Homefront\" / \"Paradise Lost\"",
+          "DS9: \"Past Tense\" (time travel)",
+          "PIC: \"Maps and Legends\" (Starfleet HQ/Federation context)"
+        ],
+        "Films": [
+          "Star Trek IV: The Voyage Home (time travel to 20th-century Earth)",
+          "Star Trek: First Contact (Bozeman / First Contact era)",
+          "Star Trek (2009) (brief Earth/Starfleet context)"
+        ],
+        "Notes": "Earth is referenced and/or visited across many additional episodes and films."
+      },
+      "DataQuality": {
+        "Confidence": "High",
+        "Coverage": "High",
+        "KnownGaps": [
+          "Specific planetary 'capital' usage varies by era and production."
+        ],
+        "VerificationNotes": "Broadly established across on-screen canon; some administrative details vary by depiction."
       }
-    ],
-    "ContinuityNotes": [
-      "Earth’s 20th–21st-century depictions vary depending on time-travel episode/film, but major events like the Bell Riots are treated as timeline-critical.",
-      "Earth is repeatedly framed as central to Federation governance and Starfleet infrastructure across eras."
-    ]
-  },
-  "Government": {
-    "Overview": "Earth is shown operating under planetary-level governance (e.g., “United Earth” in the pre-Federation era) and, later, as a core member world within the United Federation of Planets. In the Federation era, Earth is closely associated with executive leadership and high-level civil administration.",
-    "LocalGovernmentNotes": "Specific local political structures are rarely detailed on-screen; most Earth political storytelling focuses on Federation/Starfleet decision-making, security powers, and civil-military boundaries.",
-    "FederationPresence": "Earth is repeatedly depicted as hosting critical Federation institutions and Starfleet command functions, making it a focal point for debates about civil authority versus Starfleet security powers."
-  },
-  "Economy": {
-    "Overview": "Earth is often portrayed as part of a post-scarcity Federation society where replicator technology and social priorities reduce traditional resource scarcity. On-screen, discussions about wealth and labor frequently emphasize service, exploration, and civic responsibility over accumulation.",
-    "TradeNotes": "Earth functions as an administrative and cultural hub rather than a frontier trade world. When commerce is shown, it is usually tied to off-world travel, Starfleet logistics, or specific historical-era depictions.",
-    "LocalCommerceNotes": "Civilian businesses appear in certain eras and time-travel contexts (restaurants, bars, services), but the franchise seldom provides a comprehensive economic model for Earth."
-  },
-  "Culture": {
-    "Overview": "Earth’s culture is depicted as pluralistic and regionally diverse, with long-lived traditions persisting into the Federation era. The planet also embodies a Federation-wide identity built around cooperation, exploration, and diplomacy.",
-    "SocialCustoms": "Social norms vary by region and era. In Starfleet-adjacent environments, professional decorum and chain-of-command expectations are common, while civilian settings emphasize family, art, food, and local community life.",
-    "ReligiousLife": "Earth’s religious diversity is implied rather than explored in depth; stories more often focus on secular civic ideals and the ethical responsibilities of a spacefaring society.",
-    "Festivals": "Specific Earth festivals are occasionally referenced, but most Earth cultural moments on-screen appear through family gatherings, commemorations, and Academy or governmental ceremonies.",
-    "ArtsAndMedia": "Earth art, music, and literature are frequently referenced across the franchise as shared heritage, often used to contrast 24th-century ethics with earlier centuries.",
-    "LanguageNotes": "Human languages remain in use, but Federation Standard (often presented as English for the audience) dominates in most interstellar contexts."
-  },
-  "Environment": {
-    "Overview": "Earth is portrayed as environmentally rich and habitable, with stable ecosystems that support extensive human settlement and protected natural regions. Weather is shown as largely familiar to contemporary Earth, with the occasional depiction of severe anomalies during extraordinary events.",
-    "Seasons": "Seasonal variation is implied across Earth regions; most episodes focus on temperate coastal climates (notably the San Francisco Bay Area) unless a story requires another environment.",
-    "NaturalHazards": "Natural hazards are not a dominant theme for Earth in most eras; major environmental threats depicted on-screen are typically induced (e.g., the Whale Probe’s global effects) rather than purely geological or meteorological.",
-    "NightSky": "Earth’s night sky is occasionally depicted with visible orbital traffic and spacedock facilities; otherwise it matches familiar stellar backdrops depending on era and production needs."
-  },
-  "Appearances": {
-    "Overview": "Earth appears throughout Star Trek as both a homecoming setting (family visits, Academy life, diplomacy) and as a high-stakes target during major crises. It is also one of the franchise’s most common time-travel destinations.",
-    "BySeriesOrFilm": {
-      "TOS": "Prominently featured in time-travel and historical-visitor stories such as “Assignment: Earth” and “The City on the Edge of Forever.”",
-      "TNG": "Seen in episodes tied to Starfleet, family life, and Federation politics; Earth often functions as the setting for institutional and personal turning points.",
-      "DS9": "Central to “Past Tense” (2024), and later to the Dominion infiltration and security crises in “Homefront/Paradise Lost,” plus wartime consequences.",
-      "VOY": "Visited in time-travel arcs and referenced as home; Earth’s institutions (Academy/Command) recur in Voyager-era storytelling.",
-      "ENT": "Depicted in pre-Federation contexts and time-travel episodes, emphasizing Earth’s early interstellar era and its vulnerabilities.",
-      "PIC": "Used as a focal setting for early-21st-century timeline manipulation and as a touchstone for legacy characters."
+    },
+    {
+      "PlanetID": "planet-vulcan",
+      "Name": "Vulcan",
+      "AlternateNames": [],
+      "Tags": [
+        "Homeworld",
+        "Federation founding world",
+        "Desert world",
+        "Vulcan culture"
+      ],
+      "TypeTags": [
+        "Homeworld",
+        "FederationFoundingWorld"
+      ],
+      "Meta": {
+        "CanonicalName": "Vulcan",
+        "Classification": "Class M desert planet",
+        "Affiliation": "United Federation of Planets (founding world)",
+        "NativeSpecies": [
+          "Vulcan"
+        ]
+      },
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Vulcan.png"
+      },
+      "TravelSummary": "The Vulcan homeworld is defined by arid landscapes, austere beauty, and a deep cultural emphasis on logic and discipline. Visitors encounter ancient traditions, prominent scientific institutions, and harsh environments that reward preparation.",
+      "Location": {
+        "Quadrant": "Beta Quadrant",
+        "Sector": "Vulcan sector",
+        "StarSystem": "Vulcan system (40 Eridani)",
+        "Region": "Vulcan space",
+        "NearbyLandmarks": [
+          "Sol system (~16 ly)",
+          "Andorian system (nearby)"
+        ]
+      },
+      "Appearance": "A desert-dominant world with rust and ochre terrain, rugged ridges, and sparse seas. Clear skies are common; dust and sandstorms can be dramatic in exposed regions.",
+      "Geography": "Large arid basins and rocky highlands dominate. Key regions include the harsh desert known as Vulcan’s Forge, where geomagnetic instability and electrical sandstorms are hazardous. Settlements cluster where terrain and water access permit.",
+      "CitiesAndSites": [
+        {
+          "Name": "ShiKahr",
+          "Type": "City",
+          "Description": "A major Vulcan city often associated with government, culture, and travel destinations for off-world visitors."
+        },
+        {
+          "Name": "Vulcan Science Academy",
+          "Type": "Institution",
+          "Description": "A prominent scientific and educational institution on Vulcan, frequently referenced in Vulcan society."
+        },
+        {
+          "Name": "Vulcan’s Forge",
+          "Type": "Desert region",
+          "Description": "A notoriously harsh desert with electrical sandstorms and geomagnetic interference that can disrupt technology."
+        }
+      ],
+      "Inhabitants": "Primarily Vulcans. In different eras, Vulcan hosts significant off-world diplomatic and scientific traffic, especially connected to the Federation and Starfleet.",
+      "Tourism": "Travel centers on cultural and historical sites, scientific institutions, and guided excursions to austere natural landscapes. Visitors often pursue meditation retreats, academic exchanges, and supervised desert or mountain treks.",
+      "Logistics": "Visitors should plan for heat, dehydration risk, and rapidly shifting sandstorm conditions outside protected cities. In regions like the Forge, interference can affect comms, sensors, and transport; local guidance and protected routes are strongly advised.",
+      "Weather": {
+        "ClimateType": "Arid to semi-arid",
+        "Seasonality": "Hot, dry conditions dominate; local seasonal shifts exist but rainfall is limited and uneven.",
+        "TypicalConditions": "Clear skies, intense sun, low humidity; dust haze and sandstorms in exposed regions.",
+        "Hazards": [
+          "Electrical sandstorms (notably in the Forge)",
+          "Extreme heat and dehydration risk",
+          "Geomagnetic interference (localized)"
+        ]
+      },
+      "History": {
+        "Overview": "Vulcan is central to major Federation-era diplomatic and scientific history, and to Human-Vulcan relations following first contact.",
+        "KeyEras": [
+          {
+            "Era": "Pre-Federation and early Starfleet era",
+            "Summary": "Vulcan’s influence shapes early Human interstellar development and diplomacy."
+          },
+          {
+            "Era": "Federation era",
+            "Summary": "Vulcan remains a major contributor to science, governance, and interstellar policy."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "2150s",
+            "Event": "Key ENT-era missions involve Vulcan politics, culture, and the hazards of the Forge."
+          },
+          {
+            "When": "2161",
+            "Event": "Vulcan participates as a founding world of the United Federation of Planets."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Vulcan planetary government; in the early 22nd century the Vulcan High Command functioned as a military government.",
+        "Capital": "Not stated on-screen.",
+        "Institutions": [
+          "Vulcan High Command (military government in the early 22nd century)",
+          "Vulcan High Council (associated governing body)",
+          "First Minister of Vulcan (title used for head of government)"
+        ],
+        "LawsAffectingVisitors": [
+          "Not stated on-screen."
+        ],
+        "Notes": "Canon references identify the Vulcan High Command as a military government during ENT-era events; later eras refer to civilian political offices (e.g., First Minister) without detailing a full constitutional structure on-screen."
+      },
+      "Economy": {
+        "Overview": "A highly developed Federation-era world with strong emphasis on science, education, and interstellar diplomacy.",
+        "PrimaryIndustries": [
+          "Science and research",
+          "Education",
+          "Diplomacy and policy",
+          "Precision manufacturing (inferred from tech capacity)"
+        ],
+        "TradeNotes": "Academic and scientific exchange is a major driver of interstellar traffic.",
+        "LocalCommerceNotes": "Visitor-facing services are often formal and regulated; guided travel is common outside cities."
+      },
+      "Culture": {
+        "Overview": "Vulcan culture emphasizes logic, self-discipline, and long-established rituals and scholarly traditions.",
+        "SocialCustoms": "Formality, controlled emotion, and respect for privacy are typical expectations in public settings.",
+        "ReligiousLife": "Meditative traditions and philosophical practice are woven into daily life and civic identity.",
+        "Festivals": "Cultural ceremonies exist but are often private or solemn rather than overtly celebratory to outsiders.",
+        "ArtsAndMedia": "Scholarly arts and formal music traditions are referenced; cultural output is often tied to philosophy and history.",
+        "LanguageNotes": "Vulcan language is used alongside Federation Standard in interstellar contexts."
+      },
+      "Environment": {
+        "Overview": "A harsh, resource-conscious environment with significant desert regions and extreme weather in specific zones.",
+        "Seasons": "Local seasonal cycles exist but aridity dominates; day/night temperature swings can be substantial.",
+        "NaturalHazards": [
+          "Sandstorms",
+          "Heat exposure",
+          "Localized geomagnetic instabilities"
+        ],
+        "NightSky": "Clear desert skies can offer high visibility; in populated regions, controlled lighting and facilities are common."
+      },
+      "Appearances": {
+        "Overview": "Vulcan is featured in early Federation history and in stories centered on Vulcan culture, diplomacy, and scientific institutions.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "ENT",
+            "Highlights": [
+              "Vulcan politics and the Forge; tensions and alliances shaping Federation founding."
+            ]
+          },
+          {
+            "Era": "TNG/VOY",
+            "Highlights": [
+              "References to Vulcan institutions and cultural practices; occasional visits or missions."
+            ]
+          },
+          {
+            "Era": "Films / Kelvin-era",
+            "Highlights": [
+              "Vulcan appears prominently in alternate-timeline films (separate continuity)."
+            ]
+          }
+        ]
+      },
+      "CanonAppearances": {
+        "Episodes": [
+          "ENT: \"The Forge\" / \"Awakening\" / \"Kir'Shara\" (Vulcan’s Forge arc)",
+          "TNG: Vulcan cultural references across multiple episodes"
+        ],
+        "Films": [
+          "Star Trek (2009) (alternate timeline depiction of Vulcan)"
+        ],
+        "Notes": "On-screen detail varies by era; much geography is established through recurring named locations."
+      },
+      "DataQuality": {
+        "Confidence": "High",
+        "Coverage": "Medium-High",
+        "KnownGaps": [
+          "Many specific city/region names are only briefly referenced on screen."
+        ],
+        "VerificationNotes": "System location is strongly supported; some deeper geographics are episodic."
+      }
+    },
+    {
+      "PlanetID": "planet-ferenginar",
+      "Name": "Ferenginar",
+      "AlternateNames": [],
+      "Tags": [
+        "Homeworld",
+        "Ferengi Alliance",
+        "Rain world",
+        "Commerce"
+      ],
+      "TypeTags": [
+        "Homeworld"
+      ],
+      "Meta": {
+        "CanonicalName": "Ferenginar",
+        "Classification": "Class M humid world",
+        "Affiliation": "Ferengi Alliance",
+        "NativeSpecies": [
+          "Ferengi"
+        ]
+      },
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Ferenginar.png"
+      },
+      "TravelSummary": "Ferenginar is the Ferengi homeworld: perpetually wet, densely populated, and famously driven by commerce. Visitors come for markets, negotiation, and the cultural spectacle of Ferengi business—while enduring near-constant rain.",
+      "Location": {
+        "Quadrant": "Alpha Quadrant",
+        "Sector": "Ferengi space (sector name varies by source material)",
+        "StarSystem": "Ferenginar system",
+        "Region": "Ferengi Alliance territory",
+        "NearbyLandmarks": []
+      },
+      "Appearance": "A green-brown, rain-soaked globe with heavy cloud layers. Wet lowlands, muddy basins, and river deltas dominate visible terrain; storms and precipitation bands are a defining planetary signature.",
+      "Geography": "Humid lowlands and wetlands are widespread, with rivers and deltas cutting through dark, waterlogged terrain. Urban development concentrates around commercial districts and major towers, with infrastructure designed around persistent rain.",
+      "CitiesAndSites": [
+        {
+          "Name": "Tower of Commerce",
+          "Type": "Landmark / Commercial center",
+          "Description": "A major symbol of Ferengi commerce and political-economic power, frequently referenced as a core business hub."
+        },
+        {
+          "Name": "Ferengi commercial districts",
+          "Type": "Market zones",
+          "Description": "Dense clusters of exchanges, auctions, and private deal-making venues that anchor off-world trade visits."
+        }
+      ],
+      "Inhabitants": "Primarily Ferengi. Off-world traffic tends to be transactional: merchants, negotiators, and visiting officials, with cultural expectations strongly shaped by Ferengi business norms.",
+      "Tourism": "Tourism is commerce-forward: markets, auctions, and high-profile negotiation venues are the main draws. Visitors often schedule trips around major deals, trade fairs, or access to influential Ferengi institutions.",
+      "Logistics": "Expect persistent rain and high humidity; waterproof clothing and sealed equipment are essential. Local etiquette is highly transactional—negotiation norms, contracts, and fee structures can apply to services that are free elsewhere.",
+      "Weather": {
+        "ClimateType": "Humid, rainy",
+        "Seasonality": "Rain is effectively constant; storm intensity can vary.",
+        "TypicalConditions": "Overcast skies, heavy precipitation, mist, and slick ground conditions.",
+        "Hazards": [
+          "Flooding (localized)",
+          "Severe storms",
+          "Low visibility in heavy rain"
+        ]
+      },
+      "History": {
+        "Overview": "Ferenginar is defined by the rise of the Ferengi Alliance and its Rules-of-Acquisition-driven society, with political change in the late 24th century influencing public life.",
+        "KeyEras": [
+          {
+            "Era": "Early contacts and expansion",
+            "Summary": "Ferengi society becomes a major commercial power through interstellar trade networks."
+          },
+          {
+            "Era": "Late 24th century reforms",
+            "Summary": "High-profile political shifts and reforms alter aspects of Ferengi law and social constraints."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "24th century",
+            "Event": "Ferengi Alliance politics and reform-era debates become prominent in DS9-era stories."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Ferengi Alliance; Ferengi government led by the Grand Nagus and oriented around commercial law (Rules of Acquisition and trade by-laws).",
+        "Capital": "Not stated on-screen (the Grand Nagus operates from the Tower of Commerce in the Sacred Marketplace on Ferenginar).",
+        "Institutions": [
+          "Grand Nagus (leader of the Ferengi Alliance)",
+          "Ferengi government",
+          "Ferengi Commerce Authority (FCA) and its Liquidators (enforcement of trade by-laws)",
+          "Tower of Commerce / Chamber of Opportunity (Nagus’s seat)"
+        ],
+        "LawsAffectingVisitors": [
+          "Commercial law and trade by-laws are enforced by the FCA; sanctions can include revoking business rights.",
+          "Not stated on-screen for non-Ferengi visitors."
+        ],
+        "Notes": "The Ferengi state is depicted as a profit-centered legal regime; many governance functions manifest as regulation and enforcement of commerce."
+      },
+      "Economy": {
+        "Overview": "A commerce-driven economy centered on trade, finance, negotiation, and services.",
+        "PrimaryIndustries": [
+          "Trade and brokerage",
+          "Finance and acquisitions",
+          "Manufacturing and resale",
+          "Hospitality (commercial)"
+        ],
+        "TradeNotes": "Ferenginar is a hub for interstellar deal-making and intermediated trade.",
+        "LocalCommerceNotes": "Pricing, bargaining, and contract terms are culturally central; visitors should budget for fees and gratuities."
+      },
+      "Culture": {
+        "Overview": "Ferengi culture is famously oriented around profit, negotiation, and social status tied to commerce.",
+        "SocialCustoms": "Bargaining is normal; displays of wealth and business acumen are culturally meaningful. Social interactions often carry implied transactional expectations.",
+        "ReligiousLife": "Economic life and tradition intersect (including beliefs tied to profit and afterlife), though visitor-facing practice varies.",
+        "Festivals": "Commercial events and trade gatherings function as major social focal points.",
+        "ArtsAndMedia": "Cultural output often reflects business and status themes; public spectacle tends toward commercial presentation.",
+        "LanguageNotes": "Ferengi language is common; Federation Standard is widely understood in business contexts."
+      },
+      "Environment": {
+        "Overview": "A wet, stormy world with extensive cloud cover and saturated terrain shaping settlement and transport.",
+        "Seasons": "Seasonal change is subtle compared to constant precipitation; storms can intensify regionally.",
+        "NaturalHazards": [
+          "Flooding",
+          "Storm surges",
+          "Mudslides (localized)"
+        ],
+        "NightSky": "Cloud cover often limits natural stargazing; urban lighting and storm-cloud reflections dominate."
+      },
+      "Appearances": {
+        "Overview": "Ferenginar appears and is referenced primarily through Ferengi-centered stories, including DS9-era political and cultural arcs.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "TNG",
+            "Highlights": [
+              "Ferengi culture and early contacts established; Ferengi homeworld referenced."
+            ]
+          },
+          {
+            "Era": "DS9",
+            "Highlights": [
+              "Ferengi politics and reforms; visits and storylines involving Ferenginar governance and society."
+            ]
+          }
+        ]
+      },
+      "CanonAppearances": {
+        "Episodes": [
+          "DS9: Ferengi story arcs involving Ferenginar politics and the Grand Nagus"
+        ],
+        "Films": [],
+        "Notes": "On-screen depictions are limited; many details are established through dialogue and recurring institutions."
+      },
+      "DataQuality": {
+        "Confidence": "Medium",
+        "Coverage": "Medium",
+        "KnownGaps": [
+          "Exact sector labeling varies; some city naming is sparse on screen."
+        ],
+        "VerificationNotes": "Climate and cultural framing are strongly established; deeper geography is lightly depicted."
+      }
+    },
+    {
+      "PlanetID": "planet-risa",
+      "Name": "Risa",
+      "AlternateNames": [],
+      "Tags": [
+        "Resort world",
+        "Federation member",
+        "Pleasure planet"
+      ],
+      "TypeTags": [
+        "Resort"
+      ],
+      "Meta": {
+        "CanonicalName": "Risa",
+        "Classification": "Class M planet",
+        "Affiliation": "United Federation of Planets",
+        "NativeSpecies": [
+          "Risian"
+        ]
+      },
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Risa.png"
+      },
+      "TravelSummary": "Risa is the Federation’s best-known leisure destination, renowned for hospitality and an engineered “paradise” climate. Behind the postcard beauty is sophisticated weather control—turning a naturally volatile world into a consistent resort environment.",
+      "Location": {
+        "Quadrant": "Beta Quadrant",
+        "Sector": "Unnamed sector (Beta Quadrant)",
+        "StarSystem": "Epsilon Ceti star system (Epsilon Ceti B)",
+        "Region": "Federation space",
+        "NearbyLandmarks": [
+          "~93 light years from Sol"
+        ]
+      },
+      "Appearance": "Bright seas and island chains beneath clean blue skies and friendly cloud patterns when climate systems are functioning. Resort regions present as lush and inviting, with carefully managed weather and scenic coastal development.",
+      "Geography": "Coastal zones, beaches, and islands are emphasized in visitor areas. In its natural state, Risa is described as a rain-soaked, geologically unstable jungle world—conditions largely masked by the planet-wide weather control system.",
+      "CitiesAndSites": [
+        {
+          "Name": "Resort districts and coastal facilities",
+          "Type": "Tourism infrastructure",
+          "Description": "Large-scale hospitality zones that support constant visitor turnover, recreation, and events."
+        },
+        {
+          "Name": "Horga'hn plazas and landmarks",
+          "Type": "Cultural landmark",
+          "Description": "Public horga'hn imagery is commonly associated with Risian customs and the planet’s vacation culture."
+        }
+      ],
+      "Inhabitants": "Risians are known for welcoming hospitality and relaxed social attitudes. The resident population coexists with large numbers of off-world tourists, with visitor services embedded into daily life.",
+      "Tourism": "Tourism is the planet’s defining activity: beaches, watersports, nightlife, retreats, and curated adventure excursions. Cultural norms include open social signaling around romance (notably the horga'hn), and visitors are expected to respect local consent customs.",
+      "Logistics": "Most visitors interact primarily with resort infrastructure. Weather control generally keeps conditions stable, but disruptions can rapidly expose heavy rain or seismic/meteorological volatility. Travelers should keep emergency instructions and local advisories enabled.",
+      "Weather": {
+        "ClimateType": "Engineered tropical paradise (weather-controlled)",
+        "Seasonality": "Minimized by weather control; natural monsoon-like cycles are suppressed.",
+        "TypicalConditions": "Warm, sunny days; pleasant humidity; light clouds and calm seas in managed zones.",
+        "Hazards": [
+          "Weather control disruptions (rare but consequential)",
+          "Natural seismic instability (underlying)"
+        ]
+      },
+      "History": {
+        "Overview": "Risa becomes a major Federation leisure destination and cultural touchstone, with its paradise reputation explicitly tied to advanced weather control.",
+        "KeyEras": [
+          {
+            "Era": "Early Federation contacts",
+            "Summary": "Risa’s hospitality becomes widely known and integrated into Federation civilian travel culture."
+          },
+          {
+            "Era": "24th century mass tourism",
+            "Summary": "Risa’s resort economy peaks as a major interstellar destination; social and political events occasionally spill into vacation life."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "2360s",
+            "Event": "High-profile Starfleet personnel visit Risa; the planet is portrayed as a major vacation and intrigue setting."
+          },
+          {
+            "When": "2370s",
+            "Event": "Risa’s paradise image is contrasted with episodes highlighting security risks and cultural conflict around tourism."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Not stated on-screen.",
+        "Capital": "Not stated on-screen.",
+        "Institutions": [],
+        "LawsAffectingVisitors": [],
+        "Notes": "On-screen, Risa is portrayed primarily as a resort/shore-leave destination visited by Starfleet personnel; its formal government and political institutions are not described in canon dialogue."
+      },
+      "Economy": {
+        "Overview": "Tourism and hospitality dominate: resorts, recreation, services, and culture-oriented experiences.",
+        "PrimaryIndustries": [
+          "Hospitality and resorts",
+          "Recreation and entertainment",
+          "Climate management infrastructure",
+          "Transport services"
+        ],
+        "TradeNotes": "High visitor volume drives steady interstellar traffic and service exchange.",
+        "LocalCommerceNotes": "Visitor-facing services are extensive; most commerce is packaged as resort experiences."
+      },
+      "Culture": {
+        "Overview": "Risian culture is portrayed as openly hospitable and pleasure-oriented, with strong norms around vacation life and romance signaling.",
+        "SocialCustoms": "Relaxed social interaction; public symbols like the horga'hn signal interest in Risian practices (including jamaharon).",
+        "ReligiousLife": "Not strongly emphasized on screen; public culture is framed through hospitality and celebration.",
+        "Festivals": "Resort events and celebrations are frequent; tourism seasons are managed rather than strictly natural.",
+        "ArtsAndMedia": "Entertainment and leisure programming are central, often tailored to diverse off-world visitors.",
+        "LanguageNotes": "Risian language exists; Federation Standard is common due to tourism."
+      },
+      "Environment": {
+        "Overview": "A naturally wet, unstable jungle world heavily modified (functionally) by weather control in inhabited and tourist regions.",
+        "Seasons": "Engineered stability reduces seasonal extremes in visitor zones; natural cycles remain underlying.",
+        "NaturalHazards": [
+          "Monsoons (natural state)",
+          "Earthquakes (natural state)"
+        ],
+        "NightSky": "In resort zones, night skies are often clear and curated; elsewhere cloud cover can be heavy in the natural state."
+      },
+      "Appearances": {
+        "Overview": "Risa appears as a vacation setting, often used to contrast relaxation with espionage, romance, or cultural conflict.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "TNG",
+            "Highlights": [
+              "Vacation episodes and intrigue; Risa’s resort culture and symbols established."
+            ]
+          },
+          {
+            "Era": "DS9",
+            "Highlights": [
+              "Risa as a leisure destination where Starfleet and political tensions intrude."
+            ]
+          },
+          {
+            "Era": "ENT",
+            "Highlights": [
+              "Early-era visit shows Risa’s nightlife and cultural symbols in a different time period."
+            ]
+          }
+        ]
+      },
+      "CanonAppearances": {
+        "Episodes": [
+          "TNG: \"Captain's Holiday\"",
+          "DS9: \"Let He Who Is Without Sin...\"",
+          "ENT: \"Two Days and Two Nights\""
+        ],
+        "Films": [],
+        "Notes": "Risa is referenced in many additional episodes as the archetypal vacation world."
+      },
+      "DataQuality": {
+        "Confidence": "High",
+        "Coverage": "High",
+        "KnownGaps": [
+          "Named cities/government specifics are not heavily detailed on screen."
+        ],
+        "VerificationNotes": "Location, weather-control concept, and tourism framing are strongly supported in canon."
+      }
+    },
+    {
+      "PlanetID": "planet-qonos",
+      "Name": "Qo'noS",
+      "AlternateNames": [
+        "Kronos"
+      ],
+      "Tags": [
+        "Homeworld",
+        "Klingon Empire",
+        "Warrior culture",
+        "Political center"
+      ],
+      "TypeTags": [
+        "Homeworld"
+      ],
+      "Meta": {
+        "CanonicalName": "Qo'noS",
+        "Classification": "Class M planet",
+        "Affiliation": "Klingon Empire",
+        "NativeSpecies": [
+          "Klingon"
+        ]
+      },
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Qo'noS.png"
+      },
+      "TravelSummary": "Qo’noS is the Klingon homeworld and the heart of Klingon political and warrior culture. Travel is defined by strong social codes, intense regional identities, and monumental sites tied to Klingon history and legend.",
+      "Location": {
+        "Quadrant": "Beta Quadrant",
+        "Sector": "Klingon Empire space (sector naming varies by sources)",
+        "StarSystem": "Qo'noS system",
+        "Region": "Klingon Empire",
+        "NearbyLandmarks": []
+      },
+      "Appearance": "A rugged world often depicted with dark green landmasses, storm systems, and dramatic terrain. Settled regions show concentrated development around political centers, while broad provinces include harsh lowlands, mountains, and volcanic features.",
+      "Geography": "Qo’noS is portrayed as a rugged, lived-in world with wide regional variation—urban centers around political hubs, and remote terrain that can include mountains and harsh lowlands. Specific provincial naming is not consistently detailed on screen.",
+      "CitiesAndSites": [
+        {
+          "Name": "First City",
+          "Type": "Capital city",
+          "Description": "Seat of Klingon government; location of major political institutions."
+        },
+        {
+          "Name": "Great Hall",
+          "Type": "Government / Landmark",
+          "Description": "Iconic Klingon political site associated with the High Council and major ceremonies."
+        }
+      ],
+      "Inhabitants": "Primarily Klingons, with government, military, and clan/House structures shaping daily life. Visitors are typically diplomats, traders, or Starfleet personnel on high-stakes missions; casual tourism is uncommon and tightly constrained.",
+      "Tourism": "Tourism is niche and often ceremonial: historic halls, monuments, and cultural demonstrations. Off-world visitors must respect Klingon honor culture, avoid perceived insults, and understand that many ‘visitor experiences’ are political rather than recreational.",
+      "Logistics": "Travel permissions, escorts, and adherence to House protocols may be required depending on political climate. Violating honor customs can create immediate personal risk; visitors should coordinate with experienced Klingon or Federation liaisons.",
+      "Weather": {
+        "ClimateType": "Temperate-to-harsh (varies by province)",
+        "Seasonality": "Regional variation; storms and heavy weather systems are common in some depictions.",
+        "TypicalConditions": "Variable cloud cover with dramatic storm fronts; climates differ across provinces and elevations.",
+        "Hazards": [
+          "Severe storms (regional)",
+          "Rugged terrain hazards (remote regions)",
+          "Political/security volatility (visitor risk)"
+        ]
+      },
+      "History": {
+        "Overview": "Qo’noS is the political core of the Klingon Empire and a key stage for major Klingon-Federation relations and internal House conflicts.",
+        "KeyEras": [
+          {
+            "Era": "Early Human contact era",
+            "Summary": "First visits by Humans and early tensions set patterns for later diplomacy and conflict."
+          },
+          {
+            "Era": "23rd–24th century political upheavals",
+            "Summary": "House rivalries and shifting leadership drive frequent crises centered on the capital."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "2293",
+            "Event": "Praxis disaster affects the Empire and Qo’noS’ political trajectory (referenced as a major Klingon crisis)."
+          },
+          {
+            "When": "2360s–2370s",
+            "Event": "Multiple High Council and House conflicts place the capital at the center of Federation-Klingon diplomacy."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Klingon Empire; the Klingon High Council governs from Qo'noS.",
+        "Capital": "First City (Qo'noS).",
+        "Institutions": [
+          "Klingon High Council",
+          "Chancellor of the Klingon High Council (High Chancellor)",
+          "Great Hall (High Council meeting place)"
+        ],
+        "LawsAffectingVisitors": [
+          "Rite of Succession and related ceremonial law can determine leadership transitions.",
+          "Not stated on-screen for civilian visitors (Klingon political and legal practices vary by era and house politics)."
+        ],
+        "Notes": "Council membership is tied to Great Houses; the Chancellor leads the Council and, by extension, the Empire."
+      },
+      "Economy": {
+        "Overview": "A major imperial center with military, governmental, and industrial activity supporting the Klingon Empire.",
+        "PrimaryIndustries": [
+          "Government and military administration",
+          "Shipbuilding/industry (imperial)",
+          "Trade (controlled/negotiated)"
+        ],
+        "TradeNotes": "Trade access depends on Empire policy and diplomatic status.",
+        "LocalCommerceNotes": "Visitors should expect formal channels and House-mediated arrangements rather than open-market tourism."
+      },
+      "Culture": {
+        "Overview": "Warrior culture, honor codes, and House identity are central, with history and legend (notably Kahless) woven into civic life.",
+        "SocialCustoms": "Direct speech, ritualized challenges, and honor expectations; hospitality can be generous but is framed through respect and status.",
+        "ReligiousLife": "Mythic and historical traditions around Kahless, Sto-vo-kor, and Gre'thor shape cultural identity.",
+        "Festivals": "Ceremonies and commemorations often revolve around Houses, victories, and ancestral rites.",
+        "ArtsAndMedia": "Opera, epic storytelling, and martial displays are culturally valued.",
+        "LanguageNotes": "Klingon language is culturally important; Federation Standard is used in diplomacy."
+      },
+      "Environment": {
+        "Overview": "A diverse world with notable volcanic and rugged regions; environmental extremes can exist by province.",
+        "Seasons": "Varies widely; highlands and lowlands experience distinct patterns.",
+        "NaturalHazards": [
+          "Storm systems",
+          "Volcanic regions",
+          "Rugged terrain hazards in remote provinces"
+        ],
+        "NightSky": "In major cities, illumination is intense; rural regions may offer clear skies depending on seasonal storms."
+      },
+      "Appearances": {
+        "Overview": "Qo’noS appears as a destination for Klingon politics, honor-driven conflicts, and diplomatic crises.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "ENT",
+            "Highlights": [
+              "Early-era Klingon contact and political context set on/around the Empire."
+            ]
+          },
+          {
+            "Era": "TNG",
+            "Highlights": [
+              "High Council politics and House rivalries linked to the capital and Great Hall."
+            ]
+          },
+          {
+            "Era": "DS9/VOY",
+            "Highlights": [
+              "Empire politics and cultural myth sites referenced through Klingon characters and missions."
+            ]
+          },
+          {
+            "Era": "Films",
+            "Highlights": [
+              "Praxis-era crisis frames major shifts in Klingon-Federation relations."
+            ]
+          }
+        ]
+      },
+      "CanonAppearances": {
+        "Episodes": [
+          "TNG: Klingon High Council/First City settings appear in multiple Klingon political episodes",
+          "DS9: Klingon political arcs reference and involve Qo'noS"
+        ],
+        "Films": [
+          "Star Trek VI: The Undiscovered Country (Praxis crisis context)"
+        ],
+        "Notes": "Many sites (e.g., provinces and legendary landmarks) are referenced through dialogue and reference material."
+      },
+      "DataQuality": {
+        "Confidence": "Medium",
+        "Coverage": "Medium",
+        "KnownGaps": [
+          "Many detailed region/province names are not consistently specified on screen.",
+          "Astronomical sector labels vary by reference material."
+        ],
+        "VerificationNotes": "Capital and key institutions are strongly supported; some detailed geography is reference-material derived."
+      }
+    },
+    {
+      "PlanetID": "planet-andoria",
+      "Name": "Andoria",
+      "AlternateNames": [
+        "Andor (used interchangeably in some references)"
+      ],
+      "Tags": [
+        "Homeworld",
+        "Federation founding world",
+        "Icy world",
+        "Moon"
+      ],
+      "TypeTags": [
+        "Homeworld"
+      ],
+      "Meta": {
+        "CanonicalName": "Andoria",
+        "Classification": "Habitable moon (Class M/P-class in various references)",
+        "Affiliation": "United Federation of Planets (founding world)",
+        "NativeSpecies": [
+          "Andorian",
+          "Aenar"
+        ]
+      },
+      "Media": {
+        "HeroImageURL": ""
+      },
+      "TravelSummary": "A frigid Andorian homeworld (depicted as a habitable moon in several references) famous for ice, subterranean cities, and strong cultural identity. Travel emphasizes cold-weather logistics, respect for local security concerns, and the experience of an ice-bound society adapted to extreme conditions.",
+      "Location": {
+        "Quadrant": "Beta Quadrant",
+        "Sector": "Andorian sector (also cited as Sector 006 in reference material)",
+        "StarSystem": "Andorian system (Procyon / Alpha Canis Minoris)",
+        "Region": "Andorian space",
+        "NearbyLandmarks": [
+          "Neighboring the Vulcan system",
+          "~11 light years from Sol"
+        ]
+      },
+      "Appearance": "An icy blue-white world with extensive ice coverage and polar caps, often shown with a cold atmospheric limb. In some depictions and references, it orbits a ringed gas giant in the same system.",
+      "Geography": "Surface conditions are dominated by ice, glaciers, and frozen seas, with habitation often associated with subterranean or sheltered environments. Travel routes and settlement planning are shaped by extreme cold and seasonal ice dynamics.",
+      "CitiesAndSites": [
+        {
+          "Name": "Subterranean cities (general)",
+          "Type": "Settlement pattern",
+          "Description": "Many depictions emphasize sheltered, often underground habitation adapted to the hostile surface climate."
+        },
+        {
+          "Name": "Aenar regions (general)",
+          "Type": "Cultural region",
+          "Description": "Aenar communities are associated with distinctive cultural identity and often remote or specialized environments."
+        }
+      ],
+      "Inhabitants": "Andorians are the dominant species, with Aenar also native to the world. Visitors commonly engage through diplomatic, cultural, or Starfleet-linked channels rather than mass tourism.",
+      "Tourism": "Tourism is limited and often official: cultural exchange, historical sites, and controlled excursions to ice landscapes. The extreme climate makes casual travel uncommon; most visits are planned and guided.",
+      "Logistics": "Cold-weather gear and environment-rated equipment are mandatory for surface travel. Visibility and transport can be affected by ice storms; visitors should coordinate with local authorities for routes and safe zones.",
+      "Weather": {
+        "ClimateType": "Polar / subarctic (ice-dominant)",
+        "Seasonality": "Long cold seasons; surface conditions remain severe year-round with shifts in ice stability and storm frequency.",
+        "TypicalConditions": "Freezing temperatures, ice haze, and periodic severe storms; limited clear-sky windows.",
+        "Hazards": [
+          "Blizzards and ice storms",
+          "Crevasse/ice-field hazards",
+          "Extreme cold exposure"
+        ]
+      },
+      "History": {
+        "Overview": "Andoria is a founding world of the Federation and a major actor in early interstellar politics and security, particularly in relations with Vulcan and Earth.",
+        "KeyEras": [
+          {
+            "Era": "Pre-Federation tensions",
+            "Summary": "Conflicts and border disputes shape Andorian relations with neighboring powers, including Vulcan."
+          },
+          {
+            "Era": "Federation founding and beyond",
+            "Summary": "Andoria becomes a core Federation world and a recurring diplomatic and strategic stakeholder."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "2150s",
+            "Event": "ENT-era missions reveal Andorian politics, security, and the planet’s harsh conditions."
+          },
+          {
+            "When": "2161",
+            "Event": "Federation founding (Andoria as a founding world)."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Andorian Empire.",
+        "Capital": "Andoria.",
+        "Institutions": [
+          "Chancellor (head of government)",
+          "Imperial Council (legislature)",
+          "Andorian Imperial Guard (military/security)"
+        ],
+        "LawsAffectingVisitors": [
+          "Not stated on-screen."
+        ],
+        "Notes": "Canon references identify an Andorian Chancellor and Imperial Council; detailed visitor-facing law is not established on-screen."
+      },
+      "Economy": {
+        "Overview": "A developed Federation-world economy supporting advanced infrastructure, defense, and interstellar diplomacy.",
+        "PrimaryIndustries": [
+          "Defense and security services",
+          "Science and engineering",
+          "Interstellar diplomacy and trade (regional)"
+        ],
+        "TradeNotes": "Interstellar exchange is significant due to founding-world status and proximity to other core systems.",
+        "LocalCommerceNotes": "Visitor services are more official and controlled than resort-oriented."
+      },
+      "Culture": {
+        "Overview": "Strong cultural identity shaped by harsh environment, long history, and prominent martial/security traditions in some eras.",
+        "SocialCustoms": "Visitors should expect directness and formal respect; local protocol can be strict in official settings.",
+        "ReligiousLife": "Not heavily emphasized on screen; cultural life is more often framed through identity, family, and civic duty.",
+        "Festivals": "Local celebrations exist but are rarely detailed on screen; cultural ceremonies may be private.",
+        "ArtsAndMedia": "Cultural expression is referenced through traditions, uniforms, and civic rituals rather than extensive on-screen arts depiction.",
+        "LanguageNotes": "Andorian language exists; Federation Standard is used for interstellar contact."
+      },
+      "Environment": {
+        "Overview": "Ice-dominant ecology and settlement adaptation to extreme cold define most environmental narratives about Andoria.",
+        "Seasons": "Harsh year-round; ice stability and storm patterns shift seasonally.",
+        "NaturalHazards": [
+          "Ice storms",
+          "Extreme cold",
+          "Frozen terrain hazards"
+        ],
+        "NightSky": "Cold, clear nights can be striking during calm periods, though storms often obscure visibility."
+      },
+      "Appearances": {
+        "Overview": "Andoria is central to early Federation-era politics and appears in stories about Andorian identity, security, and alliances.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "ENT",
+            "Highlights": [
+              "Key arcs involving Andorian politics and ice-bound environments."
+            ]
+          },
+          {
+            "Era": "Later eras (references)",
+            "Highlights": [
+              "Often referenced as a major Federation founding world; visits are less frequent on screen."
+            ]
+          }
+        ]
+      },
+      "CanonAppearances": {
+        "Episodes": [
+          "ENT: \"The Andorian Incident\"",
+          "ENT: \"The Aenar\" (Andorian/Aenar-focused story elements)"
+        ],
+        "Films": [],
+        "Notes": "A significant amount of location detail is consolidated from canonical reference materials in addition to episodic depictions."
+      },
+      "DataQuality": {
+        "Confidence": "Medium",
+        "Coverage": "Medium",
+        "KnownGaps": [
+          "Some astronomy/capital details are reference-material heavy rather than shown directly on screen."
+        ],
+        "VerificationNotes": "System location and cold environment are well supported; finer civic geography is less consistently depicted."
+      }
+    },
+    {
+      "PlanetID": "planet-bajor",
+      "Name": "Bajor",
+      "AlternateNames": [],
+      "Tags": [
+        "Homeworld",
+        "Bajoran culture",
+        "Near wormhole",
+        "Spiritual center"
+      ],
+      "TypeTags": [
+        "Homeworld"
+      ],
+      "Meta": {
+        "CanonicalName": "Bajor",
+        "Classification": "Class M planet",
+        "Affiliation": "Bajor (independent; later Federation applicant/member status varies by era)",
+        "NativeSpecies": [
+          "Bajoran"
+        ]
+      },
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Bajor.png"
+      },
+      "TravelSummary": "Bajor is a lush, culturally rich world whose spiritual traditions and recent political history shape every visit. Its proximity to the Bajoran wormhole makes it a crossroads—balancing pilgrimage, reconstruction, and interstellar politics.",
+      "Location": {
+        "Quadrant": "Alpha Quadrant",
+        "Sector": "Bajor sector",
+        "StarSystem": "Bajoran system (B'hava'el system)",
+        "Region": "Bajoran space (near Federation space)",
+        "NearbyLandmarks": [
+          "Bajoran wormhole (near Denorios Belt)",
+          "~5 light years from the Cardassian system"
+        ]
+      },
+      "Appearance": "A vivid Class M world with blue oceans, green landmasses, cloud bands, and varied terrain. From orbit, the planet reads as fertile and temperate, with strong contrasts between lowlands, river basins, and mountain regions.",
+      "Geography": "Bajor includes broad river valleys, coastal plains, and mountain regions, with notable sacred and historic sites spread across provinces. Reconstruction-era infrastructure and rural communities coexist, reflecting the planet’s recovery after occupation.",
+      "CitiesAndSites": [
+        {
+          "Name": "Kendra Valley / Kendra Province",
+          "Type": "Province / Valley",
+          "Description": "A prominent named region frequently referenced in Bajoran contexts."
+        },
+        {
+          "Name": "Bajoran shrines and temples (general)",
+          "Type": "Religious sites",
+          "Description": "A network of sacred locations tied to Bajoran spiritual practice and pilgrimage."
+        },
+        {
+          "Name": "Fire Caves",
+          "Type": "Sacred / Forbidden site",
+          "Description": "A spiritually significant and dangerous location associated with Bajoran religious narratives."
+        }
+      ],
+      "Inhabitants": "Primarily Bajorans. The planet hosts Starfleet, Federation, and alien visitors due to Deep Space 9 and the wormhole, creating a mix of pilgrims, traders, aid workers, and political envoys.",
+      "Tourism": "Pilgrimage travel to temples and shrines is a major draw, alongside natural landscapes and cultural festivals. Visitors also come for historical education around the occupation and recovery era, and for wormhole-adjacent commerce.",
+      "Logistics": "Travel conditions vary by province. Visitors should be mindful of local religious customs, political sensitivities, and security advisories—especially during periods of regional instability or heightened tensions around the wormhole.",
+      "Weather": {
+        "ClimateType": "Temperate to subtropical (varies by region)",
+        "Seasonality": "Regional seasons with distinct wet/dry cycles in some areas; mountain regions experience colder conditions.",
+        "TypicalConditions": "Mild to warm weather in many lowland regions; rain systems and seasonal storms occur.",
+        "Hazards": [
+          "Seasonal storms (regional)",
+          "Seismic activity (localized)",
+          "Political/security incidents (era-dependent)"
+        ]
+      },
+      "History": {
+        "Overview": "Bajor’s modern identity is shaped by long cultural continuity, a brutal occupation, and a rapid emergence onto the interstellar stage through the wormhole.",
+        "KeyEras": [
+          {
+            "Era": "Occupation and resistance era",
+            "Summary": "Cardassian occupation and Bajoran resistance define political memory and many contemporary institutions."
+          },
+          {
+            "Era": "Post-occupation reconstruction",
+            "Summary": "Bajor rebuilds while navigating Federation ties, regional security, and spiritual-political tensions."
+          },
+          {
+            "Era": "Wormhole era",
+            "Summary": "Discovery and operation of the Bajoran wormhole make Bajor a strategic and cultural crossroads."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "2369",
+            "Event": "Discovery and opening of the Bajoran wormhole (near the Denorios Belt)."
+          },
+          {
+            "When": "2370s",
+            "Event": "Bajor becomes central to Dominion War-era strategy and diplomacy via Deep Space 9 and wormhole access."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Bajoran Republic (initially termed the Bajoran Provisional Government after the Cardassian withdrawal).",
+        "Capital": "Not stated on-screen (planetary seat on Bajor).",
+        "Institutions": [
+          "First Minister (chief executive)",
+          "Council of Ministers (also called the Chamber/Board of Ministers in earlier usage)",
+          "Bajoran Militia"
+        ],
+        "LawsAffectingVisitors": [
+          "Arriving vessels may be subject to screening when ordered by the Chamber/Council of Ministers."
+        ],
+        "Notes": "DS9 depicts frequent political turnover and debates about Federation membership; religious leadership (Kai/Vedeks) also influences governance, but the formal government is the Republic/Provisional Government."
+      },
+      "Economy": {
+        "Overview": "A rebuilding economy with strong agriculture, local industry, and growing interstellar trade driven by DS9 and the wormhole.",
+        "PrimaryIndustries": [
+          "Agriculture",
+          "Craft and local manufacturing",
+          "Trade and services linked to DS9",
+          "Tourism and pilgrimage services"
+        ],
+        "TradeNotes": "Proximity to Deep Space 9 and the wormhole makes Bajor a natural trade-adjacent destination.",
+        "LocalCommerceNotes": "Visitor-facing commerce is often tied to temples, provincial markets, and reconstruction-era services."
+      },
+      "Culture": {
+        "Overview": "Bajoran culture is deeply spiritual, with strong traditions of art, ritual, and community life.",
+        "SocialCustoms": "Religious greetings and etiquette are common; visitors should learn basic customs when entering temples or attending ceremonies.",
+        "ReligiousLife": "Faith in the Prophets and the Celestial Temple shapes public events, politics, and identity.",
+        "Festivals": "Religious and seasonal observances are prominent; many community events are tied to the calendar of faith.",
+        "ArtsAndMedia": "Bajor is associated with rich arts and craft traditions; cultural preservation is a recurring theme.",
+        "LanguageNotes": "Bajoran language exists; Federation Standard is widely used in interstellar contact zones."
+      },
+      "Environment": {
+        "Overview": "A fertile, lived-in world with significant natural beauty and strong local attachment to land and sacred geography.",
+        "Seasons": "Regional and provincial variation; mountains and valleys experience distinct patterns.",
+        "NaturalHazards": [
+          "Storms (regional)",
+          "Localized seismic/volcanic hazards"
+        ],
+        "NightSky": "In some regions, skies are clear; in others, humid haze and cloud bands are common. Orbital activity around DS9-era periods is notable."
+      },
+      "Appearances": {
+        "Overview": "Bajor and its system are central to DS9, with repeated focus on culture, politics, faith, and the strategic consequences of the wormhole.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "DS9",
+            "Highlights": [
+              "Core setting for Bajoran politics, religion, and reconstruction; wormhole-era crossroads."
+            ]
+          },
+          {
+            "Era": "TNG/VOY (references)",
+            "Highlights": [
+              "Referenced through political and Starfleet context; DS9 adjacency."
+            ]
+          }
+        ]
+      },
+      "CanonAppearances": {
+        "Episodes": [
+          "DS9: \"Emissary\"",
+          "DS9: Many Bajor-centric episodes across the series"
+        ],
+        "Films": [],
+        "Notes": "Bajor is extensively developed across DS9, with geography and culture introduced through recurring site names and pilgrim journeys."
+      },
+      "DataQuality": {
+        "Confidence": "High",
+        "Coverage": "High",
+        "KnownGaps": [
+          "Some provincial/city naming is episodic and not consistently mapped on screen."
+        ],
+        "VerificationNotes": "System location, wormhole context, and core cultural institutions are strongly established."
+      }
+    },
+    {
+      "PlanetID": "planet-cardassia-prime",
+      "Name": "Cardassia Prime",
+      "AlternateNames": [
+        "Cardassia"
+      ],
+      "Tags": [
+        "Homeworld",
+        "Cardassian Union capital",
+        "Arid world",
+        "Political center"
+      ],
+      "TypeTags": [
+        "Homeworld"
+      ],
+      "Meta": {
+        "CanonicalName": "Cardassia Prime",
+        "Classification": "Class M planet",
+        "Affiliation": "Cardassian Union",
+        "NativeSpecies": [
+          "Cardassian"
+        ]
+      },
+      "Media": {
+        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Cardassia%20Prime.jpg"
+      },
+      "TravelSummary": "Cardassia Prime is the Cardassian homeworld and historic seat of the Cardassian Union, shaped by authoritarian governance and military culture. Visitors encounter a hot, often austere environment and a civic landscape built around state power and surveillance.",
+      "Location": {
+        "Quadrant": "Alpha Quadrant",
+        "Sector": "Cardassian space (sector naming varies)",
+        "StarSystem": "Cardassian system",
+        "Region": "Cardassian Union",
+        "NearbyLandmarks": [
+          "~5 light years from the Bajoran system"
+        ]
+      },
+      "Appearance": "A warm-toned world with tan and ochre landmasses, rocky highlands, and dusty haze. Urban centers and military/government complexes stand out as dense nodes of development.",
+      "Geography": "Much of Cardassia Prime is portrayed as dry and heat-forward, with rocky basins and broad plains. Cities tend to be heavily built, with monumental architecture and controlled public spaces.",
+      "CitiesAndSites": [
+        {
+          "Name": "Lakarian City",
+          "Type": "Major city",
+          "Description": "A prominent Cardassian city referenced in DS9-era context."
+        },
+        {
+          "Name": "Central Command facilities (general)",
+          "Type": "Government/Military sites",
+          "Description": "The primary military authority’s base on Cardassia Prime is treated as the control center for many Cardassian assets."
+        }
+      ],
+      "Inhabitants": "Primarily Cardassians. The planet’s public life is strongly shaped by state institutions; off-world visitors are typically diplomats, officials, or individuals with tightly managed access rather than casual tourists.",
+      "Tourism": "Tourism is limited and politically sensitive. Official travel may include state-approved cultural sites and city visits, but visitors should expect restrictions, monitoring, and controlled itineraries.",
+      "Logistics": "Entry and movement can be constrained by Cardassian security practices. Visitors should assume surveillance, carry proper documentation, and avoid restricted zones—especially near military and intelligence facilities.",
+      "Weather": {
+        "ClimateType": "Warm, arid to semi-arid (dust-haze common)",
+        "Seasonality": "Hot seasons dominate; local storm/dust cycles can intensify.",
+        "TypicalConditions": "Dry heat, dusty air, and intermittent cloud streaks; urban heat islands in major cities.",
+        "Hazards": [
+          "Heat exposure",
+          "Dust storms (localized)",
+          "Political/security risk (era-dependent)"
+        ]
+      },
+      "History": {
+        "Overview": "Cardassia Prime anchors Cardassian political history, including military dictatorship eras, coups, and Dominion War occupation and devastation.",
+        "KeyEras": [
+          {
+            "Era": "Military-dominated Union era",
+            "Summary": "Central Command and security institutions dominate civic life and foreign policy."
+          },
+          {
+            "Era": "Civilian reform and backlash",
+            "Summary": "Shifts between civilian and military authority create instability and power struggles."
+          },
+          {
+            "Era": "Dominion War era",
+            "Summary": "The Dominion establishes headquarters on the planet; later, Cardassia suffers major wartime devastation."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "2370s",
+            "Event": "Dominion headquarters operate on Cardassia Prime during the Dominion War."
+          },
+          {
+            "When": "2375",
+            "Event": "Cardassia experiences catastrophic damage and mass casualties during the war’s endgame."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Cardassian Union.",
+        "Capital": "Not stated on-screen (seat of government on Cardassia Prime).",
+        "Institutions": [
+          "Central Command (military leadership body)",
+          "Detapa Council (Cardassian civilian government)",
+          "Obsidian Order (state security/intelligence arm, influence varies by era)"
+        ],
+        "LawsAffectingVisitors": [
+          "Not stated on-screen (Cardassian security and military authority strongly shape civil life and access)."
+        ],
+        "Notes": "DS9 depicts periods of military dominance and later a civilian government (Detapa Council) that attempted to assert control, including over Central Command."
+      },
+      "Economy": {
+        "Overview": "A state-driven economy historically focused on industrial output, military capacity, and controlled trade.",
+        "PrimaryIndustries": [
+          "State industry and logistics",
+          "Military production and infrastructure",
+          "Bureaucratic administration"
+        ],
+        "TradeNotes": "Trade access depends heavily on political era and diplomatic status.",
+        "LocalCommerceNotes": "Visitor commerce is usually mediated by official channels; informal markets may exist but carry legal risk."
+      },
+      "Culture": {
+        "Overview": "Cardassian culture emphasizes duty, order, and the primacy of the state; family loyalty and civic identity are major themes.",
+        "SocialCustoms": "Public behavior is often formal; deference to authority is expected in many eras, especially around official sites.",
+        "ReligiousLife": "Not strongly emphasized on screen; public life is more often framed through civic ideology and state institutions.",
+        "Festivals": "State ceremonies and commemorations can be prominent; details vary by era.",
+        "ArtsAndMedia": "State-influenced media and monumental civic aesthetics are common; cultural messaging often reinforces unity and strength.",
+        "LanguageNotes": "Cardassian language is common; Federation Standard is used in diplomacy."
+      },
+      "Environment": {
+        "Overview": "A hot, dry environment in many depictions, with dusty atmosphere and strong urban development around major centers.",
+        "Seasons": "Hot seasons dominate; dust-storm cycles and regional weather events vary.",
+        "NaturalHazards": [
+          "Heat",
+          "Dust storms (localized)"
+        ],
+        "NightSky": "Haze can limit stellar visibility; city illumination and industrial glow dominate in urban regions."
+      },
+      "Appearances": {
+        "Overview": "Cardassia Prime appears as the seat of Cardassian power and a key Dominion War setting; many details are established through dialogue, maps, and city references.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "TNG",
+            "Highlights": [
+              "Cardassians introduced; the Union’s political and military posture contextualized."
+            ]
+          },
+          {
+            "Era": "DS9",
+            "Highlights": [
+              "Cardassia-centric politics, espionage, and Dominion War arcs; references to Lakarian City and central institutions."
+            ]
+          },
+          {
+            "Era": "PIC (references)",
+            "Highlights": [
+              "Later-era mentions connected to post-war and wider Alpha Quadrant politics."
+            ]
+          }
+        ]
+      },
+      "CanonAppearances": {
+        "Episodes": [
+          "DS9: \"Defiant\" (Cardassian institutions referenced; Lakarian City context)",
+          "DS9: Dominion War-era episodes referencing Cardassia Prime as headquarters"
+        ],
+        "Films": [],
+        "Notes": "Cardassia Prime is referenced widely even when not shown directly."
+      },
+      "DataQuality": {
+        "Confidence": "High",
+        "Coverage": "Medium-High",
+        "KnownGaps": [
+          "Some geographic specifics beyond named cities are limited on screen."
+        ],
+        "VerificationNotes": "Political institutions are well supported; physical geography is less frequently depicted directly."
+      }
     }
-  },
-  "CanonAppearances": {
-    "Episodes": [
-      "TOS: “Assignment: Earth”",
-      "TOS: “The City on the Edge of Forever”",
-      "TNG: “The First Duty”",
-      "DS9: “Past Tense, Part I” / “Past Tense, Part II”",
-      "DS9: “Homefront” / “Paradise Lost”",
-      "VOY: “Future’s End, Part I” / “Future’s End, Part II”",
-      "ENT: “Carpenter Street”",
-      "PIC: “Assimilation” (2024 setting)"
-    ],
-    "Films": [
-      "Star Trek: The Motion Picture",
-      "Star Trek IV: The Voyage Home",
-      "Star Trek: First Contact"
-    ],
-    "Notes": "This list is representative rather than exhaustive; Earth is referenced or briefly seen in many additional episodes and films."
-  },
-  "DataQuality": {
-    "Confidence": "High",
-    "Coverage": "High for government/Starfleet landmarks and major on-screen crises; moderate for local civilian life outside featured episodes/films.",
-    "KnownGaps": [
-      "Precise details of Earth’s day-to-day civilian administration and economy are rarely specified on-screen.",
-      "Many regional locations on Earth are mentioned only once or appear briefly without broader context."
-    ],
-    "VerificationNotes": [
-      "Key institutional locations (San Francisco/Presidio; Paris President’s office) and major crises (Bell Riots; Breen raid; Whale Probe) are supported by on-screen references summarized in canonical encyclopedic sources."
-    ]
-  }
+  ]
 }
