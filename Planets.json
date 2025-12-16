@@ -245,7 +245,7 @@
     "PlanetID": "planet-andoria",
     "Name": "Andoria",
     "AlternateNames": [
-      "Unknown"
+      "Andor"
     ],
     "Tags": [
       "Homeworld",
@@ -257,8 +257,8 @@
     ],
     "Meta": {
       "CanonicalName": "Andoria",
-      "Classification": "Inhabited world associated with the Andorians; depicted on-screen with snow/ice and subterranean settings. Planetary class and astronomical details are unknown.",
-      "Affiliation": "Homeworld of the Andorians. Wider interstellar political affiliation (including Federation-era status) is unknown in detailed terms in the material referenced here.",
+      "Classification": "Inhabited moon; homeworld of the Andorians and Aenar; capital world of the Andorian Empire; later a founding Federation member world.",
+      "Affiliation": "Andorian Empire; United Federation of Planets",
       "NativeSpecies": [
         "Andorian (including the Aenar subgroup; shown on-screen)"
       ]
@@ -268,10 +268,10 @@
     },
     "TravelSummary": "Andoria is the homeworld of the Andorians. On-screen depictions (notably in Star Trek: Enterprise) present it as an intensely cold, ice-dominated environment, including subterranean settings associated with the Aenar. Visitor requirements, entry procedures, and tourism infrastructure are unknown.",
     "Location": {
-      "Quadrant": "Unknown",
-      "Sector": "Unknown",
-      "StarSystem": "Unknown",
-      "Region": "Unknown",
+      "Quadrant": "Beta Quadrant",
+      "Sector": "Andorian sector",
+      "StarSystem": "Andorian system",
+      "Region": "Andorian space",
       "NearbyLandmarks": "Unknown"
     },
     "Appearance": "On-screen visuals depict Andoria as a frozen world with snow and ice dominating the landscape. Scenes associated with Andorian stories also include underground/subsurface environments. No consistent on-screen depiction of major surface cities or planetary-scale vistas with named landmarks is provided.",
@@ -406,9 +406,9 @@
     },
     "TravelSummary": "Qo'noS is the homeworld of the Klingon people and the primary seat of Klingon political power shown on-screen, associated with the First City and the Great Hall where the Klingon High Council convenes.\n\nVisitors in Federation-era stories typically approach Qo'noS for high-stakes diplomacy, legal proceedings, or House politics rather than leisure travel. Access to major political sites is portrayed as tightly controlled and strongly shaped by the current Chancellor, the High Council, and the major Houses.\n\nQo'noS is also tied to one of the Klingon Empire’s defining modern crises: the destruction of Praxis (an energy facility associated with Qo'noS) in 2293 and the resulting environmental emergency referenced in Star Trek VI: The Undiscovered Country, which drives the film’s peace negotiations.",
     "Location": {
-      "Quadrant": "Unknown",
-      "Sector": "Unknown",
-      "StarSystem": "Unknown",
+      "Quadrant": "Beta Quadrant",
+      "Sector": "Qo'noS sector",
+      "StarSystem": "Qo'noS system",
       "Region": "Klingon Empire",
       "NearbyLandmarks": [
         "Praxis"
@@ -580,7 +580,7 @@
     ],
     "Meta": {
       "CanonicalName": "Vulcan",
-      "Classification": "Inhabited Class M world; frequently depicted with arid/desert regions and rugged terrain",
+      "Classification": "Inhabited M-class planet (also known as Ni'Var in the 32nd century); homeworld of the Vulcans and the ancestors of the Romulans.",
       "Affiliation": "Vulcan is a member of the United Federation of Planets in the Federation era; in the mid‑22nd century it is depicted with the Vulcan High Command as a dominant governing/military authority",
       "NativeSpecies": [
         "Vulcan"
@@ -591,10 +591,10 @@
     },
     "TravelSummary": "Vulcan is the homeworld of the Vulcan people and a major center of Vulcan culture, science, and diplomacy. On-screen visits commonly emphasize its traditions of logic and discipline alongside long‑standing ceremonial practices (including rites connected to pon farr, kal‑if‑fee, and katra).\n\nVisually, Vulcan is most often presented through stark, sunlit landscapes—especially arid deserts and rocky highlands. Some stories focus on dangerous wilderness regions (such as the Forge), while others center on civic and institutional settings linked to Vulcan government and academia.\n\nVulcan’s wider significance in Star Trek is tied to its long relationship with Earth and Starfleet, its role within the Federation era, and its deep historical connection to the Romulans. A separate film continuity (the Kelvin timeline) depicts Vulcan’s destruction as a defining event for that timeline.",
     "Location": {
-      "Quadrant": "Unknown",
-      "Sector": "Unknown",
-      "StarSystem": "40 Eridani",
-      "Region": "Unknown",
+      "Quadrant": "Beta Quadrant",
+      "Sector": "Vulcan sector (aka Sector 005)",
+      "StarSystem": "Vulcan system (40 Eridani A)",
+      "Region": "Vulcan space",
       "NearbyLandmarks": [
         "Unknown"
       ]
@@ -796,7 +796,7 @@
     ],
     "Meta": {
       "CanonicalName": "Ferenginar",
-      "Classification": "Inhabited planet; homeworld of the Ferengi. Further physical classification is Unknown.",
+      "Classification": "Inhabited planet; homeworld of the Ferengi; characterized by frequent rainfall in on-screen depictions.",
       "Affiliation": "Ferengi Alliance",
       "NativeSpecies": [
         "Ferengi"
@@ -810,7 +810,7 @@
       "Quadrant": "Alpha Quadrant",
       "Sector": "Unknown",
       "StarSystem": "Ferenginar system",
-      "Region": "Ferengi Territory",
+      "Region": "Ferengi space",
       "NearbyLandmarks": []
     },
     "Appearance": "Depicted and described as a dark, rain-soaked world with persistent precipitation. Specific orbital/astronomical details and surface distribution of biomes are Unknown.",
@@ -960,7 +960,7 @@
     "Location": {
       "Quadrant": "Alpha Quadrant",
       "Sector": "Unknown",
-      "StarSystem": "Cardassian system (Cardassia system)",
+      "StarSystem": "Cardassian system",
       "Region": "Cardassian space",
       "NearbyLandmarks": [
         "Unknown"
@@ -1129,7 +1129,7 @@
     ],
     "Meta": {
       "CanonicalName": "Bajor",
-      "Classification": "Inhabited terrestrial world; homeworld of the Bajoran people.",
+      "Classification": "Inhabited Class M planet; homeworld of the Bajoran people.",
       "Affiliation": "Independent Bajoran government (Provisional Government during early DS9-era); close ties with the United Federation of Planets through joint administration of Deep Space 9.",
       "NativeSpecies": [
         "Bajoran"
@@ -1142,8 +1142,8 @@
     "Location": {
       "Quadrant": "Alpha Quadrant",
       "Sector": "Bajor Sector",
-      "StarSystem": "Bajor system",
-      "Region": "Near the former Cardassian border; within Bajoran space closely associated with Deep Space 9 and the Bajoran wormhole.",
+      "StarSystem": "Bajoran system",
+      "Region": "Bajoran space",
       "NearbyLandmarks": [
         "Deep Space 9 (formerly Terok Nor)",
         "Bajoran wormhole / “Celestial Temple”",
@@ -1338,10 +1338,10 @@
     ],
     "Meta": {
       "CanonicalName": "Risa",
-      "Classification": "Inhabited planet; commonly depicted as a major resort destination with extensive leisure infrastructure",
-      "Affiliation": "Unknown",
+      "Classification": "Inhabited Class M Federation planet; widely known as a major resort destination (\"pleasure planet\").",
+      "Affiliation": "United Federation of Planets",
       "NativeSpecies": [
-        "Risan"
+        "Risians"
       ]
     },
     "Media": {
@@ -1349,10 +1349,10 @@
     },
     "TravelSummary": "Risa is a well-known leisure destination repeatedly depicted as a “pleasure planet” visited by Starfleet personnel and other travelers for shore leave. On-screen stories present Risa as a place built around hospitality, recreation, and romance, with resort districts designed to keep visitors comfortable and entertained.\n\nA distinctive on-screen feature of Risa is its planetwide weather-control system, which maintains stable, pleasant conditions in the resort regions shown. When that system is disrupted, the environment can shift rapidly into severe storms and unsafe conditions, turning a vacation setting into an emergency.",
     "Location": {
-      "Quadrant": "Unknown",
-      "Sector": "Unknown",
-      "StarSystem": "Unknown",
-      "Region": "Unknown",
+      "Quadrant": "Beta Quadrant",
+      "Sector": "Unnamed sector",
+      "StarSystem": "Epsilon Ceti star system (Epsilon Ceti B)",
+      "Region": "Federation space",
       "NearbyLandmarks": []
     },
     "Appearance": "On-screen depictions emphasize bright, inviting resort vistas—sunlit skies, beaches, lush greenery, and landscaped public spaces designed for relaxation and recreation.",
@@ -1397,10 +1397,10 @@
       ]
     },
     "Government": {
-      "Polity": "Unknown",
-      "Capital": "Unknown",
+      "Polity": "Risa Hedony",
+      "Capital": "Nuvia",
       "Institutions": [
-        "Unknown"
+        "Risa Hedony"
       ],
       "LawsAffectingVisitors": [
         "Unknown"
