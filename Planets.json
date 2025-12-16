@@ -7,213 +7,465 @@
   },
   "Planets": [
     {
-      "PlanetID": "planet-earth",
+      "ID": "pla-earth",
       "Name": "Earth",
-      "AlternateNames": [
+      "Aliases": [
         "Sol III",
         "Terra"
       ],
-      "Tags": [
-        "Homeworld",
-        "Federation capital",
-        "Starfleet HQ",
-        "Core world"
-      ],
-      "TypeTags": [
-        "Homeworld",
-        "FederationCapital",
-        "StarfleetHQ"
-      ],
+      "Timeline": "Prime",
       "Meta": {
-        "CanonicalName": "Earth",
-        "Classification": "Class M terrestrial planet",
-        "Affiliation": "United Federation of Planets (founding world)",
-        "NativeSpecies": [
-          "Human"
-        ]
+        "CanonicalScope": "On-screen (series + films) only",
+        "LastUpdated": "2025-12-15",
+        "Completeness": "core",
+        "Notes": "All descriptive claims are limited to information stated or depicted on-screen in the listed episodes/films (summarized via cited reference pages during research). Where on-screen canon is silent, fields explicitly say so."
       },
-      "Media": {
-        "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png"
+      "Classification": {
+        "BodyType": "Planet",
+        "Class": "M",
+        "PrimaryStar": "Sol",
+        "StarSystem": "Sol system"
       },
-      "TravelSummary": "Humanity’s homeworld and one of the Federation’s principal administrative centers. Earth is a densely visited hub where interstellar diplomacy, Starfleet operations, and everyday civilian life coexist across a remarkably diverse set of climates and cultures.",
-      "Location": {
-        "Quadrant": "Alpha Quadrant",
+      "AstronomicalLocation": {
+        "Quadrant": "Alpha",
         "Sector": "Sector 001",
-        "StarSystem": "Sol system",
-        "Region": "Federation core worlds",
-        "NearbyLandmarks": [
-          "Luna",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Starfleet Headquarters / Starfleet Academy (San Francisco)"
-        ]
+        "Region": "Sol system",
+        "CoordinatesNotes": "Sector 001 is repeatedly used to refer to the Sol system/Earth’s local region in Starfleet/Federation usage."
       },
-      "Appearance": "A blue-and-white globe: broad oceans, bright cloud swirls, and varied green/brown landmasses. From orbit, night-side city-light clusters and a busy pattern of orbital traffic are common in many eras.",
-      "Geography": "A multi-biome world with extensive oceans, major continental landmasses, mountain ranges, river basins, deserts, temperate plains, and polar ice. Coastal regions and inland valleys support dense settlement, while large protected areas preserve wilderness in the Federation era.",
-      "CitiesAndSites": [
-        {
-          "Name": "San Francisco (Starfleet Headquarters / Starfleet Academy)",
-          "Type": "Administrative / Academy",
-          "Description": "Frequently depicted as the heart of Starfleet’s Earthside operations, including Academy grounds and command facilities."
-        },
-        {
-          "Name": "Paris (Federation political center)",
-          "Type": "Diplomatic / Government",
-          "Description": "Often shown or referenced as a key Federation governmental and diplomatic setting on Earth."
-        },
-        {
-          "Name": "Bozeman, Montana (First Contact site)",
-          "Type": "Historic site",
-          "Description": "Associated with Zefram Cochrane’s warp flight and Humanity’s first contact with Vulcans."
-        },
-        {
-          "Name": "La Barre, France",
-          "Type": "Rural region",
-          "Description": "A notable Federation-era rural setting associated with the Picard family."
-        }
-      ],
-      "Inhabitants": "Primarily Humans, with large numbers of off-world residents and visitors—especially around Starfleet and Federation facilities. Earth’s culture remains pluralistic, with many regional languages and traditions alongside Federation Standard.",
-      "Tourism": "Earth supports tourism at every scale: historic cities, art and cultural institutions, oceans and islands, mountains and parks, and major Federation/Starfleet landmarks (where access rules permit). Seasonal travel is significant due to wide climate variation.",
-      "Logistics": "Major transport hubs connect surface cities to orbital facilities and Starfleet traffic. High-security zones around Federation and Starfleet sites may impose access restrictions; visitors should expect screening and controlled transit in sensitive areas.",
-      "Weather": {
-        "ClimateType": "Highly variable (multi-biome)",
-        "Seasonality": "Pronounced seasons at mid/high latitudes; monsoons and dry seasons in some regions; tropical belts remain warm year-round.",
-        "TypicalConditions": "Weather ranges from mild coastal fog to continental storms; conditions depend heavily on region and season.",
-        "Hazards": [
-          "Severe storms (region-dependent)",
-          "Heatwaves/cold snaps (seasonal)",
-          "Earthquakes and volcanic activity (localized)"
-        ]
-      },
-      "History": {
-        "Overview": "Earth is central to Human spaceflight history, the rise of Starfleet, and the founding and governance of the United Federation of Planets.",
-        "KeyEras": [
+      "PoliticalStatus": {
+        "Affiliations": [
           {
-            "Era": "Post-warp / First Contact era",
-            "Summary": "Zefram Cochrane’s warp flight and first contact set the stage for interstellar diplomacy and early Starfleet."
+            "Faction": "United Earth",
+            "From": "22nd century",
+            "To": "",
+            "Notes": "Earth is referenced as having a unified planetary authority by the Enterprise era; later it remains a Federation member world."
           },
           {
-            "Era": "Federation founding and expansion",
-            "Summary": "Earth becomes a Federation founding world and long-term political and operational center for Starfleet."
-          },
-          {
-            "Era": "24th century security crises",
-            "Summary": "Earth remains a strategic target and political flashpoint in multiple major crises."
+            "Faction": "United Federation of Planets",
+            "From": "2161",
+            "To": "",
+            "Notes": "Earth is one of the founding member worlds; the Federation is founded on Earth (San Francisco)."
           }
         ],
-        "MajorEvents": [
-          {
-            "When": "2063",
-            "Event": "First Human warp flight and first contact with Vulcans (associated with Bozeman, Montana)."
-          },
-          {
-            "When": "2161",
-            "Event": "Founding of the United Federation of Planets (Earth as a founding world)."
-          },
-          {
-            "When": "2372",
-            "Event": "Breen attack on Earth during the Dominion War (Earthside security and damage referenced on screen)."
-          }
-        ]
+        "GovernmentNotes": "Earth’s local planetary governmental structure is not consistently detailed on-screen across eras. On-screen canon does establish: (1) a unified Earth authority (United Earth) by the 22nd century and (2) Earth as a central Federation/Starfleet administrative hub, with Starfleet institutions in the San Francisco Bay area and the Federation President’s office associated with Paris in some eras."
       },
       "Government": {
-        "Polity": "United Earth (22nd century planetary government); later a core world of the United Federation of Planets.",
-        "Capital": "Not stated on-screen (Federation and Starfleet institutions are based on Earth, notably in Paris and the San Francisco Bay Area).",
-        "Institutions": [
-          "United Earth Government (22nd century)",
-          "Office of the President of the United Federation of Planets (Paris)",
-          "Starfleet Headquarters (San Francisco Bay Area)",
-          "Starfleet Academy (San Francisco Bay Area)",
-          "Federation Council (depicted meeting at Federation Headquarters in the San Francisco Bay Area)"
+        "Polity": "United Earth (planetary authority; specific constitutional structure not stated on-screen)",
+        "Capital": "Not stated on-screen",
+        "LeaderTitles": [
+          "Federation President (Federation head of state/government; office associated with Paris on Earth in some eras)"
+        ],
+        "KeyInstitutions": [
+          "Starfleet Headquarters (San Francisco Bay area)",
+          "Starfleet Academy (San Francisco Bay area)",
+          "Federation Council (legislature; referenced as a central governing body)"
         ],
         "LawsAffectingVisitors": [
-          "Not stated on-screen (routine access/security procedures vary by site; Earth has imposed heightened security during crises)."
+          "During heightened security crises (e.g., 2372), Earth institutes emergency measures and movement restrictions; specific legal language varies and is not fully enumerated on-screen."
         ],
-        "Notes": "On-screen sources place the Federation President’s office in Paris, and Starfleet Headquarters/Academy in the San Francisco Bay Area. The Federation Council’s primary meeting location is depicted in San Francisco in Star Trek IV, but canon evidence leaves some ambiguity about whether that is the only/primary site."
+        "Notes": "Earth’s planetary government is rarely shown directly; most on-screen governance depictions concern Federation-level institutions operating on Earth."
       },
-      "Economy": {
-        "Overview": "A mature Federation economy with extensive infrastructure, education, research, and cultural production; replicator-era logistics reduce traditional scarcity.",
-        "PrimaryIndustries": [
-          "Education and research",
-          "Culture and media",
-          "Government and diplomacy",
-          "Starfleet support and logistics"
+      "Inhabitants": {
+        "PrimarySpecies": [
+          "Human"
         ],
-        "TradeNotes": "Interstellar traffic is heavy; official and scientific exchange is constant.",
-        "LocalCommerceNotes": "Many services focus on hospitality, cultural institutions, and supporting visiting personnel."
-      },
-      "Culture": {
-        "Overview": "Earth culture is diverse and regionally distinct, with broad Federation-era cosmopolitanism in major cities.",
-        "SocialCustoms": "Etiquette varies by region; multicultural norms are common in urban centers and around Starfleet installations.",
-        "ReligiousLife": "Multiple belief systems persist; Federation-era society generally supports pluralistic practice.",
-        "Festivals": "Seasonal and regional celebrations remain common, especially tied to local histories and climates.",
-        "ArtsAndMedia": "Earth remains a major producer of music, art, literature, and holoprogram content across the Federation.",
-        "LanguageNotes": "Federation Standard is widespread; many Earth languages are actively used."
+        "OtherSpeciesNotes": "As a Federation hub, Earth hosts frequent visitation and residency by many member-world species; specific demographic breakdowns are not stated on-screen.",
+        "PopulationNotes": "On-screen sources do not provide consistent global population counts across eras."
       },
       "Environment": {
-        "Overview": "Ecologically varied with significant conservation and protected areas in many Federation-era depictions.",
-        "Seasons": "Strong regional seasonality outside the tropics; polar conditions persist year-round.",
-        "NaturalHazards": [
-          "Earthquakes (localized)",
-          "Hurricanes/typhoons (region-dependent)",
-          "Wildfire risk (dry seasons in some regions)"
-        ],
-        "NightSky": "Orbital traffic, satellites, and spaceports can be prominent near population centers; Luna is a dominant feature from the surface."
-      },
-      "Appearances": {
-        "Overview": "Earth appears repeatedly as the setting for Federation politics, Starfleet operations, time-travel stories, and major strategic events.",
-        "BySeriesOrFilm": [
-          {
-            "Era": "ENT",
-            "Highlights": [
-              "United Earth and early Starfleet operations; Earthside politics and security."
-            ]
-          },
-          {
-            "Era": "TNG/DS9/VOY",
-            "Highlights": [
-              "Federation political center; security crises and diplomatic episodes; time-travel visits."
-            ]
-          },
-          {
-            "Era": "Films",
-            "Highlights": [
-              "Major Starfleet/Federation events, including key crises and historical moments."
-            ]
-          },
-          {
-            "Era": "PIC",
-            "Highlights": [
-              "Starfleet Headquarters and Federation policy settings; personal/historical Earth locations."
-            ]
-          }
+        "ClimateNotes": "Depicted as a habitable, temperate Class M world with diverse climates and biomes across continents and oceans.",
+        "TerrainNotes": "Multiple continents and extensive oceans; urban regions are frequently shown, especially around the San Francisco Bay area in the 23rd–25th centuries.",
+        "NotableNaturalFeatures": [
+          "Luna (Earth’s natural satellite)"
         ]
       },
-      "CanonAppearances": {
-        "Episodes": [
-          "ENT: \"Broken Bow\" (Earthside scenes)",
-          "ENT: \"Terra Prime\"",
-          "TNG: \"Family\"",
-          "TNG: \"Homefront\" / \"Paradise Lost\"",
-          "DS9: \"Past Tense\" (time travel)",
-          "PIC: \"Maps and Legends\" (Starfleet HQ/Federation context)"
-        ],
-        "Films": [
-          "Star Trek IV: The Voyage Home (time travel to 20th-century Earth)",
-          "Star Trek: First Contact (Bozeman / First Contact era)",
-          "Star Trek (2009) (brief Earth/Starfleet context)"
-        ],
-        "Notes": "Earth is referenced and/or visited across many additional episodes and films."
+      "KeyLocations": [
+        {
+          "Name": "Sol system (Terran system)",
+          "Type": "Star system",
+          "Notes": "Earth’s home system; treated as a central region of the Federation for many centuries."
+        },
+        {
+          "Name": "San Francisco (Presidio area)",
+          "Type": "City / Facility cluster",
+          "Notes": "Repeatedly depicted as the location of Starfleet Headquarters and Starfleet Academy facilities."
+        },
+        {
+          "Name": "Starfleet Headquarters (San Francisco Bay area)",
+          "Type": "Facility",
+          "Notes": "Starfleet’s primary administrative headquarters complex, shown prominently in multiple eras."
+        },
+        {
+          "Name": "Starfleet Academy (San Francisco Bay area)",
+          "Type": "Academy / Facility",
+          "Notes": "Cadet training and education center associated with the Presidio and nearby facilities across the Golden Gate."
+        },
+        {
+          "Name": "Paris, France",
+          "Type": "City",
+          "Notes": "Associated on-screen with the Federation President’s office in some eras."
+        },
+        {
+          "Name": "Bozeman, Montana",
+          "Type": "City / Region",
+          "Notes": "Site of Zefram Cochrane’s Phoenix warp flight and first open Human–Vulcan contact (2063)."
+        },
+        {
+          "Name": "New Orleans, Louisiana",
+          "Type": "City",
+          "Notes": "Joseph Sisko’s restaurant and the Sisko family’s home base; Earth-side setting in the Dominion War period."
+        },
+        {
+          "Name": "San Francisco Sanctuary District A",
+          "Type": "District",
+          "Notes": "Walled district used to contain the unemployed/homeless in 2024; center of the Bell Riots."
+        },
+        {
+          "Name": "Earth orbit / Sol system defensive perimeter",
+          "Type": "Orbital region",
+          "Notes": "Recurring strategic theater during crises such as the Whale Probe (2286) and the Borg incursion (2373)."
+        }
+      ],
+      "NotableEvents": [
+        {
+          "Event": "World War III and the beginning of the post-atomic horror",
+          "When": "Mid-21st century (war ends by 2053; post-war turmoil follows)",
+          "WhatHappened": "A catastrophic global conflict and its aftermath lead to widespread collapse and instability remembered as the post-atomic horror.",
+          "Impact": "Sets the background for Earth’s later recovery, the rise of unified planetary authority, and the conditions preceding first contact.",
+          "CanonRefs": [
+            "ref-ww3",
+            "ref-post-atomic"
+          ]
+        },
+        {
+          "Event": "Bell Riots in San Francisco’s Sanctuary District A",
+          "When": "Early September 2024",
+          "WhatHappened": "Civil unrest inside the Sanctuary District becomes a pivotal flashpoint in 21st-century Earth history.",
+          "Impact": "On-screen accounts treat the riots as a watershed moment influencing later social reforms.",
+          "CanonRefs": [
+            "ref-bell-riots",
+            "ref-past-tense-1",
+            "ref-past-tense-2",
+            "ref-sanctuary-a"
+          ]
+        },
+        {
+          "Event": "First human warp flight and first open Human–Vulcan contact",
+          "When": "April 5, 2063",
+          "WhatHappened": "Zefram Cochrane’s Phoenix achieves warp flight; Vulcans detect the warp signature and land, initiating first open contact.",
+          "Impact": "Marks Earth’s entry into the interstellar community and accelerates political and technological recovery.",
+          "CanonRefs": [
+            "ref-first-contact",
+            "ref-first-contact-day"
+          ]
+        },
+        {
+          "Event": "Xindi probe attack on Earth",
+          "When": "March–April 2153",
+          "WhatHappened": "A Xindi probe attacks Earth, carving a destructive path and causing mass casualties.",
+          "Impact": "Triggers a major security crisis and drives Earth’s deep-space response via Enterprise’s Delphic Expanse mission.",
+          "CanonRefs": [
+            "ref-xindi-incident",
+            "ref-ent-expanse"
+          ]
+        },
+        {
+          "Event": "Founding of the United Federation of Planets on Earth",
+          "When": "2161",
+          "WhatHappened": "Representatives of Earth, Vulcan, Andoria, and Tellar sign and ratify treaties forming the Federation in San Francisco.",
+          "Impact": "Creates the interstellar federation that becomes the dominant political framework for Starfleet-era exploration and diplomacy.",
+          "CanonRefs": [
+            "ref-2161",
+            "ref-ufp",
+            "ref-founding-ceremony"
+          ]
+        },
+        {
+          "Event": "Whale Probe crisis",
+          "When": "2286",
+          "WhatHappened": "An immense probe of unknown origin arrives in Earth orbit, disrupting power and causing environmental damage while seeking humpback whales.",
+          "Impact": "Earth faces ecological catastrophe until the probe’s call is answered; demonstrates vulnerability to unknown cosmic phenomena.",
+          "CanonRefs": [
+            "ref-whale-probe",
+            "ref-2286",
+            "ref-st4"
+          ]
+        },
+        {
+          "Event": "Changeling infiltration panic and attempted Starfleet coup",
+          "When": "2372",
+          "WhatHappened": "Following terror attacks and fears of Changeling infiltration, Earth experiences sweeping security measures; Admiral Leyton attempts a coup.",
+          "Impact": "A major Federation civil-liberties crisis and a turning point in Dominion War-era politics.",
+          "CanonRefs": [
+            "ref-homefront",
+            "ref-paradise-lost"
+          ]
+        },
+        {
+          "Event": "Battle of Sector 001 (Borg attempt to assimilate Earth)",
+          "When": "2373",
+          "WhatHappened": "A Borg cube attacks in Sector 001, aiming to assimilate Earth; Starfleet forces engage and ultimately destroy the cube.",
+          "Impact": "Massive Starfleet losses and escalation of Borg threat; directly precedes the time-incursion events surrounding first contact.",
+          "CanonRefs": [
+            "ref-sector-001",
+            "ref-battle-001",
+            "ref-first-contact"
+          ]
+        },
+        {
+          "Event": "Breen attack on Earth",
+          "When": "Late 2375",
+          "WhatHappened": "Breen forces conduct a surprise raid targeting Earth, causing major damage in San Francisco and to Starfleet Headquarters.",
+          "Impact": "Shocks the Federation homefront during the Dominion War and forces urgent strategic recalibration.",
+          "CanonRefs": [
+            "ref-breen-attack-earth",
+            "ref-changing-face-evil"
+          ]
+        }
+      ],
+      "Appearances": [
+        {
+          "RefID": "ref-earth",
+          "Medium": "TV/Film",
+          "SeriesOrFilm": "Multiple",
+          "Season": null,
+          "Episode": null,
+          "Title": "Earth as a recurring setting",
+          "WhatWeLearn": "Earth is consistently treated as Humanity’s homeworld and a major administrative and cultural center of Starfleet and the Federation."
+        },
+        {
+          "RefID": "ref-earth-ma",
+          "Medium": "Reference",
+          "SeriesOrFilm": "Memory Alpha entry",
+          "Season": null,
+          "Episode": null,
+          "Title": "Earth",
+          "WhatWeLearn": "Confirms canon designations (Earth/Sol III/Terra), Class M status, Luna, and Sector 001 placement."
+        },
+        {
+          "RefID": "ref-sector-001",
+          "Medium": "Reference",
+          "SeriesOrFilm": "Memory Alpha entry",
+          "Season": null,
+          "Episode": null,
+          "Title": "Sector 001",
+          "WhatWeLearn": "Associates Sol system/Earth with Sector 001 and notes major conflicts in that region."
+        },
+        {
+          "RefID": "ref-sol-system",
+          "Medium": "Reference",
+          "SeriesOrFilm": "Memory Alpha entry",
+          "Season": null,
+          "Episode": null,
+          "Title": "Sol system",
+          "WhatWeLearn": "Identifies the Sol/Terran system as Earth’s home system within Sector 001."
+        },
+        {
+          "RefID": "ref-past-tense-1",
+          "Medium": "TV",
+          "SeriesOrFilm": "Star Trek: Deep Space Nine",
+          "Season": 3,
+          "Episode": 11,
+          "Title": "Past Tense, Part I",
+          "WhatWeLearn": "Depicts 2024 San Francisco and the Sanctuary District system leading into the Bell Riots."
+        },
+        {
+          "RefID": "ref-past-tense-2",
+          "Medium": "TV",
+          "SeriesOrFilm": "Star Trek: Deep Space Nine",
+          "Season": 3,
+          "Episode": 12,
+          "Title": "Past Tense, Part II",
+          "WhatWeLearn": "Shows the Bell Riots unfolding and their historical significance in-universe."
+        },
+        {
+          "RefID": "ref-first-contact",
+          "Medium": "Film",
+          "SeriesOrFilm": "Star Trek: First Contact",
+          "Season": null,
+          "Episode": null,
+          "Title": "Star Trek: First Contact",
+          "WhatWeLearn": "Depicts the 2373 Borg attack and the 2063 Phoenix warp flight/first open contact near Bozeman."
+        },
+        {
+          "RefID": "ref-ent-expanse",
+          "Medium": "TV",
+          "SeriesOrFilm": "Star Trek: Enterprise",
+          "Season": 2,
+          "Episode": 26,
+          "Title": "The Expanse",
+          "WhatWeLearn": "Shows the aftermath of the Xindi probe attack and Earth’s strategic response."
+        },
+        {
+          "RefID": "ref-homefront",
+          "Medium": "TV",
+          "SeriesOrFilm": "Star Trek: Deep Space Nine",
+          "Season": 4,
+          "Episode": 11,
+          "Title": "Homefront",
+          "WhatWeLearn": "Depicts Earth under heightened security amid Changeling fears; introduces Joseph Sisko’s New Orleans setting."
+        },
+        {
+          "RefID": "ref-paradise-lost",
+          "Medium": "TV",
+          "SeriesOrFilm": "Star Trek: Deep Space Nine",
+          "Season": 4,
+          "Episode": 12,
+          "Title": "Paradise Lost",
+          "WhatWeLearn": "Shows the attempted Starfleet coup and emergency measures on Earth."
+        },
+        {
+          "RefID": "ref-st4",
+          "Medium": "Film",
+          "SeriesOrFilm": "Star Trek IV: The Voyage Home",
+          "Season": null,
+          "Episode": null,
+          "Title": "Star Trek IV: The Voyage Home",
+          "WhatWeLearn": "Centers on the Whale Probe crisis affecting Earth’s power and environment in 2286."
+        },
+        {
+          "RefID": "ref-changing-face-evil",
+          "Medium": "TV",
+          "SeriesOrFilm": "Star Trek: Deep Space Nine",
+          "Season": 7,
+          "Episode": 20,
+          "Title": "The Changing Face of Evil",
+          "WhatWeLearn": "References and contextualizes the Breen attack on Earth during the final Dominion War arc."
+        }
+      ],
+      "CulturalAndHistoricalNotes": [
+        {
+          "Topic": "First Contact Day",
+          "Notes": "A commemorative holiday honoring the Phoenix warp flight and the first open Human–Vulcan contact on April 5, 2063.",
+          "CanonRefs": [
+            "ref-first-contact-day",
+            "ref-first-contact"
+          ]
+        },
+        {
+          "Topic": "Sanctuary Districts",
+          "Notes": "Early-21st-century U.S. policy of walled districts for the homeless and unemployed; shown in 2024-era stories on Earth.",
+          "CanonRefs": [
+            "ref-sanctuary",
+            "ref-past-tense-1",
+            "ref-past-tense-2"
+          ]
+        },
+        {
+          "Topic": "Federation/Starfleet civic center",
+          "Notes": "Earth frequently functions as a political and administrative hub, especially through Starfleet installations in the San Francisco Bay area and Federation executive offices associated with Paris.",
+          "CanonRefs": [
+            "ref-sf",
+            "ref-paris",
+            "ref-ufp"
+          ]
+        }
+      ],
+      "TravelAndAccess": {
+        "CommonApproaches": "Routine travel via Starfleet and civilian transport with arrivals through orbital space and planet-side facilities depending on era.",
+        "RestrictionsOrHazards": "Security posture varies by era; major crises produce lockdowns, higher screening, and emergency procedures on or near Earth."
       },
-      "DataQuality": {
-        "Confidence": "High",
-        "Coverage": "High",
-        "KnownGaps": [
-          "Specific planetary 'capital' usage varies by era and production."
-        ],
-        "VerificationNotes": "Broadly established across on-screen canon; some administrative details vary by depiction."
-      }
+      "Images": {
+        "HeroURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png",
+        "GalleryURLs": []
+      },
+      "References": [
+        {
+          "RefID": "ref-earth-ma",
+          "Type": "Reference",
+          "Title": "Earth (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-sector-001",
+          "Type": "Reference",
+          "Title": "Sector 001 (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-sol-system",
+          "Type": "Reference",
+          "Title": "Sol system (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-ufp",
+          "Type": "Reference",
+          "Title": "United Federation of Planets (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-paris",
+          "Type": "Reference",
+          "Title": "Paris (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-sf",
+          "Type": "Reference",
+          "Title": "San Francisco (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-2161",
+          "Type": "Reference",
+          "Title": "2161 (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-founding-ceremony",
+          "Type": "Reference",
+          "Title": "Federation Founding Ceremony (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-ww3",
+          "Type": "Reference",
+          "Title": "World War III (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-post-atomic",
+          "Type": "Reference",
+          "Title": "Post-atomic horror (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-bell-riots",
+          "Type": "Reference",
+          "Title": "Bell Riots (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-sanctuary-a",
+          "Type": "Reference",
+          "Title": "Sanctuary District A (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-sanctuary",
+          "Type": "Reference",
+          "Title": "Sanctuary District (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-first-contact-day",
+          "Type": "Reference",
+          "Title": "First Contact Day (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-xindi-incident",
+          "Type": "Reference",
+          "Title": "Xindi incident (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-2286",
+          "Type": "Reference",
+          "Title": "2286 (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-whale-probe",
+          "Type": "Reference",
+          "Title": "Whale Probe (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-battle-001",
+          "Type": "Reference",
+          "Title": "Battle of Sector 001 (Memory Alpha)"
+        },
+        {
+          "RefID": "ref-breen-attack-earth",
+          "Type": "Reference",
+          "Title": "Breen attack on Earth (Memory Alpha)"
+        }
+      ]
     },
     {
       "PlanetID": "planet-vulcan",
@@ -307,17 +559,18 @@
         ]
       },
       "Government": {
-        "Polity": "Vulcan planetary government; in the early 22nd century the Vulcan High Command functioned as a military government.",
-        "Capital": "Not stated on-screen.",
+        "Polity": "Federation member world; Vulcan governance structures evolve across eras (including prominent councils/commands in early eras).",
+        "Capital": "ShiKahr is frequently treated as a central city for civic and governmental activity.",
         "Institutions": [
-          "Vulcan High Command (military government in the early 22nd century)",
-          "Vulcan High Council (associated governing body)",
-          "First Minister of Vulcan (title used for head of government)"
+          "Vulcan Science Academy",
+          "Vulcan High Command (historical)",
+          "Planetary councils (era-dependent)"
         ],
         "LawsAffectingVisitors": [
-          "Not stated on-screen."
+          "Strict regulations in sensitive scientific/government areas",
+          "Cultural norms emphasizing decorum and restraint"
         ],
-        "Notes": "Canon references identify the Vulcan High Command as a military government during ENT-era events; later eras refer to civilian political offices (e.g., First Minister) without detailing a full constitutional structure on-screen."
+        "Notes": "Visitors should be mindful of local customs and formality in civic and religious spaces."
       },
       "Economy": {
         "Overview": "A highly developed Federation-era world with strong emphasis on science, education, and interstellar diplomacy.",
@@ -469,19 +722,17 @@
         ]
       },
       "Government": {
-        "Polity": "Ferengi Alliance; Ferengi government led by the Grand Nagus and oriented around commercial law (Rules of Acquisition and trade by-laws).",
-        "Capital": "Not stated on-screen (the Grand Nagus operates from the Tower of Commerce in the Sacred Marketplace on Ferenginar).",
+        "Polity": "Ferengi Alliance",
+        "Capital": "Ferenginar (capital city not consistently emphasized on screen)",
         "Institutions": [
-          "Grand Nagus (leader of the Ferengi Alliance)",
-          "Ferengi government",
-          "Ferengi Commerce Authority (FCA) and its Liquidators (enforcement of trade by-laws)",
-          "Tower of Commerce / Chamber of Opportunity (Nagus’s seat)"
+          "Office of the Grand Nagus",
+          "Commerce authorities and guilds (varies by era)"
         ],
         "LawsAffectingVisitors": [
-          "Commercial law and trade by-laws are enforced by the FCA; sanctions can include revoking business rights.",
-          "Not stated on-screen for non-Ferengi visitors."
+          "Contract-heavy commerce culture",
+          "Fee-based services and permits (common expectation)"
         ],
-        "Notes": "The Ferengi state is depicted as a profit-centered legal regime; many governance functions manifest as regulation and enforcement of commerce."
+        "Notes": "Business and governance are deeply intertwined; visitors should expect negotiations to be treated as standard interaction."
       },
       "Economy": {
         "Overview": "A commerce-driven economy centered on trade, finance, negotiation, and services.",
@@ -628,11 +879,17 @@
         ]
       },
       "Government": {
-        "Polity": "Not stated on-screen.",
-        "Capital": "Not stated on-screen.",
-        "Institutions": [],
-        "LawsAffectingVisitors": [],
-        "Notes": "On-screen, Risa is portrayed primarily as a resort/shore-leave destination visited by Starfleet personnel; its formal government and political institutions are not described in canon dialogue."
+        "Polity": "Federation member world with strong public-private resort infrastructure.",
+        "Capital": "Not emphasized; resort centers function as de facto hubs for visitors.",
+        "Institutions": [
+          "Planetary tourism and weather-control authorities (implied)",
+          "Local civic government (limited on-screen detail)"
+        ],
+        "LawsAffectingVisitors": [
+          "Tourism safety and conduct rules enforced by resort authorities",
+          "Local cultural consent norms (social expectations)"
+        ],
+        "Notes": "Much governance is experienced through resort operations and climate-management systems."
       },
       "Economy": {
         "Overview": "Tourism and hospitality dominate: resorts, recreation, services, and culture-oriented experiences.",
@@ -788,18 +1045,19 @@
         ]
       },
       "Government": {
-        "Polity": "Klingon Empire; the Klingon High Council governs from Qo'noS.",
-        "Capital": "First City (Qo'noS).",
+        "Polity": "Klingon Empire",
+        "Capital": "First City",
         "Institutions": [
           "Klingon High Council",
-          "Chancellor of the Klingon High Council (High Chancellor)",
-          "Great Hall (High Council meeting place)"
+          "Great Hall",
+          "Major Houses and their councils (era-dependent)"
         ],
         "LawsAffectingVisitors": [
-          "Rite of Succession and related ceremonial law can determine leadership transitions.",
-          "Not stated on-screen for civilian visitors (Klingon political and legal practices vary by era and house politics)."
+          "Honor-based conduct expectations",
+          "Restricted access to governmental districts",
+          "Travel permissions may depend on political climate"
         ],
-        "Notes": "Council membership is tied to Great Houses; the Chancellor leads the Council and, by extension, the Empire."
+        "Notes": "Political shifts can rapidly change visitor safety and access."
       },
       "Economy": {
         "Overview": "A major imperial center with military, governmental, and industrial activity supporting the Klingon Empire.",
@@ -967,17 +1225,17 @@
         ]
       },
       "Government": {
-        "Polity": "Andorian Empire.",
-        "Capital": "Andoria.",
+        "Polity": "Federation member world; Andorian governance and security structures are strongly emphasized in early-era stories.",
+        "Capital": "Not consistently shown on screen; reference material suggests named capitals, but depiction varies.",
         "Institutions": [
-          "Chancellor (head of government)",
-          "Imperial Council (legislature)",
-          "Andorian Imperial Guard (military/security)"
+          "Andorian Imperial Guard (historical/era-dependent)",
+          "Planetary councils (era-dependent)"
         ],
         "LawsAffectingVisitors": [
-          "Not stated on-screen."
+          "Strict security protocols in sensitive zones",
+          "Guided access for off-worlders in remote regions"
         ],
-        "Notes": "Canon references identify an Andorian Chancellor and Imperial Council; detailed visitor-facing law is not established on-screen."
+        "Notes": "Local security concerns can affect movement and visitor permissions."
       },
       "Economy": {
         "Overview": "A developed Federation-world economy supporting advanced infrastructure, defense, and interstellar diplomacy.",
@@ -1136,17 +1394,18 @@
         ]
       },
       "Government": {
-        "Polity": "Bajoran Republic (initially termed the Bajoran Provisional Government after the Cardassian withdrawal).",
-        "Capital": "Not stated on-screen (planetary seat on Bajor).",
+        "Polity": "Independent planetary government (with Federation relationship evolving across DS9 era).",
+        "Capital": "Not consistently emphasized on screen; governance centers operate alongside strong religious institutions.",
         "Institutions": [
-          "First Minister (chief executive)",
-          "Council of Ministers (also called the Chamber/Board of Ministers in earlier usage)",
-          "Bajoran Militia"
+          "Bajoran government ministries (varies)",
+          "Vedek Assembly (religious authority)",
+          "Local provincial administrations"
         ],
         "LawsAffectingVisitors": [
-          "Arriving vessels may be subject to screening when ordered by the Chamber/Council of Ministers."
+          "Respect for sacred sites and rituals",
+          "Travel controls during heightened security periods"
         ],
-        "Notes": "DS9 depicts frequent political turnover and debates about Federation membership; religious leadership (Kai/Vedeks) also influences governance, but the formal government is the Republic/Provisional Government."
+        "Notes": "Civil and religious authority both strongly shape public life and visitor experience."
       },
       "Economy": {
         "Overview": "A rebuilding economy with strong agriculture, local industry, and growing interstellar trade driven by DS9 and the wormhole.",
@@ -1301,17 +1560,19 @@
         ]
       },
       "Government": {
-        "Polity": "Cardassian Union.",
-        "Capital": "Not stated on-screen (seat of government on Cardassia Prime).",
+        "Polity": "Cardassian Union (structure varies by era; includes military and civilian authorities)",
+        "Capital": "Cardassia Prime (planetary and union capital)",
         "Institutions": [
-          "Central Command (military leadership body)",
-          "Detapa Council (Cardassian civilian government)",
-          "Obsidian Order (state security/intelligence arm, influence varies by era)"
+          "Detapa Council (civilian authority, era-dependent)",
+          "Cardassian Central Command",
+          "Obsidian Order (historical)"
         ],
         "LawsAffectingVisitors": [
-          "Not stated on-screen (Cardassian security and military authority strongly shape civil life and access)."
+          "Strict security screening",
+          "Restricted travel near government/military complexes",
+          "Controlled media and communications (era-dependent)"
         ],
-        "Notes": "DS9 depicts periods of military dominance and later a civilian government (Detapa Council) that attempted to assert control, including over Central Command."
+        "Notes": "Governance and law enforcement are historically intertwined with military and intelligence organs."
       },
       "Economy": {
         "Overview": "A state-driven economy historically focused on industrial output, military capacity, and controlled trade.",
