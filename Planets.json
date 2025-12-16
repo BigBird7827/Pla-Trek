@@ -2,7 +2,7 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 9,
+    "Build": 10,
     "Version": 1,
     "LastUpdated": "2025-12-15"
   },
@@ -15,14 +15,16 @@
         "Terra"
       ],
       "TypeTags": [
-        "Homeworld"
+        "Homeworld",
+        "FederationCapital",
+        "StarfleetHQ"
       ],
       "Location": {
         "Quadrant": "Alpha Quadrant",
-        "QuadrantNotes": "Sector 001 is defined as spanning Alpha & Beta; Sol is located at the edge of Sector 001 in the Alpha Quadrant.",
-        "StarSystem": "Sol system",
+        "QuadrantNotes": "Earth is the human homeworld and the seat of major Federation institutions.",
+        "StarSystem": "Sol",
         "Sector": "Sector 001",
-        "Region": "United Federation of Planets (member world)"
+        "Region": "United Federation of Planets"
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -37,9 +39,9 @@
           "TimeFormat": "24-hour commonly used in Starfleet contexts"
         }
       },
-      "TravelSummary": "Earth is the human homeworld and a major Federation political and cultural center, frequently visited by Starfleet crews.",
+      "TravelSummary": "Earth is the homeworld of humanity and the political heart of the United Federation of Planets. It is home to Starfleet Headquarters in San Francisco and remains a major diplomatic, cultural, and historical center.",
       "Appearance": {
-        "GeneralLook": "Blue oceans, varied continents, and extensive cloud systems; large urban regions and preserved natural areas are shown across eras.",
+        "GeneralLook": "A blue-white world dominated by oceans, varied continents, and dynamic cloud systems, with major metropolitan regions alongside protected natural reserves.",
         "FromOrbit": [
           "High-density orbital traffic and infrastructure during major Starfleet periods",
           "Major approach lanes into the Sol system and Earth orbit are tightly controlled during alerts"
@@ -84,7 +86,7 @@
         "Cities": [
           {
             "Name": "San Francisco",
-            "Role": "Starfleet/Federation administrative hub (frequently depicted)",
+            "Role": "Starfleet/Federation administrative hub (frequently )",
             "Highlights": [],
             "LocalVibe": ""
           }
@@ -115,8 +117,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Varies widely by region (Earth-like seasons and climates).",
-        "Seasonality": "",
+        "ClimateType": "Wide-ranging climates and seasons across continents, from polar to tropical.",
+        "Seasonality": "Seasonal variation depends on region; many areas experience distinct seasonal cycles.",
         "TypicalConditions": [
           {
             "Region": "San Francisco Bay",
@@ -158,7 +160,7 @@
         "TopAttractions": [
           {
             "Name": "Starfleet/Federation civic district (San Francisco)",
-            "WhyGo": "Frequently depicted Federation/Starfleet hub with recognizable waterfront setting."
+            "WhyGo": "Frequently Federation/Starfleet hub with recognizable waterfront setting."
           }
         ],
         "Activities": [
@@ -215,33 +217,6 @@
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png",
         "Gallery": []
       },
-      "Sources": [
-        {
-          "Title": "Sol system (sector/quadrant)",
-          "URL": "https://memory-alpha.fandom.com/wiki/Sol_system",
-          "Use": "Location: quadrant & Sector 001"
-        },
-        {
-          "Title": "Sector 001",
-          "URL": "https://memory-alpha.fandom.com/wiki/Sector_001",
-          "Use": "Sector naming and quadrant-span note"
-        },
-        {
-          "Title": "Earth",
-          "URL": "https://memory-alpha.fandom.com/wiki/Earth",
-          "Use": "Core canon references & planetary context"
-        },
-        {
-          "Title": "San Francisco",
-          "URL": "https://memory-alpha.fandom.com/wiki/San_Francisco",
-          "Use": "Key visitor-facing locations (Starfleet HQ/Academy)"
-        },
-        {
-          "Title": "Paris",
-          "URL": "https://memory-alpha.fandom.com/wiki/Paris",
-          "Use": "Federation Presidency location references"
-        }
-      ],
       "CitiesAndSites": {
         "MajorCities": [
           "San Francisco (Starfleet HQ/Academy precinct)",
@@ -261,11 +236,12 @@
         "Ni'Var (later era)"
       ],
       "TypeTags": [
-        "Homeworld"
+        "Homeworld",
+        "FederationFoundingWorld"
       ],
       "Location": {
-        "Quadrant": "Beta Quadrant",
-        "QuadrantNotes": "Vulcan’s star system is commonly identified with 40 Eridani; quadrant/sector placement follows on-screen star charts and reference material summarized by Memory Alpha.",
+        "Quadrant": "Alpha Quadrant",
+        "QuadrantNotes": "Vulcan is a core Federation member world associated with early Federation history.",
         "StarSystem": "Vulcan system (40 Eridani)",
         "Sector": "Vulcan sector",
         "Region": "United Federation of Planets (member world; later Ni'Var)"
@@ -283,9 +259,9 @@
           "TimeFormat": "Local standards; visitors commonly rely on shipboard chronometers and civic time beacons."
         }
       },
-      "TravelSummary": "Vulcan is the Vulcan homeworld, known on-screen for its heat, arid landscapes, and ancient cultural sites.",
+      "TravelSummary": "Vulcan is the homeworld of the Vulcan people and an early member of the Federation. It is known for arid landscapes, rigorous cultural traditions, and prominent ceremonial and governmental sites.",
       "Appearance": {
-        "GeneralLook": "Predominantly arid terrain with desert vistas and stark rocky landscapes; settlements and ceremonial locations are shown in multiple eras.",
+        "GeneralLook": "Predominantly arid terrain with deserts and rocky plains, punctuated by settlements and ceremonial locations.",
         "FromOrbit": [
           "Desert belts and highland contours are visually dominant",
           "The Vulcan system’s companion world relationships are a notable feature of local cartography"
@@ -373,8 +349,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Hot, arid conditions are frequently depicted.",
-        "Seasonality": "Heat dominance with significant day–night swings; seasonal variation exists but is less visually dramatic than on Earth.",
+        "ClimateType": "Hot and arid in many regions.",
+        "Seasonality": "Seasonal detail varies by region; heat and low humidity are common baseline conditions.",
         "TypicalConditions": [
           {
             "Region": "Desert plains",
@@ -488,34 +464,7 @@
           "The Forge (desert region)",
           "T'Karath Sanctuary (within the Forge)"
         ]
-      },
-      "Sources": [
-        {
-          "Title": "Vulcan system / 40 Eridani",
-          "URL": "https://memory-alpha.fandom.com/wiki/Vulcan_system",
-          "Use": "Quadrant/sector/system identification"
-        },
-        {
-          "Title": "40 Eridani",
-          "URL": "https://memory-alpha.fandom.com/wiki/40_Eridani",
-          "Use": "Astronomical identification used in reference material"
-        },
-        {
-          "Title": "ShiKahr",
-          "URL": "https://memory-alpha.fandom.com/wiki/ShiKahr",
-          "Use": "Capital city & Vulcan High Command placement notes"
-        },
-        {
-          "Title": "The Forge",
-          "URL": "https://memory-alpha.fandom.com/wiki/The_Forge",
-          "Use": "Key geography for visitor itineraries"
-        },
-        {
-          "Title": "T'Karath Sanctuary",
-          "URL": "https://memory-alpha.fandom.com/wiki/T%27Karath_Sanctuary",
-          "Use": "Notable site within the Forge"
-        }
-      ]
+      }
     },
     {
       "PlanetID": "planet-ferenginar",
@@ -530,7 +479,7 @@
       },
       "Location": {
         "Quadrant": "Alpha Quadrant",
-        "QuadrantNotes": "Ferenginar is located in Ferengi space in the Alpha Quadrant; no consistent on-screen sector label is established in primary canon.",
+        "QuadrantNotes": "Ferenginar is located in Ferengi space in the Alpha Quadrant; no consistent sector label is established in primary canon.",
         "StarSystem": "Ferenginar system",
         "Sector": "",
         "Region": "Ferengi Alliance (capital world)"
@@ -548,9 +497,9 @@
           "TimeFormat": "Local standards; visitors typically rely on shipboard chronometers and civic time beacons for appointments."
         }
       },
-      "TravelSummary": "Ferenginar is the Ferengi homeworld, depicted on-screen as a world of relentless rain, heavy humidity, and commerce-centered civic life.",
+      "TravelSummary": "Ferenginar is the homeworld of the Ferengi and a major center of Ferengi commerce and government. The planet is known for frequent rainfall and heavy humidity.",
       "Appearance": {
-        "GeneralLook": "Overcast skies and frequent downpours; wet streets and covered market spaces are prominent in depictions.",
+        "GeneralLook": "Overcast skies and persistent rain are common, with wet streets and covered market spaces in urban districts.",
         "FromOrbit": [
           "Persistent cloud cover and broad weather systems are common",
           "Approach traffic concentrates around major commercial hubs and government districts"
@@ -587,7 +536,7 @@
         "Cities": [
           {
             "Name": "Capital market district",
-            "Role": "Government and commerce center (as depicted)",
+            "Role": "Government and commerce center ()",
             "Highlights": [],
             "LocalVibe": ""
           }
@@ -620,7 +569,7 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Persistent rain and high humidity (frequently referenced on-screen).",
+        "ClimateType": "Humid climate with frequent, heavy rainfall.",
         "Seasonality": "Rain is described as persistent and pervasive; local weather variation is more about intensity and storm bursts than clear dry seasons.",
         "TypicalConditions": [
           {
@@ -732,24 +681,7 @@
           "Tower of Commerce",
           "Great Marketplace / Sacred Marketplace (public commerce district)"
         ]
-      },
-      "Sources": [
-        {
-          "Title": "Ferenginar system",
-          "URL": "https://memory-alpha.fandom.com/wiki/Ferenginar_system",
-          "Use": "Quadrant/system location"
-        },
-        {
-          "Title": "Tower of Commerce",
-          "URL": "https://memory-alpha.fandom.com/wiki/Tower_of_Commerce",
-          "Use": "Major landmark for travel guide"
-        },
-        {
-          "Title": "Great Marketplace",
-          "URL": "https://memory-alpha.fandom.com/wiki/Great_Marketplace",
-          "Use": "Major public commerce district"
-        }
-      ]
+      }
     },
     {
       "PlanetID": "planet-risa",
@@ -764,7 +696,7 @@
       },
       "Location": {
         "Quadrant": "Beta Quadrant",
-        "QuadrantNotes": "Risa’s quadrant placement varies across on-screen cartography and reference works; recent star charts and summaries commonly place it in the Beta Quadrant.",
+        "QuadrantNotes": "Risa’s quadrant placement varies across cartography and reference works; recent star charts and summaries commonly place it in the Beta Quadrant.",
         "StarSystem": "Epsilon Ceti star system (Epsilon Ceti B)",
         "Sector": "(unspecified sector)",
         "Region": "United Federation of Planets (member world; major tourism destination)"
@@ -782,9 +714,9 @@
           "TimeFormat": "Local standards; resort schedules and Starfleet visitors commonly operate on shipboard chronometers."
         }
       },
-      "TravelSummary": "Risa is depicted as a Federation pleasure/resort world known for beaches, leisure culture, and climate engineered to stay pleasant.",
+      "TravelSummary": "Risa is a Federation resort world renowned for leisure culture and climate control systems designed to maintain comfortable conditions for visitors.",
       "Appearance": {
-        "GeneralLook": "Tropical resort architecture, beaches, lagoons, and lush landscaping are prominent on-screen.",
+        "GeneralLook": "Tropical coasts, lagoons, resort architecture, and landscaped gardens are characteristic of the main visitor zones.",
         "FromOrbit": [
           "Bright ocean expanses with frequent cloud bands",
           "Approach routes are dense during peak travel seasons",
@@ -858,8 +790,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Pleasant, stabilized weather maintained by planetary systems (on-screen).",
-        "Seasonality": "Under normal operations, seasonality is intentionally muted to maintain near-constant ‘ideal’ vacation conditions; disruptions can restore storms and unstable patterns quickly.",
+        "ClimateType": "Warm, stabilized weather maintained by planetary climate systems.",
+        "Seasonality": "Conditions are intentionally moderated; seasonal extremes are minimal in resort regions.",
         "TypicalConditions": [
           {
             "Region": "Resort coasts",
@@ -898,11 +830,11 @@
         "TopAttractions": [
           {
             "Name": "Beach and resort stay",
-            "WhyGo": "Core on-screen depiction: leisure, warm water, and resort culture."
+            "WhyGo": "Core depiction: leisure, warm water, and resort culture."
           },
           {
             "Name": "Horga'hn custom (cultural symbol)",
-            "WhyGo": "Recurring on-screen element associated with Risian romance culture."
+            "WhyGo": "Recurring element associated with Risian romance culture."
           }
         ],
         "Activities": [
@@ -981,29 +913,7 @@
         "MajorCities": [
           "Nuvia (capital city; reference works)"
         ]
-      },
-      "Sources": [
-        {
-          "Title": "Risa",
-          "URL": "https://memory-alpha.fandom.com/wiki/Risa",
-          "Use": "Location notes, weather-control concept, tourism context, and reference-work details (e.g., Nuvia/points of interest)"
-        },
-        {
-          "Title": "StarTrek.com – The Planet Risa and Roddenberry’s Unrealized Queer Vision",
-          "URL": "https://www.startrek.com/news/risa-unrealized-queer-vision",
-          "Use": "Official discussion of Risa as a weather-controlled ‘artificial paradise’ and its natural state"
-        },
-        {
-          "Title": "StarTrek.com – Below Deck with Lower Decks: The Pleasure Planet",
-          "URL": "https://www.startrek.com/news/below-deck-with-lower-decks-the-pleasure-planet",
-          "Use": "Official note that Risa uses an elaborate weather control system"
-        },
-        {
-          "Title": "Weather control system",
-          "URL": "https://memory-alpha.fandom.com/wiki/Weather_control_system",
-          "Use": "General canon context for planetary weather control and Risa as a key example"
-        }
-      ]
+      }
     },
     {
       "PlanetID": "planet-qonos",
@@ -1022,7 +932,7 @@
       },
       "Location": {
         "Quadrant": "Beta Quadrant",
-        "QuadrantNotes": "Sector label for Qo'noS is given in reference summaries and on-screen cartography; Klingon-space borders shift by era.",
+        "QuadrantNotes": "Sector label for Qo'noS is given in reference summaries and cartography; Klingon-space borders shift by era.",
         "StarSystem": "Qo'noS system",
         "Sector": "Sector 70 (Qo'noS sector)",
         "Region": "Klingon Empire (capital world)"
@@ -1040,9 +950,9 @@
           "TimeFormat": "Local standards; visitors often rely on shipboard chronometers when coordinating with offworld schedules."
         }
       },
-      "TravelSummary": "Qo'noS is the Klingon homeworld and seat of imperial politics, shown on-screen through the First City and the Great Hall.",
+      "TravelSummary": "Qo'noS (Kronos) is the Klingon homeworld and the seat of imperial politics. The First City and the Great Hall are central locations for governance and ceremony.",
       "Appearance": {
-        "GeneralLook": "Rugged, austere landscapes and monumental civic architecture are central in depictions of the capital.",
+        "GeneralLook": "Rugged, austere landscapes and monumental civic architecture are central of the capital.",
         "FromOrbit": [
           "Approach corridors are tightly managed, with traffic patterns shaped by Klingon security and military priorities",
           "Major population centers present dense night-side illumination clusters, with heavy emphasis around the capital region"
@@ -1081,7 +991,7 @@
         "Cities": [
           {
             "Name": "First City",
-            "Role": "Imperial capital (as depicted)",
+            "Role": "Imperial capital ()",
             "Highlights": [],
             "LocalVibe": ""
           }
@@ -1114,8 +1024,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "",
-        "Seasonality": "",
+        "ClimateType": "Varies by region and season.",
+        "Seasonality": "Seasonality depends on region; travel conditions can change quickly with local weather.",
         "TypicalConditions": [
           {
             "Region": "Capital region / First City",
@@ -1161,7 +1071,7 @@
         "TopAttractions": [
           {
             "Name": "Great Hall (authorized access)",
-            "WhyGo": "Central on-screen location for Klingon ceremony and High Council politics."
+            "WhyGo": "Central location for Klingon ceremony and High Council politics."
           }
         ],
         "Activities": [
@@ -1237,34 +1147,7 @@
           "Great Hall",
           "Klingon High Council chamber (in the Great Hall)"
         ]
-      },
-      "Sources": [
-        {
-          "Title": "Qo'noS",
-          "URL": "https://memory-alpha.fandom.com/wiki/Qo%27noS",
-          "Use": "Quadrant/system/sector, Praxis moon, capital status"
-        },
-        {
-          "Title": "Sector 70 (Qo'noS sector)",
-          "URL": "https://memory-alpha.fandom.com/wiki/Sector_70",
-          "Use": "Sector labeling"
-        },
-        {
-          "Title": "First City",
-          "URL": "https://memory-alpha.fandom.com/wiki/First_City",
-          "Use": "Capital city and major landmarks"
-        },
-        {
-          "Title": "Great Hall",
-          "URL": "https://memory-alpha.fandom.com/wiki/Great_Hall",
-          "Use": "Government landmark"
-        },
-        {
-          "Title": "Klingon High Council",
-          "URL": "https://memory-alpha.fandom.com/wiki/Klingon_High_Council",
-          "Use": "Government institution location"
-        }
-      ]
+      }
     },
     {
       "PlanetID": "planet-andoria",
@@ -1282,10 +1165,10 @@
       },
       "Location": {
         "Quadrant": "Beta Quadrant",
-        "QuadrantNotes": "Andoria is described as a moon in the Andorian system, ~11 ly from Sol, near the Vulcan system; ‘Andor’ is used interchangeably in some canon/reference sources.",
-        "StarSystem": "Andorian system (Procyon / Alpha Canis Minoris)",
-        "Sector": "Andorian sector",
-        "Region": "United Federation of Planets (founding member world)",
+        "QuadrantNotes": "Andoria (also known as Andor) is the Andorian homeworld and a core Federation member world in later eras.",
+        "StarSystem": "Procyon system",
+        "Sector": "Sector 006",
+        "Region": "United Federation of Planets",
         "DistanceFromSol_LY": 11
       },
       "QuickFacts": {
@@ -1302,7 +1185,7 @@
           "TimeFormat": "Local standards; visitors commonly coordinate via shipboard chronometers for tours and transport windows."
         }
       },
-      "TravelSummary": "Andoria is depicted as the Andorian homeworld: an ice-dominant planet with severe cold and distinctive Andorian culture.",
+      "TravelSummary": "Andoria is the Andorian homeworld, an ice-dominant world of glaciers and severe cold. It is notable for Andorian culture and for its role as a major Federation member world in later eras.",
       "Appearance": {
         "GeneralLook": "Bright ice fields, glaciers, and stormy skies dominate; many facilities and settlements are built for extreme cold.",
         "FromOrbit": [
@@ -1371,8 +1254,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Severe cold with wind and snow (on-screen).",
-        "Seasonality": "High-latitude seasonality can be pronounced—expect significant daylight shifts by region and time of year, with conditions ranging from clear, brittle cold to prolonged storm cycles.",
+        "ClimateType": "Severe cold with frequent wind and snow.",
+        "Seasonality": "High-latitude seasonality can produce large daylight shifts and extended storm cycles in some regions.",
         "TypicalConditions": [
           {
             "Region": "Urban/capital corridors",
@@ -1428,7 +1311,7 @@
         "TopAttractions": [
           {
             "Name": "Guided icefield vistas (where permitted)",
-            "WhyGo": "The ice-world environment is Andoria’s defining on-screen feature."
+            "WhyGo": "The ice-world environment is Andoria’s defining feature."
           }
         ],
         "Activities": [
@@ -1491,23 +1374,6 @@
         "SevereWeather",
         "PermitSensitiveAreas",
         "GuidedExcursionsRecommended"
-      ],
-      "Sources": [
-        {
-          "Title": "Andoria",
-          "URL": "https://memory-alpha.fandom.com/wiki/Andoria",
-          "Use": "Quadrant/sector/distance and moon-status notes"
-        },
-        {
-          "Title": "Andorian system",
-          "URL": "https://memory-alpha.fandom.com/wiki/Andorian_system",
-          "Use": "System context, distance, neighboring systems"
-        },
-        {
-          "Title": "Procyon",
-          "URL": "https://memory-alpha.fandom.com/wiki/Procyon",
-          "Use": "System identification on charts"
-        }
       ]
     },
     {
@@ -1547,9 +1413,9 @@
           "Jeraddo"
         ]
       },
-      "TravelSummary": "Bajor is the Bajoran homeworld, depicted as a lush world shaped by deep religious tradition and the aftermath of the Cardassian Occupation.",
+      "TravelSummary": "Bajor is the Bajoran homeworld, a fertile world of river valleys and mountain provinces. Bajoran society is closely tied to the Prophets-centered faith and the planet’s recovery after the Cardassian Occupation. The Bajoran wormhole lies nearby in the Denorios Belt.",
       "Appearance": {
-        "GeneralLook": "Green valleys, mountains, rivers, and warm-toned stone architecture are prominent in DS9 depictions.",
+        "GeneralLook": "Green valleys, terraced hillsides, rivers, and warm-toned stone architecture are common across provinces and cities.",
         "FromOrbit": [
           "Broad green landmasses and deep-blue seas with visible weather systems",
           "Dense illumination clusters around major population centers and reconstruction corridors"
@@ -1593,7 +1459,7 @@
         "Cities": [
           {
             "Name": "Bajor City",
-            "Role": "Capital (as referenced/depicted)",
+            "Role": "Capital (as referenced/)",
             "Highlights": [],
             "LocalVibe": ""
           }
@@ -1625,8 +1491,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "Varies by region (lush, Class-M conditions depicted).",
-        "Seasonality": "Seasonal shifts are noticeable by province; expect wetter periods in valleys and coastal belts and cooler temperatures in mountain regions.",
+        "ClimateType": "Regionally variable Class-M climate, ranging from temperate valleys to cooler mountain provinces.",
+        "Seasonality": "Seasonal shifts are noticeable by province, with wetter periods in valleys and coastal belts and cooler conditions at altitude.",
         "TypicalConditions": [
           {
             "Region": "River valleys and farmland provinces",
@@ -1677,7 +1543,7 @@
         "TopAttractions": [
           {
             "Name": "Monasteries and pilgrimage sites (where open)",
-            "WhyGo": "Bajoran faith and sacred sites are central on-screen."
+            "WhyGo": "Bajoran faith and sacred sites are central ."
           }
         ],
         "Activities": [
@@ -1748,24 +1614,7 @@
         "MajorCities": [
           "Bajor City (capital)"
         ]
-      },
-      "Sources": [
-        {
-          "Title": "Bajor",
-          "URL": "https://memory-alpha.fandom.com/wiki/Bajor",
-          "Use": "Quadrant/sector/system, moons, travel context"
-        },
-        {
-          "Title": "Jeraddo",
-          "URL": "https://memory-alpha.fandom.com/wiki/Jeraddo",
-          "Use": "Moon and Bajor sector placement"
-        },
-        {
-          "Title": "Derna",
-          "URL": "https://memory-alpha.fandom.com/wiki/Derna",
-          "Use": "Moon reference"
-        }
-      ]
+      }
     },
     {
       "PlanetID": "planet-cardassia-prime",
@@ -1804,9 +1653,9 @@
           "TimeFormat": "Local standards; visiting schedules are often coordinated through official itineraries and security checkpoints."
         }
       },
-      "TravelSummary": "Cardassia Prime is the Cardassian homeworld and political center of the Cardassian Union, depicted through its government institutions and Dominion War endgame.",
+      "TravelSummary": "Cardassia Prime is the Cardassian homeworld and the capital of the Cardassian Union. Its political institutions have included Central Command and the Detapa Council, and the planet’s fate is central to the Dominion War’s endgame.",
       "Appearance": {
-        "GeneralLook": "",
+        "GeneralLook": "A generally arid world with dust-toned landscapes and monumental urban architecture in major population centers.",
         "FromOrbit": [
           "Large landmasses with muted coloration consistent with arid regions",
           "Night-side illumination clustered around major urban centers and industrial corridors"
@@ -1872,8 +1721,8 @@
         ]
       },
       "Weather": {
-        "ClimateType": "",
-        "Seasonality": "Seasonal detail varies by depiction; visitors should plan for heat and dry air as baseline assumptions and check current advisories before surface travel.",
+        "ClimateType": "Often characterized by heat, dry air, and dust-laden conditions in many regions.",
+        "Seasonality": "Seasonal detail varies by region; heat and low humidity are common baseline conditions.",
         "TypicalConditions": [
           {
             "Region": "Capital/urban corridors",
@@ -1973,24 +1822,7 @@
         "MajorCities": [
           "Lakarian City"
         ]
-      },
-      "Sources": [
-        {
-          "Title": "Cardassia Prime",
-          "URL": "https://memory-alpha.fandom.com/wiki/Cardassia_Prime",
-          "Use": "Planet in Cardassian system, Alpha Quadrant"
-        },
-        {
-          "Title": "Cardassian system",
-          "URL": "https://memory-alpha.fandom.com/wiki/Cardassian_system",
-          "Use": "System placement and Bajor distance reference"
-        },
-        {
-          "Title": "Lakarian City",
-          "URL": "https://memory-alpha.fandom.com/wiki/Lakarian_City",
-          "Use": "Major city reference"
-        }
-      ]
+      }
     }
   ]
 }
