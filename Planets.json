@@ -245,7 +245,7 @@
     "PlanetID": "planet-andoria",
     "Name": "Andoria",
     "AlternateNames": [
-      "Not stated on-screen"
+      "Unknown"
     ],
     "Tags": [
       "Homeworld",
@@ -257,8 +257,8 @@
     ],
     "Meta": {
       "CanonicalName": "Andoria",
-      "Classification": "Inhabited world associated with the Andorians; depicted on-screen with snow/ice and subterranean settings. Planetary class and astronomical details are not stated on-screen.",
-      "Affiliation": "Homeworld of the Andorians. Wider interstellar political affiliation (including Federation-era status) is not stated on-screen in detailed terms in the material referenced here.",
+      "Classification": "Inhabited world associated with the Andorians; depicted on-screen with snow/ice and subterranean settings. Planetary class and astronomical details are unknown.",
+      "Affiliation": "Homeworld of the Andorians. Wider interstellar political affiliation (including Federation-era status) is unknown in detailed terms in the material referenced here.",
       "NativeSpecies": [
         "Andorian (including the Aenar subgroup; shown on-screen)"
       ]
@@ -266,39 +266,39 @@
     "Media": {
       "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Andoria.png"
     },
-    "TravelSummary": "Andoria is the homeworld of the Andorians. On-screen depictions (notably in Star Trek: Enterprise) present it as an intensely cold, ice-dominated environment, including subterranean settings associated with the Aenar. Visitor requirements, entry procedures, and tourism infrastructure are not stated on-screen.",
+    "TravelSummary": "Andoria is the homeworld of the Andorians. On-screen depictions (notably in Star Trek: Enterprise) present it as an intensely cold, ice-dominated environment, including subterranean settings associated with the Aenar. Visitor requirements, entry procedures, and tourism infrastructure are unknown.",
     "Location": {
-      "Quadrant": "Not stated on-screen",
-      "Sector": "Not stated on-screen",
-      "StarSystem": "Not stated on-screen",
-      "Region": "Not stated on-screen",
-      "NearbyLandmarks": "Not stated on-screen"
+      "Quadrant": "Unknown",
+      "Sector": "Unknown",
+      "StarSystem": "Unknown",
+      "Region": "Unknown",
+      "NearbyLandmarks": "Unknown"
     },
     "Appearance": "On-screen visuals depict Andoria as a frozen world with snow and ice dominating the landscape. Scenes associated with Andorian stories also include underground/subsurface environments. No consistent on-screen depiction of major surface cities or planetary-scale vistas with named landmarks is provided.",
-    "Geography": "Not stated on-screen beyond general icy terrain and subterranean environments shown in Star Trek: Enterprise.",
+    "Geography": "unknown beyond general icy terrain and subterranean environments shown in Star Trek: Enterprise.",
     "CitiesAndSites": [
       {
         "Name": "Aenar subterranean habitats (shown on-screen)",
         "Type": "Settlement / subterranean",
-        "Description": "Star Trek: Enterprise depicts an underground Aenar community on Andoria. Specific city/settlement names and broader urban geography are not stated on-screen."
+        "Description": "Star Trek: Enterprise depicts an underground Aenar community on Andoria. Specific city/settlement names and broader urban geography are unknown."
       },
       {
-        "Name": "Not stated on-screen (surface cities and capital)",
-        "Type": "Not stated on-screen",
+        "Name": "unknown (surface cities and capital)",
+        "Type": "Unknown",
         "Description": "No named Andorian capital city or surface metropolitan area is established on-screen in the referenced episodes."
       }
     ],
-    "Inhabitants": "Andorians are the native inhabitants associated with Andoria on-screen. Star Trek: Enterprise depicts the Aenar as a distinct Andorian subgroup living in subterranean communities. Population totals, demographics, and other resident species are not stated on-screen.",
-    "Tourism": "Not stated on-screen. Andoria is primarily presented in-story through diplomacy, security incidents, and cultural/military encounters rather than through leisure travel.",
-    "Logistics": "Not stated on-screen. Specifics such as entry permissions, customs/immigration procedures, safe-travel advisories, or recommended routes are not established on-screen.",
+    "Inhabitants": "Andorians are the native inhabitants associated with Andoria on-screen. Star Trek: Enterprise depicts the Aenar as a distinct Andorian subgroup living in subterranean communities. Population totals, demographics, and other resident species are unknown.",
+    "Tourism": "unknown. Andoria is primarily presented in-story through diplomacy, security incidents, and cultural/military encounters rather than through leisure travel.",
+    "Logistics": "unknown. Specifics such as entry permissions, customs/immigration procedures, safe-travel advisories, or recommended routes are not established on-screen.",
     "Weather": {
       "ClimateType": "Cold / icy conditions (shown on-screen)",
-      "Seasonality": "Not stated on-screen",
-      "TypicalConditions": "Snow and ice conditions are depicted on-screen; typical temperatures and weather patterns are not stated on-screen.",
-      "Hazards": "Not stated on-screen (beyond the inherent risks of severe cold implied by setting)."
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Snow and ice conditions are depicted on-screen; typical temperatures and weather patterns are unknown.",
+      "Hazards": "unknown (beyond the inherent risks of severe cold implied by setting)."
     },
     "History": {
-      "Overview": "On-screen (Enterprise era), Andoria is repeatedly referenced in the context of heightened tensions with Vulcan authorities, including allegations of surveillance and espionage directed at Andoria. Andoria is also the setting for events involving the Aenar during an attempted attack that is stopped with outside assistance. Broader prehistory and later political timelines are not stated on-screen.",
+      "Overview": "On-screen (Enterprise era), Andoria is repeatedly referenced in the context of heightened tensions with Vulcan authorities, including allegations of surveillance and espionage directed at Andoria. Andoria is also the setting for events involving the Aenar during an attempted attack that is stopped with outside assistance. Broader prehistory and later political timelines are unknown.",
       "KeyEras": [
         {
           "Era": "22nd century (Enterprise era)",
@@ -306,7 +306,7 @@
         },
         {
           "Era": "Federation era (later centuries)",
-          "Summary": "Andorians are shown serving and representing Federation institutions across eras, but Andoria’s planet-specific political history in these periods is not stated on-screen."
+          "Summary": "Andorians are shown serving and representing Federation institutions across eras, but Andoria’s planet-specific political history in these periods is unknown."
         }
       ],
       "MajorEvents": [
@@ -321,41 +321,41 @@
       ]
     },
     "Government": {
-      "Polity": "Not stated on-screen. Andorian military/security is represented on-screen by the Andorian Imperial Guard.",
-      "Capital": "Not stated on-screen",
+      "Polity": "unknown. Andorian military/security is represented on-screen by the Andorian Imperial Guard.",
+      "Capital": "Unknown",
       "Institutions": [
         "Andorian Imperial Guard (shown on-screen)",
-        "Not stated on-screen (civil government institutions are not detailed)"
+        "unknown (civil government institutions are not detailed)"
       ],
       "LawsAffectingVisitors": [
-        "Not stated on-screen"
+        "Unknown"
       ],
       "Notes": "Andoria’s internal governance and legal system are not described in detail on-screen; references focus on security and diplomacy in specific incidents."
     },
     "Economy": {
-      "Overview": "Not stated on-screen",
+      "Overview": "Unknown",
       "PrimaryIndustries": [
-        "Not stated on-screen"
+        "Unknown"
       ],
-      "TradeNotes": "Not stated on-screen",
-      "LocalCommerceNotes": "Not stated on-screen"
+      "TradeNotes": "Unknown",
+      "LocalCommerceNotes": "Unknown"
     },
     "Culture": {
-      "Overview": "Not stated on-screen in a comprehensive way.",
+      "Overview": "unknown in a comprehensive way.",
       "SocialCustoms": [
         "Andorian ale is referenced/consumed on-screen as a notable Andorian beverage.",
-        "Other social customs are not stated on-screen."
+        "Other social customs are unknown."
       ],
-      "ReligiousLife": "Not stated on-screen",
-      "Festivals": "Not stated on-screen",
-      "ArtsAndMedia": "Not stated on-screen",
-      "LanguageNotes": "Not stated on-screen"
+      "ReligiousLife": "Unknown",
+      "Festivals": "Unknown",
+      "ArtsAndMedia": "Unknown",
+      "LanguageNotes": "Unknown"
     },
     "Environment": {
-      "Overview": "Cold, ice-dominated environments are shown on-screen; other environmental specifics are not stated on-screen.",
-      "Seasons": "Not stated on-screen",
-      "NaturalHazards": "Not stated on-screen (beyond implied severe cold)",
-      "NightSky": "Not stated on-screen"
+      "Overview": "Cold, ice-dominated environments are shown on-screen; other environmental specifics are unknown.",
+      "Seasons": "Unknown",
+      "NaturalHazards": "unknown (beyond implied severe cold)",
+      "NightSky": "Unknown"
     },
     "Appearances": {
       "Overview": "Andoria is primarily referenced and depicted in Star Trek: Enterprise in stories centered on the Andorians and the Aenar.",
@@ -376,6 +376,562 @@
       ],
       "Films": [],
       "Notes": "Andoria is referenced in additional episodes involving the Andorians, but only explicitly verified references are listed here."
+    }
+  },
+  {
+    "PlanetID": "planet-qonos",
+    "Name": "Qo'noS",
+    "AlternateNames": [
+      "Kronos"
+    ],
+    "Tags": [
+      "Homeworld",
+      "Klingon government center",
+      "Klingon High Council"
+    ],
+    "TypeTags": [
+      "Homeworld",
+      "EmpireCapital"
+    ],
+    "Meta": {
+      "CanonicalName": "Qo'noS",
+      "Classification": "Inhabited planet; Klingon homeworld",
+      "Affiliation": "Klingon Empire",
+      "NativeSpecies": [
+        "Klingon"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Qo'noS.png"
+    },
+    "TravelSummary": "Qo'noS is the homeworld of the Klingon people and the primary seat of Klingon political power shown on-screen, associated with the First City and the Great Hall where the Klingon High Council convenes.\n\nVisitors in Federation-era stories typically approach Qo'noS for high-stakes diplomacy, legal proceedings, or House politics rather than leisure travel. Access to major political sites is portrayed as tightly controlled and strongly shaped by the current Chancellor, the High Council, and the major Houses.\n\nQo'noS is also tied to one of the Klingon Empire’s defining modern crises: the destruction of Praxis (an energy facility associated with Qo'noS) in 2293 and the resulting environmental emergency referenced in Star Trek VI: The Undiscovered Country, which drives the film’s peace negotiations.",
+    "Location": {
+      "Quadrant": "Unknown",
+      "Sector": "Unknown",
+      "StarSystem": "Unknown",
+      "Region": "Klingon Empire",
+      "NearbyLandmarks": [
+        "Praxis"
+      ]
+    },
+    "Appearance": "Depicted on-screen as a rugged, imposing world: rocky terrain, harsh architecture, and dramatic skies are commonly used to emphasize Klingon culture and the gravity of political scenes set there.",
+    "Geography": "Unknown (specific global geography is not described consistently on-screen beyond localized exterior/establishing shots).",
+    "CitiesAndSites": [
+      {
+        "Name": "First City",
+        "Type": "Capital / Government district",
+        "Description": "Central governmental city associated with Klingon leadership and the High Council; depicted as the setting for major political gatherings and ceremonial spaces."
+      },
+      {
+        "Name": "Great Hall",
+        "Type": "Government / Ceremonial hall",
+        "Description": "The principal meeting place shown for the Klingon High Council, used for succession, trials, and major state decisions."
+      },
+      {
+        "Name": "Klingon High Council Chamber",
+        "Type": "Government",
+        "Description": "Interior political setting associated with Council proceedings; scenes here typically center on House accusations, succession disputes, and questions of honor."
+      }
+    ],
+    "Inhabitants": "Primarily Klingons. Long-term non-Klingon demographic details are Unknown.",
+    "Tourism": "Unknown (Qo'noS is portrayed more as a political and cultural destination than a conventional tourist world; specific visitor attractions are not described on-screen).",
+    "Logistics": "Travel is depicted as politically sensitive and security-intensive, especially around High Council sites and during periods of internal conflict. Specific entry requirements and civil regulations are Unknown.",
+    "Weather": {
+      "ClimateType": "Unknown",
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Unknown (on-screen depictions vary and are typically scene-driven rather than climatological).",
+      "Hazards": [
+        "Unknown"
+      ]
+    },
+    "History": {
+      "Overview": "Qo'noS is repeatedly framed as the Klingon Empire’s political and cultural heart. Major on-screen events connected to the planet include High Council proceedings and power struggles in the 24th century, and the environmental crisis following the Praxis disaster referenced in 2293, which becomes a catalyst for Klingon–Federation peace negotiations.",
+      "KeyEras": [
+        {
+          "Era": "Late 23rd century (2293)",
+          "Summary": "Praxis is destroyed and the resulting ecological emergency is presented as a driver for Klingon leadership to pursue peace with the Federation (Star Trek VI context)."
+        },
+        {
+          "Era": "24th century (2360s–2370s)",
+          "Summary": "The High Council and succession politics are depicted through multiple visits connected to Worf’s family and Klingon internal power struggles."
+        },
+        {
+          "Era": "22nd century (Enterprise era)",
+          "Summary": "Qo'noS is referenced as the Klingon homeworld and appears in the context of early Human–Klingon contact; detailed planetary history beyond those story contexts is Unknown."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "2293",
+          "Event": "Praxis disaster creates an environmental crisis referenced as threatening Qo'noS’ future habitability; this crisis drives the peace process in Star Trek VI: The Undiscovered Country."
+        },
+        {
+          "When": "2366",
+          "Event": "High Council proceedings on Qo'noS are central to Worf’s family dishonor and the politics of Klingon Houses (TNG era)."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Klingon Empire",
+      "Capital": "First City (associated with the High Council and major state institutions)",
+      "Institutions": [
+        "Klingon High Council",
+        "Chancellor of the Klingon Empire",
+        "Great Hall (High Council meeting place)"
+      ],
+      "LawsAffectingVisitors": [
+        "Unknown"
+      ],
+      "Notes": "On-screen depictions focus on Council proceedings, succession, and House politics; detailed civil administration and legal codes are Unknown."
+    },
+    "Economy": {
+      "Overview": "Unknown (on-screen sources do not provide a consistent description of Qo'noS’ economic system).",
+      "PrimaryIndustries": [
+        "Unknown"
+      ],
+      "TradeNotes": "Unknown",
+      "LocalCommerceNotes": "Unknown"
+    },
+    "Culture": {
+      "Overview": "Klingon culture is portrayed as tradition-bound and centered on honor, House allegiance, and martial values, with politics often expressed through formal challenges, ceremony, and public declarations.",
+      "SocialCustoms": "Rites of honor, formal accusations, and House-based obligations are repeatedly depicted. Specific visitor etiquette varies by context but is generally portrayed as strict and status-conscious.",
+      "ReligiousLife": "Unknown (religious practice on Qo'noS is not consistently shown in a single, comprehensive way).",
+      "Festivals": "Unknown",
+      "ArtsAndMedia": "Unknown (cultural arts are referenced broadly across Klingon stories, but specific Qo'noS institutions are not detailed on-screen).",
+      "LanguageNotes": "Klingon language is frequently used in ceremonial, political, and military contexts; Federation Standard is used in multilingual diplomatic settings."
+    },
+    "Environment": {
+      "Overview": "Qo'noS is depicted as inhabited with heavy cultural and political infrastructure. In 2293, the Praxis disaster is explicitly linked to environmental damage affecting Qo'noS’ atmosphere in Star Trek VI’s narrative framing.",
+      "Seasons": "Unknown",
+      "NaturalHazards": [
+        "Unknown"
+      ],
+      "NightSky": "Unknown"
+    },
+    "Appearances": {
+      "Overview": "Qo'noS appears on-screen primarily as the Klingon Empire’s governmental and ceremonial center, used for High Council scenes, succession crises, and major diplomatic turning points.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "TNG",
+          "Highlights": [
+            "High Council and Great Hall scenes tied to Worf’s family honor and Klingon succession politics."
+          ]
+        },
+        {
+          "Era": "DS9",
+          "Highlights": [
+            "Qo'noS is depicted in \"The House of Quark\" as the setting for Klingon House and High Council business."
+          ]
+        },
+        {
+          "Era": "ENT",
+          "Highlights": [
+            "Qo'noS is referenced as the Klingon homeworld early in Human deep-space operations and appears in the context of Klingon legal/political proceedings."
+          ]
+        },
+        {
+          "Era": "Star Trek VI",
+          "Highlights": [
+            "Praxis disaster drives Klingon–Federation peace negotiations; Qo'noS is central to the stakes of the crisis."
+          ]
+        },
+        {
+          "Era": "DIS",
+          "Highlights": [
+            "Qo'noS is shown in the context of the Federation–Klingon war, including operations in/under the planet and political outcomes tied to Klingon leadership."
+          ]
+        },
+        {
+          "Era": "Kelvin films",
+          "Highlights": [
+            "Referred to as Kronos and depicted as the Klingon homeworld in Star Trek Into Darkness (alternate reality)."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "TNG: \"Sins of the Father\" (Klingon High Council/Great Hall on Qo'noS)",
+        "TNG: \"Redemption\" / \"Redemption II\" (Arbiter of Succession; events involve travel to/from Qo'noS)",
+        "DS9: \"The House of Quark\" (Qo'noS depicted)",
+        "ENT: \"Broken Bow\" (mission destination: Qo'noS; Klingon homeworld context)",
+        "ENT: \"Judgment\" (Klingon legal proceedings; Qo'noS context)"
+      ],
+      "Films": [
+        "Star Trek VI: The Undiscovered Country (Praxis disaster; peace negotiations tied to Qo'noS’ environmental stakes)",
+        "Star Trek Into Darkness (Kronos/Qo'noS depicted in alternate reality)"
+      ],
+      "Notes": "Qo'noS is referenced across many Klingon-focused stories; this list highlights anchor appearances establishing its role as the Klingon political center and the Praxis-linked crisis."
+    }
+  },
+  {
+    "PlanetID": "planet-vulcan",
+    "Name": "Vulcan",
+    "AlternateNames": [
+      "Ni'Var"
+    ],
+    "Tags": [
+      "Homeworld",
+      "Vulcan civilization center",
+      "Federation founding world"
+    ],
+    "TypeTags": [
+      "Homeworld"
+    ],
+    "Meta": {
+      "CanonicalName": "Vulcan",
+      "Classification": "Inhabited Class M world; frequently depicted with arid/desert regions and rugged terrain",
+      "Affiliation": "Vulcan is a member of the United Federation of Planets in the Federation era; in the mid‑22nd century it is depicted with the Vulcan High Command as a dominant governing/military authority",
+      "NativeSpecies": [
+        "Vulcan"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Vulcan.png"
+    },
+    "TravelSummary": "Vulcan is the homeworld of the Vulcan people and a major center of Vulcan culture, science, and diplomacy. On-screen visits commonly emphasize its traditions of logic and discipline alongside long‑standing ceremonial practices (including rites connected to pon farr, kal‑if‑fee, and katra).\n\nVisually, Vulcan is most often presented through stark, sunlit landscapes—especially arid deserts and rocky highlands. Some stories focus on dangerous wilderness regions (such as the Forge), while others center on civic and institutional settings linked to Vulcan government and academia.\n\nVulcan’s wider significance in Star Trek is tied to its long relationship with Earth and Starfleet, its role within the Federation era, and its deep historical connection to the Romulans. A separate film continuity (the Kelvin timeline) depicts Vulcan’s destruction as a defining event for that timeline.",
+    "Location": {
+      "Quadrant": "Unknown",
+      "Sector": "Unknown",
+      "StarSystem": "Unknown",
+      "Region": "Unknown",
+      "NearbyLandmarks": [
+        "Unknown"
+      ]
+    },
+    "Appearance": "Often depicted as a reddish‑toned, arid world with broad desert basins, harsh sunlight, and rugged mountain terrain. Some episodes highlight heat, dust, and wind as immediate environmental realities for surface travel.",
+    "Geography": "Vulcan is most commonly shown through dry deserts, rocky canyons, and mountainous or highland terrain. Named regions and sites appear in story contexts (for example, the Forge and Mount Seleya), but a comprehensive global map and biome breakdown is Unknown.",
+    "CitiesAndSites": [
+      {
+        "Name": "ShiKahr",
+        "Type": "City",
+        "Description": "A named Vulcan city referenced and depicted as an important civic location in Vulcan‑centered stories."
+      },
+      {
+        "Name": "Vulcan High Command complex",
+        "Type": "Government / military",
+        "Description": "Associated with Vulcan state authority during the Enterprise era; used as a setting for Vulcan political and security decisions."
+      },
+      {
+        "Name": "Vulcan Science Academy",
+        "Type": "Academic / scientific",
+        "Description": "A prominent Vulcan institution referenced on-screen as a leading center for Vulcan science and education."
+      },
+      {
+        "Name": "Mount Seleya",
+        "Type": "Sacred site",
+        "Description": "A revered location tied to Vulcan spiritual practice and major rites, including ceremonies involving katra."
+      },
+      {
+        "Name": "The Forge",
+        "Type": "Wilderness / desert region",
+        "Description": "A hazardous desert region depicted with extreme heat and sandstorms; used as a key setting in the Enterprise-era Vulcan arc."
+      }
+    ],
+    "Inhabitants": "Vulcans are Vulcan’s native sentient species and the planet’s primary population in on-screen depictions. Other residents and visitors appear in diplomatic, academic, and ceremonial contexts, but a demographic breakdown is Unknown.",
+    "Tourism": "Visitor activity shown on-screen is most often tied to official business (diplomacy, research, security matters) and to attendance at significant cultural or spiritual sites. Leisure tourism patterns and visitor infrastructure are Unknown.",
+    "Logistics": "Entry and movement on Vulcan are depicted as controlled and context-dependent, especially around government facilities and sacred locations. Required permits, customs procedures, and routine visitor rules are Unknown.",
+    "Weather": {
+      "ClimateType": "Arid / desert (as most commonly depicted on-screen)",
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Dry heat, bright sun, and wind‑driven dust in desert regions; conditions vary by location and story focus.",
+      "Hazards": [
+        "Heat exposure and dehydration risk during surface travel",
+        "Sandstorms / reduced visibility in desert regions (e.g., the Forge)",
+        "Navigation disorientation in blowing dust"
+      ]
+    },
+    "History": {
+      "Overview": "On-screen history ties Vulcan to the teachings of Surak and to a cultural emphasis on logic, discipline, and the management of emotion. Vulcan’s past also includes an ancient divergence that links Vulcans and Romulans through shared ancestry. In the mid‑22nd century, Vulcan politics are depicted through the Vulcan High Command and a major internal reckoning tied to Vulcan tradition and governance. In later eras, Vulcan is portrayed as a key Federation member world and a focal point for stories involving Vulcan identity, diplomacy, and Romulan reunification efforts.",
+      "KeyEras": [
+        {
+          "Era": "Ancient Vulcan history",
+          "Summary": "Surak’s philosophy becomes central to Vulcan identity; the Vulcan–Romulan divergence is treated as a formative historical split."
+        },
+        {
+          "Era": "Enterprise era (22nd century)",
+          "Summary": "Vulcan is shown with the High Command as a powerful authority; internal conflict and revelations about Vulcan tradition reshape politics and policy."
+        },
+        {
+          "Era": "23rd century (TOS era and films)",
+          "Summary": "Vulcan appears in stories centered on rites such as kal‑if‑fee and ceremonies involving katra, including the fal‑tor‑pan."
+        },
+        {
+          "Era": "24th century (TNG era)",
+          "Summary": "Vulcan’s political and cultural context intersects with Spock’s reunification efforts and broader Federation diplomacy."
+        },
+        {
+          "Era": "Kelvin timeline",
+          "Summary": "One film continuity depicts the destruction of Vulcan during Nero’s attack, treated as a defining catastrophe for that timeline."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "Ancient era",
+          "Event": "Surak’s teachings and Vulcan cultural reforms become a defining foundation for Vulcan society."
+        },
+        {
+          "When": "Ancient era",
+          "Event": "Vulcans and Romulans are established as having shared ancestry and an ancient divergence."
+        },
+        {
+          "When": "22nd century (Enterprise era)",
+          "Event": "A major Vulcan internal crisis involving the Forge and ancient artifacts/teachings drives political upheaval and reform."
+        },
+        {
+          "When": "23rd century",
+          "Event": "Fal‑tor‑pan ceremonies on Vulcan are central to restoring Spock’s katra (film depiction)."
+        },
+        {
+          "When": "24th century",
+          "Event": "Spock’s reunification movement intersects with Vulcan politics and Romulan relations (episode depiction)."
+        },
+        {
+          "When": "Kelvin timeline (23rd century)",
+          "Event": "Vulcan is destroyed by Nero’s red‑matter attack (film depiction)."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Vulcan planetary governance is depicted differently across eras. The Enterprise era foregrounds the Vulcan High Command as a dominant authority; later stories treat Vulcan within Federation political context. A single, stable constitutional description is Unknown.",
+      "Capital": "Unknown",
+      "Institutions": [
+        "Vulcan High Command (Enterprise era)",
+        "Vulcan Council / leadership bodies (titles and structure vary by story; comprehensive civic structure is Unknown)",
+        "Vulcan Science Academy (major institution; role as a government body is Unknown)",
+        "Federation diplomatic and intergovernmental engagement involving Vulcan (details vary by era)"
+      ],
+      "LawsAffectingVisitors": [
+        "Unknown"
+      ],
+      "Notes": "On-screen depictions focus on security, diplomacy, and ideological conflict more than routine civil administration."
+    },
+    "Economy": {
+      "Overview": "A comprehensive description of Vulcan’s economy is Unknown. Vulcan is consistently portrayed as technologically advanced with strong emphasis on science, education, and public institutions.",
+      "PrimaryIndustries": [
+        "Science and research",
+        "Education and academic institutions",
+        "Diplomatic and governmental services"
+      ],
+      "TradeNotes": "Unknown",
+      "LocalCommerceNotes": "Unknown"
+    },
+    "Culture": {
+      "Overview": "Vulcan culture is depicted as strongly shaped by Surak’s philosophy and by social disciplines emphasizing logic, restraint, and formal practice. At the same time, multiple stories demonstrate that tradition and ritual remain central to Vulcan identity.",
+      "SocialCustoms": "Formal speech and conduct, highly regulated emotional expression, and structured ritual practices are repeatedly shown. The extent of variation across Vulcan society is Unknown.",
+      "ReligiousLife": "Vulcan spiritual practices and monastic traditions are depicted (including sacred sites and rites involving katra). The organizational structure of religion on Vulcan is Unknown.",
+      "Festivals": "Unknown",
+      "ArtsAndMedia": "Cultural production exists but is not described comprehensively on-screen; notable attention is placed on philosophy, education, and ceremonial tradition.",
+      "LanguageNotes": "The Vulcan language is referenced; Federation Standard is also used in interspecies contexts."
+    },
+    "Environment": {
+      "Overview": "Vulcan environments shown on-screen frequently emphasize arid deserts, heat, and rugged terrain. Specific planetary ecology and atmospheric details are Unknown beyond what is shown in individual scenes.",
+      "Seasons": "Unknown",
+      "NaturalHazards": [
+        "Extreme heat in desert regions",
+        "Sandstorms / blowing dust (e.g., the Forge)"
+      ],
+      "NightSky": "Unknown"
+    },
+    "Appearances": {
+      "Overview": "Vulcan appears across Star Trek as a major homeworld and cultural touchstone, often serving as the setting for stories about Vulcan ritual, political authority, identity, and diplomacy.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "TOS",
+          "Highlights": [
+            "Vulcan surface setting for pon farr–related rites and kal‑if‑fee.",
+            "Depictions of Vulcan ceremony and formal cultural practice."
+          ]
+        },
+        {
+          "Era": "ENT",
+          "Highlights": [
+            "The Forge and a major Vulcan political/spiritual arc involving the High Command and ancient tradition.",
+            "Vulcan domestic security and ideological conflict shaping policy toward Earth and Starfleet."
+          ]
+        },
+        {
+          "Era": "TOS-era films",
+          "Highlights": [
+            "Fal‑tor‑pan ceremony and katra‑related rites on Vulcan."
+          ]
+        },
+        {
+          "Era": "TNG",
+          "Highlights": [
+            "Vulcan political context and Spock’s reunification movement involving Romulan relations."
+          ]
+        },
+        {
+          "Era": "Kelvin films",
+          "Highlights": [
+            "Vulcan’s depiction and destruction as a pivotal event in the Kelvin timeline."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "TOS: \"Amok Time\" (Vulcan; pon farr; kal‑if‑fee)",
+        "ENT: \"The Forge\" / \"Awakening\" / \"Kir'Shara\" (Vulcan; the Forge; High Command; Syrrannite arc)",
+        "TNG: \"Unification\" (Vulcan political context; reunification movement)"
+      ],
+      "Films": [
+        "Star Trek III: The Search for Spock (Vulcan; fal‑tor‑pan; Mount Seleya)",
+        "Star Trek (2009) (Kelvin timeline; Vulcan’s destruction)"
+      ],
+      "Notes": "This list highlights anchor stories where Vulcan is visited or its defining institutions and rites are central on-screen; Vulcan is referenced in many additional episodes and films."
+    }
+  },
+  {
+    "PlanetID": "planet-ferenginar",
+    "Name": "Ferenginar",
+    "AlternateNames": [],
+    "Tags": [
+      "Homeworld",
+      "Ferengi Alliance capital world"
+    ],
+    "TypeTags": [
+      "Homeworld"
+    ],
+    "Meta": {
+      "CanonicalName": "Ferenginar",
+      "Classification": "Inhabited planet; homeworld of the Ferengi. Further physical classification is Unknown.",
+      "Affiliation": "Ferengi Alliance",
+      "NativeSpecies": [
+        "Ferengi"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Ferenginar.png"
+    },
+    "TravelSummary": "Ferenginar is the homeworld of the Ferengi and the seat of the Ferengi Alliance. On-screen references emphasize a perpetually wet world associated with frequent rain. Visitor access, required documents, and standard travel restrictions are Unknown.",
+    "Location": {
+      "Quadrant": "Alpha Quadrant",
+      "Sector": "Unknown",
+      "StarSystem": "Ferenginar system",
+      "Region": "Ferengi Territory",
+      "NearbyLandmarks": []
+    },
+    "Appearance": "Depicted and described as a dark, rain-soaked world with persistent precipitation. Specific orbital/astronomical details and surface distribution of biomes are Unknown.",
+    "Geography": "On-screen dialogue and set dressing associate Ferenginar with waterlogged terrain and muddy conditions. Named continents, oceans, mountain ranges, and global surface maps are Unknown.",
+    "CitiesAndSites": [
+      {
+        "Name": "Tower of Commerce",
+        "Type": "Government / Commercial complex",
+        "Description": "A major Ferengi administrative and commercial site referenced/seen in DS9-era stories involving the Grand Nagus and Ferengi government affairs."
+      },
+      {
+        "Name": "Sacred Marketplace",
+        "Type": "Marketplace",
+        "Description": "Referenced as a prominent marketplace on Ferenginar; specific location and size are Unknown."
+      },
+      {
+        "Name": "Ishka’s house",
+        "Type": "Residence",
+        "Description": "Residence of Ishka (Quark and Rom’s mother) shown in DS9-era visits to Ferenginar."
+      },
+      {
+        "Name": "Chamber of Petitioners",
+        "Type": "Government chamber",
+        "Description": "A formal audience/administrative space associated with the Grand Nagus’ operations; exact placement beyond Ferenginar is Unknown."
+      }
+    ],
+    "Inhabitants": "Native population is Ferengi. Presence of significant non-Ferengi resident communities is Unknown. Off-world visitors appear primarily in business or official contexts on-screen.",
+    "Tourism": "Tourism as a dedicated industry is Unknown. On-screen portrayals emphasize business travel, official visits, and commerce-driven activity.",
+    "Logistics": "Entry/visa requirements, customs procedures, and common visitor restrictions are Unknown. Commercial regulation by Ferengi authorities (including the Ferengi Commerce Authority and the Office of the Grand Nagus) is referenced on-screen.",
+    "Weather": {
+      "ClimateType": "Rainy / waterlogged (frequent rainfall emphasized on-screen)",
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Frequent rain and overcast skies are emphasized; typical temperatures and humidity ranges are Unknown.",
+      "Hazards": [
+        "Unknown"
+      ]
+    },
+    "History": {
+      "Overview": "On-screen Ferenginar stories focus on Ferengi domestic affairs, commerce, and political change under the Grand Nagus. Specific ancient/early history, founding dates, and pre-warp timelines are Unknown.",
+      "KeyEras": [
+        {
+          "Era": "24th century (DS9 era)",
+          "Summary": "Multiple DS9-era stories place Ferengi political and social change in motion, including reforms associated with the Grand Nagus and disputes involving Ferengi institutions."
+        },
+        {
+          "Era": "Later-era references",
+          "Summary": "Later on-screen references to Ferenginar continue to treat it as the Ferengi homeworld and Alliance political center; detailed continuity beyond those references is Unknown."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "DS9 era",
+          "Event": "Ferengi domestic disputes and reforms tied to the Grand Nagus and Ferengi law become recurring on-screen plot points."
+        },
+        {
+          "When": "DS9 era",
+          "Event": "Ferengi social rules regarding clothing and profit for females are challenged and altered in Ferengi-focused storylines."
+        },
+        {
+          "When": "DS9 era",
+          "Event": "Leadership changes in the office of the Grand Nagus impact Ferengi policy and the Alliance’s direction."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Ferengi Alliance",
+      "Capital": "Unknown",
+      "Institutions": [
+        "Office of the Grand Nagus",
+        "Ferengi Commerce Authority",
+        "Tower of Commerce"
+      ],
+      "LawsAffectingVisitors": [
+        "Unknown"
+      ],
+      "Notes": "On-screen governance is centered on the Grand Nagus and Ferengi legal/commercial institutions. Constitutional structure, legislative bodies, and judicial hierarchy are Unknown."
+    },
+    "Economy": {
+      "Overview": "Commerce and profit are central to Ferengi society on-screen, and Ferenginar is treated as the Alliance’s economic and administrative heart. Specific planet-side industries and resource exports are Unknown.",
+      "PrimaryIndustries": [
+        "Commerce and trade"
+      ],
+      "TradeNotes": "Major trade partners and tariff regimes are Unknown.",
+      "LocalCommerceNotes": "Local currency mechanics and market structure beyond general Ferengi ‘latinum’ usage are Unknown."
+    },
+    "Culture": {
+      "Overview": "On-screen Ferengi culture is strongly profit-oriented and often framed through the Rules of Acquisition, contract law, and status tied to wealth. Cultural variation by region on Ferenginar is Unknown.",
+      "SocialCustoms": "Social norms depicted on-screen include aggressive bargaining, strict contract etiquette, and gender restrictions in traditional Ferengi society (with reforms occurring over time).",
+      "ReligiousLife": "Unknown",
+      "Festivals": "Unknown",
+      "ArtsAndMedia": "Unknown",
+      "LanguageNotes": "Unknown"
+    },
+    "Environment": {
+      "Overview": "Frequent rainfall is emphasized on-screen; broader ecological details are Unknown.",
+      "Seasons": "Unknown",
+      "NaturalHazards": [
+        "Unknown"
+      ],
+      "NightSky": "Unknown"
+    },
+    "Appearances": {
+      "Overview": "Ferenginar is used on-screen primarily for Ferengi-focused political, legal, and family stories, establishing it as the Ferengi homeworld and Alliance center.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "DS9",
+          "Highlights": [
+            "Visits to Ferenginar for Ferengi family and political plots; depictions of Ferengi institutions and reforms."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "DS9: Family Business",
+        "DS9: Ferengi Love Songs",
+        "DS9: Profit and Lace",
+        "DS9: The Dogs of War"
+      ],
+      "Films": [],
+      "Notes": "List reflects prominent on-screen Ferenginar-focused episodes; additional references may exist. Overall completeness is Unknown."
     }
   }
 ]
