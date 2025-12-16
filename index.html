@@ -415,505 +415,648 @@
     </div>
   </div>
   <script>
-    const DATA_URLS = [
-      "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Planets.json"
-    ];
+const DATA_URLS = [
+  "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Planets.json"
+];
 
-    const els = {
-      list: document.getElementById("planetList"),
-      detail: document.getElementById("detail"),
-      search: document.getElementById("search"),
-      countMeta: document.getElementById("countMeta"),
-      buildMeta: document.getElementById("buildMeta"),
-      reloadBtn: document.getElementById("reloadBtn")
-    };
+const els = {
+  list: document.getElementById("planetList"),
+  detail: document.getElementById("detail"),
+  search: document.getElementById("search"),
+  countMeta: document.getElementById("countMeta"),
+  buildMeta: document.getElementById("buildMeta"),
+  reloadBtn: document.getElementById("reloadBtn")
+};
 
-    let rawData = null;
-    let planets = [];
-    let filtered = [];
-    let selectedId = null;
+let rawData = null;
+let planets = [];
+let filtered = [];
+let selectedId = null;
 
-    const esc = (s) => (s ?? "").toString().replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
-    const norm = (s) => (s ?? "").toString().toLowerCase().trim();
+function esc(s){
+  return (s ?? "").toString().replace(/[&<>"']/g, (c) => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
 
-    const pickFirstNonEmpty = (arr) => Array.isArray(arr) && arr.length ? arr[0] : null;
+function br(s){
+  const t = esc(s);
+  return t ? t.replace(/\n/g, "<br>") : "";
+}
 
-    async function fetchFirstWorkingUrl(urls){
-      let lastErr = null;
-      for (const url of urls){
-        try{
-          const res = await fetch(url, { cache: "no-store" });
-          if (!res.ok) throw new Error("HTTP " + res.status);
-          const j = await res.json();
-          return { url, data: j };
-        }catch(e){
-          lastErr = e;
-        }
-      }
-      throw lastErr || new Error("Unable to load data.");
-    }
+function norm(s){
+  return (s ?? "").toString().toLowerCase().trim();
+}
 
-    function buildCard(p){
-      const alt = Array.isArray(p.AlternateNames) && p.AlternateNames.length ? p.AlternateNames.join(" • ") : "";
-      const tags = Array.isArray(p.TypeTags) ? p.TypeTags : [];
-      const subBits = [];
-      if (p.Location && p.Location.StarSystem) subBits.push(p.Location.StarSystem);
-      if (p.Location && p.Location.Sector) subBits.push(p.Location.Sector);
-      if (p.Location && p.Location.Quadrant) subBits.push(p.Location.Quadrant);
-      const sub = subBits.filter(Boolean).join(" • ");
-      const imgUrl = p.Media && p.Media.HeroImageURL ? p.Media.HeroImageURL : null;
-
-      const div = document.createElement("div");
-      div.className = "card" + (p.PlanetID === selectedId ? " active" : "");
-      div.dataset.id = p.PlanetID;
-
-      const thumb = document.createElement("div");
-      thumb.className = "thumb";
-      if (imgUrl){
-        const img = document.createElement("img");
-        img.src = imgUrl;
-        img.alt = p.Name;
-        thumb.appendChild(img);
-      }
-      div.appendChild(thumb);
-
-      const info = document.createElement("div");
-      info.style.minWidth = "0";
-
-      const h = document.createElement("div");
-      h.className = "cardTitle";
-      h.textContent = p.Name || "Untitled";
-      info.appendChild(h);
-
-      const s = document.createElement("div");
-      s.className = "cardSub";
-      const line = [alt, sub].filter(Boolean).join(" — ");
-      s.textContent = line || " ";
-      info.appendChild(s);
-
-      const br = document.createElement("div");
-      br.className = "badgeRow";
-      (tags.slice(0, 6)).forEach((t, idx) => {
-        const b = document.createElement("div");
-        b.className = "badge" + (idx === 0 ? " gold" : "");
-        b.textContent = t;
-        br.appendChild(b);
-      });
-      info.appendChild(br);
-
-      div.appendChild(info);
-
-      div.addEventListener("click", () => selectPlanet(p.PlanetID, true));
-      return div;
-    }
-
-    function renderList(){
-      els.list.innerHTML = "";
-      if (!filtered.length){
-        const empty = document.createElement("div");
-        empty.className = "empty";
-        empty.textContent = "No matches.";
-        els.list.appendChild(empty);
-      } else {
-        filtered.forEach(p => els.list.appendChild(buildCard(p)));
-      }
-      els.countMeta.textContent = filtered.length + " / " + planets.length;
-    }
-
-    function kvRow(k, v){
-      const row = document.createElement("div");
-      row.className = "kv";
-      const kk = document.createElement("div");
-      kk.className = "k";
-      kk.textContent = k;
-      const vv = document.createElement("div");
-      vv.className = "v";
-      vv.innerHTML = v;
-      row.appendChild(kk);
-      row.appendChild(vv);
-      return row;
-    }
-
-    function ul(items){
-      const u = document.createElement("ul");
-      u.className = "ul";
-      items.forEach(it => {
-        const li = document.createElement("li");
-        li.innerHTML = it;
-        u.appendChild(li);
-      });
-      return u;
-    }
-
-    function section(name, bodyNode){
-      const s = document.createElement("div");
-      s.className = "section";
-      const head = document.createElement("div");
-      head.className = "sectionHead";
-      const n = document.createElement("div");
-      n.className = "name";
-      n.textContent = name;
-      head.appendChild(n);
-      s.appendChild(head);
-      const b = document.createElement("div");
-      b.className = "sectionBody";
-      b.appendChild(bodyNode);
-      s.appendChild(b);
-      return s;
-    }
-
-    function safeList(arr, mapFn){
-      if (!Array.isArray(arr) || !arr.length) return null;
-      return arr.map(mapFn);
-    }
-
-        function esc(s){
-      if (s === null || s === undefined) return "";
-      return String(s).replace(/[&<>"']/g, ch => ({
-        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-      }[ch]));
-    }
-    function br(s){
-      const t = esc(s);
-      return t ? t.replace(/\n/g, "<br>") : "";
-    }
-    function pill(text){
-      return `<span class="pill">${esc(text)}</span>`;
-    }
-    function bulletList(items, renderItem){
-      if (!Array.isArray(items) || !items.length) return `<div class="muted">—</div>`;
-      return `<ul class="ul">${items.map(it => `<li>${renderItem ? renderItem(it) : br(it)}</li>`).join("")}</ul>`;
-    }
-    function kvHtml(k, v){
-      const val = (v === null || v === undefined || v === "") ? `<span class="muted">—</span>` : br(v);
-      return `<div class="kv"><div class="k">${esc(k)}</div><div class="v">${val}</div></div>`;
-    }
-    function joinChips(arr){
-      if (!Array.isArray(arr) || !arr.length) return `<span class="muted">—</span>`;
-      return arr.map(pill).join(" ");
-    }
-
-    function renderDetail(planet){
-      if (!planet){
-        els.detail.innerHTML = `<div class="empty">Select a planet.</div>`;
-        return;
-      }
-
-      const loc = planet.Location || {};
-      const media = planet.Media || {};
-      const canon = planet.CanonAppearances || {};
-      const history = planet.History || {};
-      const gov = planet.Government || {};
-      const econ = planet.Economy || {};
-      const cult = planet.Culture || {};
-      const env = planet.Environment || {};
-      const app = planet.Appearances || {};
-      const dq = planet.DataQuality || {};
-      const weather = planet.Weather || {};
-
-      const sites = Array.isArray(planet.CitiesAndSites) ? planet.CitiesAndSites : [];
-
-      const hero = media.HeroImageURL ? esc(media.HeroImageURL) : "";
-
-      els.detail.innerHTML = `
-        <div class="hero">
-          <div class="heroImg" style="background-image:url('${hero}')"></div>
-          <div class="heroText">
-            <div class="heroTitle">${esc(planet.Name || "")}</div>
-            <div class="heroSub">${esc((planet.Meta && planet.Meta.CanonicalName) ? planet.Meta.CanonicalName : "")}</div>
-            <div class="chipRow">
-              ${planet.Tags && planet.Tags.length ? joinChips(planet.Tags) : `<span class="muted">—</span>`}
-            </div>
-          </div>
-        </div>
-
-        <div class="grid">
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Overview</div>
-              <div class="cardSub">At-a-glance</div>
-            </div>
-            <div class="cardBody">
-              <div class="p">${br(planet.TravelSummary || "")}</div>
-              ${kvHtml("Planet Type", planet.Meta && planet.Meta.Classification ? planet.Meta.Classification : "")}
-              ${kvHtml("Quadrant", loc.Quadrant || "")}
-              ${kvHtml("Sector", loc.Sector || "")}
-              ${kvHtml("Star System", loc.StarSystem || "")}
-              ${kvHtml("Region", loc.Region || "")}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Appearance</div>
-              <div class="cardSub">Look & feel</div>
-            </div>
-            <div class="cardBody">
-              <div class="p">${br(planet.Appearance || "")}</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Geography</div>
-              <div class="cardSub">Terrain & regions</div>
-            </div>
-            <div class="cardBody">
-              <div class="p">${br(planet.Geography || "")}</div>
-              ${loc.NearbyLandmarks && loc.NearbyLandmarks.length ? `<div class="hr"></div><div class="smallHead">Nearby / Landmarks</div>${bulletList(loc.NearbyLandmarks, x => br(x))}` : ``}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Inhabitants</div>
-              <div class="cardSub">People & society</div>
-            </div>
-            <div class="cardBody">
-              <div class="p">${br(planet.Inhabitants || "")}</div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Weather</div>
-              <div class="cardSub">Climate & hazards</div>
-            </div>
-            <div class="cardBody">
-              ${kvHtml("Climate Type", weather.ClimateType || "")}
-              ${kvHtml("Seasonality", weather.Seasonality || "")}
-              ${kvHtml("Typical Conditions", weather.TypicalConditions || "")}
-              <div class="hr"></div>
-              <div class="smallHead">Hazards</div>
-              ${bulletList(weather.Hazards || [], x => br(x))}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Visitor Notes</div>
-              <div class="cardSub">Access & etiquette</div>
-            </div>
-            <div class="cardBody">
-              <div class="smallHead">Visitation</div>
-              <div class="p">${br(planet.Tourism || "")}</div>
-              <div class="hr"></div>
-              <div class="smallHead">Logistics</div>
-              <div class="p">${br(planet.Logistics || "")}</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid">
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">History</div>
-              <div class="cardSub">Eras & major events</div>
-            </div>
-            <div class="cardBody">
-              <div class="p">${br(history.Overview || "")}</div>
-              <div class="hr"></div>
-              <div class="smallHead">Key Eras</div>
-              ${bulletList(history.KeyEras || [], e => `<b>${esc(e.Era || "")}</b>${e.Summary ? ` — ${br(e.Summary)}` : ``}`)}
-              <div class="hr"></div>
-              <div class="smallHead">Major Events</div>
-              ${bulletList(history.MajorEvents || [], e => `${e.When ? `<b>${esc(e.When)}</b>: ` : ``}${br(e.Event || "")}`)}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Government</div>
-              <div class="cardSub">Polity & institutions</div>
-            </div>
-            <div class="cardBody">
-              ${kvHtml("Polity", gov.Polity || "")}
-              ${kvHtml("Capital", gov.Capital || "")}
-              <div class="hr"></div>
-              <div class="smallHead">Institutions</div>
-              ${bulletList(gov.Institutions || [], x => br(x))}
-              <div class="hr"></div>
-              <div class="smallHead">Visitor-impacting rules</div>
-              ${bulletList(gov.LawsAffectingVisitors || [], x => br(x))}
-              ${gov.Notes ? `<div class="hr"></div><div class="smallHead">Notes</div><div class="p">${br(gov.Notes)}</div>` : ``}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Economy</div>
-              <div class="cardSub">Industry & trade</div>
-            </div>
-            <div class="cardBody">
-              <div class="p">${br(econ.Overview || "")}</div>
-              <div class="hr"></div>
-              <div class="smallHead">Primary industries</div>
-              ${bulletList(econ.PrimaryIndustries || [], x => br(x))}
-              ${econ.TradeNotes ? `<div class="hr"></div><div class="smallHead">Trade notes</div><div class="p">${br(econ.TradeNotes)}</div>` : ``}
-              ${econ.LocalCommerceNotes ? `<div class="hr"></div><div class="smallHead">Local commerce</div><div class="p">${br(econ.LocalCommerceNotes)}</div>` : ``}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Culture</div>
-              <div class="cardSub">Customs & language</div>
-            </div>
-            <div class="cardBody">
-              <div class="p">${br(cult.Overview || "")}</div>
-              <div class="hr"></div>
-              <div class="smallHead">Social customs</div>
-              <div class="p">${br(cult.SocialCustoms || "")}</div>
-              ${cult.ReligiousLife ? `<div class="hr"></div><div class="smallHead">Religious life</div><div class="p">${br(cult.ReligiousLife)}</div>` : ``}
-              ${cult.Festivals ? `<div class="hr"></div><div class="smallHead">Festivals</div><div class="p">${br(cult.Festivals)}</div>` : ``}
-              ${cult.ArtsAndMedia ? `<div class="hr"></div><div class="smallHead">Arts & media</div><div class="p">${br(cult.ArtsAndMedia)}</div>` : ``}
-              ${cult.LanguageNotes ? `<div class="hr"></div><div class="smallHead">Language</div><div class="p">${br(cult.LanguageNotes)}</div>` : ``}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Environment</div>
-              <div class="cardSub">Seasons & risks</div>
-            </div>
-            <div class="cardBody">
-              <div class="p">${br(env.Overview || "")}</div>
-              ${env.Seasons ? `<div class="hr"></div><div class="smallHead">Seasons</div><div class="p">${br(env.Seasons)}</div>` : ``}
-              <div class="hr"></div>
-              <div class="smallHead">Natural hazards</div>
-              ${bulletList(env.NaturalHazards || [], x => br(x))}
-              ${env.NightSky ? `<div class="hr"></div><div class="smallHead">Night sky</div><div class="p">${br(env.NightSky)}</div>` : ``}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Places & Sites</div>
-              <div class="cardSub">Cities, regions, landmarks</div>
-            </div>
-            <div class="cardBody">
-              ${sites.length ? `
-                <ul class="ul">
-                  ${sites.map(s => `<li><b>${esc(s.Name || "")}</b>${s.Type ? ` <span class="muted">(${esc(s.Type)})</span>` : ``}${s.Description ? `<div class="small">${br(s.Description)}</div>` : ``}</li>`).join("")}
-                </ul>
-              ` : `<div class="muted">—</div>`}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Appearances</div>
-              <div class="cardSub">Canon presence</div>
-            </div>
-            <div class="cardBody">
-              ${app.Overview ? `<div class="p">${br(app.Overview)}</div><div class="hr"></div>` : ``}
-              ${bulletList(app.BySeriesOrFilm || [], a => `<b>${esc(a.Era || "")}</b>${a.Highlights && a.Highlights.length ? `<div class="small">${esc(a.Highlights.join(" • "))}</div>` : ``}`)}
-              <div class="hr"></div>
-              <div class="smallHead">Canon appearances list</div>
-              <div class="p"><b>Episodes</b></div>
-              ${bulletList(canon.Episodes || [], x => br(x))}
-              <div class="p"><b>Films</b></div>
-              ${bulletList(canon.Films || [], x => br(x))}
-              ${canon.Notes ? `<div class="hr"></div><div class="smallHead">Notes</div><div class="p">${br(canon.Notes)}</div>` : ``}
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="cardHead">
-              <div class="cardTitle">Data Notes</div>
-              <div class="cardSub">Completeness</div>
-            </div>
-            <div class="cardBody">
-              ${dq.Confidence ? kvHtml("Confidence", dq.Confidence) : ``}
-              ${dq.Coverage ? kvHtml("Coverage", dq.Coverage) : ``}
-              ${dq.KnownGaps ? `<div class="hr"></div><div class="smallHead">Known gaps</div>${bulletList(dq.KnownGaps, x => br(x))}` : ``}
-              ${dq.VerificationNotes ? `<div class="hr"></div><div class="smallHead">Verification notes</div><div class="p">${br(dq.VerificationNotes)}</div>` : ``}
-            </div>
-          </div>
-        </div>
-      `;
-
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-    
-
-    function selectPlanet(id, scrollIntoView){
-      selectedId = id;
-      const p = planets.find(x => x.PlanetID === id);
-      renderList();
-      if (!p){
-        els.detail.innerHTML = '<div class="empty">Planet not found.</div>';
-        return;
-      }
-      renderDetail(p);
-      if (scrollIntoView){
-        const el = els.list.querySelector('[data-id="' + CSS.escape(id) + '"]');
-        if (el) el.scrollIntoView({ block: "nearest" });
-      }
-    }
-
-    function applyFilter(){
-      const q = norm(els.search.value);
-      if (!q){
-        filtered = planets.slice();
-      } else {
-        filtered = planets.filter(p => {
-          const hay = [
-            p.Name,
-            ...(Array.isArray(p.AlternateNames) ? p.AlternateNames : []),
-            ...(Array.isArray(p.TypeTags) ? p.TypeTags : []),
-            p.Location && p.Location.StarSystem ? p.Location.StarSystem : "",
-            p.Location && p.Location.Sector ? p.Location.Sector : "",
-            p.Location && p.Location.Quadrant ? p.Location.Quadrant : ""
-          ].join(" ").toLowerCase();
-          return hay.includes(q);
-        });
-      }
-      if (selectedId && !filtered.some(p => p.PlanetID === selectedId)){
-        selectedId = filtered.length ? filtered[0].PlanetID : null;
-      }
-      renderList();
-      if (selectedId) renderDetail(planets.find(x => x.PlanetID === selectedId));
-    }
-
-    function showLoadError(){
-      els.list.innerHTML = '<div class="empty"><b style="color: rgba(255,107,107,.95)">Failed to load data.</b><div class="small" style="margin-top:8px">Place <b>Pla-Build-0.json</b> next to this HTML file, or edit <b>DATA_URLS</b> in the script.</div></div>';
-      els.detail.innerHTML = '<div class="empty">No data loaded.</div>';
-      els.countMeta.textContent = "—";
-      els.buildMeta.textContent = "—";
-    }
-
-    async function init(){
+function fetchJsonFirst(urls){
+  return (async () => {
+    let lastErr = null;
+    for (const url of urls){
       try{
-        els.list.innerHTML = '<div class="empty">Loading…</div>';
-        const { url, data } = await fetchFirstWorkingUrl(DATA_URLS);
-        rawData = data;
-        planets = Array.isArray(data.Planets) ? data.Planets.slice() : [];
-        planets.sort((a,b) => (a.Name || "").localeCompare(b.Name || ""));
-        filtered = planets.slice();
-
-        const meta = data.Meta || {};
-        const buildStr = meta.Build != null ? ("Build " + meta.Build) : (meta.Version != null ? ("v" + meta.Version) : "");
-        const updStr = meta.LastUpdated ? meta.LastUpdated : "";
-        els.buildMeta.textContent = [buildStr, updStr].filter(Boolean).join(" • ") || "—";
-        renderList();
-
-        const first = planets.length ? planets[0].PlanetID : null;
-        if (first){
-          selectedId = first;
-          renderList();
-          renderDetail(planets.find(x => x.PlanetID === selectedId));
-        } else {
-          els.detail.innerHTML = '<div class="empty">No planets found in data.</div>';
-        }
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const j = await res.json();
+        return { url, data: j };
       }catch(e){
-        showLoadError();
+        lastErr = e;
       }
     }
+    throw lastErr || new Error("Unable to load data.");
+  })();
+}
 
-    els.search.addEventListener("input", applyFilter);
-    els.reloadBtn.addEventListener("click", () => init());
-    init();
-  </script>
+function buildMetaText(data){
+  const build = (data && (data.Build ?? (data.Meta && data.Meta.Build) ?? data.Version ?? (data.Meta && data.Meta.Version)));
+  const schema = (data && (data.SchemaVersion ?? (data.Meta && data.Meta.SchemaVersion)));
+  const updated = (data && (data.LastUpdated ?? (data.Meta && data.Meta.LastUpdated)));
+  const bits = [];
+  if (build !== undefined && build !== null && build !== "") bits.push("Build " + build);
+  if (schema) bits.push("Schema " + schema);
+  if (updated) bits.push(updated);
+  return bits.length ? bits.join(" • ") : "—";
+}
+
+function buildCard(p){
+  const alt = Array.isArray(p.AlternateNames) && p.AlternateNames.length ? p.AlternateNames.join(" • ") : "";
+  const tags = Array.isArray(p.TypeTags) ? p.TypeTags : [];
+  const subBits = [];
+  if (p.Location && p.Location.StarSystem) subBits.push(p.Location.StarSystem);
+  if (p.Location && p.Location.Sector) subBits.push(p.Location.Sector);
+  if (p.Location && p.Location.Quadrant) subBits.push(p.Location.Quadrant);
+  const sub = subBits.filter(Boolean).join(" • ");
+  const imgUrl = p.Media && p.Media.HeroImageURL ? p.Media.HeroImageURL : null;
+
+  const div = document.createElement("div");
+  div.className = "card" + (p.PlanetID === selectedId ? " active" : "");
+  div.dataset.id = p.PlanetID;
+
+  const thumb = document.createElement("div");
+  thumb.className = "thumb";
+  if (imgUrl){
+    const img = document.createElement("img");
+    img.src = imgUrl;
+    img.alt = p.Name || "";
+    thumb.appendChild(img);
+  }
+  div.appendChild(thumb);
+
+  const info = document.createElement("div");
+  info.style.minWidth = "0";
+
+  const h = document.createElement("div");
+  h.className = "cardTitle";
+  h.textContent = p.Name || "Untitled";
+  info.appendChild(h);
+
+  const s = document.createElement("div");
+  s.className = "cardSub";
+  const line = [alt, sub].filter(Boolean).join(" — ");
+  s.textContent = line || " ";
+  info.appendChild(s);
+
+  const brRow = document.createElement("div");
+  brRow.className = "badgeRow";
+  (tags.slice(0, 6)).forEach((t, idx) => {
+    const b = document.createElement("div");
+    b.className = "badge" + (idx === 0 ? " gold" : "");
+    b.textContent = t;
+    brRow.appendChild(b);
+  });
+  info.appendChild(brRow);
+
+  div.appendChild(info);
+
+  div.addEventListener("click", () => selectPlanet(p.PlanetID, true));
+  return div;
+}
+
+function renderList(){
+  els.list.innerHTML = "";
+  if (!filtered.length){
+    const empty = document.createElement("div");
+    empty.className = "empty";
+    empty.textContent = "No matches.";
+    els.list.appendChild(empty);
+  } else {
+    filtered.forEach(p => els.list.appendChild(buildCard(p)));
+  }
+  els.countMeta.textContent = filtered.length + " / " + planets.length;
+}
+
+function kvRow(k, vHtml){
+  const row = document.createElement("div");
+  row.className = "kv";
+  const kk = document.createElement("div");
+  kk.className = "k";
+  kk.textContent = k;
+  const vv = document.createElement("div");
+  vv.className = "v";
+  vv.innerHTML = (vHtml && vHtml.trim()) ? vHtml : "<span class='small'>—</span>";
+  row.appendChild(kk);
+  row.appendChild(vv);
+  return row;
+}
+
+function ul(items, renderItem){
+  const u = document.createElement("ul");
+  u.className = "ul";
+  items.forEach(it => {
+    const li = document.createElement("li");
+    li.innerHTML = renderItem ? renderItem(it) : esc(it);
+    u.appendChild(li);
+  });
+  return u;
+}
+
+function section(name, bodyNode){
+  const s = document.createElement("div");
+  s.className = "section";
+  const head = document.createElement("div");
+  head.className = "sectionHead";
+  const n = document.createElement("div");
+  n.className = "name";
+  n.textContent = name;
+  head.appendChild(n);
+  s.appendChild(head);
+  const b = document.createElement("div");
+  b.className = "sectionBody";
+  b.appendChild(bodyNode);
+  s.appendChild(b);
+  return s;
+}
+
+function renderDetail(planet){
+  els.detail.innerHTML = "";
+  if (!planet){
+    els.detail.innerHTML = "<div class='empty'>Select a planet.</div>";
+    return;
+  }
+
+  const meta = planet.Meta || {};
+  const loc = planet.Location || {};
+  const media = planet.Media || {};
+  const weather = planet.Weather || {};
+  const history = planet.History || {};
+  const gov = planet.Government || {};
+  const econ = planet.Economy || {};
+  const cult = planet.Culture || {};
+  const env = planet.Environment || {};
+  const canon = planet.CanonAppearances || {};
+  const dq = planet.DataQuality || {};
+  const sites = Array.isArray(planet.CitiesAndSites) ? planet.CitiesAndSites : [];
+
+  const hero = document.createElement("div");
+  hero.className = "hero";
+
+  const heroImg = document.createElement("div");
+  heroImg.className = "heroImg";
+  if (media.HeroImageURL){
+    const img = document.createElement("img");
+    img.src = media.HeroImageURL;
+    img.alt = planet.Name || "";
+    heroImg.appendChild(img);
+  }
+  hero.appendChild(heroImg);
+
+  const heroText = document.createElement("div");
+
+  const h1 = document.createElement("h1");
+  h1.className = "heroTitle";
+  h1.textContent = planet.Name || "";
+  heroText.appendChild(h1);
+
+  const altLine = [];
+  if (Array.isArray(planet.AlternateNames) && planet.AlternateNames.length) altLine.push(planet.AlternateNames.join(" • "));
+  if (meta.CanonicalName && meta.CanonicalName !== planet.Name) altLine.push(meta.CanonicalName);
+  const alt = document.createElement("div");
+  alt.className = "heroAlt";
+  alt.textContent = altLine.length ? altLine.join(" — ") : "";
+  heroText.appendChild(alt);
+
+  const badgeWrap = document.createElement("div");
+  badgeWrap.className = "heroBadges";
+  const tagList = Array.isArray(planet.Tags) ? planet.Tags : [];
+  const typeTags = Array.isArray(planet.TypeTags) ? planet.TypeTags : [];
+  const badges = [...typeTags.slice(0, 4), ...tagList.slice(0, 6)];
+  if (badges.length){
+    badges.forEach((t, idx) => {
+      const b = document.createElement("div");
+      b.className = "badge" + (idx === 0 ? " gold" : "");
+      b.textContent = t;
+      badgeWrap.appendChild(b);
+    });
+  }
+  heroText.appendChild(badgeWrap);
+
+  if (planet.TravelSummary){
+    const sum = document.createElement("div");
+    sum.className = "heroSummary";
+    sum.innerHTML = br(planet.TravelSummary);
+    heroText.appendChild(sum);
+  }
+
+  hero.appendChild(heroText);
+  els.detail.appendChild(hero);
+
+  const sectionGrid = document.createElement("div");
+  sectionGrid.className = "sectionGrid";
+
+  const overviewBody = document.createElement("div");
+  overviewBody.appendChild(kvRow("Classification", esc(meta.Classification || "")));
+  overviewBody.appendChild(kvRow("Affiliation", esc(meta.Affiliation || "")));
+  overviewBody.appendChild(kvRow("Quadrant", esc(loc.Quadrant || "")));
+  overviewBody.appendChild(kvRow("Sector", esc(loc.Sector || "")));
+  overviewBody.appendChild(kvRow("Star system", esc(loc.StarSystem || "")));
+  overviewBody.appendChild(kvRow("Region", esc(loc.Region || "")));
+  if (Array.isArray(meta.NativeSpecies) && meta.NativeSpecies.length){
+    overviewBody.appendChild(kvRow("Native species", esc(meta.NativeSpecies.join(" • "))));
+  }
+  sectionGrid.appendChild(section("Overview", overviewBody));
+
+  const visitorBody = document.createElement("div");
+  visitorBody.innerHTML = `
+    <div class="small"><b>Tourism</b></div>
+    <div>${br(planet.Tourism || "") || "<span class='small'>—</span>"}</div>
+    <div style="height:10px"></div>
+    <div class="small"><b>Logistics</b></div>
+    <div>${br(planet.Logistics || "") || "<span class='small'>—</span>"}</div>
+  `;
+  sectionGrid.appendChild(section("Visitor notes", visitorBody));
+
+  const weatherBody = document.createElement("div");
+  weatherBody.appendChild(kvRow("Climate type", esc(weather.ClimateType || "")));
+  weatherBody.appendChild(kvRow("Seasonality", esc(weather.Seasonality || "")));
+  weatherBody.appendChild(kvRow("Typical conditions", esc(weather.TypicalConditions || "")));
+  if (Array.isArray(weather.Hazards) && weather.Hazards.length){
+    const wrap = document.createElement("div");
+    wrap.appendChild(document.createElement("div"));
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Hazards</b>";
+    wrap.appendChild(t);
+    wrap.appendChild(ul(weather.Hazards, x => br(x)));
+    weatherBody.appendChild(wrap);
+  }
+  sectionGrid.appendChild(section("Weather", weatherBody));
+
+  const peopleBody = document.createElement("div");
+  peopleBody.innerHTML = br(planet.Inhabitants || "") || "<span class='small'>—</span>";
+  sectionGrid.appendChild(section("Inhabitants", peopleBody));
+
+  const appearanceBody = document.createElement("div");
+  appearanceBody.innerHTML = br(planet.Appearance || "") || "<span class='small'>—</span>";
+  sectionGrid.appendChild(section("Appearance", appearanceBody));
+
+  const geoBody = document.createElement("div");
+  geoBody.innerHTML = br(planet.Geography || "") || "<span class='small'>—</span>";
+  if (Array.isArray(loc.NearbyLandmarks) && loc.NearbyLandmarks.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Nearby / landmarks</b>";
+    geoBody.appendChild(t);
+    geoBody.appendChild(ul(loc.NearbyLandmarks, x => br(x)));
+  }
+  sectionGrid.appendChild(section("Geography", geoBody));
+
+  const historyBody = document.createElement("div");
+  if (history.Overview){
+    const p = document.createElement("div");
+    p.innerHTML = br(history.Overview);
+    historyBody.appendChild(p);
+  }
+  if (Array.isArray(history.KeyEras) && history.KeyEras.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Key eras</b>";
+    historyBody.appendChild(t);
+    historyBody.appendChild(ul(history.KeyEras, e => `<b>${esc(e.Era || "")}</b>${e.Summary ? " — " + br(e.Summary) : ""}`));
+  }
+  if (Array.isArray(history.MajorEvents) && history.MajorEvents.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Major events</b>";
+    historyBody.appendChild(t);
+    historyBody.appendChild(ul(history.MajorEvents, e => `${e.When ? "<b>" + esc(e.When) + "</b>: " : ""}${br(e.Event || "")}`));
+  }
+  sectionGrid.appendChild(section("History", historyBody));
+
+  const govBody = document.createElement("div");
+  govBody.appendChild(kvRow("Polity", esc(gov.Polity || "")));
+  govBody.appendChild(kvRow("Capital", esc(gov.Capital || "")));
+  if (Array.isArray(gov.Institutions) && gov.Institutions.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Institutions</b>";
+    govBody.appendChild(t);
+    govBody.appendChild(ul(gov.Institutions, x => br(x)));
+  }
+  if (Array.isArray(gov.LawsAffectingVisitors) && gov.LawsAffectingVisitors.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Visitor-impacting rules</b>";
+    govBody.appendChild(t);
+    govBody.appendChild(ul(gov.LawsAffectingVisitors, x => br(x)));
+  }
+  if (gov.Notes){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Notes</b>";
+    govBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(gov.Notes);
+    govBody.appendChild(p);
+  }
+  sectionGrid.appendChild(section("Government", govBody));
+
+  const econBody = document.createElement("div");
+  if (econ.Overview) {
+    const p = document.createElement("div");
+    p.innerHTML = br(econ.Overview);
+    econBody.appendChild(p);
+  }
+  if (Array.isArray(econ.PrimaryIndustries) && econ.PrimaryIndustries.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Primary industries</b>";
+    econBody.appendChild(t);
+    econBody.appendChild(ul(econ.PrimaryIndustries, x => br(x)));
+  }
+  if (econ.TradeNotes){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Trade notes</b>";
+    econBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(econ.TradeNotes);
+    econBody.appendChild(p);
+  }
+  if (econ.LocalCommerceNotes){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Local commerce</b>";
+    econBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(econ.LocalCommerceNotes);
+    econBody.appendChild(p);
+  }
+  sectionGrid.appendChild(section("Economy", econBody));
+
+  const cultBody = document.createElement("div");
+  if (cult.Overview){
+    const p = document.createElement("div");
+    p.innerHTML = br(cult.Overview);
+    cultBody.appendChild(p);
+  }
+  if (cult.SocialCustoms){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Social customs</b>";
+    cultBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(cult.SocialCustoms);
+    cultBody.appendChild(p);
+  }
+  if (cult.ReligiousLife){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Religious life</b>";
+    cultBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(cult.ReligiousLife);
+    cultBody.appendChild(p);
+  }
+  if (cult.Festivals){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Festivals</b>";
+    cultBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(cult.Festivals);
+    cultBody.appendChild(p);
+  }
+  if (cult.ArtsAndMedia){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Arts & media</b>";
+    cultBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(cult.ArtsAndMedia);
+    cultBody.appendChild(p);
+  }
+  if (cult.LanguageNotes){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Language</b>";
+    cultBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(cult.LanguageNotes);
+    cultBody.appendChild(p);
+  }
+  sectionGrid.appendChild(section("Culture", cultBody));
+
+  const envBody = document.createElement("div");
+  if (env.Overview){
+    const p = document.createElement("div");
+    p.innerHTML = br(env.Overview);
+    envBody.appendChild(p);
+  }
+  if (env.Seasons){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Seasons</b>";
+    envBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(env.Seasons);
+    envBody.appendChild(p);
+  }
+  if (Array.isArray(env.NaturalHazards) && env.NaturalHazards.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Natural hazards</b>";
+    envBody.appendChild(t);
+    envBody.appendChild(ul(env.NaturalHazards, x => br(x)));
+  }
+  if (env.NightSky){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Night sky</b>";
+    envBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(env.NightSky);
+    envBody.appendChild(p);
+  }
+  sectionGrid.appendChild(section("Environment", envBody));
+
+  const placesBody = document.createElement("div");
+  if (sites.length){
+    placesBody.appendChild(ul(sites, s => `<b>${esc(s.Name || "")}</b>${s.Type ? ` <span class="small">(${esc(s.Type)})</span>` : ""}${s.Description ? `<div class="small" style="margin-top:4px">${br(s.Description)}</div>` : ""}`));
+  } else {
+    placesBody.innerHTML = "<span class='small'>—</span>";
+  }
+  sectionGrid.appendChild(section("Places & sites", placesBody));
+
+  const canonBody = document.createElement("div");
+  if (Array.isArray(canon.Episodes) && canon.Episodes.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.innerHTML = "<b>Episodes</b>";
+    canonBody.appendChild(t);
+    canonBody.appendChild(ul(canon.Episodes, x => br(x)));
+  } else {
+    canonBody.appendChild(kvRow("Episodes", ""));
+  }
+  if (Array.isArray(canon.Films) && canon.Films.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Films</b>";
+    canonBody.appendChild(t);
+    canonBody.appendChild(ul(canon.Films, x => br(x)));
+  } else {
+    canonBody.appendChild(kvRow("Films", ""));
+  }
+  if (canon.Notes){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Notes</b>";
+    canonBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(canon.Notes);
+    canonBody.appendChild(p);
+  }
+  sectionGrid.appendChild(section("Canon appearances", canonBody));
+
+  const dqBody = document.createElement("div");
+  dqBody.appendChild(kvRow("Confidence", esc(dq.Confidence || "")));
+  dqBody.appendChild(kvRow("Coverage", esc(dq.Coverage || "")));
+  if (Array.isArray(dq.KnownGaps) && dq.KnownGaps.length){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Known gaps</b>";
+    dqBody.appendChild(t);
+    dqBody.appendChild(ul(dq.KnownGaps, x => br(x)));
+  }
+  if (dq.VerificationNotes){
+    const t = document.createElement("div");
+    t.className = "small";
+    t.style.marginTop = "10px";
+    t.innerHTML = "<b>Verification notes</b>";
+    dqBody.appendChild(t);
+    const p = document.createElement("div");
+    p.innerHTML = br(dq.VerificationNotes);
+    dqBody.appendChild(p);
+  }
+  sectionGrid.appendChild(section("Data notes", dqBody));
+
+  els.detail.appendChild(sectionGrid);
+
+  const foot = document.createElement("div");
+  foot.className = "footerNote";
+  foot.textContent = "Data source: " + (rawData && rawData.SchemaVersion ? ("Schema " + rawData.SchemaVersion) : "Planets.json");
+  els.detail.appendChild(foot);
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function selectPlanet(id, scrollIntoView){
+  selectedId = id;
+  const p = planets.find(x => x.PlanetID === id);
+  renderList();
+  if (!p){
+    els.detail.innerHTML = "<div class='empty'>Planet not found.</div>";
+    return;
+  }
+  renderDetail(p);
+  if (scrollIntoView){
+    const el = els.list.querySelector('[data-id="' + CSS.escape(id) + '"]');
+    if (el) el.scrollIntoView({ block: "nearest" });
+  }
+}
+
+function applyFilter(){
+  const q = norm(els.search.value);
+  if (!q){
+    filtered = planets.slice();
+  } else {
+    filtered = planets.filter(p => {
+      const hay = [
+        p.Name,
+        ...(Array.isArray(p.AlternateNames) ? p.AlternateNames : []),
+        ...(Array.isArray(p.Tags) ? p.Tags : []),
+        ...(Array.isArray(p.TypeTags) ? p.TypeTags : []),
+        p.Location && p.Location.StarSystem ? p.Location.StarSystem : "",
+        p.Location && p.Location.Sector ? p.Location.Sector : "",
+        p.Location && p.Location.Quadrant ? p.Location.Quadrant : "",
+        p.Location && p.Location.Region ? p.Location.Region : ""
+      ].join(" ").toLowerCase();
+      return hay.includes(q);
+    });
+  }
+  if (selectedId && !filtered.some(p => p.PlanetID === selectedId)){
+    selectedId = filtered.length ? filtered[0].PlanetID : null;
+  }
+  renderList();
+  if (selectedId) renderDetail(planets.find(x => x.PlanetID === selectedId));
+}
+
+function showLoadError(){
+  els.list.innerHTML =
+    "<div class='empty'><b style='color: rgba(255,107,107,.95)'>Failed to load Planets.json.</b>" +
+    "<div class='small' style='margin-top:8px'>Check the GitHub raw URL in <b>DATA_URLS</b> or your network connection.</div></div>";
+  els.detail.innerHTML = "<div class='empty'>No data loaded.</div>";
+  els.countMeta.textContent = "—";
+  els.buildMeta.textContent = "—";
+}
+
+async function init(){
+  try{
+    els.list.innerHTML = "<div class='empty'>Loading…</div>";
+    const { data } = await fetchJsonFirst(DATA_URLS);
+    rawData = data;
+
+    planets = Array.isArray(data.Planets) ? data.Planets.slice() : [];
+    planets.sort((a,b) => (a.Name || "").localeCompare(b.Name || ""));
+    filtered = planets.slice();
+
+    els.buildMeta.textContent = buildMetaText(data);
+    renderList();
+
+    const first = planets.length ? planets[0].PlanetID : null;
+    if (first){
+      selectedId = first;
+      renderList();
+      renderDetail(planets.find(x => x.PlanetID === selectedId));
+    } else {
+      els.detail.innerHTML = "<div class='empty'>No planets found in data.</div>";
+    }
+  }catch(e){
+    showLoadError();
+  }
+}
+
+els.search.addEventListener("input", applyFilter);
+els.reloadBtn.addEventListener("click", () => init());
+init();
+</script>
 </body>
 </html>
