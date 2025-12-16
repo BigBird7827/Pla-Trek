@@ -238,14 +238,5 @@
       "Star Trek VI: The Undiscovered Country (Federation President’s office associated with Paris)"
     ],
     "Notes": "Earth is referenced and/or visited across many additional episodes and films; this list highlights anchor appearances that establish key historical and governmental details used above."
-  },
-  "DataQuality": {
-    "Confidence": "High",
-    "Coverage": "High",
-    "KnownGaps": [
-      "Earth’s local planetary governmental structure and any single official planetary capital are not consistently defined on-screen",
-      "Population figures and detailed economic mechanisms vary by era and are not uniformly stated"
-    ],
-    "VerificationNotes": "Key identifiers (Sol III/Terra; Sol system; Sector 001; Luna), institutional anchors (Starfleet HQ/Academy in the Presidio/San Francisco region; Federation President office in Paris), and major dated events (Bell Riots September 2024; World War III end 2053; First Contact April 5, 2063; Federation founding 2161; Whale Probe 2286; Battle of Sector 001 2373; Breen attack late 2375) are supported by on-screen references summarized in canon reference compilations."
   }
 }
