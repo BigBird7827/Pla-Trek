@@ -1,242 +1,381 @@
-{
-  "PlanetID": "planet-earth",
-  "Name": "Earth",
-  "AlternateNames": [
-    "Sol III",
-    "Terra"
-  ],
-  "Tags": [
-    "Homeworld",
-    "Federation core world",
-    "Starfleet Headquarters",
-    "Federation governance hub"
-  ],
-  "TypeTags": [
-    "Homeworld",
-    "FederationCapital",
-    "StarfleetHQ"
-  ],
-  "Meta": {
-    "CanonicalName": "Earth",
-    "Classification": "Inhabited Class M terrestrial planet (Sol III/Terra) in the Sol system; one natural satellite (Luna)",
-    "Affiliation": "United Federation of Planets (founding world; Federation founded on Earth in 2161); Earth’s unified planetary authority is known as United Earth (22nd century onward)",
-    "NativeSpecies": [
-      "Human"
-    ]
-  },
-  "Media": {
-    "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png"
-  },
-  "TravelSummary": "Earth—also known as Sol III or Terra—is Humanity’s homeworld, located in the Sol system within Sector 001. Across Starfleet history it functions as a cultural homeworld and an administrative center, strongly associated with Starfleet Headquarters and Starfleet Academy in the San Francisco Bay / Presidio area, and with the Federation President’s office in Paris.\n\nEarth’s on-screen modern history includes major turning points: the Bell Riots in San Francisco’s Sanctuary District A in September 2024; the end of World War III in 2053 and the ensuing “post-atomic horror”; the Phoenix warp flight and First Contact with Vulcans on April 5, 2063 near Bozeman, Montana; the unification of the planet under United Earth in the 22nd century; and the founding of the United Federation of Planets on Earth (San Francisco) in 2161.\n\nIn the 23rd–24th centuries, Earth is repeatedly treated as strategically pivotal and is directly impacted by major crises, including the Whale Probe incident (2286), the Battle of Sector 001 during a Borg attempt to assimilate Earth (2373), and a Breen raid that struck Starfleet Headquarters and San Francisco in late 2375.",
-  "Location": {
-    "Quadrant": "Alpha Quadrant",
-    "Sector": "Sector 001 (Sol sector / Terran sector)",
-    "StarSystem": "Sol system (Terran system)",
-    "Region": "Federation core",
-    "NearbyLandmarks": [
-      "Luna",
-      "Earth orbit",
-      "San Francisco Bay / Presidio (Starfleet campus area)"
-    ]
-  },
-  "Appearance": "A blue-and-white globe with extensive oceans and dynamic cloud systems. Starfleet-era depictions often emphasize Earth’s limb with orbital traffic or installations, and the Golden Gate / San Francisco waterfront frequently serves as an iconic ground-level establishing view.",
-  "Geography": "A water-rich, multi-continent Class M world with broad regional diversity (oceans, mountain ranges, deserts, forests, polar regions, and extensive urban development). Canon depictions frequently establish the San Francisco Bay / Golden Gate region as a major Starfleet landmark area, while other stories highlight sites such as Paris, Bozeman (Montana), and New Orleans.",
-  "CitiesAndSites": [
-    {
-      "Name": "San Francisco Bay / Presidio (Starfleet campus area)",
-      "Type": "Administrative / Academy",
-      "Description": "Associated with Starfleet Headquarters and Starfleet Academy; repeatedly used as a visual and narrative anchor for Starfleet and Federation operations."
+[
+  {
+    "PlanetID": "planet-earth",
+    "Name": "Earth",
+    "AlternateNames": [
+      "Sol III",
+      "Terra"
+    ],
+    "Tags": [
+      "Homeworld",
+      "Federation core world",
+      "Starfleet Headquarters",
+      "Federation governance hub"
+    ],
+    "TypeTags": [
+      "Homeworld",
+      "FederationCapital",
+      "StarfleetHQ"
+    ],
+    "Meta": {
+      "CanonicalName": "Earth",
+      "Classification": "Inhabited Class M terrestrial planet (Sol III/Terra) in the Sol system; one natural satellite (Luna)",
+      "Affiliation": "United Federation of Planets (founding world; Federation founded on Earth in 2161); Earth’s unified planetary authority is known as United Earth (22nd century onward)",
+      "NativeSpecies": [
+        "Human"
+      ]
     },
-    {
-      "Name": "Paris, France",
-      "Type": "Government / Diplomatic",
-      "Description": "Associated with the office of the Federation President in some eras; referenced as a key Federation executive location on Earth."
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png"
     },
-    {
-      "Name": "Bozeman, Montana",
-      "Type": "Historic site",
-      "Description": "Associated with Zefram Cochrane’s Phoenix and the first open Human–Vulcan contact on April 5, 2063."
+    "TravelSummary": "Earth—also known as Sol III or Terra—is Humanity’s homeworld, located in the Sol system within Sector 001. Across Starfleet history it functions as a cultural homeworld and an administrative center, strongly associated with Starfleet Headquarters and Starfleet Academy in the San Francisco Bay / Presidio area, and with the Federation President’s office in Paris.\n\nEarth’s on-screen modern history includes major turning points: the Bell Riots in San Francisco’s Sanctuary District A in September 2024; the end of World War III in 2053 and the ensuing “post-atomic horror”; the Phoenix warp flight and First Contact with Vulcans on April 5, 2063 near Bozeman, Montana; the unification of the planet under United Earth in the 22nd century; and the founding of the United Federation of Planets on Earth (San Francisco) in 2161.\n\nIn the 23rd–24th centuries, Earth is repeatedly treated as strategically pivotal and is directly impacted by major crises, including the Whale Probe incident (2286), the Battle of Sector 001 during a Borg attempt to assimilate Earth (2373), and a Breen raid that struck Starfleet Headquarters and San Francisco in late 2375.",
+    "Location": {
+      "Quadrant": "Alpha Quadrant",
+      "Sector": "Sector 001 (Sol sector / Terran sector)",
+      "StarSystem": "Sol system (Terran system)",
+      "Region": "Federation core",
+      "NearbyLandmarks": [
+        "Luna",
+        "Earth orbit",
+        "San Francisco Bay / Presidio (Starfleet campus area)"
+      ]
     },
-    {
-      "Name": "Sanctuary District A (San Francisco)",
-      "Type": "Historic district",
-      "Description": "Walled district central to the Bell Riots of September 2024."
+    "Appearance": "A blue-and-white globe with extensive oceans and dynamic cloud systems. Starfleet-era depictions often emphasize Earth’s limb with orbital traffic or installations, and the Golden Gate / San Francisco waterfront frequently serves as an iconic ground-level establishing view.",
+    "Geography": "A water-rich, multi-continent Class M world with broad regional diversity (oceans, mountain ranges, deserts, forests, polar regions, and extensive urban development). Canon depictions frequently establish the San Francisco Bay / Golden Gate region as a major Starfleet landmark area, while other stories highlight sites such as Paris, Bozeman (Montana), and New Orleans.",
+    "CitiesAndSites": [
+      {
+        "Name": "San Francisco Bay / Presidio (Starfleet campus area)",
+        "Type": "Administrative / Academy",
+        "Description": "Associated with Starfleet Headquarters and Starfleet Academy; repeatedly used as a visual and narrative anchor for Starfleet and Federation operations."
+      },
+      {
+        "Name": "Paris, France",
+        "Type": "Government / Diplomatic",
+        "Description": "Associated with the office of the Federation President in some eras; referenced as a key Federation executive location on Earth."
+      },
+      {
+        "Name": "Bozeman, Montana",
+        "Type": "Historic site",
+        "Description": "Associated with Zefram Cochrane’s Phoenix and the first open Human–Vulcan contact on April 5, 2063."
+      },
+      {
+        "Name": "Sanctuary District A (San Francisco)",
+        "Type": "Historic district",
+        "Description": "Walled district central to the Bell Riots of September 2024."
+      },
+      {
+        "Name": "New Orleans, Louisiana",
+        "Type": "Cultural / Residential",
+        "Description": "Joseph Sisko’s restaurant and the Sisko family’s home base; an Earthside setting during the Dominion War period."
+      },
+      {
+        "Name": "Luna",
+        "Type": "Natural satellite",
+        "Description": "Earth’s moon; frequently referenced in navigation and often visible in orbital/planetary establishing shots."
+      }
+    ],
+    "Inhabitants": "Humans are Earth’s native sentient species and the planet’s primary population across eras. As a Federation hub world, Earth also hosts frequent visitation and residency by many Federation member species; on-screen sources do not provide a consistent demographic breakdown.",
+    "Tourism": "Earth is a premier destination for Federation-era history, culture, and iconic civic landmarks. Frequently highlighted canon points of interest include Starfleet’s San Francisco campus area, Paris as a Federation political site, and Bozeman’s First Contact legacy. The planet’s natural diversity supports a wide range of travel experiences.",
+    "Logistics": "Approaches commonly route through Earth orbit and major transport infrastructure (spaceport/orbital facilities vary by era). Expect restricted access around Starfleet and Federation installations, and heightened security protocols during periods of crisis affecting the Sol sector.",
+    "Weather": {
+      "ClimateType": "Highly variable (multi-biome)",
+      "Seasonality": "Varies strongly by region; temperate zones show pronounced seasonal cycles while tropical belts follow wet/dry patterns",
+      "TypicalConditions": "Conditions range from marine-coastal fog and mild weather to continental storms and arid heat depending on location and season",
+      "Hazards": [
+        "Severe storms (region-dependent)",
+        "Heatwaves/cold snaps (seasonal)",
+        "Earthquakes/tsunami risk (localized)",
+        "Wildfire risk (region-dependent)"
+      ]
     },
-    {
-      "Name": "New Orleans, Louisiana",
-      "Type": "Cultural / Residential",
-      "Description": "Joseph Sisko’s restaurant and the Sisko family’s home base; an Earthside setting during the Dominion War period."
+    "History": {
+      "Overview": "On-screen history places Earth’s major modern turning points across the 21st–24th centuries: the Bell Riots in September 2024; World War III ending in 2053 with a prolonged ‘post-atomic horror’ aftermath; First Contact with Vulcans on April 5, 2063; the rise of United Earth as a unified planetary authority in the 22nd century; and the founding of the United Federation of Planets on Earth in 2161. Earth remains strategically central and is repeatedly threatened by major external crises.",
+      "KeyEras": [
+        {
+          "Era": "21st century (pre-warp)",
+          "Summary": "Sanctuary Districts culminate in the Bell Riots (September 2024); later, World War III ends in 2053 and is followed by global turmoil remembered as the post-atomic horror."
+        },
+        {
+          "Era": "First Contact and early interstellar era",
+          "Summary": "Phoenix warp flight and first open Human–Vulcan contact occur on April 5, 2063 near Bozeman, Montana, accelerating Earth’s recovery and interstellar integration."
+        },
+        {
+          "Era": "United Earth / NX era",
+          "Summary": "Earth is unified under United Earth in the 22nd century; early Starfleet expands exploration and defense, including responses to major security threats."
+        },
+        {
+          "Era": "Federation era",
+          "Summary": "The Federation is founded on Earth (San Francisco) in 2161; Earth becomes a durable political, cultural, and Starfleet administrative hub."
+        },
+        {
+          "Era": "Late 23rd–24th century crises",
+          "Summary": "Earth is directly impacted by galaxy-scale events including the Whale Probe incident (2286), the Borg attack culminating in the Battle of Sector 001 (2373), and the Breen raid (2375)."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "September 2024",
+          "Event": "Bell Riots begin in San Francisco’s Sanctuary District A; treated as a pivotal social flashpoint."
+        },
+        {
+          "When": "2053",
+          "Event": "World War III ends; the ‘post-atomic horror’ describes the global turmoil that follows."
+        },
+        {
+          "When": "April 5, 2063",
+          "Event": "Phoenix achieves warp flight; first open Human–Vulcan contact occurs near Bozeman, Montana (First Contact Day)."
+        },
+        {
+          "When": "22nd century",
+          "Event": "Earth is unified under United Earth as a single planetary authority."
+        },
+        {
+          "When": "2161",
+          "Event": "United Federation of Planets founded on Earth (San Francisco)."
+        },
+        {
+          "When": "2153",
+          "Event": "Xindi probe attack strikes Earth, catalyzing an extended security and exploration response (Enterprise era)."
+        },
+        {
+          "When": "2286",
+          "Event": "Whale Probe crisis: a massive probe disrupts power and threatens Earth’s environment while seeking humpback whales."
+        },
+        {
+          "When": "2373",
+          "Event": "Battle of Sector 001: a Borg cube attempts to assimilate Earth; Starfleet destroys the cube with heavy losses."
+        },
+        {
+          "When": "Late 2375",
+          "Event": "Breen raid attacks Starfleet Headquarters and San Francisco, including damage to the Golden Gate region."
+        }
+      ]
     },
-    {
-      "Name": "Luna",
-      "Type": "Natural satellite",
-      "Description": "Earth’s moon; frequently referenced in navigation and often visible in orbital/planetary establishing shots."
+    "Government": {
+      "Polity": "United Earth (unified planetary authority by the 22nd century); Earth is a founding member world of the United Federation of Planets",
+      "Capital": "Not consistently stated on-screen (Earth is shown through multiple civic centers; Federation executive offices are associated with Paris and Starfleet’s principal campus with the San Francisco Bay / Presidio area)",
+      "Institutions": [
+        "United Earth (planetary authority; structure not consistently detailed on-screen)",
+        "Office of the President of the United Federation of Planets (Paris, Earth)",
+        "Federation Council (referenced as a central governing body)",
+        "Starfleet Headquarters / Starfleet Command (San Francisco Bay / Presidio area)",
+        "Starfleet Academy (headquarters in the Presidio; training facilities across the Golden Gate in Marin County)"
+      ],
+      "LawsAffectingVisitors": [
+        "Standard transport, traffic-control, and customs procedures through orbital/planetary facilities (era-dependent)",
+        "Restricted-access zones around Federation and Starfleet installations",
+        "During security crises, emergency measures and heightened screening may be imposed; on-screen sources rarely enumerate specific legal texts"
+      ],
+      "Notes": "On-screen governance depictions on Earth focus mainly on Federation- and Starfleet-level institutions operating on-world; Earth’s planetary governmental mechanics are referenced far less directly than its role as a Federation hub."
+    },
+    "Economy": {
+      "Overview": "In the Federation era, Earth is portrayed primarily as a civic, research, and administrative hub within a high-technology, low-scarcity society. On-screen stories rarely provide a single comprehensive description of Earth’s economic mechanisms.",
+      "PrimaryIndustries": [
+        "Education and research",
+        "Public administration (Federation and Starfleet institutions)",
+        "Cultural production and heritage preservation",
+        "Orbital operations and logistics (in Starfleet contexts)"
+      ],
+      "TradeNotes": "Interstellar trade flows are implied through Earth’s status as a core world and major travel hub, but specific export/import profiles are not consistently stated on-screen.",
+      "LocalCommerceNotes": "Local businesses and services appear across eras (especially in time-travel narratives), but details vary and are not systematically enumerated."
+    },
+    "Culture": {
+      "Overview": "Earth culture is portrayed as pluralistic and strongly shaped by Federation-era ideals emphasizing education, exploration, and public service alongside local traditions.",
+      "SocialCustoms": "Norms vary widely by region; metropolitan centers associated with Starfleet and Federation governance are often depicted as cosmopolitan and cross-cultural.",
+      "ReligiousLife": "A wide variety of belief systems exist historically; on-screen sources do not present a single dominant faith and typically treat belief as personal and diverse.",
+      "Festivals": "First Contact Day (April 5) commemorates the Phoenix warp flight and first open Human–Vulcan contact.",
+      "ArtsAndMedia": "Earth remains a major cultural center with extensive artistic and educational traditions; specific institutions vary by story focus.",
+      "LanguageNotes": "Many Earth languages are spoken; Standard is widely used in Federation contexts and multilingualism is common."
+    },
+    "Environment": {
+      "Overview": "Habitable Class M biosphere with diverse ecosystems. Earth’s orbit is frequently depicted as a high-traffic region and a strategic theater during crises; Luna is a prominent nearby body in both navigation and imagery.",
+      "Seasons": "Varies by latitude and region, ranging from four-season temperate cycles to tropical wet/dry patterns and polar extremes.",
+      "NaturalHazards": [
+        "Severe storms (region-dependent)",
+        "Seismic/volcanic activity (localized)",
+        "Wildfires (region-dependent)"
+      ],
+      "NightSky": "Luna is a dominant natural feature; in later eras, orbital traffic and installations are common near major population centers."
+    },
+    "Appearances": {
+      "Overview": "Earth is a recurring setting across Star Trek, serving as Humanity’s homeworld and a central hub for Federation and Starfleet governance, as well as a frequent destination for time-travel stories and major crises.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "ENT",
+          "Highlights": [
+            "United Earth and early Starfleet operations; Earthside political/security stories in the pre-Federation period; the Xindi probe attack crisis and its aftermath."
+          ]
+        },
+        {
+          "Era": "TOS-era films",
+          "Highlights": [
+            "Federation/Starfleet institutions in San Francisco; the Whale Probe crisis impacting Earth in 2286."
+          ]
+        },
+        {
+          "Era": "TNG/DS9/VOY",
+          "Highlights": [
+            "Federation political center; internal-security crises; 2024 San Francisco time-travel depiction and Sanctuary District/Bell Riots arc; major strategic threats in the Sol sector."
+          ]
+        },
+        {
+          "Era": "PIC",
+          "Highlights": [
+            "Starfleet Headquarters/Federation policy context and Earthside personal/historical locations (era-dependent)."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "DS9: \"Past Tense, Part I\" / \"Past Tense, Part II\" (2024 San Francisco; Sanctuary Districts; Bell Riots)",
+        "DS9: \"Homefront\" / \"Paradise Lost\" (Earth security crisis; Federation President’s office in Paris referenced)",
+        "ENT: \"The Expanse\" (Xindi probe attack aftermath and response)",
+        "DS9: \"The Changing Face of Evil\" (Breen attack on Starfleet Headquarters in San Francisco)"
+      ],
+      "Films": [
+        "Star Trek: First Contact (Bozeman/First Contact; Borg attack and Battle of Sector 001 framing)",
+        "Star Trek IV: The Voyage Home (Whale Probe crisis; Earth threatened in 2286)",
+        "Star Trek VI: The Undiscovered Country (Federation President’s office associated with Paris)"
+      ],
+      "Notes": "Earth is referenced and/or visited across many additional episodes and films; this list highlights anchor appearances that establish key historical and governmental details used above."
     }
-  ],
-  "Inhabitants": "Humans are Earth’s native sentient species and the planet’s primary population across eras. As a Federation hub world, Earth also hosts frequent visitation and residency by many Federation member species; on-screen sources do not provide a consistent demographic breakdown.",
-  "Tourism": "Earth is a premier destination for Federation-era history, culture, and iconic civic landmarks. Frequently highlighted canon points of interest include Starfleet’s San Francisco campus area, Paris as a Federation political site, and Bozeman’s First Contact legacy. The planet’s natural diversity supports a wide range of travel experiences.",
-  "Logistics": "Approaches commonly route through Earth orbit and major transport infrastructure (spaceport/orbital facilities vary by era). Expect restricted access around Starfleet and Federation installations, and heightened security protocols during periods of crisis affecting the Sol sector.",
-  "Weather": {
-    "ClimateType": "Highly variable (multi-biome)",
-    "Seasonality": "Varies strongly by region; temperate zones show pronounced seasonal cycles while tropical belts follow wet/dry patterns",
-    "TypicalConditions": "Conditions range from marine-coastal fog and mild weather to continental storms and arid heat depending on location and season",
-    "Hazards": [
-      "Severe storms (region-dependent)",
-      "Heatwaves/cold snaps (seasonal)",
-      "Earthquakes/tsunami risk (localized)",
-      "Wildfire risk (region-dependent)"
-    ]
   },
-  "History": {
-    "Overview": "On-screen history places Earth’s major modern turning points across the 21st–24th centuries: the Bell Riots in September 2024; World War III ending in 2053 with a prolonged ‘post-atomic horror’ aftermath; First Contact with Vulcans on April 5, 2063; the rise of United Earth as a unified planetary authority in the 22nd century; and the founding of the United Federation of Planets on Earth in 2161. Earth remains strategically central and is repeatedly threatened by major external crises.",
-    "KeyEras": [
+  {
+    "PlanetID": "planet-andoria",
+    "Name": "Andoria",
+    "AlternateNames": [
+      "Not stated on-screen"
+    ],
+    "Tags": [
+      "Homeworld",
+      "Andorians",
+      "Icy world (shown on-screen)"
+    ],
+    "TypeTags": [
+      "Homeworld"
+    ],
+    "Meta": {
+      "CanonicalName": "Andoria",
+      "Classification": "Inhabited world associated with the Andorians; depicted on-screen with snow/ice and subterranean settings. Planetary class and astronomical details are not stated on-screen.",
+      "Affiliation": "Homeworld of the Andorians. Wider interstellar political affiliation (including Federation-era status) is not stated on-screen in detailed terms in the material referenced here.",
+      "NativeSpecies": [
+        "Andorian (including the Aenar subgroup; shown on-screen)"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Andoria.png"
+    },
+    "TravelSummary": "Andoria is the homeworld of the Andorians. On-screen depictions (notably in Star Trek: Enterprise) present it as an intensely cold, ice-dominated environment, including subterranean settings associated with the Aenar. Visitor requirements, entry procedures, and tourism infrastructure are not stated on-screen.",
+    "Location": {
+      "Quadrant": "Not stated on-screen",
+      "Sector": "Not stated on-screen",
+      "StarSystem": "Not stated on-screen",
+      "Region": "Not stated on-screen",
+      "NearbyLandmarks": "Not stated on-screen"
+    },
+    "Appearance": "On-screen visuals depict Andoria as a frozen world with snow and ice dominating the landscape. Scenes associated with Andorian stories also include underground/subsurface environments. No consistent on-screen depiction of major surface cities or planetary-scale vistas with named landmarks is provided.",
+    "Geography": "Not stated on-screen beyond general icy terrain and subterranean environments shown in Star Trek: Enterprise.",
+    "CitiesAndSites": [
       {
-        "Era": "21st century (pre-warp)",
-        "Summary": "Sanctuary Districts culminate in the Bell Riots (September 2024); later, World War III ends in 2053 and is followed by global turmoil remembered as the post-atomic horror."
+        "Name": "Aenar subterranean habitats (shown on-screen)",
+        "Type": "Settlement / subterranean",
+        "Description": "Star Trek: Enterprise depicts an underground Aenar community on Andoria. Specific city/settlement names and broader urban geography are not stated on-screen."
       },
       {
-        "Era": "First Contact and early interstellar era",
-        "Summary": "Phoenix warp flight and first open Human–Vulcan contact occur on April 5, 2063 near Bozeman, Montana, accelerating Earth’s recovery and interstellar integration."
-      },
-      {
-        "Era": "United Earth / NX era",
-        "Summary": "Earth is unified under United Earth in the 22nd century; early Starfleet expands exploration and defense, including responses to major security threats."
-      },
-      {
-        "Era": "Federation era",
-        "Summary": "The Federation is founded on Earth (San Francisco) in 2161; Earth becomes a durable political, cultural, and Starfleet administrative hub."
-      },
-      {
-        "Era": "Late 23rd–24th century crises",
-        "Summary": "Earth is directly impacted by galaxy-scale events including the Whale Probe incident (2286), the Borg attack culminating in the Battle of Sector 001 (2373), and the Breen raid (2375)."
+        "Name": "Not stated on-screen (surface cities and capital)",
+        "Type": "Not stated on-screen",
+        "Description": "No named Andorian capital city or surface metropolitan area is established on-screen in the referenced episodes."
       }
     ],
-    "MajorEvents": [
-      {
-        "When": "September 2024",
-        "Event": "Bell Riots begin in San Francisco’s Sanctuary District A; treated as a pivotal social flashpoint."
-      },
-      {
-        "When": "2053",
-        "Event": "World War III ends; the ‘post-atomic horror’ describes the global turmoil that follows."
-      },
-      {
-        "When": "April 5, 2063",
-        "Event": "Phoenix achieves warp flight; first open Human–Vulcan contact occurs near Bozeman, Montana (First Contact Day)."
-      },
-      {
-        "When": "22nd century",
-        "Event": "Earth is unified under United Earth as a single planetary authority."
-      },
-      {
-        "When": "2161",
-        "Event": "United Federation of Planets founded on Earth (San Francisco)."
-      },
-      {
-        "When": "2153",
-        "Event": "Xindi probe attack strikes Earth, catalyzing an extended security and exploration response (Enterprise era)."
-      },
-      {
-        "When": "2286",
-        "Event": "Whale Probe crisis: a massive probe disrupts power and threatens Earth’s environment while seeking humpback whales."
-      },
-      {
-        "When": "2373",
-        "Event": "Battle of Sector 001: a Borg cube attempts to assimilate Earth; Starfleet destroys the cube with heavy losses."
-      },
-      {
-        "When": "Late 2375",
-        "Event": "Breen raid attacks Starfleet Headquarters and San Francisco, including damage to the Golden Gate region."
-      }
-    ]
-  },
-  "Government": {
-    "Polity": "United Earth (unified planetary authority by the 22nd century); Earth is a founding member world of the United Federation of Planets",
-    "Capital": "Not consistently stated on-screen (Earth is shown through multiple civic centers; Federation executive offices are associated with Paris and Starfleet’s principal campus with the San Francisco Bay / Presidio area)",
-    "Institutions": [
-      "United Earth (planetary authority; structure not consistently detailed on-screen)",
-      "Office of the President of the United Federation of Planets (Paris, Earth)",
-      "Federation Council (referenced as a central governing body)",
-      "Starfleet Headquarters / Starfleet Command (San Francisco Bay / Presidio area)",
-      "Starfleet Academy (headquarters in the Presidio; training facilities across the Golden Gate in Marin County)"
-    ],
-    "LawsAffectingVisitors": [
-      "Standard transport, traffic-control, and customs procedures through orbital/planetary facilities (era-dependent)",
-      "Restricted-access zones around Federation and Starfleet installations",
-      "During security crises, emergency measures and heightened screening may be imposed; on-screen sources rarely enumerate specific legal texts"
-    ],
-    "Notes": "On-screen governance depictions on Earth focus mainly on Federation- and Starfleet-level institutions operating on-world; Earth’s planetary governmental mechanics are referenced far less directly than its role as a Federation hub."
-  },
-  "Economy": {
-    "Overview": "In the Federation era, Earth is portrayed primarily as a civic, research, and administrative hub within a high-technology, low-scarcity society. On-screen stories rarely provide a single comprehensive description of Earth’s economic mechanisms.",
-    "PrimaryIndustries": [
-      "Education and research",
-      "Public administration (Federation and Starfleet institutions)",
-      "Cultural production and heritage preservation",
-      "Orbital operations and logistics (in Starfleet contexts)"
-    ],
-    "TradeNotes": "Interstellar trade flows are implied through Earth’s status as a core world and major travel hub, but specific export/import profiles are not consistently stated on-screen.",
-    "LocalCommerceNotes": "Local businesses and services appear across eras (especially in time-travel narratives), but details vary and are not systematically enumerated."
-  },
-  "Culture": {
-    "Overview": "Earth culture is portrayed as pluralistic and strongly shaped by Federation-era ideals emphasizing education, exploration, and public service alongside local traditions.",
-    "SocialCustoms": "Norms vary widely by region; metropolitan centers associated with Starfleet and Federation governance are often depicted as cosmopolitan and cross-cultural.",
-    "ReligiousLife": "A wide variety of belief systems exist historically; on-screen sources do not present a single dominant faith and typically treat belief as personal and diverse.",
-    "Festivals": "First Contact Day (April 5) commemorates the Phoenix warp flight and first open Human–Vulcan contact.",
-    "ArtsAndMedia": "Earth remains a major cultural center with extensive artistic and educational traditions; specific institutions vary by story focus.",
-    "LanguageNotes": "Many Earth languages are spoken; Standard is widely used in Federation contexts and multilingualism is common."
-  },
-  "Environment": {
-    "Overview": "Habitable Class M biosphere with diverse ecosystems. Earth’s orbit is frequently depicted as a high-traffic region and a strategic theater during crises; Luna is a prominent nearby body in both navigation and imagery.",
-    "Seasons": "Varies by latitude and region, ranging from four-season temperate cycles to tropical wet/dry patterns and polar extremes.",
-    "NaturalHazards": [
-      "Severe storms (region-dependent)",
-      "Seismic/volcanic activity (localized)",
-      "Wildfires (region-dependent)"
-    ],
-    "NightSky": "Luna is a dominant natural feature; in later eras, orbital traffic and installations are common near major population centers."
-  },
-  "Appearances": {
-    "Overview": "Earth is a recurring setting across Star Trek, serving as Humanity’s homeworld and a central hub for Federation and Starfleet governance, as well as a frequent destination for time-travel stories and major crises.",
-    "BySeriesOrFilm": [
-      {
-        "Era": "ENT",
-        "Highlights": [
-          "United Earth and early Starfleet operations; Earthside political/security stories in the pre-Federation period; the Xindi probe attack crisis and its aftermath."
-        ]
-      },
-      {
-        "Era": "TOS-era films",
-        "Highlights": [
-          "Federation/Starfleet institutions in San Francisco; the Whale Probe crisis impacting Earth in 2286."
-        ]
-      },
-      {
-        "Era": "TNG/DS9/VOY",
-        "Highlights": [
-          "Federation political center; internal-security crises; 2024 San Francisco time-travel depiction and Sanctuary District/Bell Riots arc; major strategic threats in the Sol sector."
-        ]
-      },
-      {
-        "Era": "PIC",
-        "Highlights": [
-          "Starfleet Headquarters/Federation policy context and Earthside personal/historical locations (era-dependent)."
-        ]
-      }
-    ]
-  },
-  "CanonAppearances": {
-    "Episodes": [
-      "DS9: \"Past Tense, Part I\" / \"Past Tense, Part II\" (2024 San Francisco; Sanctuary Districts; Bell Riots)",
-      "DS9: \"Homefront\" / \"Paradise Lost\" (Earth security crisis; Federation President’s office in Paris referenced)",
-      "ENT: \"The Expanse\" (Xindi probe attack aftermath and response)",
-      "DS9: \"The Changing Face of Evil\" (Breen attack on Starfleet Headquarters in San Francisco)"
-    ],
-    "Films": [
-      "Star Trek: First Contact (Bozeman/First Contact; Borg attack and Battle of Sector 001 framing)",
-      "Star Trek IV: The Voyage Home (Whale Probe crisis; Earth threatened in 2286)",
-      "Star Trek VI: The Undiscovered Country (Federation President’s office associated with Paris)"
-    ],
-    "Notes": "Earth is referenced and/or visited across many additional episodes and films; this list highlights anchor appearances that establish key historical and governmental details used above."
+    "Inhabitants": "Andorians are the native inhabitants associated with Andoria on-screen. Star Trek: Enterprise depicts the Aenar as a distinct Andorian subgroup living in subterranean communities. Population totals, demographics, and other resident species are not stated on-screen.",
+    "Tourism": "Not stated on-screen. Andoria is primarily presented in-story through diplomacy, security incidents, and cultural/military encounters rather than through leisure travel.",
+    "Logistics": "Not stated on-screen. Specifics such as entry permissions, customs/immigration procedures, safe-travel advisories, or recommended routes are not established on-screen.",
+    "Weather": {
+      "ClimateType": "Cold / icy conditions (shown on-screen)",
+      "Seasonality": "Not stated on-screen",
+      "TypicalConditions": "Snow and ice conditions are depicted on-screen; typical temperatures and weather patterns are not stated on-screen.",
+      "Hazards": "Not stated on-screen (beyond the inherent risks of severe cold implied by setting)."
+    },
+    "History": {
+      "Overview": "On-screen (Enterprise era), Andoria is repeatedly referenced in the context of heightened tensions with Vulcan authorities, including allegations of surveillance and espionage directed at Andoria. Andoria is also the setting for events involving the Aenar during an attempted attack that is stopped with outside assistance. Broader prehistory and later political timelines are not stated on-screen.",
+      "KeyEras": [
+        {
+          "Era": "22nd century (Enterprise era)",
+          "Summary": "Andoria is referenced as a focal point in Andorian–Vulcan tension and espionage allegations, and it is depicted as the setting for Aenar-related events."
+        },
+        {
+          "Era": "Federation era (later centuries)",
+          "Summary": "Andorians are shown serving and representing Federation institutions across eras, but Andoria’s planet-specific political history in these periods is not stated on-screen."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "22nd century (Enterprise era)",
+          "Event": "A Vulcan facility at the P'Jem monastery is revealed to be used for surveillance of Andoria (alleged and then supported by discovered evidence on-screen)."
+        },
+        {
+          "When": "22nd century (Enterprise era)",
+          "Event": "Events involving the Aenar on Andoria are pivotal in stopping an attempted attack carried out via an unwilling pilot and remote control (telepresence) arrangements."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Not stated on-screen. Andorian military/security is represented on-screen by the Andorian Imperial Guard.",
+      "Capital": "Not stated on-screen",
+      "Institutions": [
+        "Andorian Imperial Guard (shown on-screen)",
+        "Not stated on-screen (civil government institutions are not detailed)"
+      ],
+      "LawsAffectingVisitors": [
+        "Not stated on-screen"
+      ],
+      "Notes": "Andoria’s internal governance and legal system are not described in detail on-screen; references focus on security and diplomacy in specific incidents."
+    },
+    "Economy": {
+      "Overview": "Not stated on-screen",
+      "PrimaryIndustries": [
+        "Not stated on-screen"
+      ],
+      "TradeNotes": "Not stated on-screen",
+      "LocalCommerceNotes": "Not stated on-screen"
+    },
+    "Culture": {
+      "Overview": "Not stated on-screen in a comprehensive way.",
+      "SocialCustoms": [
+        "Andorian ale is referenced/consumed on-screen as a notable Andorian beverage.",
+        "Other social customs are not stated on-screen."
+      ],
+      "ReligiousLife": "Not stated on-screen",
+      "Festivals": "Not stated on-screen",
+      "ArtsAndMedia": "Not stated on-screen",
+      "LanguageNotes": "Not stated on-screen"
+    },
+    "Environment": {
+      "Overview": "Cold, ice-dominated environments are shown on-screen; other environmental specifics are not stated on-screen.",
+      "Seasons": "Not stated on-screen",
+      "NaturalHazards": "Not stated on-screen (beyond implied severe cold)",
+      "NightSky": "Not stated on-screen"
+    },
+    "Appearances": {
+      "Overview": "Andoria is primarily referenced and depicted in Star Trek: Enterprise in stories centered on the Andorians and the Aenar.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "ENT",
+          "Highlights": [
+            "Andoria is referenced as the subject of surveillance/espionage concerns tied to P'Jem.",
+            "Andoria is shown as the setting for Aenar-related events in which an attack is prevented."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "ENT: \"The Andorian Incident\" (Andoria referenced as the target of Vulcan surveillance concerns)",
+        "ENT: \"The Aenar\" (Andoria depicted as the setting for Aenar-related events)"
+      ],
+      "Films": [],
+      "Notes": "Andoria is referenced in additional episodes involving the Andorians, but only explicitly verified references are listed here."
+    }
   }
-}
+]
