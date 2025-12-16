@@ -1034,7 +1034,19 @@ async function init(){
     const { data } = await fetchJsonFirst(DATA_URLS);
     rawData = data;
 
-    planets = Array.isArray(data.Planets) ? data.Planets.slice() : [];
+    // Accept multiple JSON shapes:
+// 1) { Planets: [...] }  (preferred)
+// 2) [...]              (array of planet objects)
+// 3) { PlanetID: ... }  (single planet object)
+let planetArr = [];
+if (data && Array.isArray(data.Planets)) {
+  planetArr = data.Planets;
+} else if (Array.isArray(data)) {
+  planetArr = data;
+} else if (data && typeof data === "object" && (data.PlanetID || data.Name)) {
+  planetArr = [data];
+}
+planets = planetArr.slice();
     planets.sort((a,b) => (a.Name || "").localeCompare(b.Name || ""));
     filtered = planets.slice();
 
