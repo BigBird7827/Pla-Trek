@@ -1465,5 +1465,524 @@
       "Films": [],
       "Notes": "Risa is referenced in other contexts, but the items above are the primary on-screen stories that directly depict the planet as a setting."
     }
+  },
+  {
+    "PlanetID": "planet-trill",
+    "Name": "Trill",
+    "AlternateNames": [
+      "Trill (homeworld)"
+    ],
+    "Tags": [
+      "Homeworld",
+      "Joined species",
+      "Symbiont pools",
+      "Mak'ala",
+      "Symbiosis Commission"
+    ],
+    "TypeTags": [
+      "Homeworld"
+    ],
+    "Meta": {
+      "CanonicalName": "Trill",
+      "Classification": "Inhabited Class M terrestrial planet; homeworld of Trills and Trill symbionts",
+      "Affiliation": "United Federation of Planets (Trill individuals serve in Starfleet; the planet’s Federation membership status is treated as ambiguous in 24th-century sources; later-era sources indicate secession after the Burn and rejoining by 3189)",
+      "NativeSpecies": [
+        "Trill",
+        "Trill symbiont"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Trill%20(Final).png"
+    },
+    "TravelSummary": "Trill is the homeworld of the Trill people and the Trill symbionts, whose joining produces the joined Trill seen across Starfleet and Federation history. The planet’s most culturally significant site is the sacred Caves of Mak'ala—an extensive underground cave-and-pool system regarded as the symbionts’ ancestral habitat and a focal point for joining traditions.\n\nFor visitors, Trill is typically framed as a temperate, scenic world with forests, lakes, canyons, caves, and resort/coastal destinations, with distinctive oceans that appear purple-tinted from space. Travel can involve heightened local protocol around symbiont sites and legal authority, particularly in cases involving hosts, symbionts, and joining practices.",
+    "Location": {
+      "Quadrant": "Alpha Quadrant",
+      "Sector": "Unknown",
+      "StarSystem": "Trill system",
+      "Region": "Federation space (in or near; later-era political status varies)",
+      "NearbyLandmarks": [
+        "Mak'ala",
+        "Caves of Mak'ala"
+      ]
+    },
+    "Appearance": "From orbit, Trill appears as a blue world whose oceans show a purple tint in space views, with active white cloud systems. Ground-level depictions feature lush forests and lake country, with rugged canyon terrain near cave regions.",
+    "Geography": "A temperate Class M planet with extensive forests, lakes, canyons, and major cave systems. The Caves of Mak'ala form a vast underground network containing the symbionts’ natural pools and sacred sites associated with joining. Trill also supports coastal and resort environments and cold-region features such as the Teneran Ice Cliffs.",
+    "CitiesAndSites": [
+      {
+        "Name": "Mak'ala",
+        "Type": "Capital city",
+        "Description": "Trill’s capital city and an administrative center; associated with the Symbiosis Commission and access to the sacred Caves of Mak'ala."
+      },
+      {
+        "Name": "Caves of Mak'ala",
+        "Type": "Sacred natural site",
+        "Description": "A vast underground cave-and-pool complex regarded as the symbionts’ ancestral home; central to joining traditions and to symbiont communication in key incidents."
+      },
+      {
+        "Name": "Symbiosis Commission",
+        "Type": "Institution / facility",
+        "Description": "Trill organization responsible for nearly all aspects of joining hosts and symbionts; includes roles tasked with symbiont care and joining oversight."
+      },
+      {
+        "Name": "Hoobishan Baths",
+        "Type": "Recreation / cultural site",
+        "Description": "A notable local attraction referenced among Trill points of interest."
+      },
+      {
+        "Name": "Tenaran Ice Cliffs",
+        "Type": "Natural feature",
+        "Description": "A named Trill geographical feature associated with cold-region terrain."
+      },
+      {
+        "Name": "Trill Polytech",
+        "Type": "Education / research",
+        "Description": "An educational institution listed among Trill points of interest."
+      }
+    ],
+    "Inhabitants": "Trill are the primary humanoid inhabitants. Trill symbionts inhabit natural pools in the Caves of Mak'ala and are essential to the joined Trill population. On-screen sources do not provide a consistent population figure or demographic breakdown.",
+    "Tourism": "Trill is presented as a destination for scenic temperate landscapes (forests, lakes, coastal areas) and for culturally significant travel centered on symbiont heritage sites. The Caves of Mak'ala and Mak'ala’s institutional district are high-interest stops, though access may be regulated due to cultural and medical sensitivities around the symbionts and joining.",
+    "Logistics": "Visitors should plan for regulated access to symbiont-related sites and institutions. Protocols may prioritize Trill law and local authorities—especially for matters involving joining, hosts, and symbionts. Standard interstellar arrival logistics are not consistently detailed on-screen and may be era-dependent.",
+    "Weather": {
+      "ClimateType": "Temperate (varied by region)",
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Generally depicted as mild-to-temperate in forested regions; local conditions vary across lakes, coasts, canyonlands, and ice regions.",
+      "Hazards": [
+        "Unknown"
+      ]
+    },
+    "History": {
+      "Overview": "Trill’s joining tradition is treated as ancient, and the sacred Caves of Mak'ala are repeatedly described as the symbionts’ ancestral home. In the 24th century, Trill becomes central to several high-profile incidents involving the Dax symbiont and Starfleet intervention, as well as the medical crisis that revealed joining more broadly in earlier Federation contact. In the 32nd century, Trill is depicted as having become more insular after the Burn, with its relationship to the Federation changing over time and Trill law asserted strongly in disputes involving symbionts.",
+      "KeyEras": [
+        {
+          "Era": "Pre-Federation and early recorded history",
+          "Summary": "Joining traditions are established as ancient; the symbionts’ ancestral habitat is tied to the Caves of Mak'ala."
+        },
+        {
+          "Era": "24th century",
+          "Summary": "Trill is contacted for host replacement during the Odan crisis and becomes central to major Dax-related medical and cultural events, including incidents requiring intervention by Starfleet personnel on-world."
+        },
+        {
+          "Era": "32nd century (post-Burn)",
+          "Summary": "Trill is depicted as having seceded from the Federation after the Burn and later reconnecting with the Federation context during Discovery-era events."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "2367",
+          "Event": "Starfleet contacts Trill to provide a replacement host for Ambassador Odan after a medical crisis involving joining."
+        },
+        {
+          "When": "2371",
+          "Event": "USS Defiant travels to Trill during a crisis involving suppressed memories of the Dax symbiont and the joining institutions in Mak'ala."
+        },
+        {
+          "When": "2375",
+          "Event": "Dax symbiont is injured en route to Trill and is joined with Ezri Tigan aboard USS Destiny due to medical urgency."
+        },
+        {
+          "When": "3069",
+          "Event": "The Burn devastates the Trill population; Trill becomes more insular, and later-era sources describe Trill among Federation members that seceded during this period."
+        },
+        {
+          "When": "3189",
+          "Event": "USS Discovery visits Trill during a dispute involving Trill law and the Tal symbiont; Trill’s relationship to the Federation is depicted as in flux and later reconnecting."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Trillian government",
+      "Capital": "Mak'ala",
+      "Institutions": [
+        "Trillian government",
+        "Symbiosis Commission (Symbiosis Institute)",
+        "Trill Science Ministry"
+      ],
+      "LawsAffectingVisitors": [
+        "Trill law may take precedence on Trill in disputes involving hosts and symbionts, particularly when Trill is not operating as a Federation member world in that era",
+        "Access and conduct rules for sacred symbiont sites (Caves of Mak'ala) and joining institutions are culturally and legally sensitive"
+      ],
+      "Notes": "On-screen stories emphasize joining oversight and symbiont governance institutions more than broader civilian political structures."
+    },
+    "Economy": {
+      "Overview": "Trill is depicted through the lens of education, science, governance institutions tied to joining, and leisure travel. On-screen sources do not provide a comprehensive economic model.",
+      "PrimaryIndustries": [
+        "Education and research (e.g., Trill Polytech, science agencies)",
+        "Public administration (Trillian government institutions)",
+        "Medical and symbiont-related services (joining oversight)",
+        "Tourism and recreation (coasts, baths, resort travel)"
+      ],
+      "TradeNotes": "Unknown",
+      "LocalCommerceNotes": "Unknown"
+    },
+    "Culture": {
+      "Overview": "Trill culture is strongly shaped by the symbiotic relationship between Trill hosts and symbionts. Joining is treated as both a medical process and a foundational cultural institution, with dedicated authorities and sacred sites.",
+      "SocialCustoms": "Joining-related customs, site access norms, and the handling of joined memories are treated as serious cultural matters; specific everyday customs are not consistently detailed on-screen.",
+      "ReligiousLife": "Unknown",
+      "Festivals": "Unknown",
+      "ArtsAndMedia": "Unknown",
+      "LanguageNotes": "Unknown"
+    },
+    "Environment": {
+      "Overview": "A life-rich temperate biosphere with forests, lakes, canyon regions, and extensive cave systems. The planet’s oceans are described as having a purple tint from space. Native animal life includes named species and flying fauna.",
+      "Seasons": "Unknown",
+      "NaturalHazards": [
+        "Unknown"
+      ],
+      "NightSky": "Unknown"
+    },
+    "Appearances": {
+      "Overview": "Trill appears as both a physical setting and a key cultural locus for joined-Trill stories. It is central to DS9’s Dax arcs, is referenced in earlier TNG joining lore, and returns in Discovery’s 32nd-century continuity with major scenes in and around the Caves of Mak'ala and Trill legal institutions.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "TNG",
+          "Highlights": [
+            "Joining lore and the Odan host crisis establishes Trill as a required contact point for host replacement."
+          ]
+        },
+        {
+          "Era": "DS9",
+          "Highlights": [
+            "Mak'ala and the Symbiosis Commission appear in Dax-centered stories; the Caves of Mak'ala are shown as a sacred symbiont site."
+          ]
+        },
+        {
+          "Era": "DIS",
+          "Highlights": [
+            "Trill is revisited in the 32nd century with major scenes in the Caves of Mak'ala and disputes involving Trill law and symbiont hosting."
+          ]
+        },
+        {
+          "Era": "PIC",
+          "Highlights": [
+            "Trill is referenced as a destination and appears in later-era context through travel/legal references."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "TNG: \"The Host\" (Trill/host replacement contact during Odan crisis)",
+        "DS9: \"Invasive Procedures\" (homeworld name established; joining context)",
+        "DS9: \"Equilibrium\" (Trill setting; Mak'ala/Caves of Mak'ala; Symbiosis Commission)",
+        "DS9: \"Shadows and Symbols\" (Dax symbiont medical urgency en route to Trill; Ezri joining)",
+        "DIS: \"Forget Me Not\" (Trill visit; Caves of Mak'ala; Trill law dispute context)",
+        "DIS: \"Jinaal\" (Trill context continues)",
+        "PIC: \"Disengage\" (Trill referenced in late-24th-century context)",
+        "PIC: \"The Last Generation\" (Trill considered for a beach vacation)"
+      ],
+      "Films": [],
+      "Notes": "This list emphasizes episodes that directly establish Trill geography, institutions, and continuity details used above; Trill and Trill people are referenced in additional contexts elsewhere."
+    }
+  },
+  {
+    "PlanetID": "planet-betazed",
+    "Name": "Betazed",
+    "AlternateNames": [],
+    "Tags": [
+      "Homeworld",
+      "Federation member world",
+      "Betazoid"
+    ],
+    "TypeTags": [
+      "Class M",
+      "Inhabited"
+    ],
+    "Meta": {
+      "CanonicalName": "Betazed",
+      "Classification": "Class M planet",
+      "Affiliation": "United Federation of Planets",
+      "NativeSpecies": [
+        "Betazoid"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Betazed%20(Final).png"
+    },
+    "TravelSummary": "Betazed is the homeworld of the Betazoids, a Federation member world known on screen for an unusually open social culture and for the empathic/telepathic abilities of its people. Visitors are typically treated as welcome guests, but etiquette is shaped by Betazoid sensitivity—privacy, emotional honesty, and consent matter more than formal protocol.\n\nMost hard logistics (permits, ports, and formal entry rules) are not described on screen; what the canon emphasizes instead is the lived experience of Betazoid society: intimate, candid, and often disarmingly direct.",
+    "Location": {
+      "Quadrant": "Alpha Quadrant",
+      "Sector": "Unknown",
+      "StarSystem": "Beta Zeta system",
+      "Region": "Betazoid space",
+      "NearbyLandmarks": []
+    },
+    "Appearance": "On-screen visuals of Betazed itself are limited compared with major Star Trek hubs, but it is repeatedly described as an inhabited, Earth-like Class M world. When referenced, it is associated with serene landscapes, warm climates, and a relaxed, resort-like aesthetic consistent with its reputation as a peaceful homeworld.",
+    "Geography": "Specific continental layouts, named seas, and major geographic features are not established in on-screen canon. Betazed is portrayed broadly as a temperate, habitable world with environments suitable for large population centers and countryside estates.",
+    "CitiesAndSites": [
+      {
+        "Name": "Rixx",
+        "Type": "Capital city / Cultural site",
+        "Description": "Referenced in canon through Betazoid ceremonial titles (e.g., the Sacred Chalice of Rixx). Licensed reference material identifies Rixx as the capital city; on screen it functions mainly as a cultural touchstone in Betazoid society."
+      },
+      {
+        "Name": "Betazoid countryside estates (general)",
+        "Type": "Residential / Retreats",
+        "Description": "Betazed is associated on screen with private residences and retreats tied to prominent families (notably those connected to Lwaxana and Deanna Troi). Named estate locations are not consistently specified."
+      }
+    ],
+    "Inhabitants": "Betazed is the homeworld of the Betazoids. On screen, Betazoids are shown as empathic and, in many cases, telepathic—able to sense emotions and sometimes read thoughts, with strength and expression varying by individual and age. Deanna Troi’s half-human heritage is treated as a special case affecting the extent of her abilities.",
+    "Tourism": "Betazed is characterized on screen as an appealing destination: beautiful, peaceful, and socially permissive. Its reputation suggests a strong hospitality culture, with visitors drawn by its mild environments, arts, and the novelty of an openly expressive society.",
+    "Logistics": "Arrival procedures, port authorities, and entry requirements are Unknown. Practical guidance derived from canon depictions: expect a low-formality culture, be mindful that many locals can sense emotions, and treat personal boundaries and consent as essential social rules.",
+    "Weather": {
+      "ClimateType": "Temperate (Class M; depicted as mild)",
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Generally portrayed as pleasant and resort-like; specific meteorology is Unknown.",
+      "Hazards": []
+    },
+    "History": {
+      "Overview": "Betazed is a long-established warp-capable homeworld that becomes a Federation member by the 23rd/24th century era. During the Dominion War, Betazed is explicitly stated to have fallen to Dominion forces, making it a significant strategic and humanitarian concern.",
+      "KeyEras": [
+        "Pre-Federation Betazoid civilization (details Unknown on screen)",
+        "Federation membership era (by 24th century; accession year varies by reference)",
+        "Dominion War era (occupation referenced on screen)"
+      ],
+      "MajorEvents": [
+        "Dominion occupation of Betazed (stated during the Dominion War)",
+        "Post-occupation recovery and reintegration (details Unknown on screen)"
+      ]
+    },
+    "Government": {
+      "Polity": "Betazed planetary government (Houses/House-based authority referenced)",
+      "Capital": "Rixx",
+      "Institutions": [
+        "House-based civic authority (Houses of Betazed; structure details Unknown on screen)",
+        "Betazoid diplomatic representation within the Federation"
+      ],
+      "LawsAffectingVisitors": [
+        "Unknown (canon emphasizes social etiquette more than codified visitor law)"
+      ],
+      "Notes": "Prominent ceremonial titles and artifacts (e.g., Sacred Chalice of Rixx, Holy Rings of Betazed) are referenced on screen and suggest a strong tradition of formal status within Betazoid society."
+    },
+    "Economy": {
+      "Overview": "Unknown. As a Federation member world in the TNG era, Betazed is depicted as prosperous and stable; specific industries and trade roles are not established on screen.",
+      "PrimaryIndustries": [],
+      "TradeNotes": "Unknown",
+      "LocalCommerceNotes": "Unknown"
+    },
+    "Culture": {
+      "Overview": "Betazoid culture is portrayed as unusually candid and permissive, with low social stigma around nudity and emotional openness. Telepathic/empathic norms shape everyday interaction and diplomacy.",
+      "SocialCustoms": "Open social norms; personal honesty and emotional transparency are culturally salient. Ceremonial titles are used formally by some prominent figures.",
+      "ReligiousLife": "Unknown. Ritual objects and titles imply spiritual or ceremonial traditions, but structured religion is not clearly described on screen.",
+      "Festivals": "Unknown",
+      "ArtsAndMedia": "Unknown (Betazed is described as cultured and refined; specific art forms are not established on screen).",
+      "LanguageNotes": "Federation Standard is used on screen; distinct Betazoid language details are Unknown."
+    },
+    "Environment": {
+      "Overview": "Betazed is a habitable Class M environment depicted as comfortable and hospitable. Specific biomes and native ecology are Unknown on screen.",
+      "Seasons": "Unknown",
+      "NaturalHazards": [],
+      "NightSky": "Unknown"
+    },
+    "Appearances": {
+      "Overview": "Betazed is referenced across multiple series primarily through Betazoid characters and political events, with major story relevance during the Dominion War era.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "TNG",
+          "Highlights": [
+            "Betazoid culture and diplomacy are explored through Lwaxana Troi and Deanna Troi; Betazed is repeatedly referenced as their homeworld.",
+            "Betazoid social norms (including openness and ceremonial titles) are treated as a recurring character and worldbuilding element."
+          ]
+        },
+        {
+          "Era": "DS9",
+          "Highlights": [
+            "Betazed’s fall/occupation is referenced during the Dominion War, underscoring the Dominion’s reach and the war’s escalating stakes."
+          ]
+        },
+        {
+          "Era": "SNW / pre-TOS era references",
+          "Highlights": [
+            "Betazed and the Beta Zeta system are referenced in starship-era navigation context."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "TNG: \"Haven\" (Betazoid culture and ceremonial titles referenced)",
+        "TNG: \"Half a Life\" (Lwaxana Troi; Betazed diplomatic context)",
+        "TNG: \"Dark Page\" (Betazoid family history; Lwaxana/Deanna context)",
+        "DS9: \"The Forsaken\" (Lwaxana Troi; Betazed representation)",
+        "DS9: \"In the Pale Moonlight\" (Betazed has fallen/occupation referenced)"
+      ],
+      "Films": [],
+      "Notes": "Betazed is frequently referenced via Betazoid characters; direct on-screen depiction of the planet is less common than its cultural and political presence in dialogue."
+    }
+  },
+  {
+    "PlanetID": "planet-denobula",
+    "Name": "Denobula",
+    "AlternateNames": [
+      "Unknown"
+    ],
+    "Tags": [
+      "Homeworld",
+      "Denobulan civilization",
+      "Single-continent world (high population density)",
+      "Weather towers mitigate major storms"
+    ],
+    "TypeTags": [
+      "Homeworld"
+    ],
+    "Meta": {
+      "CanonicalName": "Denobula",
+      "Classification": "Habitable world",
+      "Affiliation": "Coalition of Planets; United Federation of Planets ally (by 2384)",
+      "NativeSpecies": [
+        "Denobulan"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Denobula%20(Final).png"
+    },
+    "TravelSummary": "Denobula is the Denobulan homeworld in the Denobula Triaxa system. It is known for a densely populated, highly communal society concentrated on a single continent and for planet-scale weather towers that keep massive storms in check. Visitors should expect vibrant urban life, strong social norms around family and relationships, and infrastructure designed to manage extreme weather.",
+    "Location": {
+      "Quadrant": "Beta Quadrant",
+      "Sector": "Unknown",
+      "StarSystem": "Denobula Triaxa system",
+      "Region": "Approx. 96.3 light years from Sol",
+      "NearbyLandmarks": [
+        "Sol (approx. 96.3 light years)"
+      ]
+    },
+    "Appearance": "Denobula is a habitable planet with a single relatively small continent. On-screen canon does not establish a consistent visual depiction of the planet from orbit or surface; the world is primarily referenced in dialogue.",
+    "Geography": "Denobula’s known land geography centers on one continent supporting dense cities and riverside districts. The planet’s environment is shaped by powerful storm systems; Denobulan-built weather towers are credited with controlling or suppressing the largest storms. Further geographic details (mountain ranges, oceans, polar regions) are not described in on-screen canon.",
+    "CitiesAndSites": [
+      {
+        "Name": "Kaybin District",
+        "Type": "Urban district (nightlife / riverside)",
+        "Description": "A noted riverside nightlife area and social gathering spot; referenced as a place associated with meeting partners during Denobulan mating season."
+      },
+      {
+        "Name": "Planetary weather towers (network)",
+        "Type": "Climate-control infrastructure",
+        "Description": "Weather towers built by the Denobulans to keep massive planet-wide storms at bay; presented as a defining feature of Denobulan planetary engineering."
+      }
+    ],
+    "Inhabitants": "Homeworld of the Denobulans, a warp-capable humanoid species. Denobula is described as heavily populated; in the mid-2150s, the population is stated as about twelve billion, with most inhabitants sharing a single continent by cultural preference rather than necessity.",
+    "Tourism": "Denobula’s visitor appeal is tied to its communal culture: dense cities, frequent social gatherings, and a lively nightlife scene in places like the Kaybin District. Cultural norms around extended families and multi-partner marriage structures can be unfamiliar to off-world visitors; respectful curiosity and discretion are advised, especially during mating season when social venues may be notably active.",
+    "Logistics": "Interstellar access is implied by Denobula’s warp-capable society and its participation in early interstellar diplomacy. Specific entry procedures, ports of entry, currency, and visitor regulations are not detailed in on-screen canon. Travel planning should account for weather conditions and any operational status of the planet’s weather-tower systems.",
+    "Weather": {
+      "ClimateType": "Temperate habitable world with major storm activity",
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Large storm systems are a known feature; urban regions are supported by advanced weather-mitigation infrastructure.",
+      "Hazards": [
+        "Massive storms (historically significant; mitigated by weather towers)"
+      ]
+    },
+    "History": {
+      "Overview": "Denobula is referenced throughout the 22nd century as the Denobulan homeworld and a populous, socially dense planet. It is associated with long-standing, carefully bounded genetic medicine practices, and it participates diplomatically in the formation-era interstellar alliances that lead toward the Coalition of Planets. By the late 24th century, Denobula appears in Starfleet strategic context as an allied world.",
+      "KeyEras": [
+        {
+          "Era": "Mid-20th century onward",
+          "Summary": "Genetic engineering is described as being used on Denobula to repair genetic deficiencies, not to redesign the species."
+        },
+        {
+          "Era": "2151–2155 (Enterprise era)",
+          "Summary": "Denobula is repeatedly referenced as Phlox’s homeworld; Humans participate in an interspecies medical exchange, and Denobula takes part in Coalition-era diplomatic efforts."
+        },
+        {
+          "Era": "2384 (late 24th century)",
+          "Summary": "Denobula is shown as a Starfleet ally on a strategic display (as referenced in animated canon)."
+        },
+        {
+          "Era": "3191 (32nd century)",
+          "Summary": "Denobula is listed as habitable in 32nd-century-era references."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "Mid-20th century",
+          "Event": "Genetic engineering on Denobula is described as being used to correct deficiencies rather than to 'improve' the species."
+        },
+        {
+          "When": "September 2151",
+          "Event": "Human doctor Jeremy Lucas serves on Denobula as part of an interspecies medical exchange."
+        },
+        {
+          "When": "2155",
+          "Event": "A Denobulan representative participates in talks at Starfleet Headquarters to form the Coalition of Planets."
+        },
+        {
+          "When": "2384",
+          "Event": "Denobula appears on a Starfleet strategic display as an allied world."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Planetary government (name/structure unknown); Denobula is represented diplomatically in Coalition-era talks.",
+      "Capital": "Unknown",
+      "Institutions": [
+        "Denobulan planetary government (unnamed; represented by an ambassador/representative in 2155)",
+        "Denobulan scientific and medical community (frequently referenced through Phlox and Denobulan colleagues)",
+        "Weather-tower infrastructure administration (implied by planet-scale climate engineering)"
+      ],
+      "LawsAffectingVisitors": [
+        "Unknown"
+      ],
+      "Notes": "On-screen canon emphasizes Denobula’s culture and major infrastructure more than its formal governmental structure."
+    },
+    "Economy": {
+      "Overview": "Denobula’s economic model is not described in on-screen canon; the planet is characterized instead by dense urban life, strong social cohesion, and advanced engineering and medical science.",
+      "PrimaryIndustries": [
+        "Medicine and biological sciences",
+        "Planetary-scale climate engineering (weather towers)",
+        "Urban services and hospitality (nightlife districts)"
+      ],
+      "TradeNotes": "Interstellar trade routes are implied, but specific exports/imports and trade partners are unknown.",
+      "LocalCommerceNotes": "Local businesses (including nightlife venues) are referenced, but pricing and currency systems are unknown."
+    },
+    "Culture": {
+      "Overview": "Denobulan culture is portrayed as optimistic and strongly communal, with many people choosing to live in close proximity on a single continent. Family and relationship structures commonly involve multiple spouses and large extended networks.",
+      "SocialCustoms": "Communal living and large social gatherings are culturally valued. Denobulan relationship norms are polyamorous; Phlox references multiple spouses and extended family connections as ordinary.",
+      "ReligiousLife": "Unknown",
+      "Festivals": "Mating season is referenced as a socially active period; other festivals are unknown.",
+      "ArtsAndMedia": "Unknown",
+      "LanguageNotes": "Unknown"
+    },
+    "Environment": {
+      "Overview": "A single-continent habitable planet with significant storm activity historically severe enough to motivate the construction of weather towers. Additional environmental specifics (biomes beyond urbanized regions, oceans, and polar conditions) are unknown.",
+      "Seasons": "Unknown",
+      "NaturalHazards": [
+        "Massive storms (mitigated by weather towers)"
+      ],
+      "NightSky": "Unknown"
+    },
+    "Appearances": {
+      "Overview": "Denobula is primarily referenced as Phlox’s homeworld; it is mentioned frequently but not visited or depicted in an extended on-screen setting.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "ENT",
+          "Highlights": [
+            "Referenced as the Denobulan homeworld and in medical/diplomatic contexts across multiple episodes."
+          ]
+        },
+        {
+          "Era": "DIS",
+          "Highlights": [
+            "Referenced in relation to Denobulan weather-tower technology and later-era context."
+          ]
+        },
+        {
+          "Era": "PRO",
+          "Highlights": [
+            "Listed on a Starfleet strategic display as an ally (2384)."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "ENT: \"Dear Doctor\" (Denobula referenced; population density, culture, and Kaybin District context)",
+        "ENT: \"The Catwalk\" (Denobula referenced; population on a single continent)",
+        "ENT: \"Doctor's Orders\" (Denobula referenced; communal culture and density)",
+        "ENT: \"Demons\" / \"Terra Prime\" (Denobula representative in Coalition of Planets talks)",
+        "ENT: \"Borderland\" (Denobulan genetic engineering referenced)",
+        "DIS: \"Whistlespeak\" (Denobulan weather-tower technology referenced in later era)",
+        "PRO: \"Supernova, Part 1\" (Denobula shown as Starfleet ally on strategic display, 2384)"
+      ],
+      "Films": [],
+      "Notes": "Denobula is largely established through dialogue and indirect references; extended on-screen planetary visuals are not provided."
+    }
   }
 ]
