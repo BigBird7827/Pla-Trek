@@ -199,6 +199,7 @@
       box-shadow: 0 22px 60px rgba(0,0,0,.6);
     }
     .thumb{
+      position:relative;
       width: 66px;
       height: 66px;
       border-radius: 16px;
@@ -213,7 +214,7 @@
       overflow:hidden;
       flex:0 0 auto;
     }
-    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .thumb img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
     .cardTitle{
       font-weight: 900;
       font-size: 15px;
@@ -265,6 +266,7 @@
     }
     @media (max-width: 700px){
       .hero{grid-template-columns:1fr}
+      .heroImg{width:min(260px, 100%); margin: 0 auto}
     }
     .heroImg{
       border-radius: 18px;
@@ -276,8 +278,10 @@
       overflow:hidden;
       position:relative;
       min-height: 170px;
+      aspect-ratio: 1 / 1;
+      align-self: start;
     }
-    .heroImg img{width:100%;height:100%;object-fit:cover;display:block}
+    .heroImg img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
     .heroTitle{
       margin: 0 0 6px 0;
       font-size: 30px;
@@ -433,6 +437,175 @@ let planets = [];
 let filtered = [];
 let selectedId = null;
 
+const IMG_NORM = {
+  fillThumb: 0.89,
+  fillHero: 0.89,
+  alphaThreshold: 12
+};
+
+function normalizeAllIn(root){
+  if (!root) return;
+  root.querySelectorAll(".thumb img, .heroImg img").forEach(img => normalizeWhenReady(img));
+}
+
+function normalizeWhenReady(img){
+  if (!img) return;
+
+  const run = () => {
+    if (!document.contains(img)) return;
+    if (!img.complete || !img.naturalWidth) return;
+    normalizeImageToContent(img);
+    img.dataset.norm = "1";
+  };
+
+  if (img.complete && img.naturalWidth){
+    requestAnimationFrame(run);
+  } else {
+    img.addEventListener("load", () => requestAnimationFrame(run), { once: true });
+  }
+}
+
+function normalizeImageToContent(img){
+  const frame = img.closest(".thumb, .heroImg");
+  if (!frame) return;
+
+  const r = frame.getBoundingClientRect();
+  const cw = Math.max(1, Math.round(r.width));
+  const ch = Math.max(1, Math.round(r.height));
+
+  const iw = img.naturalWidth;
+  const ih = img.naturalHeight;
+  if (!iw || !ih) return;
+
+  const fill = frame.classList.contains("heroImg") ? IMG_NORM.fillHero : IMG_NORM.fillThumb;
+
+  let bounds = null;
+
+  try{
+    const maxDim = 256;
+    const down = Math.min(1, maxDim / Math.max(iw, ih));
+    const w = Math.max(1, Math.round(iw * down));
+    const h = Math.max(1, Math.round(ih * down));
+
+    const canvas = document.createElement("canvas");
+    canvas.width = w;
+    canvas.height = h;
+
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
+    ctx.clearRect(0, 0, w, h);
+    ctx.drawImage(img, 0, 0, w, h);
+
+    const data = ctx.getImageData(0, 0, w, h).data;
+
+    let minX = w, minY = h, maxX = -1, maxY = -1;
+    const aThr = IMG_NORM.alphaThreshold;
+
+    for (let y = 0; y < h; y++){
+      for (let x = 0; x < w; x++){
+        const i = (y * w + x) * 4;
+        const a = data[i + 3];
+        if (a > aThr){
+          if (x < minX) minX = x;
+          if (y < minY) minY = y;
+          if (x > maxX) maxX = x;
+          if (y > maxY) maxY = y;
+        }
+      }
+    }
+
+    if (maxX >= 0){
+      const spanX = maxX - minX;
+      const spanY = maxY - minY;
+      const fullX = spanX >= (w - 2);
+      const fullY = spanY >= (h - 2);
+
+      if (fullX && fullY){
+        const c1 = 0;
+        const c2 = (w - 1) * 4;
+        const c3 = (h - 1) * w * 4;
+        const c4 = ((h - 1) * w + (w - 1)) * 4;
+
+        const br = Math.round((data[c1] + data[c2] + data[c3] + data[c4]) / 4);
+        const bg = Math.round((data[c1 + 1] + data[c2 + 1] + data[c3 + 1] + data[c4 + 1]) / 4);
+        const bb = Math.round((data[c1 + 2] + data[c2 + 2] + data[c3 + 2] + data[c4 + 2]) / 4);
+
+        let minX2 = w, minY2 = h, maxX2 = -1, maxY2 = -1;
+        const colorThr = 48;
+
+        for (let y = 0; y < h; y++){
+          for (let x = 0; x < w; x++){
+            const i = (y * w + x) * 4;
+            const dr = Math.abs(data[i] - br);
+            const dg = Math.abs(data[i + 1] - bg);
+            const db = Math.abs(data[i + 2] - bb);
+            if ((dr + dg + db) > colorThr){
+              if (x < minX2) minX2 = x;
+              if (y < minY2) minY2 = y;
+              if (x > maxX2) maxX2 = x;
+              if (y > maxY2) maxY2 = y;
+            }
+          }
+        }
+
+        if (maxX2 >= 0){
+          bounds = {
+            minX: minX2 / down,
+            minY: minY2 / down,
+            maxX: (maxX2 + 1) / down,
+            maxY: (maxY2 + 1) / down
+          };
+        }
+      } else {
+        bounds = {
+          minX: minX / down,
+          minY: minY / down,
+          maxX: (maxX + 1) / down,
+          maxY: (maxY + 1) / down
+        };
+      }
+    }
+  } catch (e){
+    bounds = null;
+  }
+
+  if (!bounds){
+    bounds = { minX: 0, minY: 0, maxX: iw, maxY: ih };
+  }
+
+  const bw = Math.max(1, bounds.maxX - bounds.minX);
+  const bh = Math.max(1, bounds.maxY - bounds.minY);
+  const cx = bounds.minX + bw / 2;
+  const cy = bounds.minY + bh / 2;
+
+  const target = fill * Math.min(cw, ch);
+  const scale = target / Math.max(bw, bh);
+
+  const tx = (cw / 2) - (cx * scale);
+  const ty = (ch / 2) - (cy * scale);
+
+  img.style.position = "absolute";
+  img.style.left = "0";
+  img.style.top = "0";
+  img.style.width = iw + "px";
+  img.style.height = ih + "px";
+  img.style.maxWidth = "none";
+  img.style.maxHeight = "none";
+  img.style.transformOrigin = "0 0";
+  img.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+  img.style.display = "block";
+}
+
+let _normResizeT = null;
+window.addEventListener("resize", () => {
+  clearTimeout(_normResizeT);
+  _normResizeT = setTimeout(() => {
+    document.querySelectorAll(".thumb img[data-norm='1'], .heroImg img[data-norm='1']").forEach(img => {
+      img.dataset.norm = "0";
+      normalizeWhenReady(img);
+    });
+  }, 120);
+});
+
 function esc(s){
   return (s ?? "").toString().replace(/[&<>"']/g, (c) => ({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
@@ -494,6 +667,7 @@ function buildCard(p){
   thumb.className = "thumb";
   if (imgUrl){
     const img = document.createElement("img");
+    img.crossOrigin = "anonymous";
     img.src = imgUrl;
     img.alt = p.Name || "";
     thumb.appendChild(img);
@@ -541,6 +715,7 @@ function renderList(){
     filtered.forEach(p => els.list.appendChild(buildCard(p)));
   }
   els.countMeta.textContent = filtered.length + " / " + planets.length;
+  normalizeAllIn(els.list);
 }
 
 function kvRow(k, vHtml){
@@ -602,7 +777,6 @@ function renderDetail(planet){
   const cult = planet.Culture || {};
   const env = planet.Environment || {};
   const canon = planet.CanonAppearances || {};
-  const dq = planet.DataQuality || {};
   const sites = Array.isArray(planet.CitiesAndSites) ? planet.CitiesAndSites : [];
 
   const hero = document.createElement("div");
@@ -612,6 +786,7 @@ function renderDetail(planet){
   heroImg.className = "heroImg";
   if (media.HeroImageURL){
     const img = document.createElement("img");
+    img.crossOrigin = "anonymous";
     img.src = media.HeroImageURL;
     img.alt = planet.Name || "";
     heroImg.appendChild(img);
@@ -944,36 +1119,14 @@ function renderDetail(planet){
     canonBody.appendChild(p);
   }
   sectionGrid.appendChild(section("Canon appearances", canonBody));
-
-  const dqBody = document.createElement("div");
-  dqBody.appendChild(kvRow("Confidence", esc(dq.Confidence || "")));
-  dqBody.appendChild(kvRow("Coverage", esc(dq.Coverage || "")));
-  if (Array.isArray(dq.KnownGaps) && dq.KnownGaps.length){
-    const t = document.createElement("div");
-    t.className = "small";
-    t.style.marginTop = "10px";
-    t.innerHTML = "<b>Known gaps</b>";
-    dqBody.appendChild(t);
-    dqBody.appendChild(ul(dq.KnownGaps, x => br(x)));
-  }
-  if (dq.VerificationNotes){
-    const t = document.createElement("div");
-    t.className = "small";
-    t.style.marginTop = "10px";
-    t.innerHTML = "<b>Verification notes</b>";
-    dqBody.appendChild(t);
-    const p = document.createElement("div");
-    p.innerHTML = br(dq.VerificationNotes);
-    dqBody.appendChild(p);
-  }
-  sectionGrid.appendChild(section("Data notes", dqBody));
-
   els.detail.appendChild(sectionGrid);
 
   const foot = document.createElement("div");
   foot.className = "footerNote";
   foot.textContent = "Data source: " + (rawData && rawData.SchemaVersion ? ("Schema " + rawData.SchemaVersion) : "Planets.json");
   els.detail.appendChild(foot);
+
+  normalizeAllIn(els.detail);
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
