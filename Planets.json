@@ -933,5 +933,537 @@
       "Films": [],
       "Notes": "List reflects prominent on-screen Ferenginar-focused episodes; additional references may exist. Overall completeness is Unknown."
     }
+  },
+  {
+    "PlanetID": "planet-cardassia-prime",
+    "Name": "Cardassia Prime",
+    "AlternateNames": [
+      "Cardassia"
+    ],
+    "Tags": [
+      "Cardassian Union",
+      "Homeworld"
+    ],
+    "TypeTags": [
+      "Terrestrial (inhabited)"
+    ],
+    "Meta": {
+      "CanonicalName": "Cardassia Prime",
+      "Classification": "Unknown",
+      "Affiliation": "Cardassian Union (Cardassian state)",
+      "NativeSpecies": "Cardassians"
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Cardassia%20Prime.jpg"
+    },
+    "TravelSummary": "Cardassia Prime—often shortened to simply “Cardassia”—is the Cardassian homeworld and the political center of the Cardassian Union. On-screen, it is most closely associated with state institutions such as the Detapa Council and Central Command, and with the Dominion War’s final campaign.\n\nVisitor-facing details like entry procedures, tourism norms, and local transit systems are largely Unknown on-screen. What is shown and discussed emphasizes security, government control, and the planet’s strategic importance during periods of conflict.",
+    "Location": {
+      "Quadrant": "Alpha Quadrant",
+      "Sector": "Unknown",
+      "StarSystem": "Cardassian system (Cardassia system)",
+      "Region": "Cardassian space",
+      "NearbyLandmarks": [
+        "Unknown"
+      ]
+    },
+    "Appearance": "Depictions on Cardassia Prime emphasize monumental Cardassian architecture—angular, imposing civic structures and dense urban skylines. When cities are shown, waterways and canal-like features are visible in some establishing shots, and the overall palette leans toward muted stone and warm, dusty tones.",
+    "Geography": "Planet-wide geography (continents, oceans, and major landforms) is Unknown on-screen. The clearest specific locale referenced by name is Lakarian City; other scenes focus on government and wartime targets rather than mapping the world’s surface.",
+    "CitiesAndSites": [
+      {
+        "Name": "Lakarian City",
+        "Type": "City",
+        "Description": "A major city on Cardassia Prime referenced as having leisure facilities such as an amusement center. During the Dominion War’s final arc, it is destroyed as a reprisal, becoming a defining trauma for the Cardassian population."
+      },
+      {
+        "Name": "Detapa Council",
+        "Type": "Civilian government",
+        "Description": "The Cardassian civilian government body referenced in DS9. It is presented as a central political authority of the Cardassian Union."
+      },
+      {
+        "Name": "Central Command",
+        "Type": "Military / state leadership",
+        "Description": "Cardassian military leadership referenced throughout DS9-era stories. It is tied to policy, security, and wartime decision-making affecting Cardassian territory and occupied or contested regions."
+      },
+      {
+        "Name": "Dominion command presence on Cardassia Prime",
+        "Type": "Wartime administration",
+        "Description": "During the late Dominion War, Cardassia becomes a major Dominion partner territory. The Dominion maintains a command presence and directs harsh reprisals from Cardassia Prime in response to sabotage and resistance."
+      }
+    ],
+    "Inhabitants": "Cardassians are the dominant native population. In the Dominion War period, Dominion forces (including Jem'Hadar) operate on Cardassia Prime, and Cardassian resistance activity is shown on-world.",
+    "Tourism": "Unknown. On-screen stories depict Cardassia Prime primarily in political and wartime contexts rather than as a civilian tourist destination.",
+    "Logistics": "Unknown. On-screen sources emphasize heightened security and state control during crises, but do not provide consistent, practical visitor guidance (visas, permits, customs inspections, or civilian transit rules).",
+    "Weather": {
+      "ClimateType": "Unknown",
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Unknown",
+      "Hazards": [
+        "Unknown"
+      ]
+    },
+    "History": {
+      "Overview": "Cardassia Prime is presented as the core world of the Cardassian Union and a focal point for Cardassian state power. Across DS9, its off-screen influence is felt through the Occupation of Bajor, conflicts with the Federation and Klingons, and shifting internal politics. In the Dominion War, Cardassia becomes central to the war’s endgame, with the planet suffering devastating reprisals and widespread destruction.",
+      "KeyEras": [
+        {
+          "Era": "Cardassian Union state era",
+          "Summary": "Cardassia Prime is the seat of Cardassian governance and military authority as portrayed across DS9-era politics and security stories."
+        },
+        {
+          "Era": "Occupation and post-Occupation era",
+          "Summary": "Cardassian rule over Bajor shapes regional politics and Cardassia’s reputation; the aftermath drives ongoing tension with Bajorans and Federation-aligned powers."
+        },
+        {
+          "Era": "Dominion War alliance period",
+          "Summary": "Cardassia aligns with the Dominion, becomes a major theater of operations, and experiences internal resistance and severe reprisals."
+        },
+        {
+          "Era": "Late-war devastation and aftermath",
+          "Summary": "Events in the final Dominion War arc depict large-scale destruction on Cardassia Prime; the post-war recovery path is Unknown on-screen."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "Unknown",
+          "Event": "Cardassian Occupation of Bajor shapes the region and becomes a central political legacy referenced throughout DS9."
+        },
+        {
+          "When": "Unknown (Dominion War)",
+          "Event": "Cardassia joins the Dominion; Cardassian leadership broadcasts promises of renewed power in the Alpha Quadrant."
+        },
+        {
+          "When": "Unknown (Dominion War finale)",
+          "Event": "Resistance sabotage triggers Dominion retaliation: Lakarian City is reduced to ashes with no survivors, and Cardassian outrage helps catalyze open rebellion."
+        },
+        {
+          "When": "Unknown (Dominion War finale)",
+          "Event": "Cardassian forces turn on Dominion troops and cities are attacked during the final battle over Cardassia Prime."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Cardassian Union (state governance portrayed as heavily influenced by military/security institutions in multiple eras)",
+      "Capital": "Unknown (a specific capital city is not consistently stated on-screen; Lakarian City is identified as a major city)",
+      "Institutions": [
+        "Detapa Council (civilian government)",
+        "Central Command (military/state leadership)",
+        "Obsidian Order (intelligence service; role referenced on-screen)",
+        "Dominion administration (wartime control during the Dominion War)"
+      ],
+      "LawsAffectingVisitors": [
+        "Unknown (on-screen sources do not enumerate visitor laws or entry requirements)",
+        "During security crises, restrictions and reprisals are depicted, but specific legal texts are Unknown"
+      ],
+      "Notes": "On-screen depictions focus on political control, military influence, and wartime governance rather than civic processes, elections, or detailed administrative structure."
+    },
+    "Economy": {
+      "Overview": "Unknown (on-screen stories emphasize politics, security, and war; economic structure is not described in consistent, practical detail).",
+      "PrimaryIndustries": [
+        "Unknown"
+      ],
+      "TradeNotes": "Unknown",
+      "LocalCommerceNotes": "Unknown"
+    },
+    "Culture": {
+      "Overview": "Cardassian culture on-screen is often framed through themes of duty to the state, family bonds, and a strong sense of national identity. DS9 also highlights Cardassian arts and literature as a point of pride and debate in conversations between Cardassians and Federation citizens.",
+      "SocialCustoms": [
+        "Formality and state-centered expectations are common in Cardassian political and military contexts",
+        "Personal/civilian day-to-day customs are Unknown on-screen in a broad, planet-wide sense"
+      ],
+      "ReligiousLife": "Unknown",
+      "Festivals": "Unknown",
+      "ArtsAndMedia": "Cardassian literature is referenced on-screen, including discussion of prominent Cardassian epic forms and well-known works.",
+      "LanguageNotes": "The Cardassian language exists and is used in multiple scenes; detailed linguistic notes are Unknown."
+    },
+    "Environment": {
+      "Overview": "Unknown (planet-wide environmental conditions are not described consistently on-screen).",
+      "Seasons": "Unknown",
+      "NaturalHazards": [
+        "Unknown"
+      ],
+      "NightSky": "Unknown"
+    },
+    "Appearances": {
+      "Overview": "Cardassia Prime is a major locus of DS9-era politics and the Dominion War’s conclusion, with named locales (notably Lakarian City) and on-world resistance activity depicted in the final arc.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "TNG",
+          "Highlights": [
+            "Cardassia and Cardassian territory are frequently referenced as major regional powers; Cardassia Prime is the implied seat of the Cardassian state."
+          ]
+        },
+        {
+          "Era": "DS9",
+          "Highlights": [
+            "Cardassian institutions (Detapa Council, Central Command, Obsidian Order) and Cardassian politics are recurring drivers of the series.",
+            "Dominion War climax includes major events on Cardassia Prime, including the destruction of Lakarian City and the final battle."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "DS9: \"Defiant\" (Lakarian City referenced; Cardassian politics and family stakes highlighted)",
+        "DS9: \"The Die Is Cast\" (Cardassian intelligence/state power and Alpha Quadrant strategy discussed)",
+        "DS9: \"By Inferno's Light\" (Cardassian alignment and ambitions in the Alpha Quadrant broadcast)",
+        "DS9: \"The Changing Face of Evil\" (Dominion promises to extend Cardassian influence throughout the Alpha Quadrant referenced)",
+        "DS9: \"What You Leave Behind\" (on-world resistance; Lakarian City destruction; final battle over Cardassia Prime)"
+      ],
+      "Films": [],
+      "Notes": "This list highlights prominent on-screen references and the DS9 finale arc. Cardassia Prime is also referenced broadly across other Cardassian-focused stories."
+    }
+  },
+  {
+    "PlanetID": "planet-bajor",
+    "Name": "Bajor",
+    "AlternateNames": [],
+    "Tags": [
+      "Homeworld",
+      "Major setting",
+      "Post-occupation reconstruction",
+      "Bajoran religion"
+    ],
+    "TypeTags": [
+      "Homeworld",
+      "DS9Setting",
+      "ReconstructionEra"
+    ],
+    "Meta": {
+      "CanonicalName": "Bajor",
+      "Classification": "Inhabited terrestrial world; homeworld of the Bajoran people.",
+      "Affiliation": "Independent Bajoran government (Provisional Government during early DS9-era); close ties with the United Federation of Planets through joint administration of Deep Space 9.",
+      "NativeSpecies": [
+        "Bajoran"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Bajor.png"
+    },
+    "TravelSummary": "Bajor is a beautiful, heavily visited world in the Alpha Quadrant, known for its deep spiritual traditions, agricultural countryside, and long recovery after decades of Cardassian occupation. Visitors most often arrive via Deep Space 9 and travel onward for cultural sites, religious pilgrimages, and rural retreats. Some travel conditions vary with local politics and regional recovery.",
+    "Location": {
+      "Quadrant": "Alpha Quadrant",
+      "Sector": "Bajor Sector",
+      "StarSystem": "Bajor system",
+      "Region": "Near the former Cardassian border; within Bajoran space closely associated with Deep Space 9 and the Bajoran wormhole.",
+      "NearbyLandmarks": [
+        "Deep Space 9 (formerly Terok Nor)",
+        "Bajoran wormhole / “Celestial Temple”",
+        "Denorios Belt"
+      ]
+    },
+    "Appearance": "On screen, Bajor is portrayed as a lush, habitable world with open skies, green valleys, farmland, and coastal or river landscapes. Rural settlements, stone architecture, and monastery-like religious sites are frequently shown, reflecting both everyday agrarian life and long-standing spiritual traditions.",
+    "Geography": "Bajor is politically divided into provinces, and its terrain is shown as varied—fertile agricultural regions, rolling hills, rivers, and valleys. Episodes reference multiple provinces (including Dahkur, Kendra, and Rakantha), with life often centered on farms, small towns, and regional communities. Specific global metrics (continental layout, exact land/water ratios) are Unknown.",
+    "CitiesAndSites": [
+      {
+        "Name": "Dahkur Province",
+        "Type": "Province / Agricultural region",
+        "Description": "Referenced as Major Kira Nerys’s home province and repeatedly associated with farms, hills, and resistance-era history. Post-occupation, it is shown as a place where former resistance members return to farming and local life."
+      },
+      {
+        "Name": "Kendra Province",
+        "Type": "Province / Rural region",
+        "Description": "Referenced as a populated region affected by major historical trauma during the Occupation and later by natural disasters during wormhole-related instability. Sisko is shown selecting land here as a future home site."
+      },
+      {
+        "Name": "Rakantha Province",
+        "Type": "Province / Agricultural region",
+        "Description": "Referenced in connection with Bajoran agriculture and weather impacts; episodes mention crop damage from flooding affecting local harvests."
+      },
+      {
+        "Name": "City of B’hala",
+        "Type": "Archaeological / Sacred site",
+        "Description": "A legendary “lost” Bajoran city connected to prophecy and faith; rediscovered in the DS9 era and treated as a major cultural and religious landmark."
+      },
+      {
+        "Name": "Fire Caves",
+        "Type": "Cave system / Religious-mythic site",
+        "Description": "A sacred and feared cavern complex tied to Bajoran religious mythology, associated with the Pah-wraiths and events late in Deep Space Nine."
+      },
+      {
+        "Name": "Qui’al Dam (near Janir)",
+        "Type": "Infrastructure / Landmark",
+        "Description": "A major dam and waterworks site referenced in connection with prophecy and a real engineering project to manage water for nearby communities."
+      }
+    ],
+    "Inhabitants": "Bajor is primarily inhabited by Bajorans. In the DS9 era, the planet is also shaped by the presence of off-world visitors and advisers—particularly Federation/Starfleet personnel connected to Deep Space 9—and by the lingering effects of Cardassian administration and exploitation during the Occupation. Specific global population figures are Unknown.",
+    "Tourism": "Tourism is strongly tied to pilgrimage and culture: visitors attend festivals, visit temples and monasteries, and seek out historic or prophetic sites. Rural travel—farm stays, small-town markets, and countryside excursions—is commonly portrayed. Tourism can be affected by security conditions and local political tensions.",
+    "Logistics": "Most off-world arrivals and departures are depicted through Deep Space 9, with onward surface travel by shuttles and local transport. Jurisdictional authority for visitors is primarily Bajoran, and access to sensitive areas may depend on current security conditions. Specific visa rules, entry requirements, and standard travel paperwork are Unknown.",
+    "Weather": {
+      "ClimateType": "Temperate/earthlike in many depicted regions (overall planetary climate specifics are Unknown).",
+      "Seasonality": "Seasonal agricultural cycles are referenced; regional floods and harvest impacts occur in some provinces.",
+      "TypicalConditions": "Often depicted as mild and pleasant in rural and coastal settings; conditions vary by region and season.",
+      "Hazards": [
+        "Flooding (region-dependent)",
+        "Earthquakes (reported during periods of unusual wormhole-related instability)",
+        "Unknown"
+      ]
+    },
+    "History": {
+      "Overview": "Bajor is one of the most culturally and spiritually prominent worlds in the Star Trek canon, with a long-lived civilization and a religion centered on the Prophets and their Orbs. In the modern era, Bajor emerges from a prolonged Cardassian occupation, rebuilding its government and society while navigating internal political conflict, the strategic implications of the nearby stable wormhole, and the wider Dominion War.",
+      "KeyEras": [
+        {
+          "Era": "Ancient Bajoran civilization and prophecy traditions",
+          "Summary": "Bajor’s religious and artistic heritage is portrayed as extremely old, with Orbs and prophetic texts shaping major social and political decisions."
+        },
+        {
+          "Era": "Cardassian Occupation and Resistance",
+          "Summary": "The Occupation is depicted as a period of forced labor, exploitation, and mass suffering, opposed by resistance cells and underground movements."
+        },
+        {
+          "Era": "Post-Occupation Provisional Government and recovery",
+          "Summary": "After liberation, Bajor rebuilds amid political fragmentation, resource disputes, and debates over Federation membership and sovereignty."
+        },
+        {
+          "Era": "Wormhole era and Dominion War pressures",
+          "Summary": "The discovery and strategic importance of the Bajoran wormhole reshapes Bajor’s place in the quadrant and draws it into major regional conflicts."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "During the Occupation (late 24th century)",
+          "Event": "Cardassian control, forced labor, and harsh repression; Bajoran resistance activity becomes widespread."
+        },
+        {
+          "When": "Shortly before and during early DS9 era",
+          "Event": "Cardassians withdraw from Bajor and Terok Nor; Bajor assumes authority and requests Federation help to stabilize Deep Space 9."
+        },
+        {
+          "When": "Early DS9 era",
+          "Event": "A stable wormhole in Bajoran space is discovered; the wormhole becomes central to Bajor’s religion and the sector’s politics."
+        },
+        {
+          "When": "DS9 era",
+          "Event": "Internal political crises—including extremist movements and leadership struggles—challenge the Provisional Government."
+        },
+        {
+          "When": "Late DS9 era",
+          "Event": "Major spiritual conflict involving the Prophets and Pah-wraiths culminates at sacred sites on Bajor."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Independent Bajoran government (Provisional Government during early DS9 era; later presented as the Bajoran Republic).",
+      "Capital": "Unknown",
+      "Institutions": [
+        "First Minister and the Chamber of Ministers",
+        "Bajoran Militia (planetary defense and security)",
+        "Kai and the Bajoran religious hierarchy",
+        "Vedek Assembly (religious council)",
+        "Local provincial authorities"
+      ],
+      "LawsAffectingVisitors": [
+        "Bajoran law and local jurisdiction apply, including to Deep Space 9 while it is administered jointly with Starfleet.",
+        "Access to sacred sites and religious artifacts is often controlled by Bajoran religious authorities.",
+        "Specific immigration/visa regulations are Unknown."
+      ],
+      "Notes": "Bajor’s politics are portrayed as highly sensitive in the post-occupation period, with sovereignty concerns often shaping interactions with the Federation and neighboring powers."
+    },
+    "Economy": {
+      "Overview": "A recovering post-occupation economy with strong agricultural roots and significant rebuilding needs; trade and services expand alongside Deep Space 9’s role as a regional hub.",
+      "PrimaryIndustries": [
+        "Agriculture (including wheat and other staple crops)",
+        "Reconstruction and infrastructure recovery",
+        "Local crafts and cultural production",
+        "Trade and services linked to Deep Space 9 and regional travel"
+      ],
+      "TradeNotes": "Federation aid and cooperative projects are depicted as important during recovery, while regional instability can disrupt commerce.",
+      "LocalCommerceNotes": "Local commerce is shown through farms, markets, and community-based exchange; details of standard currency and pricing are Unknown."
+    },
+    "Culture": {
+      "Overview": "Bajoran culture is portrayed as spiritually centered, tradition-rich, and strongly shaped by the trauma of occupation and the pride of survival.",
+      "SocialCustoms": "Common on-screen cultural markers include family-name ordering (family name first), distinctive earrings as identity and tradition, and social emphasis on community and remembrance.",
+      "ReligiousLife": "The Bajoran faith venerates the Prophets (linked to the wormhole) and uses sacred artifacts known as Orbs; religious leadership includes the Kai and Vedeks, and faith regularly intersects with governance and daily life.",
+      "Festivals": "Annual public celebrations include the Bajoran Gratitude Festival (associated with the greeting “Peldor Joi”).",
+      "ArtsAndMedia": "Bajoran art and architecture are frequently portrayed through paintings, carved stonework, ceremonial spaces, and devotional objects; prophetic texts and iconography recur throughout DS9.",
+      "LanguageNotes": "Bajoran language and ancient forms exist, but specific linguistic details and standardized transliterations are Unknown."
+    },
+    "Environment": {
+      "Overview": "Bajor is depicted as a scenic, life-supporting world with abundant farmland and livable rural regions; environmental recovery and resource pressure are recurring post-occupation themes.",
+      "Seasons": "Seasonal patterns are implied by harvest cycles and region-specific weather events; a complete planetary seasonal model is Unknown.",
+      "NaturalHazards": [
+        "Flooding (reported in some agricultural regions)",
+        "Earthquakes (reported in connection with unusual regional instability)",
+        "Unknown"
+      ],
+      "NightSky": "From orbit-adjacent locations, Deep Space 9 may be visible as a bright moving point; other night-sky details (moons/constellations) are Unknown."
+    },
+    "Appearances": {
+      "Overview": "Bajor is the central world of Star Trek: Deep Space Nine, repeatedly visited and referenced as its society rebuilds after the Occupation and confronts the political and spiritual consequences of the nearby wormhole.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "DS9",
+          "Highlights": [
+            "Post-occupation recovery and political instability (Provisional Government, coups, leadership struggles).",
+            "Religious and prophetic storylines tied to the Prophets, Orbs, and the Emissary.",
+            "Civilian life shown through provinces, farms, festivals, and sacred sites.",
+            "Major late-series spiritual conflict culminating at sacred locations on Bajor."
+          ]
+        },
+        {
+          "Era": "TNG (references)",
+          "Highlights": [
+            "Bajor is discussed in connection with the Cardassian conflict and Bajoran refugees; Bajorans are introduced before DS9."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "DS9: \"Emissary\" (Bajor and its spiritual leadership; DS9 begins as Bajor rebuilds; wormhole discovered in Bajoran space)",
+        "DS9: \"The Circle\" / \"The Siege\" (Bajoran political crisis and extremist movement)",
+        "DS9: \"Shakaar\" (soil reclamators dispute in Dahkur Province; political transition)",
+        "DS9: \"Destiny\" (Qui’al Dam and prophecy-related engineering project)",
+        "DS9: \"Fascination\" (Bajoran Gratitude Festival / “Peldor Joi”)",
+        "DS9: \"Rapture\" (rediscovery of the City of B’hala; Bajor and Federation membership debate)",
+        "DS9: \"The Reckoning\" (Prophets/Pah-wraiths conflict; earthquakes in Bajoran provinces)",
+        "DS9: \"Penumbra\" (Sisko’s land in Kendra Province; personal plans on Bajor)",
+        "DS9: \"Image in the Sand\" / \"Shadows and Symbols\" (Bajor-centric spiritual storyline leading into final arc)",
+        "DS9: \"What You Leave Behind\" (final resolution involving Bajoran sacred sites and spiritual conflict)"
+      ],
+      "Films": [],
+      "Notes": "This list highlights major Bajor-focused episodes; Bajor is referenced throughout DS9 and appears in many additional episodes."
+    }
+  },
+  {
+    "PlanetID": "planet-risa",
+    "Name": "Risa",
+    "AlternateNames": [],
+    "Tags": [
+      "Resort world",
+      "Pleasure planet",
+      "Federation destination"
+    ],
+    "TypeTags": [
+      "ResortWorld",
+      "PleasurePlanet"
+    ],
+    "Meta": {
+      "CanonicalName": "Risa",
+      "Classification": "Inhabited planet; commonly depicted as a major resort destination with extensive leisure infrastructure",
+      "Affiliation": "Unknown",
+      "NativeSpecies": [
+        "Risan"
+      ]
+    },
+    "Media": {
+      "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Risa.png"
+    },
+    "TravelSummary": "Risa is a well-known leisure destination repeatedly depicted as a “pleasure planet” visited by Starfleet personnel and other travelers for shore leave. On-screen stories present Risa as a place built around hospitality, recreation, and romance, with resort districts designed to keep visitors comfortable and entertained.\n\nA distinctive on-screen feature of Risa is its planetwide weather-control system, which maintains stable, pleasant conditions in the resort regions shown. When that system is disrupted, the environment can shift rapidly into severe storms and unsafe conditions, turning a vacation setting into an emergency.",
+    "Location": {
+      "Quadrant": "Unknown",
+      "Sector": "Unknown",
+      "StarSystem": "Unknown",
+      "Region": "Unknown",
+      "NearbyLandmarks": []
+    },
+    "Appearance": "On-screen depictions emphasize bright, inviting resort vistas—sunlit skies, beaches, lush greenery, and landscaped public spaces designed for relaxation and recreation.",
+    "Geography": "Unknown",
+    "CitiesAndSites": [
+      {
+        "Name": "Risan resort districts",
+        "Type": "Tourism / Leisure",
+        "Description": "Beachfront and garden-like resort areas are the primary locations shown on-screen, including hotels, promenades, and outdoor gathering spaces associated with shore leave."
+      },
+      {
+        "Name": "Weather-control infrastructure",
+        "Type": "Planetary system",
+        "Description": "Risa is shown to depend on a planetwide weather-control capability that can be targeted or disrupted, causing severe storms and dangerous conditions."
+      }
+    ],
+    "Inhabitants": "Risans are the planet’s native people. Risa is also shown as a frequent destination for offworld visitors, including Starfleet personnel on shore leave.",
+    "Tourism": "Tourism and recreation are central to how Risa is portrayed on-screen: visitors come for relaxation, resort amenities, romance, and organized leisure experiences. The planet is commonly described as a “pleasure planet,” and its public spaces are designed to welcome travelers.",
+    "Logistics": "Access is presented through typical interstellar travel (arrivals by starship and local transport to resort areas). Specific entry requirements, customs rules, or visitor regulations are Unknown.",
+    "Weather": {
+      "ClimateType": "Managed / controlled (planetwide weather-control system shown on-screen)",
+      "Seasonality": "Unknown",
+      "TypicalConditions": "Generally depicted with stable, pleasant resort weather; when the weather-control system is disrupted, severe storms and hazardous conditions can occur.",
+      "Hazards": [
+        "Severe storms during weather-control disruptions",
+        "Security incidents targeting tourism infrastructure (rare, episode-specific)"
+      ]
+    },
+    "History": {
+      "Overview": "On-screen stories focus on Risa’s role as a long-established resort destination rather than a detailed political or historical timeline. Specific founding history and major historical eras are Unknown.",
+      "KeyEras": [
+        {
+          "Era": "Starfleet/Federation-era shore leave destination",
+          "Summary": "Risa is repeatedly depicted as a common shore leave location for Starfleet crews and a recognized interstellar resort world."
+        }
+      ],
+      "MajorEvents": [
+        {
+          "When": "Unknown",
+          "Event": "Risa’s weather-control system is shown being disrupted in at least one major incident, producing dangerous storms and forcing emergency response by visiting personnel."
+        }
+      ]
+    },
+    "Government": {
+      "Polity": "Unknown",
+      "Capital": "Unknown",
+      "Institutions": [
+        "Unknown"
+      ],
+      "LawsAffectingVisitors": [
+        "Unknown"
+      ],
+      "Notes": "On-screen depictions emphasize tourism operations and public safety incidents; specific governmental structure and legal codes are Unknown."
+    },
+    "Economy": {
+      "Overview": "Risa is portrayed primarily as a tourism-driven world built around hospitality, recreation, and services for visitors.",
+      "PrimaryIndustries": [
+        "Tourism and hospitality",
+        "Recreation and leisure services"
+      ],
+      "TradeNotes": "Unknown",
+      "LocalCommerceNotes": "Resort services, accommodations, and leisure amenities are repeatedly depicted; details of broader commerce are unknown."
+    },
+    "Culture": {
+      "Overview": "Risa is portrayed as socially open and welcoming to visitors, with a strong emphasis on leisure, romance, and consent-signaling customs in resort contexts.",
+      "SocialCustoms": "The horga’hn is shown as a cultural symbol used in the context of local romantic/sexual customs; ‘jamaharon’ is referenced as part of that culture’s shore leave environment.",
+      "ReligiousLife": "Unknown",
+      "Festivals": "Unknown",
+      "ArtsAndMedia": "Unknown",
+      "LanguageNotes": "Unknown"
+    },
+    "Environment": {
+      "Overview": "Risa is depicted as a carefully maintained resort environment, supported by a planetwide weather-control system.",
+      "Seasons": "Unknown",
+      "NaturalHazards": [
+        "Unknown"
+      ],
+      "NightSky": "Unknown"
+    },
+    "Appearances": {
+      "Overview": "Risa appears as a recurring shore leave and vacation setting across multiple Star Trek series, often used for character-focused stories that contrast relaxation with sudden crisis.",
+      "BySeriesOrFilm": [
+        {
+          "Era": "TNG",
+          "Highlights": [
+            "Risa is shown as a Starfleet shore leave destination with resort environments and controlled weather."
+          ]
+        },
+        {
+          "Era": "DS9",
+          "Highlights": [
+            "Risa is used as a vacation setting where political and ideological conflict impacts the resort environment and its weather-control system."
+          ]
+        },
+        {
+          "Era": "ENT",
+          "Highlights": [
+            "Risa is depicted as an early-era pleasure destination visited by Enterprise crew during shore leave."
+          ]
+        }
+      ]
+    },
+    "CanonAppearances": {
+      "Episodes": [
+        "TNG: \"Captain's Holiday\" (Risa shore leave; horga’hn/jamaharon references)",
+        "TNG: \"The Game\" (Risa shore leave setting)",
+        "DS9: \"Let He Who Is Without Sin…\" (Risa vacation setting; weather-control disruption)",
+        "ENT: \"Two Days and Two Nights\" (Risa shore leave setting)"
+      ],
+      "Films": [],
+      "Notes": "Risa is referenced in other contexts, but the items above are the primary on-screen stories that directly depict the planet as a setting."
+    }
   }
 ]
