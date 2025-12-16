@@ -2,9 +2,14 @@
   "Meta": {
     "Project": "Plan-Trek",
     "DataSet": "TravelGuidePlanets",
-    "Build": 10,
+    "Build": 11,
     "Version": 1,
-    "LastUpdated": "2025-12-15"
+    "LastUpdated": "2025-12-15",
+    "Schema": {
+      "SchemaName": "Pla-Trek Planets",
+      "SchemaVersion": "1.1",
+      "AdditiveUpgrade": true
+    }
   },
   "Planets": [
     {
@@ -22,9 +27,12 @@
       "Location": {
         "Quadrant": "Alpha Quadrant",
         "QuadrantNotes": "Earth is the human homeworld and the seat of major Federation institutions.",
-        "StarSystem": "Sol",
+        "StarSystem": "Sol system",
         "Sector": "Sector 001",
-        "Region": "United Federation of Planets"
+        "Region": "United Federation of Planets (core worlds)",
+        "Subregion": "Terran system space",
+        "DistanceFromSolLy": 0,
+        "Notes": "Earth is the third planet of the Sol system (Sol III) and a principal administrative world for Federation affairs."
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -39,167 +47,22 @@
           "TimeFormat": "24-hour commonly used in Starfleet contexts"
         }
       },
-      "TravelSummary": "Earth is the homeworld of humanity and the political heart of the United Federation of Planets. It is home to Starfleet Headquarters in San Francisco and remains a major diplomatic, cultural, and historical center.",
-      "Appearance": {
-        "GeneralLook": "A blue-white world dominated by oceans, varied continents, and dynamic cloud systems, with major metropolitan regions alongside protected natural reserves.",
-        "FromOrbit": [
-          "High-density orbital traffic and infrastructure during major Starfleet periods",
-          "Major approach lanes into the Sol system and Earth orbit are tightly controlled during alerts"
-        ],
-        "NotableLandscapes": [
-          "San Francisco Bay area and coastline",
-          "European river valleys and historic urban cores",
-          "Rural preserves and heritage sites tied to First Contact history"
-        ],
-        "SurfaceNotes": [
-          "Civic architecture ranges from preserved pre-warp landmarks to sleek Federation-era public buildings.",
-          "Many locations prominently integrate water features, parks, and pedestrian spaces."
-        ]
-      },
-      "Geography": {
-        "Biomes": [
-          {
-            "Name": "Oceans and coastlines",
-            "Notes": ""
-          },
-          {
-            "Name": "Temperate regions",
-            "Notes": ""
-          },
-          {
-            "Name": "Arid regions",
-            "Notes": ""
-          },
-          {
-            "Name": "Polar regions",
-            "Notes": ""
-          }
-        ],
-        "Landmarks": [
-          {
-            "Name": "San Francisco (Starfleet Headquarters area)",
-            "Category": "City / Government",
-            "CityOrRegion": "North America",
-            "VisitorNotes": []
-          }
-        ],
-        "Cities": [
-          {
-            "Name": "San Francisco",
-            "Role": "Starfleet/Federation administrative hub (frequently )",
-            "Highlights": [],
-            "LocalVibe": ""
-          }
-        ]
-      },
-      "Inhabitants": {
-        "Primary": [
-          {
-            "Species": "Human",
-            "Notes": ""
-          }
-        ],
-        "NotableCultures": [
-          {
-            "Name": "United Earth civic culture",
-            "Notes": "Visitors will find strong norms around pluralism, diplomacy, and public education."
-          },
-          {
-            "Name": "Starfleet community presence",
-            "Notes": "Academy cadets, officers, and visiting crews shape local rhythms near major facilities."
-          }
-        ],
-        "VisitorEtiquette": [
-          "Expect security screening and identity checks near Starfleet and Federation facilities.",
-          "Avoid restricted shoreline and airspace zones around major orbital-interface sites during alerts.",
-          "Respect memorials and historic sites—many are treated as solemn civic spaces.",
-          "Food culture is wide-ranging; reservations are common for renowned family restaurants."
-        ]
-      },
+      "TravelSummary": "Earth (Sol III) is the human homeworld and a core member world of the United Federation of Planets. In the 23rd–25th centuries it hosts major Federation and Starfleet institutions, making it a frequent destination for diplomacy, education, and interstellar travel.",
+      "Appearance": "From orbit, Earth presents bright blue oceans, varied green-brown landmasses, and extensive white cloud systems. The planet’s night side is often marked by dense city-light patterns, while orbital infrastructure and traffic can be heavy near major hubs.",
+      "Geography": "A Class-M world with diverse biomes and seven major continents separated by broad oceans. Key climatic zones range from polar ice caps to temperate forests and equatorial tropics; many regions have been restored and protected after earlier industrial damage.",
+      "Inhabitants": "Primarily Humans, with a long history of multicultural societies and wide linguistic diversity. By the Federation era, Earth regularly hosts large non-human populations for diplomatic, academic, and Starfleet-related reasons.",
       "Weather": {
-        "ClimateType": "Wide-ranging climates and seasons across continents, from polar to tropical.",
-        "Seasonality": "Seasonal variation depends on region; many areas experience distinct seasonal cycles.",
-        "TypicalConditions": [
-          {
-            "Region": "San Francisco Bay",
-            "Conditions": [
-              "Cool mornings/evenings",
-              "Frequent coastal fog",
-              "Mild wet season patterns"
-            ]
-          },
-          {
-            "Region": "Paris basin",
-            "Conditions": [
-              "Temperate seasons",
-              "Cool winters",
-              "Warm summers with occasional rain"
-            ]
-          },
-          {
-            "Region": "Gulf lowlands (e.g., New Orleans)",
-            "Conditions": [
-              "Hot humid summers",
-              "Heavy rain periods",
-              "Storm season precautions"
-            ]
-          }
-        ],
+        "ClimateType": "Varied (global range: polar to tropical)",
+        "Seasonality": "Pronounced seasonal variation in many temperate regions; regional microclimates are common.",
+        "TypicalConditions": "Conditions vary widely by latitude and terrain; coastal zones can be humid and storm-prone, interiors can be arid or continental.",
         "Hazards": [
-          {
-            "Type": "Storm disruptions",
-            "Notes": "Local storms can delay shuttle schedules and outdoor events; buffer time is recommended."
-          },
-          {
-            "Type": "Security posture shifts",
-            "Notes": "During major political or military events, travel corridors may change rapidly."
-          }
+          "Tropical cyclones and severe storms in some ocean basins",
+          "Blizzards in polar/high-latitude regions",
+          "Heat waves and drought in some continental interiors"
         ]
       },
-      "Tourism": {
-        "TopAttractions": [
-          {
-            "Name": "Starfleet/Federation civic district (San Francisco)",
-            "WhyGo": "Frequently Federation/Starfleet hub with recognizable waterfront setting."
-          }
-        ],
-        "Activities": [
-          "Museum and archive days (Federation history, warp-era exhibits)",
-          "Bayfront walks and scenic transit loops",
-          "Cuisine trips spanning regional Earth traditions",
-          "Seasonal festivals and cultural performances"
-        ],
-        "Restrictions": [
-          "No-fly / no-drone zones near Starfleet and Federation executive areas during high security.",
-          "Certain Academy areas are cadet-only and may be closed during training and examinations."
-        ],
-        "SafetyNotes": [
-          "Check current advisories for Sol system traffic controls before arrival.",
-          "Carry ID and travel authorization if planning visits near major government campuses.",
-          "During major anniversaries and ceremonies, crowds can be dense—plan transit accordingly."
-        ]
-      },
-      "Logistics": {
-        "Entry": [
-          "Federation standard customs procedures (varies by era and political context).",
-          "Visitors approaching through Earth orbit may be routed via controlled corridors, especially during alerts."
-        ],
-        "LocalTransport": [
-          "High-capacity urban transit networks in major cities",
-          "Shuttles and licensed air/space traffic near orbital-interface zones",
-          "Transporter use depends on local infrastructure and security rules"
-        ],
-        "CurrencyNotes": [
-          "Visitors should expect largely cashless exchange; carry travel credentials compatible with local services."
-        ],
-        "Lodging": [
-          "City-center hotels and guest facilities near major cultural districts",
-          "Outlying eco-lodges and heritage inns near historic sites"
-        ],
-        "Communications": [
-          "Dense communications infrastructure; universal translator support is generally unnecessary for Standard speech, but available for visitors."
-        ]
-      },
+      "Tourism": "Earth supports a broad range of visitor experiences: cultural centers, historic landmarks, natural preserves, and major Federation institutions. Visitors should expect strict security protocols near key governmental and Starfleet facilities.",
+      "Logistics": "Earth has extensive space traffic control, multiple orbital facilities, and frequent starship arrivals. Transit between major cities is efficient; access to restricted sites (e.g., sensitive government or Starfleet areas) typically requires authorization.",
       "CanonAppearances": {
         "FirstSeen": {
           "Series": "TOS",
@@ -209,22 +72,154 @@
         "Key": []
       },
       "Tags": [
+        "Capital World",
+        "Class M",
         "CoreWorld",
+        "Federation Core",
         "HighInfrastructure",
-        "HighSecurityPotential"
+        "HighSecurityPotential",
+        "Human Homeworld"
       ],
       "Media": {
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Earth.png",
         "Gallery": []
       },
-      "CitiesAndSites": {
-        "MajorCities": [
-          "San Francisco (Starfleet HQ/Academy precinct)",
-          "Paris (Federation Presidency)"
+      "CitiesAndSites": [
+        {
+          "Name": "San Francisco (Starfleet Headquarters)",
+          "Type": "City / Starfleet hub",
+          "Description": "A major Starfleet administrative center and common location for fleet operations and ceremonial events; closely associated with Starfleet Academy."
+        },
+        {
+          "Name": "Starfleet Academy",
+          "Type": "Academy",
+          "Description": "Starfleet’s premier officer-training institution, widely depicted as located in the San Francisco area."
+        },
+        {
+          "Name": "Paris (Federation capital functions)",
+          "Type": "City / Government center",
+          "Description": "Commonly associated with Federation-level governmental functions, including offices connected with the Federation President and Council."
+        },
+        {
+          "Name": "Bozeman, Montana (First warp flight site)",
+          "Type": "Historic site",
+          "Description": "Site associated with Zefram Cochrane’s first warp flight and the historic first contact with Vulcans."
+        }
+      ],
+      "PlaceRefs": {
+        "Cities": [],
+        "Regions": [],
+        "Landmarks": [],
+        "Settlements": [],
+        "Moons": [],
+        "OrbitalFacilities": []
+      },
+      "FeatureRefs": [],
+      "OrganizationRefs": [],
+      "History": {
+        "Overview": "Earth’s modern interstellar era begins with the warp age and first contact with Vulcans, leading to United Earth and, later, the founding of the United Federation of Planets. Across multiple centuries, Earth remains a political and cultural center while also serving as a key Starfleet staging and training world.",
+        "KeyEras": [
+          {
+            "Era": "Warp and First Contact era",
+            "Summary": "Humanity’s transition to warp travel and first interstellar diplomacy."
+          },
+          {
+            "Era": "Federation founding and expansion",
+            "Summary": "Earth as a principal founding world and administrative hub."
+          },
+          {
+            "Era": "Klingon, Romulan, and Dominion-era crises",
+            "Summary": "Repeated security incidents and wartime mobilization impacting Earth and its institutions."
+          }
         ],
-        "PointsOfInterest": [
-          "Starfleet Headquarters (near San Francisco Bay)",
-          "Starfleet Academy (San Francisco)"
+        "MajorEvents": [
+          {
+            "When": "2063",
+            "Event": "First warp flight and first contact with Vulcans (Bozeman)."
+          },
+          {
+            "When": "2161",
+            "Event": "Founding of the United Federation of Planets (Earth as a founding world)."
+          },
+          {
+            "When": "24th century",
+            "Event": "Earth repeatedly serves as the location for high-level Federation and Starfleet decision-making during major conflicts."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "United Federation of Planets; Earth also maintains planetary governance (United Earth in various eras).",
+        "Capital": "Paris (Federation capital functions); major Starfleet command functions in the San Francisco area.",
+        "Institutions": [
+          "Federation Council and executive offices (Federation era)",
+          "Starfleet Headquarters",
+          "Starfleet Academy"
+        ],
+        "LawsAffectingVisitors": [
+          "Strict security zones around sensitive facilities",
+          "Standard Federation customs and immigration controls for off-world visitors"
+        ],
+        "Notes": "Earth is routinely treated as a political capital and major Starfleet hub in multiple eras."
+      },
+      "Economy": {
+        "Overview": "A post-scarcity Federation core world emphasizing governance, education, science, and cultural exchange.",
+        "PrimaryIndustries": [
+          "Administration and diplomacy",
+          "Academia and research",
+          "Starfleet training and logistics",
+          "Tourism and cultural institutions"
+        ],
+        "TradeNotes": "Earth’s strategic value is institutional rather than export-driven; it hosts conferences, councils, and major interstellar events.",
+        "LocalCommerceNotes": "Commercial activity exists, but day-to-day life is depicted as largely beyond traditional monetary scarcity within Federation society."
+      },
+      "Culture": {
+        "Overview": "Highly pluralistic human culture with strong traditions in arts, cuisine, and civic institutions; Earth is frequently portrayed as a meeting place for Federation worlds.",
+        "SocialCustoms": "Visitors are expected to observe local customs of the region they are in; major governmental and Starfleet facilities operate with formal protocols.",
+        "ReligiousLife": "A wide range of religious and philosophical traditions persist in the Federation era, alongside secular civic culture.",
+        "Festivals": "Numerous regional and planetary holidays; large public ceremonies sometimes accompany Federation or Starfleet events.",
+        "ArtsAndMedia": "Earth remains a major center for literature, music, museums, and performance, often serving as a cultural reference point for other worlds.",
+        "LanguageNotes": "Many languages remain in active use; Federation Standard is common in interstellar contexts."
+      },
+      "Environment": {
+        "Overview": "Ecologically diverse world with significant protected areas; restoration and conservation are frequently implied in Federation-era portrayals.",
+        "Seasons": "Strong latitudinal seasons on many landmasses; stable temperate climates in some coastal regions.",
+        "NaturalHazards": [
+          "Natural seismic activity",
+          "Severe weather in some regions"
+        ],
+        "NightSky": "A busy orbital environment is common near major population centers; lunar visibility is prominent in many depictions."
+      },
+      "DataQuality": {
+        "Certainty": "High",
+        "Notes": ""
+      },
+      "Appearances": {
+        "Overview": "Appears across nearly every Star Trek era as an anchor location for Federation politics and Starfleet.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "TOS/TAS films era",
+            "Highlights": [
+              "Starfleet operations and return-to-Earth story beats in films"
+            ]
+          },
+          {
+            "Era": "TNG/DS9/VOY era",
+            "Highlights": [
+              "Federation political center; Starfleet security and crisis response episodes"
+            ]
+          },
+          {
+            "Era": "ENT era",
+            "Highlights": [
+              "United Earth and early Starfleet; post-warp political development"
+            ]
+          },
+          {
+            "Era": "PIC era",
+            "Highlights": [
+              "Starfleet Headquarters and Federation policy decisions"
+            ]
+          }
         ]
       }
     },
@@ -240,11 +235,12 @@
         "FederationFoundingWorld"
       ],
       "Location": {
-        "Quadrant": "Alpha Quadrant",
+        "Quadrant": "Beta Quadrant",
         "QuadrantNotes": "Vulcan is a core Federation member world associated with early Federation history.",
-        "StarSystem": "Vulcan system (40 Eridani)",
-        "Sector": "Vulcan sector",
-        "Region": "United Federation of Planets (member world; later Ni'Var)"
+        "StarSystem": "Vulcan system",
+        "Sector": "Vulcan sector (Sector 005)",
+        "Region": "Federation space / Vulcan territory",
+        "Notes": "Vulcan is commonly placed in the Vulcan sector and relatively close to Earth by interstellar standards."
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -259,186 +255,22 @@
           "TimeFormat": "Local standards; visitors commonly rely on shipboard chronometers and civic time beacons."
         }
       },
-      "TravelSummary": "Vulcan is the homeworld of the Vulcan people and an early member of the Federation. It is known for arid landscapes, rigorous cultural traditions, and prominent ceremonial and governmental sites.",
-      "Appearance": {
-        "GeneralLook": "Predominantly arid terrain with deserts and rocky plains, punctuated by settlements and ceremonial locations.",
-        "FromOrbit": [
-          "Desert belts and highland contours are visually dominant",
-          "The Vulcan system’s companion world relationships are a notable feature of local cartography"
-        ],
-        "NotableLandscapes": [
-          "Vulcan's Forge (desert/volcanic badlands)",
-          "Sacred mountain sites (e.g., Mount Seleya)",
-          "Desert-edge urban corridors (e.g., ShiKahr region)"
-        ],
-        "SurfaceNotes": [
-          "Visitors commonly report intense light, rapid dehydration risk, and strong day–night comfort swings.",
-          "Some wilderness zones can interfere with technology and require analog navigation backups."
-        ]
-      },
-      "Geography": {
-        "Biomes": [
-          {
-            "Name": "Desert and rocky plains",
-            "Notes": ""
-          }
-        ],
-        "Landmarks": [
-          {
-            "Name": "Forge",
-            "Category": "Desert region",
-            "CityOrRegion": "Vulcan",
-            "VisitorNotes": []
-          },
-          {
-            "Name": "Vulcan High Command / government district (era-dependent)",
-            "Category": "Government",
-            "CityOrRegion": "Vulcan",
-            "VisitorNotes": []
-          }
-        ],
-        "Cities": [
-          {
-            "Name": "ShiKahr",
-            "Role": "Major city near the edge of the Forge",
-            "Highlights": [
-              "Desert-edge architecture optimized for shade and heat control",
-              "Cultural residences associated with prominent Vulcan families in some eras"
-            ],
-            "LocalVibe": "Orderly, quiet, and tradition-forward; visitors are expected to be self-contained and respectful."
-          },
-          {
-            "Name": "Gol",
-            "Role": "Ancient city (historic/cultural reference)",
-            "Highlights": [
-              "Referenced in Vulcan historical accounts and cautionary tales",
-              "Often approached as an educational stop rather than a leisure destination"
-            ],
-            "LocalVibe": "Austere heritage site—visit via curator-led routes if available."
-          }
-        ]
-      },
-      "Inhabitants": {
-        "Primary": [
-          {
-            "Species": "Vulcan",
-            "Notes": ""
-          }
-        ],
-        "NotableCultures": [
-          {
-            "Name": "Surakian tradition",
-            "Notes": "Pilgrimage, scholarship, and meditation are central to many visitor experiences."
-          },
-          {
-            "Name": "Scientific institutions",
-            "Notes": "Academic culture is prominent; lectures and symposiums can be major tourist draws in some eras."
-          }
-        ],
-        "VisitorEtiquette": [
-          "Keep your voice low; emotional displays are often considered disruptive in public spaces.",
-          "Avoid unsolicited physical contact; ask permission before assisting someone physically.",
-          "Never attempt or request a mind meld casually—consent and cultural context are critical.",
-          "Dress for sun and dust: breathable layers, eye protection, and sealed footwear are standard.",
-          "Carry water and electrolyte supplementation for outdoor travel; dehydration can escalate quickly.",
-          "Follow shrine and sanctuary rules precisely: silence zones, footwear policies, and restricted steps are common.",
-          "Do not treat sacred symbols (e.g., IDIC iconography) as casual merchandise in solemn spaces.",
-          "When invited into a home, wait for explicit guidance on seating, food, and conversation topics.",
-          "Photography/recording may be restricted in religious and academic areas—ask before capturing images.",
-          "On guided treks, stay with your group; terrain and stormfronts can shift quickly."
-        ]
-      },
+      "TravelSummary": "Vulcan is the homeworld of the Vulcans and one of the most influential founding worlds associated with the Federation. The planet is known for its arid landscapes, intense heat, and ancient cultural sites tied to Vulcan philosophy and tradition.",
+      "Appearance": "From orbit, Vulcan shows broad rust-red and ochre deserts broken by darker volcanic terrain and rugged mountain chains. Atmospheric haze and dust can soften surface contrast, especially near desert basins.",
+      "Geography": "A predominantly arid Class-M world with extensive deserts and badlands. Notable regions include the Forge, a harsh desert expanse, and mountainous areas associated with major cultural institutions.",
+      "Inhabitants": "Primarily Vulcans. Off-world residents and visitors are common in diplomatic and academic contexts, including at major scientific institutions.",
       "Weather": {
-        "ClimateType": "Hot and arid in many regions.",
-        "Seasonality": "Seasonal detail varies by region; heat and low humidity are common baseline conditions.",
-        "TypicalConditions": [
-          {
-            "Region": "Desert plains",
-            "Conditions": [
-              "High daytime heat",
-              "Dry air",
-              "Dust gusts"
-            ]
-          },
-          {
-            "Region": "Forge region",
-            "Conditions": [
-              "Electrical sandstorms",
-              "Geomagnetic instability",
-              "Technology interference pockets"
-            ]
-          },
-          {
-            "Region": "Mountain routes",
-            "Conditions": [
-              "Cooler temperatures at elevation",
-              "Strong winds",
-              "Rapid exposure shifts"
-            ]
-          }
-        ],
+        "ClimateType": "Hot arid (desert-dominant)",
+        "Seasonality": "Seasonal variation exists but is often less pronounced than daily extremes in desert regions.",
+        "TypicalConditions": "High temperatures, low precipitation, and frequent dry winds; local microclimates exist near protected settlements and oases.",
         "Hazards": [
-          {
-            "Type": "Sandfire storms",
-            "Notes": "Fast-moving storms with blinding sand and lightning-like electrical discharges; can last hours to days and require sealed shelter."
-          },
-          {
-            "Type": "Electrical sandstorms / geomagnetic interference (Forge)",
-            "Notes": "Can interfere with scanners, communicators, and transporters (especially in 22nd-century tech contexts)."
-          },
-          {
-            "Type": "Heat injury and dehydration",
-            "Notes": "Primary day-trip risk for offworld visitors; plan shade breaks and carry water beyond Earth-normal expectations."
-          }
+          "Heat exposure and dehydration risk in open deserts",
+          "Dust storms in arid basins",
+          "Rapid temperature drops after sunset in some regions"
         ]
       },
-      "Tourism": {
-        "TopAttractions": [
-          {
-            "Name": "Cultural and ceremonial sites (visit via approved protocols)",
-            "WhyGo": "Vulcan culture and rituals are central to many stories; access is portrayed as formal."
-          }
-        ],
-        "Activities": [
-          "Guided desert treks (non-Forge routes recommended for casual visitors)",
-          "Museum and archive visits focused on Vulcan history and philosophy",
-          "Meditation retreats and cultural workshops (by invitation or registration)",
-          "Night-sky viewing when conditions allow (companion planet visibility can be striking)"
-        ],
-        "Restrictions": [
-          "Forge-area travel may require permits, guides, and approved equipment checklists.",
-          "Sacred and governmental facilities may restrict offworld visitors during political tension or ceremonial periods.",
-          "Some rites and trials are not tourist events; do not attempt participation without formal invitation."
-        ],
-        "SafetyNotes": [
-          "Never enter the Forge without sealed shelter options and a guide familiar with storm behavior.",
-          "Carry redundant navigation and communications options; some terrain can disrupt instruments.",
-          "Plan arrivals and departures around heat peaks; dawn/dusk itineraries reduce risk.",
-          "Respect local authority immediately during advisories—Vulcan enforcement is typically strict and procedural."
-        ]
-      },
-      "Logistics": {
-        "Entry": [
-          "Expect strict customs and documentation checks; Vulcan authorities prioritize order and clarity.",
-          "Visitors may be required to declare scientific equipment, recording devices, and medical supplies."
-        ],
-        "LocalTransport": [
-          "Urban transit and regulated shuttles near major cities",
-          "Licensed ground vehicles for desert routes",
-          "Guided convoys for wilderness itineraries in higher-risk regions"
-        ],
-        "CurrencyNotes": [
-          "Visitors should plan for credential-based payment systems and pre-authorized travel accounts."
-        ],
-        "Lodging": [
-          "Quiet guest facilities with strong privacy norms near cities",
-          "Retreat-style accommodations for meditation and study travelers",
-          "Permit-based camps for guided expeditions"
-        ],
-        "Communications": [
-          "Universal translator is useful for cultural nuance, but many Vulcans are fluent in Federation Standard in Federation-era contexts."
-        ]
-      },
+      "Tourism": "Vulcan’s primary draws are cultural and scientific: historic temples, academic institutions, and ceremonial sites. Visitors should expect reserved social norms and should avoid interrupting rituals or meditative practices.",
+      "Logistics": "Major population centers and institutions are accessible via established transport corridors. Travel into harsh desert regions requires preparation, environmental protection, and—at times—local guidance.",
       "CanonAppearances": {
         "FirstSeen": {
           "Series": "TOS",
@@ -448,21 +280,145 @@
         "Key": []
       },
       "Tags": [
-        "HeatPreparednessRequired",
+        "Arid",
+        "Class M",
         "EtiquetteCritical",
-        "GuidesRecommendedForWilderness"
+        "Founding World",
+        "GuidesRecommendedForWilderness",
+        "HeatPreparednessRequired",
+        "Vulcan Homeworld"
       ],
       "Media": {
         "HeroImageURL": "https://raw.githubusercontent.com/BigBird7827/Pla-Trek/main/Images/Vulcan.png",
         "Gallery": []
       },
-      "CitiesAndSites": {
-        "MajorCities": [
-          "ShiKahr (capital city)"
+      "CitiesAndSites": [
+        {
+          "Name": "ShiKahr",
+          "Type": "City",
+          "Description": "A major Vulcan city associated with prominent institutions and governmental or cultural activity in multiple eras."
+        },
+        {
+          "Name": "Vulcan Science Academy",
+          "Type": "Scientific institution",
+          "Description": "A leading Vulcan academic institution, frequently referenced in Federation-era science and policy contexts."
+        },
+        {
+          "Name": "Mount Seleya",
+          "Type": "Sacred mountain / monastery region",
+          "Description": "A major spiritual and cultural site associated with Vulcan rites and tradition."
+        },
+        {
+          "Name": "The Forge",
+          "Type": "Desert region",
+          "Description": "A harsh desert expanse known for dangerous conditions and historical significance in 22nd-century Vulcan stories."
+        }
+      ],
+      "PlaceRefs": {
+        "Cities": [],
+        "Regions": [],
+        "Landmarks": [],
+        "Settlements": [],
+        "Moons": [],
+        "OrbitalFacilities": []
+      },
+      "FeatureRefs": [],
+      "OrganizationRefs": [],
+      "History": {
+        "Overview": "Vulcan civilization is portrayed as ancient and highly influential, with a major cultural shift toward logic and emotional discipline shaping its global institutions. In the modern era, Vulcan becomes central to interstellar diplomacy and serves as a crucial partner in early human spaceflight and Federation founding.",
+        "KeyEras": [
+          {
+            "Era": "Reformation toward logic",
+            "Summary": "Cultural transformation emphasizing logic and emotional control, shaping Vulcan society and governance."
+          },
+          {
+            "Era": "Early human–Vulcan relations",
+            "Summary": "Vulcan guidance and friction during humanity’s early warp era."
+          },
+          {
+            "Era": "Federation era",
+            "Summary": "Vulcan as a major diplomatic, scientific, and cultural center within the Federation framework."
+          }
         ],
-        "PointsOfInterest": [
-          "The Forge (desert region)",
-          "T'Karath Sanctuary (within the Forge)"
+        "MajorEvents": [
+          {
+            "When": "22nd century",
+            "Event": "Vulcan institutions and politics play a key role in early United Earth and Starfleet development."
+          },
+          {
+            "When": "2161",
+            "Event": "Vulcan is associated with the founding era of the United Federation of Planets."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Vulcan planetary governance; historically includes bodies such as the Vulcan High Command in the 22nd century, with later civilian structures within Federation context.",
+        "Capital": "ShiKahr (commonly associated with major institutions and governance).",
+        "Institutions": [
+          "Vulcan Science Academy",
+          "Vulcan governmental councils (various eras)",
+          "Religious/monastic orders tied to major rites"
+        ],
+        "LawsAffectingVisitors": [
+          "Respect for restricted ceremonial sites",
+          "Permits and escorts may be required for travel into hazardous desert regions"
+        ],
+        "Notes": "Governance and institutional names vary across eras; Vulcan is often depicted as operating with strong civil and scientific authority."
+      },
+      "Economy": {
+        "Overview": "A science- and diplomacy-oriented society emphasizing education, research, and interstellar policy influence rather than mass export industry.",
+        "PrimaryIndustries": [
+          "Science and research",
+          "Education",
+          "Diplomacy and interstellar administration",
+          "Specialized manufacturing and cultural goods"
+        ],
+        "TradeNotes": "Vulcan’s major interstellar value is institutional and intellectual; technological and scientific collaboration is repeatedly emphasized.",
+        "LocalCommerceNotes": "Visitors typically interact with structured institutions, academic campuses, and regulated cultural sites."
+      },
+      "Culture": {
+        "Overview": "A tradition-heavy culture organized around logic, ritual discipline, and deep historical continuity; public behavior tends to be formal and reserved.",
+        "SocialCustoms": "Ritual etiquette is important; visitors are expected to be punctual, quiet in ceremonial settings, and respectful of personal boundaries.",
+        "ReligiousLife": "Philosophical and spiritual traditions remain influential, particularly at sites tied to historic rites and monastic orders.",
+        "Festivals": "Ceremonial observances and rites are prominent, sometimes involving pilgrimages to sacred locations.",
+        "ArtsAndMedia": "Vulcan arts are portrayed as refined and formal, often connected to long cultural lineages.",
+        "LanguageNotes": "Vulcan language is widely used locally; Federation Standard is common in interstellar contexts."
+      },
+      "Environment": {
+        "Overview": "Arid ecosystems with hardy desert-adapted flora and fauna; settlements rely on infrastructure, careful resource management, and protected habitats.",
+        "Seasons": "Hot seasons dominate many regions; some highland areas can be cooler.",
+        "NaturalHazards": [
+          "Extreme heat in open deserts",
+          "Desert storms",
+          "Long-range travel risks in sparsely populated regions"
+        ],
+        "NightSky": "Clear desert nights can offer high visibility, though dust haze can reduce clarity during storm periods."
+      },
+      "DataQuality": {
+        "Certainty": "High",
+        "Notes": ""
+      },
+      "Appearances": {
+        "Overview": "Appears as a key cultural and diplomatic world, especially in stories about early Federation history and Vulcan tradition.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "ENT era",
+            "Highlights": [
+              "Vulcan politics, the Forge, and early human–Vulcan relations"
+            ]
+          },
+          {
+            "Era": "TOS/TNG era",
+            "Highlights": [
+              "Vulcan culture, rites, and diplomatic contexts"
+            ]
+          },
+          {
+            "Era": "Films/PIC era",
+            "Highlights": [
+              "Federation-era Vulcan institutions and their influence on interstellar events"
+            ]
+          }
         ]
       }
     },
@@ -480,9 +436,10 @@
       "Location": {
         "Quadrant": "Alpha Quadrant",
         "QuadrantNotes": "Ferenginar is located in Ferengi space in the Alpha Quadrant; no consistent sector label is established in primary canon.",
-        "StarSystem": "Ferenginar system",
-        "Sector": "",
-        "Region": "Ferengi Alliance (capital world)"
+        "StarSystem": "Ferenginar system (often referenced as a system; star name not consistently specified)",
+        "Sector": "Ferengi space (sector designation not consistently specified on-screen)",
+        "Region": "Ferengi Alliance space",
+        "Notes": "Ferenginar is treated as a major political and economic hub for Ferengi civilization."
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -497,103 +454,18 @@
           "TimeFormat": "Local standards; visitors typically rely on shipboard chronometers and civic time beacons for appointments."
         }
       },
-      "TravelSummary": "Ferenginar is the homeworld of the Ferengi and a major center of Ferengi commerce and government. The planet is known for frequent rainfall and heavy humidity.",
-      "Appearance": {
-        "GeneralLook": "Overcast skies and persistent rain are common, with wet streets and covered market spaces in urban districts.",
-        "FromOrbit": [
-          "Persistent cloud cover and broad weather systems are common",
-          "Approach traffic concentrates around major commercial hubs and government districts"
-        ],
-        "NotableLandscapes": [
-          "Lowland wetlands and swampy basins",
-          "River channels and drainage corridors carrying heavy runoff",
-          "Dense urban districts clustered around major marketplaces"
-        ],
-        "SurfaceNotes": [
-          "Expect wet ground conditions almost everywhere—non-slip footwear and sealed bags are standard.",
-          "Many high-traffic civic areas are covered or partially enclosed to keep commerce moving during downpours."
-        ]
-      },
-      "Geography": {
-        "Biomes": [
-          {
-            "Name": "Humid lowlands",
-            "Notes": ""
-          },
-          {
-            "Name": "Wetlands / muddy basins",
-            "Notes": ""
-          }
-        ],
-        "Landmarks": [
-          {
-            "Name": "Tower of Commerce",
-            "Category": "Government / Commerce",
-            "CityOrRegion": "Capital district",
-            "VisitorNotes": []
-          }
-        ],
-        "Cities": [
-          {
-            "Name": "Capital market district",
-            "Role": "Government and commerce center ()",
-            "Highlights": [],
-            "LocalVibe": ""
-          }
-        ]
-      },
-      "Inhabitants": {
-        "Primary": [
-          {
-            "Species": "Ferengi",
-            "Notes": ""
-          }
-        ],
-        "NotableCultures": [
-          {
-            "Name": "Rules of Acquisition civic culture",
-            "Notes": "Business norms and social etiquette are often framed through the Rules of Acquisition and the pursuit of profit."
-          },
-          {
-            "Name": "Ferengi Commerce Authority presence",
-            "Notes": "Regulatory enforcement exists alongside widespread graft and aggressive sales tactics; visitors should stick to reputable vendors."
-          }
-        ],
-        "VisitorEtiquette": [
-          "Assume every price is negotiable unless explicitly posted as fixed—haggling is expected in many contexts.",
-          "Get agreements in writing (or recorded contract form) before exchanging funds or goods—clarify fees, delivery, and refunds.",
-          "Avoid insulting someone’s business acumen; negotiations are social contests as much as transactions.",
-          "Keep personal financial details private; targeted upselling and ‘exclusive’ offers are common.",
-          "Respect local laws and social norms, including gender and dress restrictions in specific venues—do not assume offworld norms apply.",
-          "Be cautious with gifts and ‘samples’—confirm whether they’re free before accepting."
-        ]
-      },
+      "TravelSummary": "Ferenginar is the homeworld and capital world of the Ferengi Alliance. It is famed for near-constant rain, dense cloud cover, and a culture where commerce and the Rules of Acquisition shape public life.",
+      "Appearance": "A humid green-brown world often concealed by thick cloud decks and storm bands. Wet lowlands, winding waterways, and sprawling urban-commercial centers dominate many depictions.",
+      "Geography": "Low-lying, waterlogged terrain with extensive wetlands, river deltas, and muddy basins. Built environments emphasize towers, markets, and enclosed commercial districts adapted to heavy rainfall.",
+      "Inhabitants": "Primarily Ferengi. Off-worlders commonly visit for trade, contracts, and diplomatic meetings with the Ferengi Alliance.",
       "Weather": {
-        "ClimateType": "Humid climate with frequent, heavy rainfall.",
-        "Seasonality": "Rain is described as persistent and pervasive; local weather variation is more about intensity and storm bursts than clear dry seasons.",
-        "TypicalConditions": [
-          {
-            "Region": "Capital districts",
-            "Conditions": [
-              "Heavy rain",
-              "Overcast skies",
-              "High humidity"
-            ]
-          }
-        ],
+        "ClimateType": "Humid subtropical / wet tropical (storm-dominant)",
+        "Seasonality": "Frequent precipitation year-round; seasonal shifts are less emphasized than persistent storm patterns.",
+        "TypicalConditions": "Heavy rain, high humidity, overcast skies, and frequent lightning storms; ground conditions are often muddy or waterlogged.",
         "Hazards": [
-          {
-            "Type": "Torrential rain",
-            "Notes": "Sudden downpours can flood low streets and disrupt surface travel; plan sheltered routes and flexible timing."
-          },
-          {
-            "Type": "Humidity exposure",
-            "Notes": "Electronics, paper goods, and clothing can degrade quickly without sealing and drying routines."
-          },
-          {
-            "Type": "Slippery surfaces",
-            "Notes": "Polished stone, metal walkways, and market tiles can be slick; non-slip footwear is strongly recommended."
-          }
+          "Severe thunderstorms and lightning",
+          "Flooding in lowlands",
+          "Poor visibility during heavy rain"
         ],
         "TravelGear": [
           "Sealed outer layer or poncho; quick-dry clothing",
@@ -602,50 +474,8 @@
           "Anti-fog eye protection in heavy humidity"
         ]
       },
-      "Tourism": {
-        "TopAttractions": [
-          {
-            "Name": "Tower of Commerce (exterior / authorized areas)",
-            "WhyGo": "Iconic seat of Ferengi leadership and a recognizable skyline feature."
-          }
-        ],
-        "Activities": [
-          "Market crawls with a vetted guide (price-checking and safe vendor lists)",
-          "Cultural lectures on the Rules of Acquisition and Ferengi economic history",
-          "Museum days (trade, gambling, negotiation exhibits)",
-          "Food and beverage tastings with humidity-resistant packaging"
-        ],
-        "Restrictions": [
-          "Government and FCA areas in the Tower of Commerce may be closed without notice during investigations or political shifts.",
-          "Some venues enforce local social norms strictly; verify dress and conduct rules before arrival."
-        ],
-        "SafetyNotes": [
-          "Avoid ‘too-good-to-be-true’ offers—use licensed vendors and confirm authentication for high-value items.",
-          "Do not carry all funds or latinum in one place; use secure accounts and incremental transfers.",
-          "If a deal becomes pressured or time-limited, walk away—high-pressure tactics are common in tourist zones."
-        ]
-      },
-      "Logistics": {
-        "Entry": [
-          "Expect customs declarations focused on trade goods, valuables, and commercial equipment.",
-          "Business-visas or transaction permits may be required for high-value buying/selling depending on era and local policy."
-        ],
-        "LocalTransport": [
-          "Covered pedestrian corridors within major market districts",
-          "Licensed ground transport and shuttle links between civic zones",
-          "Transit routes may reroute around flooded streets during heavy rain bursts"
-        ],
-        "CurrencyNotes": [
-          "Latinums and contract-based credit arrangements are common in Ferengi trade contexts; confirm exchange and fee schedules in writing."
-        ],
-        "Lodging": [
-          "Business hotels and guest houses near major market hubs",
-          "Humidity-managed suites (recommended for visitors with sensitive equipment or attire)"
-        ],
-        "Communications": [
-          "Universal translator is helpful for negotiations and contract nuance; consider using verified legal translation services for major purchases."
-        ]
-      },
+      "Tourism": "Visitors typically come for commerce: markets, auctions, and meetings with Ferengi institutions. Cultural norms favor negotiation; conspicuous displays of profit-making are socially accepted.",
+      "Logistics": "Rain gear is essential. Many transactions are conducted in controlled indoor spaces. Visitors should expect active legal/financial oversight by Ferengi authorities and strict enforcement of contract terms.",
       "CanonAppearances": {
         "FirstSeen": {
           "Series": "DS9",
@@ -668,18 +498,124 @@
         ]
       },
       "Tags": [
-        "RainWorld",
+        "Capital World",
+        "Class M",
+        "Ferengi Homeworld",
         "HighHaggleCulture",
         "HumidityPreparednessRequired",
-        "TouristScamRisk"
+        "RainWorld",
+        "TouristScamRisk",
+        "Wet Climate"
       ],
-      "CitiesAndSites": {
-        "MajorCities": [
-          "(Capital) — commonly treated as the seat of the Grand Nagus’ government"
+      "CitiesAndSites": [
+        {
+          "Name": "Tower of Commerce",
+          "Type": "Commercial/government complex",
+          "Description": "A prominent Ferengi commercial landmark associated with high-level business and Alliance affairs."
+        },
+        {
+          "Name": "Ferengi Commerce Authority offices",
+          "Type": "Regulatory institution",
+          "Description": "Administrative centers connected with regulation, enforcement, and dispute resolution in Ferengi commerce."
+        },
+        {
+          "Name": "Grand Nagus residence/seat",
+          "Type": "Governmental site",
+          "Description": "The seat of the Grand Nagus, central to Ferengi political leadership and major decisions."
+        }
+      ],
+      "PlaceRefs": {
+        "Cities": [],
+        "Regions": [],
+        "Landmarks": [],
+        "Settlements": [],
+        "Moons": [],
+        "OrbitalFacilities": []
+      },
+      "FeatureRefs": [],
+      "OrganizationRefs": [],
+      "History": {
+        "Overview": "Ferenginar’s modern identity is defined by the rise of the Ferengi Alliance and a society organized around profit, contracts, and commercial law. Across the 24th century, reforms and political shifts occur, but the planet remains the symbolic and operational center of Ferengi power.",
+        "KeyEras": [
+          {
+            "Era": "Alliance consolidation",
+            "Summary": "Political unification under Alliance leadership and codified commercial practice."
+          },
+          {
+            "Era": "24th-century reform period",
+            "Summary": "Social and legal changes amid shifting leadership and external pressures."
+          }
         ],
-        "PointsOfInterest": [
-          "Tower of Commerce",
-          "Great Marketplace / Sacred Marketplace (public commerce district)"
+        "MajorEvents": [
+          {
+            "When": "24th century",
+            "Event": "Political leadership and legal reforms tied to Grand Nagus administrations affect trade norms and social policy."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Ferengi Alliance",
+        "Capital": "Ferenginar (planetary capital functions concentrated in major commercial/government districts).",
+        "Institutions": [
+          "Grand Nagus",
+          "Ferengi Commerce Authority",
+          "Legal and financial boards overseeing contracts and commerce"
+        ],
+        "LawsAffectingVisitors": [
+          "Strict contract enforcement",
+          "Commercial regulations overseen by Ferengi authorities",
+          "Visitors should retain verifiable contract records"
+        ],
+        "Notes": "Ferengi governance is closely tied to commercial authority and the legitimacy of financial/legal institutions."
+      },
+      "Economy": {
+        "Overview": "Highly market-driven economy centered on trade, finance, extraction, and interstellar commerce.",
+        "PrimaryIndustries": [
+          "Interstellar trade and brokerage",
+          "Finance and banking",
+          "Manufacturing and logistics",
+          "Legal services and contract arbitration"
+        ],
+        "TradeNotes": "Ferenginar is treated as a major node for deals, auctions, and political trade agreements.",
+        "LocalCommerceNotes": "Negotiation culture is pervasive; prices and terms are often expected to be bargained rather than fixed."
+      },
+      "Culture": {
+        "Overview": "Commerce-centered culture structured by the Rules of Acquisition and strong expectations around profit, negotiation, and status.",
+        "SocialCustoms": "Haggling is normal; direct discussion of profit is socially acceptable. Visitors should learn basic Ferengi negotiation etiquette and avoid insulting offers.",
+        "ReligiousLife": "Traditional Ferengi beliefs exist alongside pragmatic commercial priorities; religious practice is less emphasized than legal and cultural codes in many depictions.",
+        "Festivals": "Celebrations often revolve around business success, family status, and Alliance leadership events.",
+        "ArtsAndMedia": "Material status symbols, luxury goods, and commercial spectacle are common cultural markers.",
+        "LanguageNotes": "Ferengi language and business jargon are common; Federation Standard is widely used for interstellar deals."
+      },
+      "Environment": {
+        "Overview": "Wetland-dominant environment with persistent storm systems and heavy cloud cover.",
+        "Seasons": "Less distinct seasons; storm frequency and intensity dominate the lived environment.",
+        "NaturalHazards": [
+          "Lightning storms",
+          "Flooding",
+          "Mold and humidity-related infrastructure challenges in exposed areas"
+        ],
+        "NightSky": "Cloud cover frequently obscures the night sky; clearer views are more likely during brief breaks in storm bands."
+      },
+      "DataQuality": {
+        "Certainty": "High",
+        "Notes": ""
+      },
+      "Appearances": {
+        "Overview": "Appears chiefly in stories focused on Ferengi politics, commerce, and social change.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "TNG/DS9 era",
+            "Highlights": [
+              "Ferengi Alliance leadership, business intrigues, and cultural norms"
+            ]
+          },
+          {
+            "Era": "VOY era",
+            "Highlights": [
+              "Occasional Ferengi-related trade and cultural references"
+            ]
+          }
         ]
       }
     },
@@ -697,9 +633,10 @@
       "Location": {
         "Quadrant": "Beta Quadrant",
         "QuadrantNotes": "Risa’s quadrant placement varies across cartography and reference works; recent star charts and summaries commonly place it in the Beta Quadrant.",
-        "StarSystem": "Epsilon Ceti star system (Epsilon Ceti B)",
-        "Sector": "(unspecified sector)",
-        "Region": "United Federation of Planets (member world; major tourism destination)"
+        "StarSystem": "Epsilon Ceti system",
+        "Sector": "Risa sector (designation not consistently emphasized on-screen)",
+        "Region": "Federation space",
+        "Notes": "Risa is treated as a well-traveled Federation leisure destination, often reachable via routine starship travel."
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -714,109 +651,17 @@
           "TimeFormat": "Local standards; resort schedules and Starfleet visitors commonly operate on shipboard chronometers."
         }
       },
-      "TravelSummary": "Risa is a Federation resort world renowned for leisure culture and climate control systems designed to maintain comfortable conditions for visitors.",
-      "Appearance": {
-        "GeneralLook": "Tropical coasts, lagoons, resort architecture, and landscaped gardens are characteristic of the main visitor zones.",
-        "FromOrbit": [
-          "Bright ocean expanses with frequent cloud bands",
-          "Approach routes are dense during peak travel seasons",
-          "Tourism hubs produce distinctive night-side illumination clusters around resort belts"
-        ],
-        "NotableLandscapes": [
-          "White-sand beaches and shallow coastal shelves",
-          "Warm lagoons and reef-like shallows near resort districts",
-          "Garden complexes and landscaped courtyards integrated into hotels and villas"
-        ],
-        "SurfaceNotes": [
-          "Public spaces prioritize walkability: covered paths, misting arches, and shaded plazas.",
-          "Dress norms are relaxed in resort zones, but guests should still respect posted rules for sacred/cultural sites."
-        ]
-      },
-      "Geography": {
-        "Biomes": [
-          {
-            "Name": "Tropical coasts and beaches",
-            "Notes": ""
-          },
-          {
-            "Name": "Lagoon / resort districts",
-            "Notes": ""
-          }
-        ],
-        "Landmarks": [
-          {
-            "Name": "Resort districts (various)",
-            "Category": "Resort",
-            "CityOrRegion": "Primary visitor zones",
-            "VisitorNotes": []
-          }
-        ],
-        "Cities": [
-          {
-            "Name": "Resort Belt (capital tourism district)",
-            "Role": "Primary visitor zone and hospitality core",
-            "Highlights": [
-              "Lagoon resorts and villas",
-              "Beach clubs and cultural events",
-              "High-capacity transit loops and concierge hubs"
-            ],
-            "LocalVibe": "Festive, relaxed, flirtatious, and service-forward—designed to make visitors forget they’re on a schedule."
-          }
-        ]
-      },
-      "Inhabitants": {
-        "Primary": [
-          {
-            "Species": "Risian",
-            "Notes": ""
-          }
-        ],
-        "NotableCultures": [
-          {
-            "Name": "Hospitality guild culture",
-            "Notes": "Tourism work is highly respected; many services are ritualized into ‘experiences’ rather than simple transactions."
-          },
-          {
-            "Name": "Jamaharon tradition (symbolic courtship custom)",
-            "Notes": "Often referenced through the horga'hn statuette; treated playfully in resort zones but still grounded in local etiquette."
-          }
-        ],
-        "VisitorEtiquette": [
-          "Consent-first: flirting is common, but never assume interest; follow clear verbal or behavioral cues.",
-          "If you accept an invitation, clarify expectations—Risians often treat communication as part of the experience.",
-          "Respect local symbols (including the horga'hn) and avoid using them to embarrass others.",
-          "Dress norms are relaxed, but resorts still post rules for dining, ceremonies, and formal events—follow them.",
-          "Don’t mock leisure culture; on Risa, relaxation is treated as a serious civic priority."
-        ]
-      },
+      "TravelSummary": "Risa is widely known as a resort world and a major leisure destination for Federation citizens and visitors. Its reputation rests on carefully managed climate stability, extensive hospitality infrastructure, and a culture that treats pleasure and relaxation as social goods.",
+      "Appearance": "A bright ocean world with lush islands, pale coastlines, and frequent fair-weather cloud patterns. Large resort complexes and transit hubs are common in inhabited regions.",
+      "Geography": "Island chains, warm shallow seas, beaches, and tropical interiors form the dominant geography. Built environments focus on open-air resorts, cultural plazas, and visitor-oriented waterfront districts.",
+      "Inhabitants": "Risians, along with a large seasonal and permanent population tied to tourism and services. The planet hosts visitors from many Federation and non-Federation worlds.",
       "Weather": {
-        "ClimateType": "Warm, stabilized weather maintained by planetary climate systems.",
-        "Seasonality": "Conditions are intentionally moderated; seasonal extremes are minimal in resort regions.",
-        "TypicalConditions": [
-          {
-            "Region": "Resort coasts",
-            "Conditions": [
-              "Warm, comfortable temperatures",
-              "Gentle breezes",
-              "Clear skies",
-              "Short, controlled showers (when scheduled)"
-            ]
-          },
-          {
-            "Region": "Interior garden districts",
-            "Conditions": [
-              "Humid but comfortable air",
-              "Filtered sunlight",
-              "Evening warmth",
-              "Low wind"
-            ]
-          }
-        ],
+        "ClimateType": "Tropical maritime (highly regulated/controlled in inhabited resort zones)",
+        "Seasonality": "Engineered stability is emphasized over natural seasonal swings in key tourist regions.",
+        "TypicalConditions": "Warm temperatures, gentle winds, and frequent clear conditions; cloud cover tends to be light and scenic rather than storm-dominant.",
         "Hazards": [
-          {
-            "Type": "Weather-control disruption (story-dependent)",
-            "Notes": ""
-          }
+          "Rare severe weather events can occur if climate controls fail or are disrupted",
+          "Localized seismic risk is mitigated by planetary regulators"
         ],
         "TravelGear": [
           "Light breathable clothing plus one dry layer for sudden storms",
@@ -826,55 +671,8 @@
         ],
         "Summary": "Tropical ‘paradise’ conditions are largely engineered: Risa’s weather control system is used to maintain consistently pleasant temperatures, breezes, and skies for visitors."
       },
-      "Tourism": {
-        "TopAttractions": [
-          {
-            "Name": "Beach and resort stay",
-            "WhyGo": "Core depiction: leisure, warm water, and resort culture."
-          },
-          {
-            "Name": "Horga'hn custom (cultural symbol)",
-            "WhyGo": "Recurring element associated with Risian romance culture."
-          }
-        ],
-        "Activities": [
-          "Beach and lagoon swimming",
-          "Sailing and small-craft excursions (conditions permitting)",
-          "Resort spa circuits and wellness programs",
-          "Nightlife: clubs, live music, and themed social events",
-          "Guided cultural tours focusing on Risian customs and hospitality traditions"
-        ],
-        "Restrictions": [
-          "Weather control and planetary infrastructure sites are restricted.",
-          "Some events have explicit participation rules; resorts may enforce conduct standards tightly to protect guests."
-        ],
-        "SafetyNotes": [
-          "Use official booking channels—tourist zones can attract opportunistic scams and counterfeit ‘exclusive’ passes.",
-          "If storms hit, leave the water immediately and follow resort shelter instructions.",
-          "Set boundaries clearly; if someone ignores them, contact resort security—Risa prioritizes guest safety and consent."
-        ]
-      },
-      "Logistics": {
-        "Entry": [
-          "Federation-friendly arrival procedures; peak seasons can produce heavy traffic and longer berth allocation times.",
-          "Resorts often handle customs/registration through pre-arrival concierge workflows."
-        ],
-        "LocalTransport": [
-          "Resort transit loops (shuttles, trams, and pedestrian corridors)",
-          "Licensed watercraft and charter excursions",
-          "Transporter use varies by venue and local security posture"
-        ],
-        "CurrencyNotes": [
-          "Resort packages and Federation-standard payments are common; confirm what’s included vs. premium add-ons before arrival."
-        ],
-        "Lodging": [
-          "Lagoon resorts, beach hotels, and private villas",
-          "Quiet retreat properties away from main nightlife zones"
-        ],
-        "Communications": [
-          "Excellent tourism communications coverage; most visitors operate comfortably in Federation Standard with translator support for nuance."
-        ]
-      },
+      "Tourism": "Risa’s attractions include beaches, resorts, cultural festivals, and a social environment known for openness. Symbols such as the horga’hn are recognized locally as indicators of romantic interest; visitors should be aware of the cultural meaning to avoid misunderstandings.",
+      "Logistics": "Risa is built around hospitality. Visitors should expect comprehensive services, from medical and security support to transport across resort districts. Local regulations focus on maintaining public safety and the planet’s controlled environment.",
       "CanonAppearances": {
         "FirstSeen": {
           "Series": "TNG",
@@ -897,21 +695,113 @@
         ]
       },
       "Tags": [
-        "ParadiseByDesign",
+        "Class M",
         "ConsentCulture",
+        "Federation Space",
         "HighTourismDensity",
-        "InfrastructureDependentWeather"
+        "InfrastructureDependentWeather",
+        "ParadiseByDesign",
+        "Resort World",
+        "Tropical"
       ],
-      "CitiesAndSites": {
-        "PointsOfInterest": [
-          "Resort zones and shore-leave districts (weapons prohibited)",
-          "Weather control complex (restricted; seen during sabotage events)",
-          "Temtibi Lagoon",
-          "Suraya Bay",
-          "Eluvian Mud Baths"
+      "CitiesAndSites": [
+        {
+          "Name": "Risan resort districts",
+          "Type": "Tourist zone",
+          "Description": "Coastal and island resort regions designed for long-term visitors, with extensive lodging and recreation."
+        },
+        {
+          "Name": "Horga’hn cultural sites",
+          "Type": "Cultural symbol",
+          "Description": "Locations and displays where the horga’hn symbol is featured; understanding its meaning is part of visitor etiquette."
+        }
+      ],
+      "PlaceRefs": {
+        "Cities": [],
+        "Regions": [],
+        "Landmarks": [],
+        "Settlements": [],
+        "Moons": [],
+        "OrbitalFacilities": []
+      },
+      "FeatureRefs": [],
+      "OrganizationRefs": [],
+      "History": {
+        "Overview": "Risa’s modern prominence stems from its development into a major interstellar leisure destination, especially for Federation travelers. Its infrastructure and climate-regulation systems support large visitor volumes and consistent ‘paradise’ conditions.",
+        "KeyEras": [
+          {
+            "Era": "Federation leisure destination era",
+            "Summary": "Expansion of resort infrastructure and climate management to support interstellar tourism."
+          }
         ],
-        "MajorCities": [
-          "Nuvia (capital city; reference works)"
+        "MajorEvents": [
+          {
+            "When": "24th century",
+            "Event": "Risa becomes a recurring setting for Federation recreation and diplomatic ‘informal’ meetings."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Risan local governance within Federation space (exact structures are not always foregrounded on-screen).",
+        "Capital": "Not consistently specified on-screen; key civic functions are associated with major resort and administrative districts.",
+        "Institutions": [
+          "Local civic administration",
+          "Hospitality and security services",
+          "Planetary environmental control infrastructure"
+        ],
+        "LawsAffectingVisitors": [
+          "Public-safety ordinances in high-tourism zones",
+          "Regulations supporting climate and seismic stabilization systems"
+        ],
+        "Notes": "On-screen focus is typically on tourism culture; formal political institutions are less frequently named."
+      },
+      "Economy": {
+        "Overview": "Tourism and hospitality-dominant economy supporting large-scale interstellar travel and resort operations.",
+        "PrimaryIndustries": [
+          "Hospitality and resorts",
+          "Transport and visitor services",
+          "Entertainment and recreation",
+          "Environmental/climate control operations"
+        ],
+        "TradeNotes": "Risa’s ‘export’ is experience: lodging, leisure services, and venue hosting for interstellar visitors.",
+        "LocalCommerceNotes": "Visitor-facing commerce is widespread, with services tailored to many species’ needs."
+      },
+      "Culture": {
+        "Overview": "A leisure-forward culture emphasizing relaxation, personal freedom, and social openness; hospitality is treated as a civic priority.",
+        "SocialCustoms": "Consent and social signaling are culturally important; visitors should learn common local symbols and avoid assumptions.",
+        "ReligiousLife": "Religious life is not commonly emphasized in on-screen depictions of Risa.",
+        "Festivals": "Frequent seasonal-style celebrations and themed events oriented toward visitors and local tradition.",
+        "ArtsAndMedia": "Public art, performance, and recreation-oriented design are prominent in resort spaces.",
+        "LanguageNotes": "Local language exists but Federation Standard is widely used given the volume of off-world visitors."
+      },
+      "Environment": {
+        "Overview": "Tropical island and ocean ecosystems, with human/alien-made systems maintaining stable weather in key inhabited zones.",
+        "Seasons": "Warm ocean-driven cycles; engineered stability often supersedes natural variation in tourist corridors.",
+        "NaturalHazards": [
+          "Environmental-control disruption risks",
+          "Coastal storm surge if severe weather develops"
+        ],
+        "NightSky": "Clear skies are common in resort areas, making stargazing a frequent part of the visitor experience."
+      },
+      "DataQuality": {
+        "Certainty": "High",
+        "Notes": ""
+      },
+      "Appearances": {
+        "Overview": "Appears primarily as a Federation leisure world and backdrop for interpersonal stories, diplomacy, and cultural misunderstandings.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "TNG era",
+            "Highlights": [
+              "Risa as a leisure destination and setting for character-focused stories"
+            ]
+          },
+          {
+            "Era": "DS9 era",
+            "Highlights": [
+              "Risa as a cultural touchpoint; occasional direct visits or references"
+            ]
+          }
         ]
       }
     },
@@ -934,8 +824,9 @@
         "Quadrant": "Beta Quadrant",
         "QuadrantNotes": "Sector label for Qo'noS is given in reference summaries and cartography; Klingon-space borders shift by era.",
         "StarSystem": "Qo'noS system",
-        "Sector": "Sector 70 (Qo'noS sector)",
-        "Region": "Klingon Empire (capital world)"
+        "Sector": "Sector 70",
+        "Region": "Klingon Empire core territory",
+        "Notes": "Qo’noS is repeatedly treated as the capital world of the Klingon Empire and a key strategic location near Federation space."
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -950,115 +841,17 @@
           "TimeFormat": "Local standards; visitors often rely on shipboard chronometers when coordinating with offworld schedules."
         }
       },
-      "TravelSummary": "Qo'noS (Kronos) is the Klingon homeworld and the seat of imperial politics. The First City and the Great Hall are central locations for governance and ceremony.",
-      "Appearance": {
-        "GeneralLook": "Rugged, austere landscapes and monumental civic architecture are central of the capital.",
-        "FromOrbit": [
-          "Approach corridors are tightly managed, with traffic patterns shaped by Klingon security and military priorities",
-          "Major population centers present dense night-side illumination clusters, with heavy emphasis around the capital region"
-        ],
-        "NotableLandscapes": [
-          "Volcanic regions and basaltic terrain",
-          "Extensive cave systems and subterranean networks",
-          "Rugged highlands and broad plains outside major urban centers"
-        ],
-        "SurfaceNotes": [
-          "Many civic buildings are designed for spectacle: grand entrances, wide courtyards, and intimidating vertical scale.",
-          "Expect visible security—uniformed guards, checkpoints, and restricted zones near government sites."
-        ]
-      },
-      "Geography": {
-        "Biomes": [
-          {
-            "Name": "Rugged plains and rocky terrain",
-            "Notes": ""
-          }
-        ],
-        "Landmarks": [
-          {
-            "Name": "First City",
-            "Category": "Capital city",
-            "CityOrRegion": "Qo'noS",
-            "VisitorNotes": []
-          },
-          {
-            "Name": "Great Hall",
-            "Category": "Government / Ceremonial",
-            "CityOrRegion": "First City",
-            "VisitorNotes": []
-          }
-        ],
-        "Cities": [
-          {
-            "Name": "First City",
-            "Role": "Imperial capital ()",
-            "Highlights": [],
-            "LocalVibe": ""
-          }
-        ]
-      },
-      "Inhabitants": {
-        "Primary": [
-          {
-            "Species": "Klingon",
-            "Notes": ""
-          }
-        ],
-        "NotableCultures": [
-          {
-            "Name": "Great House politics",
-            "Notes": "Major families (Houses) hold power, influence, and obligation networks; visitors should avoid casually taking sides in disputes."
-          },
-          {
-            "Name": "Ritual honor culture",
-            "Notes": "Many interactions are framed through public respect, challenge etiquette, and visible confidence—ambiguity can be read as weakness or deception."
-          }
-        ],
-        "VisitorEtiquette": [
-          "Use correct titles and names; show respect for rank and House affiliation when it is declared.",
-          "Be direct and keep promises—backing out of agreements can be treated as dishonorable.",
-          "Avoid public mockery or sarcasm about Klingon tradition; it can escalate quickly.",
-          "Do not touch weapons, ceremonial objects, or House insignia without permission.",
-          "Follow checkpoint instructions immediately; arguing with guards is a fast way to end your trip.",
-          "If invited to a ritual or ceremony, ask a local liaison about expected conduct beforehand."
-        ]
-      },
+      "TravelSummary": "Qo’noS is the Klingon homeworld and political center of the Klingon Empire. It is characterized by strong martial traditions, ceremonial architecture, and high-security governance centered on the High Council.",
+      "Appearance": "A dark, rugged world with broad landmasses, frequent cloud systems, and regions marked by harsh weather and heavy industry. Urban centers can appear dense and fortified, with monumental civic complexes.",
+      "Geography": "Varied Class-M terrain including mountain ranges, rocky highlands, and temperate regions supporting large population centers. Industrial zones and fortified government districts are prominent in many depictions.",
+      "Inhabitants": "Primarily Klingons; significant off-world presence tends to be diplomatic, military, or intelligence-related rather than recreational.",
       "Weather": {
-        "ClimateType": "Varies by region and season.",
-        "Seasonality": "Seasonality depends on region; travel conditions can change quickly with local weather.",
-        "TypicalConditions": [
-          {
-            "Region": "Capital region / First City",
-            "Conditions": [
-              "Overcast or green-tinged skies in some depictions",
-              "Windy periods",
-              "Cool evenings",
-              "Occasional storms"
-            ]
-          },
-          {
-            "Region": "Volcanic and cave-adjacent zones",
-            "Conditions": [
-              "Dry heat near active features",
-              "Rapid temperature shifts",
-              "Sulfurous haze in localized pockets",
-              "Low visibility around vents"
-            ]
-          }
-        ],
+        "ClimateType": "Temperate-to-variable (not consistently detailed on-screen)",
+        "Seasonality": "Seasonal cycles are implied but not often the focus; weather can shift rapidly in some stories.",
+        "TypicalConditions": "Frequent cloud cover and storms are commonly depicted; conditions vary by region and elevation.",
         "Hazards": [
-          {
-            "Type": "Security closures during unrest",
-            "Notes": "Political events can lock down transit corridors and public squares with little notice; keep alternate routes and shelter options."
-          },
-          {
-            "Type": "Volcanic / geothermal activity",
-            "Notes": "Avoid unescorted travel near vents, unstable rock, and restricted cavern systems."
-          },
-          {
-            "Type": "Environmental stress (historical)",
-            "Notes": "In late-23rd-century contexts, the Praxis disaster created planet-wide environmental strain and heightened controls."
-          }
+          "Severe storms in some regions",
+          "Security restrictions and civil unrest risks during political crises"
         ],
         "TravelGear": [
           "Layered clothing for variable temperatures",
@@ -1067,50 +860,8 @@
           "A formal outfit if attending civic events (as advised by your liaison)"
         ]
       },
-      "Tourism": {
-        "TopAttractions": [
-          {
-            "Name": "Great Hall (authorized access)",
-            "WhyGo": "Central location for Klingon ceremony and High Council politics."
-          }
-        ],
-        "Activities": [
-          "Guided city walks in authorized districts",
-          "Ceremony observation (when permitted)",
-          "Curated cultural briefings with a local liaison",
-          "Supervised excursions to geological viewpoints away from restricted zones"
-        ],
-        "Restrictions": [
-          "Government buildings and High Council-adjacent areas are frequently restricted to authorized visitors.",
-          "Security conditions can change rapidly based on House politics or imperial events."
-        ],
-        "SafetyNotes": [
-          "Travel with a vetted liaison if you plan to visit civic centers—this is not a casual walk-up destination.",
-          "Avoid bartering with unauthorized agents offering 'Council access' or 'House introductions'.",
-          "If challenged or provoked, disengage and leave—do not escalate without local guidance."
-        ]
-      },
-      "Logistics": {
-        "Entry": [
-          "Entry requirements vary with the Klingon Empire’s diplomatic posture; visitors may need sponsorship, permits, or escort arrangements.",
-          "Expect strict inspections for weapons, recording equipment, and contraband."
-        ],
-        "LocalTransport": [
-          "Guarded transit corridors and checkpointed routes in capital districts",
-          "Ground transport and shuttle links between authorized zones",
-          "Access restrictions are common near ceremonial sites and government compounds"
-        ],
-        "CurrencyNotes": [
-          "Trade rules depend on era and local policy; confirm what exchanges are permitted before arrival."
-        ],
-        "Lodging": [
-          "Guest quarters in authorized districts (often arranged through sponsors)",
-          "Diplomatic accommodations for official travelers"
-        ],
-        "Communications": [
-          "Translator support is strongly recommended for formal proceedings and legal terms; direct language is culturally preferred."
-        ]
-      },
+      "Tourism": "Qo’noS is not typically portrayed as a leisure destination. Visitors usually arrive on official business: diplomacy, legal proceedings, or inter-empire negotiations.",
+      "Logistics": "Expect stringent security, inspections, and escort requirements. Cultural protocol matters: formal address, respect for Klingon tradition, and careful behavior around political institutions.",
       "CanonAppearances": {
         "FirstSeen": {
           "Series": "TNG",
@@ -1133,19 +884,135 @@
         ]
       },
       "Tags": [
-        "HonorCulture",
-        "HighSecurity",
+        "Beta Quadrant",
+        "Capital World",
         "CeremonyHeavy",
-        "VolcanicGeology",
-        "PoliticalFlashpoint"
+        "Class M",
+        "HighSecurity",
+        "HonorCulture",
+        "Klingon Homeworld",
+        "PoliticalFlashpoint",
+        "VolcanicGeology"
       ],
-      "CitiesAndSites": {
-        "MajorCities": [
-          "First City (capital city)"
+      "CitiesAndSites": [
+        {
+          "Name": "First City",
+          "Type": "Capital city",
+          "Description": "The political heart of the Klingon Empire and the location associated with major government and ceremonial structures."
+        },
+        {
+          "Name": "Great Hall / High Council complex",
+          "Type": "Government complex",
+          "Description": "A monumental complex tied to the Klingon High Council and chancellorship, central to imperial decision-making."
+        },
+        {
+          "Name": "Klingon High Council Chamber",
+          "Type": "Government chamber",
+          "Description": "Key venue for Klingon political proceedings, including leadership disputes and major imperial decisions."
+        }
+      ],
+      "PlaceRefs": {
+        "Cities": [],
+        "Regions": [],
+        "Landmarks": [],
+        "Settlements": [],
+        "Moons": [],
+        "OrbitalFacilities": []
+      },
+      "FeatureRefs": [],
+      "OrganizationRefs": [],
+      "History": {
+        "Overview": "Qo’noS is central to the Klingon Empire’s political and cultural identity. Its modern history is marked by recurring leadership crises, shifting alliances with the Federation, and major events such as the ecological and political fallout tied to the Praxis disaster.",
+        "KeyEras": [
+          {
+            "Era": "Praxis aftermath era",
+            "Summary": "Political and environmental consequences ripple through Klingon society after the Praxis catastrophe."
+          },
+          {
+            "Era": "24th-century High Council instability",
+            "Summary": "Repeated chancellorship disputes and internal power struggles affect imperial policy."
+          }
         ],
-        "PointsOfInterest": [
-          "Great Hall",
-          "Klingon High Council chamber (in the Great Hall)"
+        "MajorEvents": [
+          {
+            "When": "2293",
+            "Event": "Praxis explosion triggers major political pressures and drives treaty negotiations affecting the Empire."
+          },
+          {
+            "When": "2360s–2370s",
+            "Event": "High Council leadership crises and shifting alliances repeatedly bring Federation and Klingon representatives to Qo’noS."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Klingon Empire",
+        "Capital": "First City (Qo’noS)",
+        "Institutions": [
+          "Klingon High Council",
+          "Chancellor and Great Hall administration",
+          "Imperial military and intelligence services"
+        ],
+        "LawsAffectingVisitors": [
+          "Restricted access to government districts",
+          "Strict weapons and security controls for visitors",
+          "Behavioral expectations under Klingon honor codes"
+        ],
+        "Notes": "Klingon politics can change rapidly; access and safety conditions vary with the internal situation of the High Council."
+      },
+      "Economy": {
+        "Overview": "Imperial economy shaped by military capacity, shipbuilding, and strategic resources; civilian life is strongly influenced by political and house structures.",
+        "PrimaryIndustries": [
+          "Military and shipbuilding",
+          "Heavy industry",
+          "Administration and logistics",
+          "House-based economic networks"
+        ],
+        "TradeNotes": "External trade exists but is filtered through imperial policy and house interests; diplomacy can affect market access.",
+        "LocalCommerceNotes": "Visitors typically interact through official channels rather than open consumer markets."
+      },
+      "Culture": {
+        "Overview": "Martial honor culture with strong traditions of ritual, house loyalty, and public ceremony; political life is inseparable from cultural identity.",
+        "SocialCustoms": "Formal respect in speech and posture matters; misunderstandings can escalate quickly. Visitors should avoid insults and recognize ritual contexts.",
+        "ReligiousLife": "Spiritual and mythic traditions exist, though political/house ritual often dominates public ceremony in depictions.",
+        "Festivals": "Ceremonial gatherings, succession rites, and commemorations tied to houses and the Empire are central.",
+        "ArtsAndMedia": "Song, opera, and martial arts traditions are culturally significant; architecture favors monumental and fortress-like forms.",
+        "LanguageNotes": "Klingon language is prevalent; Federation Standard is used in diplomatic contexts but not assumed in all settings."
+      },
+      "Environment": {
+        "Overview": "Inhabited Class-M world with industrial and urban concentration in key regions; environmental conditions are not consistently detailed but storms and rugged terrain recur visually.",
+        "Seasons": "Implied seasonal cycles; regional variability likely.",
+        "NaturalHazards": [
+          "Storm systems",
+          "Industrial pollution in some zones",
+          "Political unrest risks during transitions"
+        ],
+        "NightSky": "Urban centers can be brightly lit; elsewhere, cloud cover can limit visibility."
+      },
+      "DataQuality": {
+        "Certainty": "High",
+        "Notes": ""
+      },
+      "Appearances": {
+        "Overview": "Appears most often as the Klingon seat of power during diplomatic crises and leadership disputes.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "TNG era",
+            "Highlights": [
+              "High Council politics and succession disputes"
+            ]
+          },
+          {
+            "Era": "DS9 era",
+            "Highlights": [
+              "Klingon–Federation tensions and internal politics"
+            ]
+          },
+          {
+            "Era": "Films era",
+            "Highlights": [
+              "Praxis aftermath and treaty-era political pressures"
+            ]
+          }
         ]
       }
     },
@@ -1166,10 +1033,11 @@
       "Location": {
         "Quadrant": "Beta Quadrant",
         "QuadrantNotes": "Andoria (also known as Andor) is the Andorian homeworld and a core Federation member world in later eras.",
-        "StarSystem": "Procyon system",
-        "Sector": "Sector 006",
-        "Region": "United Federation of Planets",
-        "DistanceFromSol_LY": 11
+        "StarSystem": "Andorian system (Procyon system association)",
+        "Sector": "Sector 006 (Andorian sector)",
+        "Region": "Federation space / Andorian territory",
+        "DistanceFromSol_LY": 11,
+        "Notes": "Reference materials commonly associate Andoria with the Procyon system; it is often described as a moon (also called Andor in some sources)."
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -1185,119 +1053,18 @@
           "TimeFormat": "Local standards; visitors commonly coordinate via shipboard chronometers for tours and transport windows."
         }
       },
-      "TravelSummary": "Andoria is the Andorian homeworld, an ice-dominant world of glaciers and severe cold. It is notable for Andorian culture and for its role as a major Federation member world in later eras.",
-      "Appearance": {
-        "GeneralLook": "Bright ice fields, glaciers, and stormy skies dominate; many facilities and settlements are built for extreme cold.",
-        "FromOrbit": [
-          "Large reflective ice sheets dominate the surface coloration",
-          "Storm bands and polar cloud systems are common",
-          "Night-side illumination clusters concentrate around major cities and protected corridors"
-        ],
-        "NotableLandscapes": [
-          "Polar ice caps and continent-scale glaciers",
-          "Jagged mountain ridges and frozen highlands",
-          "Cracked sea-ice plates and frozen coastal shelves"
-        ],
-        "SurfaceNotes": [
-          "Most public infrastructure assumes freezing temperatures—expect enclosed walkways, sealed transport, and strict safety protocols.",
-          "Visibility can shift rapidly with blowing snow and low cloud ceilings."
-        ]
-      },
-      "Geography": {
-        "Biomes": [
-          {
-            "Name": "Glaciers and ice plains",
-            "Notes": ""
-          },
-          {
-            "Name": "Polar and highland regions",
-            "Notes": ""
-          }
-        ],
-        "Landmarks": [],
-        "Cities": [
-          {
-            "Name": "Capital city (primary civic hub)",
-            "Role": "Government, diplomacy, and cultural center",
-            "Highlights": [
-              "Civic halls and ceremonial plazas",
-              "Museums and cultural briefings (where available)",
-              "Insulated transit corridors connecting key districts"
-            ],
-            "LocalVibe": "Orderly and formal, with a strong sense of public duty; visitors are welcomed when respectful but are expected to follow rules precisely."
-          }
-        ]
-      },
-      "Inhabitants": {
-        "Primary": [
-          {
-            "Species": "Andorian",
-            "Notes": ""
-          },
-          {
-            "Species": "Aenar",
-            "Notes": ""
-          }
-        ],
-        "NotableCultures": [
-          {
-            "Name": "Service-forward civic tradition",
-            "Notes": "Government, defense, and public duty are culturally prominent; visitors should expect a more formal tone than on leisure worlds."
-          }
-        ],
-        "VisitorEtiquette": [
-          "Dress for the environment and for formality—arriving underprepared is viewed as careless.",
-          "Be direct and honest; evasive answers can be interpreted as disrespect or concealment.",
-          "Ask before photographing people, ceremonies, or security infrastructure—many locations have strict restrictions.",
-          "Respect Aenar privacy rules and any restricted-zone boundaries without debate.",
-          "Follow local safety instructions in storms without improvisation."
-        ]
-      },
+      "TravelSummary": "Andoria is the Andorian homeworld and a key founding world associated with early Federation history. It is depicted as an icy, high-latitude world (often treated as a moon in its system) with major population centers adapted to extreme cold.",
+      "Appearance": "A pale blue-white world dominated by ice sheets, frozen seas, and glacial terrain. Cloud cover can be thin and crisp, with polar haze and occasional auroral activity.",
+      "Geography": "Extensive polar ice caps and broad frozen surfaces with rugged mountain ridges. Many settlements are portrayed as protected or subterranean, minimizing exposure to surface extremes.",
+      "Inhabitants": "Primarily Andorians (including Aenar populations in some depictions). Off-world traffic is common for diplomacy and Starfleet-era cooperation, but harsh conditions limit casual visitation.",
       "Weather": {
-        "ClimateType": "Severe cold with frequent wind and snow.",
-        "Seasonality": "High-latitude seasonality can produce large daylight shifts and extended storm cycles in some regions.",
-        "TypicalConditions": [
-          {
-            "Region": "Urban/capital corridors",
-            "Conditions": [
-              "Freezing temperatures",
-              "Wind chill",
-              "Intermittent snowfall",
-              "Low cloud ceilings"
-            ]
-          },
-          {
-            "Region": "Open glacier plains",
-            "Conditions": [
-              "Whiteouts",
-              "Blowing snow",
-              "Rapid visibility loss",
-              "Crevasse hazards under fresh snow"
-            ]
-          },
-          {
-            "Region": "High ridges and exposed overlooks",
-            "Conditions": [
-              "Strong winds",
-              "Extreme wind chill",
-              "Fast-moving squalls",
-              "Icy surfaces"
-            ]
-          }
-        ],
+        "ClimateType": "Polar / subpolar (ice world)",
+        "Seasonality": "Long cold seasons; limited thaw in some sheltered or lower-latitude zones depending on region.",
+        "TypicalConditions": "Very low temperatures, dry cold air, and frequent ice fog; blizzards can develop rapidly over open ice.",
         "Hazards": [
-          {
-            "Type": "Whiteout conditions",
-            "Notes": "Visibility can drop to near-zero quickly; guided routes and locator beacons are standard outside city limits."
-          },
-          {
-            "Type": "Wind chill and exposure",
-            "Notes": "Frostbite risk rises quickly in exposed zones—use layered thermal protection and adhere to time limits outdoors."
-          },
-          {
-            "Type": "Ice and crevasses",
-            "Notes": "Marked corridors exist near tourist viewpoints; do not deviate from approved paths."
-          }
+          "Blizzards and whiteout conditions",
+          "Extreme cold exposure",
+          "Crevasse and ice-shelf instability in some regions"
         ],
         "TravelGear": [
           "Thermal layers with windproof outer shell",
@@ -1307,50 +1074,8 @@
           "Emergency heat packs for excursions"
         ]
       },
-      "Tourism": {
-        "TopAttractions": [
-          {
-            "Name": "Guided icefield vistas (where permitted)",
-            "WhyGo": "The ice-world environment is Andoria’s defining feature."
-          }
-        ],
-        "Activities": [
-          "Guided icefield excursions with safety beacons",
-          "Aurora viewing in clear polar nights (seasonal)",
-          "Indoor cultural events and formal receptions (by invitation/permit)",
-          "Cuisine tastings suited to cold climates (warm broths, spiced dishes, hot beverages)"
-        ],
-        "Restrictions": [
-          "Many government and security-adjacent areas require permits or sponsorship.",
-          "Aenar regions are culturally protected and typically not open to casual tourism.",
-          "Storm alerts can close surface travel rapidly."
-        ],
-        "SafetyNotes": [
-          "Do not attempt independent wilderness travel—use licensed guides and keep to marked corridors.",
-          "Carry verified shelter locations and transport fallback routes in case of closures.",
-          "Respect local security procedures; delays at checkpoints are normal and not negotiable."
-        ]
-      },
-      "Logistics": {
-        "Entry": [
-          "Federation-friendly for most visitors, but permit requirements can increase during political or security events.",
-          "Expect safety briefings for any excursion beyond protected urban districts."
-        ],
-        "LocalTransport": [
-          "Enclosed ground transit, heated corridors, and shuttle links between districts",
-          "Weather-related reroutes and temporary closures are common during storms"
-        ],
-        "CurrencyNotes": [
-          "Federation-standard payments are common in visitor districts; confirm excursion and gear rental inclusions in advance."
-        ],
-        "Lodging": [
-          "Insulated hotels and guest quarters within protected districts",
-          "Expedition lodging for guided multi-day tours (seasonal and tightly regulated)"
-        ],
-        "Communications": [
-          "Strong urban coverage; out-of-city travel should include locator services and emergency beacons as standard."
-        ]
-      },
+      "Tourism": "Visits are typically cultural, diplomatic, or scientific rather than leisure-oriented. The planet offers unique polar landscapes and Andorian cultural sites, but travel conditions require preparation.",
+      "Logistics": "Thermal protection is mandatory for surface travel. Many destinations are accessed via enclosed transport networks or subterranean complexes; visitors should coordinate with local authorities.",
       "CanonAppearances": {
         "FirstSeen": {
           "Series": "ENT",
@@ -1369,11 +1094,122 @@
         ]
       },
       "Tags": [
-        "IceWorld",
+        "Andorian Homeworld",
+        "Beta Quadrant",
+        "Founding World",
         "FoundingWorld",
-        "SevereWeather",
+        "GuidedExcursionsRecommended",
+        "Ice World",
+        "IceWorld",
         "PermitSensitiveAreas",
-        "GuidedExcursionsRecommended"
+        "SevereWeather"
+      ],
+      "PlaceRefs": {
+        "Cities": [],
+        "Regions": [],
+        "Landmarks": [],
+        "Settlements": [],
+        "Moons": [],
+        "OrbitalFacilities": []
+      },
+      "FeatureRefs": [],
+      "OrganizationRefs": [],
+      "History": {
+        "Overview": "Andoria plays a prominent role in early interstellar politics and is repeatedly associated with the coalition efforts that precede Federation founding. Its strategic location and Andorian influence make it a recurring diplomatic touchpoint.",
+        "KeyEras": [
+          {
+            "Era": "Coalition and pre-Federation diplomacy",
+            "Summary": "Andoria is central to early alliances and disputes that shape interstellar governance."
+          },
+          {
+            "Era": "Federation era",
+            "Summary": "Andoria remains a key member world with strong Starfleet and diplomatic ties."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "22nd century",
+            "Event": "Andorian political and security events contribute to the formation of early interstellar coalitions."
+          },
+          {
+            "When": "2161",
+            "Event": "Andoria is associated with the founding era of the United Federation of Planets."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Andorian planetary governance within Federation framework (Federation era); earlier independent institutions in pre-Federation period.",
+        "Capital": "Laikan (per licensed reference works); on-screen depictions emphasize Andoria as a major polity rather than naming a capital repeatedly.",
+        "Institutions": [
+          "Andorian governmental councils (various eras)",
+          "Security and defense institutions",
+          "Diplomatic missions and Federation-era administration"
+        ],
+        "LawsAffectingVisitors": [
+          "Environmental safety controls in protected habitats",
+          "Permits may apply for travel to restricted facilities"
+        ],
+        "Notes": "Andoria’s political structure shifts across eras; on-screen focus is often on diplomacy and security rather than civic detail."
+      },
+      "Economy": {
+        "Overview": "Mixed economy shaped by extreme-environment infrastructure, defense, and interstellar diplomacy; specialized cold-environment engineering is implied by settlement patterns.",
+        "PrimaryIndustries": [
+          "Habitat and infrastructure engineering",
+          "Defense and security services",
+          "Scientific research (cryosphere and atmospheric studies)"
+        ],
+        "TradeNotes": "Interstellar engagement is frequently tied to diplomacy and strategic cooperation.",
+        "LocalCommerceNotes": "Visitor services are concentrated in protected hubs due to climate constraints."
+      },
+      "Culture": {
+        "Overview": "Proud, tradition-rich society with strong emphasis on honor, duty, and community; cultural practices vary between Andorian groups and eras.",
+        "SocialCustoms": "Visitors should be attentive to formality and interpersonal boundaries; local protocols may be stricter in military or governmental settings.",
+        "ReligiousLife": "Spiritual practices exist but are not consistently foregrounded in on-screen depictions of Andoria.",
+        "Festivals": "Seasonal and civic observances are likely shaped by extreme climate cycles and community cohesion.",
+        "ArtsAndMedia": "Cultural expression is present but not heavily detailed on-screen; ceremonial and diplomatic traditions are emphasized.",
+        "LanguageNotes": "Andorian languages and dialects are used locally; Federation Standard is common in interstellar contexts."
+      },
+      "Environment": {
+        "Overview": "Cryosphere-dominant world with extensive ice cover and cold-adapted ecosystems; human/Andorian infrastructure concentrates in protected regions.",
+        "Seasons": "Long winter-like periods dominate; polar phenomena are common.",
+        "NaturalHazards": [
+          "Ice storms",
+          "Surface travel risk over glaciers and sea ice"
+        ],
+        "NightSky": "Clear polar air can offer excellent visibility during calm periods; auroral activity may be visible at high latitudes."
+      },
+      "DataQuality": {
+        "Certainty": "High",
+        "Notes": ""
+      },
+      "Appearances": {
+        "Overview": "Appears most prominently in early Federation-era narratives and in stories involving Andorian politics and diplomacy.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "ENT era",
+            "Highlights": [
+              "Andorian–Vulcan tensions, coalition politics, and Andorian security affairs"
+            ]
+          },
+          {
+            "Era": "Later eras",
+            "Highlights": [
+              "References to Andoria as a founding world and Federation member"
+            ]
+          }
+        ]
+      },
+      "CitiesAndSites": [
+        {
+          "Name": "Laikan",
+          "Type": "Capital city (reference works)",
+          "Description": "A capital city name associated with Andoria in licensed reference material; major civic functions are implied."
+        },
+        {
+          "Name": "Underground habitat complexes",
+          "Type": "Settlement type",
+          "Description": "Protected cities and facilities adapted to extreme cold, often described as built below the ice or within insulated structures."
+        }
       ]
     },
     {
@@ -1394,7 +1230,8 @@
         "QuadrantNotes": "Bajor is explicitly placed in the Bajor sector of the Alpha Quadrant in reference summaries.",
         "StarSystem": "Bajoran system",
         "Sector": "Bajor sector",
-        "Region": "Bajoran space (Federation-aligned in later eras)"
+        "Region": "Near Cardassian space / Federation-Cardassian frontier region",
+        "Notes": "Bajor’s system includes the Denorios Belt, where the stable Bajoran wormhole’s Alpha Quadrant terminus is located; the Cardassian system is nearby by interstellar standards."
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -1413,124 +1250,18 @@
           "Jeraddo"
         ]
       },
-      "TravelSummary": "Bajor is the Bajoran homeworld, a fertile world of river valleys and mountain provinces. Bajoran society is closely tied to the Prophets-centered faith and the planet’s recovery after the Cardassian Occupation. The Bajoran wormhole lies nearby in the Denorios Belt.",
-      "Appearance": {
-        "GeneralLook": "Green valleys, terraced hillsides, rivers, and warm-toned stone architecture are common across provinces and cities.",
-        "FromOrbit": [
-          "Broad green landmasses and deep-blue seas with visible weather systems",
-          "Dense illumination clusters around major population centers and reconstruction corridors"
-        ],
-        "NotableLandscapes": [
-          "Mountain valleys and river deltas",
-          "Agricultural provinces and terraced farmlands",
-          "Coastal belts and inland seas",
-          "Cave and canyon systems associated with religious myth and history"
-        ],
-        "SurfaceNotes": [
-          "Rural regions can feel timeless and pastoral, while urban districts show visible modernization after the Occupation.",
-          "Travel between provinces is common for pilgrimages and memorial visits; many routes have cultural significance."
-        ]
-      },
-      "Geography": {
-        "Biomes": [
-          {
-            "Name": "Temperate valleys and riverlands",
-            "Notes": ""
-          },
-          {
-            "Name": "Mountain regions",
-            "Notes": ""
-          }
-        ],
-        "Landmarks": [
-          {
-            "Name": "Bajor City (capital)",
-            "Category": "Capital city",
-            "CityOrRegion": "Bajor",
-            "VisitorNotes": []
-          },
-          {
-            "Name": "Fire Caves",
-            "Category": "Religious site",
-            "CityOrRegion": "Bajor",
-            "VisitorNotes": []
-          }
-        ],
-        "Cities": [
-          {
-            "Name": "Bajor City",
-            "Role": "Capital (as referenced/)",
-            "Highlights": [],
-            "LocalVibe": ""
-          }
-        ]
-      },
-      "Inhabitants": {
-        "Primary": [
-          {
-            "Species": "Bajoran",
-            "Notes": ""
-          }
-        ],
-        "NotableCultures": [
-          {
-            "Name": "Prophets-centered faith",
-            "Notes": "Religion is embedded in public life: shrines, monasteries, and ceremonies are common, and visitors are expected to show respect even when not participating."
-          },
-          {
-            "Name": "Post-Occupation civic identity",
-            "Notes": "Memorial culture and political vigilance remain strong; certain topics are sensitive, especially in public or around veterans."
-          }
-        ],
-        "VisitorEtiquette": [
-          "Treat shrines, monasteries, and religious symbols with respect—ask before photographing ceremonies or sacred objects.",
-          "Avoid casually debating Occupation history with strangers; many families are directly affected.",
-          "When invited into a religious space, follow host instructions on dress, voice level, and where to stand.",
-          "Use official guides for archaeological sites—Bajor values preservation and controls access to fragile ruins.",
-          "Be mindful of local politics: rallies, assemblies, and security shifts can occur around major events."
-        ]
-      },
+      "TravelSummary": "Bajor is the Bajoran homeworld in the Alpha Quadrant, known for its natural beauty and deep spiritual traditions. In the late 24th century it becomes strategically vital due to the nearby Bajoran wormhole and undergoes rapid political recovery after Cardassian occupation.",
+      "Appearance": "A lush Class-M world with blue oceans, green landmasses, and active cloud systems. From orbit, the planet often appears temperate and fertile, with pronounced coastal and river features.",
+      "Geography": "Diverse landscapes including river valleys, forests, mountain ranges, and coastal plains. Several regions and landmarks are repeatedly referenced, including major valleys, passes, canyons, and spiritual sites.",
+      "Inhabitants": "Primarily Bajorans. The planet hosts Federation and other off-world visitors, especially during the era of Deep Space 9 and regional diplomacy.",
       "Weather": {
-        "ClimateType": "Regionally variable Class-M climate, ranging from temperate valleys to cooler mountain provinces.",
-        "Seasonality": "Seasonal shifts are noticeable by province, with wetter periods in valleys and coastal belts and cooler conditions at altitude.",
-        "TypicalConditions": [
-          {
-            "Region": "River valleys and farmland provinces",
-            "Conditions": [
-              "Warm days",
-              "Mild evenings",
-              "Periodic rain",
-              "Morning fog in lowlands"
-            ]
-          },
-          {
-            "Region": "Mountain passes and monastery ridges",
-            "Conditions": [
-              "Cooler air",
-              "Fast weather changes",
-              "Windy overlooks",
-              "Cloud ceilings that can drop quickly"
-            ]
-          },
-          {
-            "Region": "Coastal belts",
-            "Conditions": [
-              "Humid air",
-              "Sea breezes",
-              "Seasonal storms",
-              "Clear days alternating with rain bands"
-            ]
-          }
-        ],
+        "ClimateType": "Temperate-to-varied (fertile Class-M)",
+        "Seasonality": "Seasonal cycles across multiple climatic zones; weather varies by province, elevation, and latitude.",
+        "TypicalConditions": "Mild-to-warm conditions in many populated regions, with rain systems supporting agriculture; mountain zones can be colder and windier.",
         "Hazards": [
-          {
-            "Type": "Storm bands and flash rains",
-            "Notes": "Localized downpours can affect road and shuttle timing, especially in valleys."
-          },
-          {
-            "Type": "Seismic activity (historical episodes)",
-            "Notes": "Certain periods saw major quakes tied to wormhole instability; modern advisories may still reference vulnerable zones."
-          }
+          "Seasonal storms and flooding in river valleys",
+          "Mountain weather and sudden fog in passes",
+          "Localized hazards near cave systems and rugged canyons"
         ],
         "TravelGear": [
           "Light layers for warm valleys and cool ridges",
@@ -1539,53 +1270,8 @@
           "A respectful outfit for monastery visits (as advised locally)"
         ]
       },
-      "Tourism": {
-        "TopAttractions": [
-          {
-            "Name": "Monasteries and pilgrimage sites (where open)",
-            "WhyGo": "Bajoran faith and sacred sites are central ."
-          }
-        ],
-        "Activities": [
-          "Temple and monastery visits (guided/approved)",
-          "Valley hikes and scenic overlooks (seasonal)",
-          "Cultural lectures on Bajoran history and faith (official venues)",
-          "Local food tastings (regional breads, stews, and produce-forward dishes)",
-          "Museum and memorial tours in urban districts"
-        ],
-        "Restrictions": [
-          "Certain religious sites restrict recording and limit non-participant access during ceremonies.",
-          "Some ruins and provinces have permit requirements to protect cultural heritage and sensitive recovery areas.",
-          "Fire Caves access is often restricted or culturally discouraged."
-        ],
-        "SafetyNotes": [
-          "Use licensed guides for ruins and remote routes; some areas still contain Occupation-era hazards or unstable structures.",
-          "Respect security instructions during political events—crowd control can change quickly.",
-          "Avoid buying looted artifacts; Bajor takes cultural theft seriously."
-        ]
-      },
-      "Logistics": {
-        "Entry": [
-          "Entry requirements vary by era and political climate; visitors may need permits for certain provinces, digs, or religious sites.",
-          "If arriving via Deep Space 9, expect coordination between station schedules and planet-side customs."
-        ],
-        "LocalTransport": [
-          "Shuttles and ground vehicles connecting major cities and provinces",
-          "Guided transport for archaeology routes and remote monasteries",
-          "Weather and event-driven delays are common during storms or assemblies"
-        ],
-        "CurrencyNotes": [
-          "Local commerce is active but culturally regulated around sacred objects and artifacts; confirm what is legal to purchase and export."
-        ],
-        "Lodging": [
-          "Urban hotels and guesthouses in the capital",
-          "Rural inns along pilgrimage routes (seasonal availability)",
-          "Retreat-style accommodations near approved monasteries"
-        ],
-        "Communications": [
-          "Good coverage in cities; rural valleys may require relay service or tour-provided comm support."
-        ]
-      },
+      "Tourism": "Bajor offers both natural and cultural destinations: scenic valleys, historic cities, and numerous religious shrines and pilgrimage sites. Respectful behavior at spiritual locations is essential.",
+      "Logistics": "Travel infrastructure expands significantly during the DS9 era. Visitors should monitor political advisories during periods of regional tension and follow local guidance around sensitive religious or security sites.",
       "CanonAppearances": {
         "FirstSeen": {
           "Series": "DS9",
@@ -1604,15 +1290,141 @@
         ]
       },
       "Tags": [
-        "PilgrimageFriendly",
+        "Alpha Quadrant",
         "ArchaeologyHeavy",
+        "Bajoran Homeworld",
+        "Class M",
         "PermitSensitiveSites",
+        "PilgrimageFriendly",
         "PostOccupationContext",
-        "RespectfulTourism"
+        "RespectfulTourism",
+        "Wormhole Region"
       ],
-      "CitiesAndSites": {
-        "MajorCities": [
-          "Bajor City (capital)"
+      "CitiesAndSites": [
+        {
+          "Name": "Bajor (city)",
+          "Type": "City",
+          "Description": "A major population center referenced as an important urban hub on the planet."
+        },
+        {
+          "Name": "Kendra Valley",
+          "Type": "Valley / region",
+          "Description": "A well-known geographic region frequently referenced in DS9-era Bajoran contexts."
+        },
+        {
+          "Name": "Fire Caves",
+          "Type": "Cave system / spiritual site",
+          "Description": "A significant subterranean site tied to Bajoran spiritual mythology and major historical events."
+        },
+        {
+          "Name": "Denorios Belt (system landmark)",
+          "Type": "Plasma field / system region",
+          "Description": "A charged plasma field in the Bajoran system associated with the stable wormhole’s Alpha Quadrant terminus."
+        }
+      ],
+      "PlaceRefs": {
+        "Cities": [],
+        "Regions": [],
+        "Landmarks": [],
+        "Settlements": [],
+        "Moons": [],
+        "OrbitalFacilities": []
+      },
+      "FeatureRefs": [],
+      "OrganizationRefs": [],
+      "History": {
+        "Overview": "Bajor’s recent history is defined by the Cardassian occupation and the planet’s subsequent recovery, political restructuring, and renewed cultural self-determination. The discovery of the stable wormhole in the Denorios Belt transforms Bajor into a focal point for regional powers and interstellar diplomacy.",
+        "KeyEras": [
+          {
+            "Era": "Cardassian occupation era",
+            "Summary": "Foreign rule, resistance movements, and significant cultural trauma."
+          },
+          {
+            "Era": "Post-occupation recovery",
+            "Summary": "Rebuilding institutions, navigating internal politics, and managing heightened strategic attention."
+          },
+          {
+            "Era": "Wormhole strategic era",
+            "Summary": "Deep Space 9 and the wormhole make Bajor central to Alpha Quadrant events."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "Mid-to-late 24th century",
+            "Event": "End of Cardassian occupation and establishment of a new Bajoran government."
+          },
+          {
+            "When": "2369",
+            "Event": "Discovery of the stable Bajoran wormhole in the Denorios Belt and establishment of DS9 as a strategic station."
+          },
+          {
+            "When": "Dominion War era",
+            "Event": "Bajor’s status and security become deeply intertwined with broader wartime strategy."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Bajoran government (post-occupation provisional structures evolving toward stable institutions); interacts closely with Federation authorities during DS9 era.",
+        "Capital": "Bajor (city) is commonly treated as a principal urban and governmental center in references; specific ‘capital’ naming varies by context.",
+        "Institutions": [
+          "Bajoran political leadership bodies (provisional and later structures)",
+          "Religious institutions and Vedek Assembly (spiritual authority)",
+          "Security and resistance legacy organizations"
+        ],
+        "LawsAffectingVisitors": [
+          "Respect for religious sites and ceremonies",
+          "Security restrictions during periods of unrest or wartime readiness"
+        ],
+        "Notes": "Bajor’s political and religious institutions are tightly linked in many depictions, and public life is shaped by both governance and faith."
+      },
+      "Economy": {
+        "Overview": "Recovering and rebuilding economy with strong agricultural, cultural, and service components; interstellar trade increases significantly due to the wormhole and DS9.",
+        "PrimaryIndustries": [
+          "Agriculture",
+          "Local manufacturing and rebuilding",
+          "Tourism and cultural pilgrimage services",
+          "Interstellar commerce tied to DS9 and regional trade"
+        ],
+        "TradeNotes": "Bajor’s strategic position increases trade flow; political stability strongly affects commercial activity.",
+        "LocalCommerceNotes": "Visitors often encounter both traditional local markets and newer off-world-oriented services near major transit hubs."
+      },
+      "Culture": {
+        "Overview": "Deeply spiritual culture with strong traditions, festivals, and a prominent religious hierarchy; communal identity is strongly shaped by recent history and resistance.",
+        "SocialCustoms": "Visitors should observe shrine etiquette, seek permission before participating in ceremonies, and be sensitive to occupation-era history.",
+        "ReligiousLife": "Bajoran faith is central, with pilgrimages, temples, and clerical leadership (Vedeks and Kai) influencing social and political life.",
+        "Festivals": "Numerous holy days and community celebrations; some observances are tied to the Prophets and major historical milestones.",
+        "ArtsAndMedia": "Bajoran art, music, and craft traditions are frequently referenced as culturally significant and historically rich.",
+        "LanguageNotes": "Bajoran language is common locally; Federation Standard is widely used in interstellar-facing areas."
+      },
+      "Environment": {
+        "Overview": "Fertile Class-M environment supporting diverse ecosystems; many regions are considered scenic and culturally important.",
+        "Seasons": "Regional seasons vary; river valleys and coastal zones support agriculture through regular precipitation cycles.",
+        "NaturalHazards": [
+          "Storms and flooding",
+          "Cave and canyon hazards",
+          "Occasional seismic activity"
+        ],
+        "NightSky": "Skies can be clear outside storm periods; orbital activity is elevated during DS9 era due to station traffic."
+      },
+      "DataQuality": {
+        "Certainty": "High",
+        "Notes": ""
+      },
+      "Appearances": {
+        "Overview": "Extensively featured in DS9 as a political, cultural, and spiritual focal point, with recurring references in related eras.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "DS9 era",
+            "Highlights": [
+              "Post-occupation recovery, religion, politics, and wormhole-era strategic events"
+            ]
+          },
+          {
+            "Era": "TNG/VOY era",
+            "Highlights": [
+              "References to Bajor’s status and regional power dynamics"
+            ]
+          }
         ]
       }
     },
@@ -1634,11 +1446,12 @@
         "Quadrant": "Alpha Quadrant",
         "QuadrantNotes": "Cardassia Prime is placed in Cardassian space in the Alpha Quadrant; sector naming is not consistently provided in primary canon.",
         "StarSystem": "Cardassian system",
-        "Sector": "",
-        "Region": "Cardassian Union (capital world)",
+        "Sector": "Cardassian space (Cardassia system)",
+        "Region": "Cardassian Union core territory",
         "Nearby": [
           "~5 light years from Bajor (system distance reference)"
-        ]
+        ],
+        "Notes": "The Cardassian system is located inside Cardassian space in the Alpha Quadrant and is relatively close to the Bajoran system by interstellar standards."
       },
       "QuickFacts": {
         "Class": "Class M",
@@ -1653,105 +1466,18 @@
           "TimeFormat": "Local standards; visiting schedules are often coordinated through official itineraries and security checkpoints."
         }
       },
-      "TravelSummary": "Cardassia Prime is the Cardassian homeworld and the capital of the Cardassian Union. Its political institutions have included Central Command and the Detapa Council, and the planet’s fate is central to the Dominion War’s endgame.",
-      "Appearance": {
-        "GeneralLook": "A generally arid world with dust-toned landscapes and monumental urban architecture in major population centers.",
-        "FromOrbit": [
-          "Large landmasses with muted coloration consistent with arid regions",
-          "Night-side illumination clustered around major urban centers and industrial corridors"
-        ],
-        "NotableLandscapes": [
-          "Arid plains and rocky highlands",
-          "Dusty basins and dry valleys",
-          "Heavily built urban and industrial corridors"
-        ],
-        "SurfaceNotes": [
-          "Public spaces in major cities can feel formal and surveilled; expect signage and guard presence even in civilian districts.",
-          "Outside approved visitor routes, conditions can become harsher and services sparser."
-        ]
-      },
-      "Geography": {
-        "Biomes": [],
-        "Landmarks": [
-          {
-            "Name": "Central Command (institutional seat, access restricted)",
-            "Category": "Government / Military",
-            "CityOrRegion": "Cardassia Prime",
-            "VisitorNotes": []
-          },
-          {
-            "Name": "Detapa Council (institutional seat, era-dependent)",
-            "Category": "Government",
-            "CityOrRegion": "Cardassia Prime",
-            "VisitorNotes": []
-          }
-        ],
-        "Cities": [
-          {
-            "Name": "Lakarian City",
-            "Role": "Capital and primary visitor gateway (when open)",
-            "Highlights": [
-              "Monumental civic architecture",
-              "Approved museums and public history venues",
-              "Formal plazas and government-adjacent boulevards"
-            ],
-            "LocalVibe": "Controlled, ceremonial, and security-forward—public spaces often feel designed for processions, surveillance, and state visibility."
-          }
-        ]
-      },
-      "Inhabitants": {
-        "Primary": [
-          {
-            "Species": "Cardassian",
-            "Notes": ""
-          }
-        ],
-        "NotableCultures": [
-          {
-            "Name": "State-and-service civic identity",
-            "Notes": "Public messaging and ceremony frequently highlight duty and the legitimacy of institutions; visitors should expect formal conduct norms in civic spaces."
-          }
-        ],
-        "VisitorEtiquette": [
-          "Keep documentation ready; officials may request identification frequently.",
-          "Use formal address and avoid casual jokes about the state, military, or recent conflicts.",
-          "Don’t photograph guards, checkpoints, or restricted buildings unless explicitly permitted.",
-          "If invited into a family home, follow host rules—hospitality can be formal and status-conscious.",
-          "Avoid discussing Bajoran Occupation history with strangers; it is politically and personally sensitive."
-        ]
-      },
+      "TravelSummary": "Cardassia Prime is the Cardassian homeworld and capital world of the Cardassian Union. It is a major political and military center, with large cities and strong security institutions; visitor access is shaped by state control and changing regimes.",
+      "Appearance": "A warm-toned world with broad arid regions, dusty basins, and rocky highlands. Urban areas can appear dense and heavily monitored, especially during periods of authoritarian rule.",
+      "Geography": "Class-M terrain with extensive dry zones and rugged landforms. Major cities and administrative complexes dominate inhabited regions, and large-scale infrastructure is common.",
+      "Inhabitants": "Primarily Cardassians. Off-world presence is most often diplomatic, military, or intelligence-related rather than recreational.",
       "Weather": {
-        "ClimateType": "Often characterized by heat, dry air, and dust-laden conditions in many regions.",
-        "Seasonality": "Seasonal detail varies by region; heat and low humidity are common baseline conditions.",
-        "TypicalConditions": [
-          {
-            "Region": "Capital/urban corridors",
-            "Conditions": [
-              "Warm to hot days",
-              "Dry air",
-              "Haze and dust",
-              "Cooler nights depending on season"
-            ]
-          },
-          {
-            "Region": "Open plains and outskirts",
-            "Conditions": [
-              "Hot sun",
-              "Dust-laden winds",
-              "Low humidity",
-              "Rapid visibility changes during gusts"
-            ]
-          }
-        ],
+        "ClimateType": "Warm arid / semi-arid (not consistently specified on-screen)",
+        "Seasonality": "Seasonal cycles are implied; heat and dry conditions are frequently suggested in visual tone.",
+        "TypicalConditions": "Dusty, warm conditions in many regions; local variability around coasts and urban basins.",
         "Hazards": [
-          {
-            "Type": "Dust storms / wind events",
-            "Notes": "Blowing dust can reduce visibility and irritate respiratory systems; use sealed eyewear and filtration when advised."
-          },
-          {
-            "Type": "Heat exposure",
-            "Notes": "Dehydration risk rises quickly in open areas; carry water and follow excursion time limits."
-          }
+          "Heat and dust exposure in arid zones",
+          "Political instability and security crackdowns during regime shifts",
+          "Restricted travel during wartime conditions"
         ],
         "TravelGear": [
           "Light, breathable clothing plus a sun-shielding outer layer",
@@ -1760,44 +1486,8 @@
           "Weather-sealed pouch for comm devices"
         ]
       },
-      "Tourism": {
-        "TopAttractions": [],
-        "Activities": [
-          "Guided city walks in authorized districts",
-          "Museum visits and public exhibitions (where open)",
-          "Officially hosted cultural talks and receptions (permit/sponsor dependent)"
-        ],
-        "Restrictions": [
-          "Government, intelligence, and military-adjacent areas are restricted.",
-          "Political conditions can close attractions and reroute tours with little notice."
-        ],
-        "SafetyNotes": [
-          "Use licensed guides and official booking channels—avoid ‘access brokers’ offering restricted entry.",
-          "Follow checkpoint instructions immediately; do not argue protocol on-site.",
-          "Stay aware of advisories related to post-war reconstruction or local unrest."
-        ]
-      },
-      "Logistics": {
-        "Entry": [
-          "Entry requirements depend heavily on diplomatic conditions; sponsorship and escorted itineraries may be required.",
-          "Expect inspections for weapons, recording equipment, and restricted materials."
-        ],
-        "LocalTransport": [
-          "Checkpointed surface routes in major cities",
-          "Licensed shuttles and controlled corridors between approved zones",
-          "Reroutes and closures are common during security escalations"
-        ],
-        "CurrencyNotes": [
-          "Exchange and purchasing rules can vary by era and policy; confirm what transactions are permitted before arrival."
-        ],
-        "Lodging": [
-          "Authorized hotels/guest quarters within controlled districts (often arranged through sponsors)",
-          "Diplomatic accommodations for official travelers"
-        ],
-        "Communications": [
-          "Translator support is recommended for formal notices and legal terms; expect monitoring in some districts."
-        ]
-      },
+      "Tourism": "Cardassia Prime is not commonly portrayed as a leisure destination. Visits are typically official: diplomacy, negotiation, or authorized travel under Cardassian law.",
+      "Logistics": "Expect strict entry controls, surveillance, and limited access outside designated areas. Visitor movement can be subject to permits, escorts, and rapidly changing security rules.",
       "CanonAppearances": {
         "FirstSeen": {
           "Series": "DS9",
@@ -1812,17 +1502,134 @@
         ]
       },
       "Tags": [
-        "PermitSensitiveTravel",
+        "Alpha Quadrant",
+        "AridConditions",
+        "Capital World",
+        "Cardassian Homeworld",
+        "Class M",
         "HighSecurity",
         "MonumentalArchitecture",
-        "AridConditions",
+        "PermitSensitiveTravel",
         "PostWarContext"
       ],
-      "CitiesAndSites": {
-        "MajorCities": [
-          "Lakarian City"
+      "CitiesAndSites": [
+        {
+          "Name": "Lakarian City",
+          "Type": "Major city",
+          "Description": "A prominent city on Cardassia Prime referenced for civic life and as a site of major wartime events."
+        },
+        {
+          "Name": "Central Command complexes",
+          "Type": "Military/government institutions",
+          "Description": "Facilities associated with Cardassian military authority and high-level governance during many eras."
+        },
+        {
+          "Name": "Detapa Council government districts",
+          "Type": "Civil government",
+          "Description": "Civic districts tied to Cardassian civilian governance, which sometimes competes with military authority."
+        }
+      ],
+      "PlaceRefs": {
+        "Cities": [],
+        "Regions": [],
+        "Landmarks": [],
+        "Settlements": [],
+        "Moons": [],
+        "OrbitalFacilities": []
+      },
+      "FeatureRefs": [],
+      "OrganizationRefs": [],
+      "History": {
+        "Overview": "Cardassia Prime anchors Cardassian political power and the institutions of the Cardassian Union. Its modern era includes militarization, occupation policies in neighboring regions, and the catastrophic devastation of the Dominion War, during which major cities suffer severe damage.",
+        "KeyEras": [
+          {
+            "Era": "Militarization and expansion era",
+            "Summary": "Central Command and security institutions dominate policy, shaping Cardassia’s external posture."
+          },
+          {
+            "Era": "Dominion War devastation era",
+            "Summary": "Alliance shifts and wartime occupation lead to major destruction across Cardassian territory and cities."
+          }
+        ],
+        "MajorEvents": [
+          {
+            "When": "24th century",
+            "Event": "Cardassian occupation policies and frontier conflicts shape regional politics."
+          },
+          {
+            "When": "2370s",
+            "Event": "Dominion War culminates in major destruction on Cardassia Prime and political collapse of the Dominion puppet regime."
+          }
+        ]
+      },
+      "Government": {
+        "Polity": "Cardassian Union (structure varies by era between civilian Detapa Council and military Central Command; intelligence influence via the Obsidian Order).",
+        "Capital": "Cardassia Prime",
+        "Institutions": [
+          "Detapa Council (civilian government)",
+          "Central Command (military authority)",
+          "Obsidian Order (intelligence service)"
+        ],
+        "LawsAffectingVisitors": [
+          "Strict internal security and surveillance in many eras",
+          "Permits/escorts for off-world visitors",
+          "Rapidly changing regulations during crises"
+        ],
+        "Notes": "Power balance between civilian and military authorities can shift; visitor experience varies sharply by political period."
+      },
+      "Economy": {
+        "Overview": "State-influenced economy oriented around administration, security, and heavy industry, with significant resources directed toward military capacity in many eras.",
+        "PrimaryIndustries": [
+          "Government administration",
+          "Military and security services",
+          "Heavy industry and manufacturing",
+          "Infrastructure and logistics"
+        ],
+        "TradeNotes": "External trade depends on diplomatic status; wartime conditions can sharply restrict commerce.",
+        "LocalCommerceNotes": "Public life and commerce can be tightly controlled; visitors should expect regulated markets and monitored transactions."
+      },
+      "Culture": {
+        "Overview": "Hierarchical society emphasizing order, duty, and state legitimacy; public culture is shaped by institutions and strong social expectations.",
+        "SocialCustoms": "Formality and respect for authority are important. Visitors should avoid public criticism of institutions and comply with local security directives.",
+        "ReligiousLife": "Religious life is not consistently foregrounded in on-screen depictions, though cultural identity and tradition are strongly emphasized.",
+        "Festivals": "Civic ceremonies and state occasions are prominent; cultural events may be used to signal political legitimacy.",
+        "ArtsAndMedia": "Cardassian literature, art, and music are referenced as rich and historic, with significant losses during late-war devastation.",
+        "LanguageNotes": "Cardassian language is used locally; Federation Standard is common in diplomatic settings but not assumed in all regions."
+      },
+      "Environment": {
+        "Overview": "Warm-toned environment with extensive arid zones; urban and industrial concentrations are significant in key regions.",
+        "Seasons": "Implied seasonal variability; dry seasons likely dominate in many regions.",
+        "NaturalHazards": [
+          "Dust storms",
+          "Urban pollution in industrial zones",
+          "Post-war infrastructure damage in the late 24th century"
+        ],
+        "NightSky": "Urban light pollution can be significant around major cities; clearer skies likely away from industrial centers."
+      },
+      "DataQuality": {
+        "Certainty": "High",
+        "Notes": ""
+      },
+      "Appearances": {
+        "Overview": "Featured heavily in DS9-era political and wartime narratives as the center of Cardassian power and later devastation.",
+        "BySeriesOrFilm": [
+          {
+            "Era": "TNG era",
+            "Highlights": [
+              "Cardassian power and frontier conflicts; Cardassia referenced as an imperial center"
+            ]
+          },
+          {
+            "Era": "DS9 era",
+            "Highlights": [
+              "Occupation legacy, internal politics, and Dominion War climax impacting Cardassia Prime"
+            ]
+          }
         ]
       }
     }
-  ]
+  ],
+  "Places": [],
+  "Features": [],
+  "Organizations": []
 }
