@@ -567,344 +567,275 @@
       return arr.map(mapFn);
     }
 
-    function renderDetail(p){
-      const wrap = document.createElement("div");
-
-      const hero = document.createElement("div");
-      hero.className = "hero";
-
-      const heroImg = document.createElement("div");
-      heroImg.className = "heroImg";
-      const heroUrl = (p.Media && p.Media.HeroImageURL) ? p.Media.HeroImageURL : null;
-      if (heroUrl){
-        const img = document.createElement("img");
-        img.src = heroUrl;
-        img.alt = p.Name;
-        heroImg.appendChild(img);
-      }
-      hero.appendChild(heroImg);
-
-      const heroInfo = document.createElement("div");
-      const title = document.createElement("h1");
-      title.className = "heroTitle";
-      title.textContent = p.Name || "Planet";
-      heroInfo.appendChild(title);
-
-      const alt = Array.isArray(p.AlternateNames) && p.AlternateNames.length ? p.AlternateNames.join(" • ") : "";
-      const locBits = [];
-      if (p.Location && p.Location.StarSystem) locBits.push(p.Location.StarSystem);
-      if (p.Location && p.Location.Sector) locBits.push(p.Location.Sector);
-      if (p.Location && p.Location.Quadrant) locBits.push(p.Location.Quadrant);
-      const locLine = locBits.filter(Boolean).join(" • ");
-      const altLine = [alt, locLine].filter(Boolean).join(" — ");
-      const altEl = document.createElement("div");
-      altEl.className = "heroAlt";
-      altEl.textContent = altLine || " ";
-      heroInfo.appendChild(altEl);
-
-      const badgeRow = document.createElement("div");
-      badgeRow.className = "heroBadges";
-      (Array.isArray(p.TypeTags) ? p.TypeTags : []).forEach((t, idx) => {
-        const b = document.createElement("div");
-        b.className = "badge" + (idx === 0 ? " gold" : "");
-        b.textContent = t;
-        badgeRow.appendChild(b);
-      });
-      heroInfo.appendChild(badgeRow);
-
-      const summary = document.createElement("div");
-      summary.className = "heroSummary";
-      summary.textContent = p.TravelSummary || " ";
-      heroInfo.appendChild(summary);
-
-      hero.appendChild(heroInfo);
-      wrap.appendChild(hero);
-
-      const grid = document.createElement("div");
-      grid.className = "sectionGrid";
-
-      const locBody = document.createElement("div");
-      const loc = p.Location || {};
-      locBody.appendChild(kvRow("Quadrant", esc(loc.Quadrant || "—")));
-      if (loc.QuadrantNotes) locBody.appendChild(kvRow("Quadrant notes", esc(loc.QuadrantNotes)));
-      locBody.appendChild(kvRow("Star system", esc(loc.StarSystem || "—")));
-      locBody.appendChild(kvRow("Sector", esc(loc.Sector || "—")));
-      locBody.appendChild(kvRow("Region", esc(loc.Region || "—")));
-      grid.appendChild(section("Location", locBody));
-
-      const appBody = document.createElement("div");
-      const ap = p.Appearance || {};
-      appBody.appendChild(kvRow("General look", esc(ap.GeneralLook || "—")));
-      const orbit = safeList(ap.FromOrbit, x => esc(x));
-      if (orbit){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "From orbit:";
-        d.appendChild(ul(orbit));
-        appBody.appendChild(d);
-      }
-      const lands = safeList(ap.NotableLandscapes, x => esc(x));
-      if (lands){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Notable landscapes:";
-        d.appendChild(ul(lands));
-        appBody.appendChild(d);
-      }
-      const surface = safeList(ap.SurfaceNotes, x => esc(x));
-      if (surface){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Surface notes:";
-        d.appendChild(ul(surface));
-        appBody.appendChild(d);
-      }
-      grid.appendChild(section("Appearance", appBody));
-
-      const geoBody = document.createElement("div");
-      const g = p.Geography || {};
-      const biomes = safeList(g.Biomes, b => esc(b.Name) + (b.Notes ? " — <span class='small'>" + esc(b.Notes) + "</span>" : ""));
-      if (biomes){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Biomes:";
-        d.appendChild(ul(biomes));
-        geoBody.appendChild(d);
-      } else {
-        geoBody.appendChild(kvRow("Biomes", "—"));
-      }
-
-      const landmarks = safeList(g.Landmarks, lm => {
-        const bits = [];
-        bits.push("<b>" + esc(lm.Name || "Landmark") + "</b>");
-        const meta = [lm.Category, lm.CityOrRegion].filter(Boolean).map(esc).join(" • ");
-        if (meta) bits.push("<span class='small'>(" + meta + ")</span>");
-        if (Array.isArray(lm.VisitorNotes) && lm.VisitorNotes.length) {
-          const notes = lm.VisitorNotes.map(esc).join("; ");
-          bits.push("<div class='small'>" + notes + "</div>");
-        }
-        return bits.join(" ");
-      });
-      if (landmarks){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Landmarks:";
-        d.appendChild(ul(landmarks));
-        geoBody.appendChild(d);
-      } else {
-        geoBody.appendChild(kvRow("Landmarks", "—"));
-      }
-
-      const cities = safeList(g.Cities, c => {
-        const bits = [];
-        bits.push("<b>" + esc(c.Name || "City") + "</b>");
-        if (c.Role) bits.push("<span class='small'>— " + esc(c.Role) + "</span>");
-        const hl = Array.isArray(c.Highlights) && c.Highlights.length ? c.Highlights.map(esc) : [];
-        if (hl.length) bits.push("<div class='small'><i>Highlights:</i> " + hl.join(" • ") + "</div>");
-        if (c.LocalVibe) bits.push("<div class='small'><i>Vibe:</i> " + esc(c.LocalVibe) + "</div>");
-        return bits.join(" ");
-      });
-      if (cities){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Cities:";
-        d.appendChild(ul(cities));
-        geoBody.appendChild(d);
-      } else {
-        geoBody.appendChild(kvRow("Cities", "—"));
-      }
-      grid.appendChild(section("Geography & Cities", geoBody));
-
-      const inhBody = document.createElement("div");
-      const inh = p.Inhabitants || {};
-      const prim = safeList(inh.Primary, x => {
-        const s = x.Species ? "<b>" + esc(x.Species) + "</b>" : "<b>—</b>";
-        const n = x.Notes ? " <span class='small'>— " + esc(x.Notes) + "</span>" : "";
-        return s + n;
-      });
-      if (prim){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Primary:";
-        d.appendChild(ul(prim));
-        inhBody.appendChild(d);
-      } else {
-        inhBody.appendChild(kvRow("Primary", "—"));
-      }
-
-      const cultures = safeList(inh.NotableCultures, x => {
-        const s = "<b>" + esc(x.Name || "Culture") + "</b>";
-        const n = x.Notes ? " <span class='small'>— " + esc(x.Notes) + "</span>" : "";
-        return s + n;
-      });
-      if (cultures){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Notable cultures:";
-        d.appendChild(ul(cultures));
-        inhBody.appendChild(d);
-      }
-
-      const et = safeList(inh.VisitorEtiquette, x => esc(x));
-      if (et){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Visitor etiquette:";
-        d.appendChild(ul(et));
-        inhBody.appendChild(d);
-      } else {
-        inhBody.appendChild(kvRow("Visitor etiquette", "—"));
-      }
-      grid.appendChild(section("Inhabitants", inhBody));
-
-      const wBody = document.createElement("div");
-      const w = p.Weather || {};
-      wBody.appendChild(kvRow("Climate", esc(w.ClimateType || "—")));
-      wBody.appendChild(kvRow("Seasonality", esc(w.Seasonality || "—")));
-      const tc = safeList(w.TypicalConditions, x => {
-        const region = x.Region ? "<b>" + esc(x.Region) + ":</b> " : "";
-        const cond = Array.isArray(x.Conditions) ? x.Conditions.map(esc).join(" • ") : "";
-        return region + esc(cond);
-      });
-      if (tc){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Typical conditions:";
-        d.appendChild(ul(tc));
-        wBody.appendChild(d);
-      }
-      const hz = safeList(w.Hazards, x => {
-        const t = x.Type ? "<b>" + esc(x.Type) + "</b>" : "<b>Hazard</b>";
-        const n = x.Notes ? " <span class='small'>— " + esc(x.Notes) + "</span>" : "";
-        return t + n;
-      });
-      if (hz){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Hazards:";
-        d.appendChild(ul(hz));
-        wBody.appendChild(d);
-      }
-      grid.appendChild(section("Weather", wBody));
-
-      const tBody = document.createElement("div");
-      const t = p.Tourism || {};
-      const top = safeList(t.TopAttractions, x => {
-        const nm = "<b>" + esc(x.Name || "Attraction") + "</b>";
-        const why = x.WhyGo ? " <span class='small'>— " + esc(x.WhyGo) + "</span>" : "";
-        return nm + why;
-      });
-      if (top){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Top attractions:";
-        d.appendChild(ul(top));
-        tBody.appendChild(d);
-      } else {
-        tBody.appendChild(kvRow("Top attractions", "—"));
-      }
-
-      const acts = safeList(t.Activities, x => esc(x));
-      if (acts){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Activities:";
-        d.appendChild(ul(acts));
-        tBody.appendChild(d);
-      }
-      const restr = safeList(t.Restrictions, x => esc(x));
-      if (restr){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Restrictions:";
-        d.appendChild(ul(restr));
-        tBody.appendChild(d);
-      }
-      const sn = safeList(t.SafetyNotes, x => esc(x));
-      if (sn){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Safety notes:";
-        d.appendChild(ul(sn));
-        tBody.appendChild(d);
-      }
-      grid.appendChild(section("Tourism", tBody));
-
-      const lBody = document.createElement("div");
-      const lg = p.Logistics || {};
-      const entry = safeList(lg.Entry, x => esc(x));
-      if (entry){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Entry:";
-        d.appendChild(ul(entry));
-        lBody.appendChild(d);
-      } else {
-        lBody.appendChild(kvRow("Entry", "—"));
-      }
-
-      const trans = safeList(lg.LocalTransport, x => esc(x));
-      if (trans){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Local transport:";
-        d.appendChild(ul(trans));
-        lBody.appendChild(d);
-      }
-      const lodg = safeList(lg.Lodging, x => esc(x));
-      if (lodg){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Lodging:";
-        d.appendChild(ul(lodg));
-        lBody.appendChild(d);
-      }
-      const comm = safeList(lg.Communications, x => esc(x));
-      if (comm){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Communications:";
-        d.appendChild(ul(comm));
-        lBody.appendChild(d);
-      }
-      grid.appendChild(section("Logistics", lBody));
-
-      const cBody = document.createElement("div");
-      const ca = p.CanonAppearances || {};
-      if (ca.FirstSeen){
-        const fs = [];
-        if (ca.FirstSeen.Series) fs.push(esc(ca.FirstSeen.Series));
-        if (ca.FirstSeen.EpisodeOrFilm) fs.push(esc(ca.FirstSeen.EpisodeOrFilm));
-        const s = fs.length ? fs.join(" — ") : "—";
-        cBody.appendChild(kvRow("First seen", s));
-      } else {
-        cBody.appendChild(kvRow("First seen", "—"));
-      }
-      const key = safeList(ca.Key, x => {
-        const nm = "<b>" + esc(x.SeriesOrFilm || "Appearance") + "</b>";
-        const n = x.Notes ? " <span class='small'>— " + esc(x.Notes) + "</span>" : "";
-        return nm + n;
-      });
-      if (key){
-        const d = document.createElement("div");
-        d.appendChild(document.createElement("div")).className = "small";
-        d.firstChild.textContent = "Key appearances:";
-        d.appendChild(ul(key));
-        cBody.appendChild(d);
-      }
-      grid.appendChild(section("Canon Appearances", cBody));
-
-      wrap.appendChild(grid);
-
-      const tail = document.createElement("div");
-      tail.className = "footerNote";
-      const tags = Array.isArray(p.Tags) && p.Tags.length ? p.Tags.map(esc).join(" • ") : "";
-      tail.innerHTML = tags ? "Tags: " + tags : "";
-      wrap.appendChild(tail);
-
-      els.detail.innerHTML = "";
-      els.detail.appendChild(wrap);
+        function esc(s){
+      if (s === null || s === undefined) return "";
+      return String(s).replace(/[&<>"']/g, ch => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+      }[ch]));
     }
+    function br(s){
+      const t = esc(s);
+      return t ? t.replace(/\n/g, "<br>") : "";
+    }
+    function pill(text){
+      return `<span class="pill">${esc(text)}</span>`;
+    }
+    function bulletList(items, renderItem){
+      if (!Array.isArray(items) || !items.length) return `<div class="muted">—</div>`;
+      return `<ul class="ul">${items.map(it => `<li>${renderItem ? renderItem(it) : br(it)}</li>`).join("")}</ul>`;
+    }
+    function kvHtml(k, v){
+      const val = (v === null || v === undefined || v === "") ? `<span class="muted">—</span>` : br(v);
+      return `<div class="kv"><div class="k">${esc(k)}</div><div class="v">${val}</div></div>`;
+    }
+    function joinChips(arr){
+      if (!Array.isArray(arr) || !arr.length) return `<span class="muted">—</span>`;
+      return arr.map(pill).join(" ");
+    }
+
+    function renderDetail(planet){
+      if (!planet){
+        els.detail.innerHTML = `<div class="empty">Select a planet.</div>`;
+        return;
+      }
+
+      const loc = planet.Location || {};
+      const media = planet.Media || {};
+      const canon = planet.CanonAppearances || {};
+      const history = planet.History || {};
+      const gov = planet.Government || {};
+      const econ = planet.Economy || {};
+      const cult = planet.Culture || {};
+      const env = planet.Environment || {};
+      const app = planet.Appearances || {};
+      const dq = planet.DataQuality || {};
+      const weather = planet.Weather || {};
+
+      const sites = Array.isArray(planet.CitiesAndSites) ? planet.CitiesAndSites : [];
+
+      const hero = media.HeroImageURL ? esc(media.HeroImageURL) : "";
+
+      els.detail.innerHTML = `
+        <div class="hero">
+          <div class="heroImg" style="background-image:url('${hero}')"></div>
+          <div class="heroText">
+            <div class="heroTitle">${esc(planet.Name || "")}</div>
+            <div class="heroSub">${esc((planet.Meta && planet.Meta.CanonicalName) ? planet.Meta.CanonicalName : "")}</div>
+            <div class="chipRow">
+              ${planet.Tags && planet.Tags.length ? joinChips(planet.Tags) : `<span class="muted">—</span>`}
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Overview</div>
+              <div class="cardSub">At-a-glance</div>
+            </div>
+            <div class="cardBody">
+              <div class="p">${br(planet.TravelSummary || "")}</div>
+              ${kvHtml("Planet Type", planet.Meta && planet.Meta.Classification ? planet.Meta.Classification : "")}
+              ${kvHtml("Quadrant", loc.Quadrant || "")}
+              ${kvHtml("Sector", loc.Sector || "")}
+              ${kvHtml("Star System", loc.StarSystem || "")}
+              ${kvHtml("Region", loc.Region || "")}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Appearance</div>
+              <div class="cardSub">Look & feel</div>
+            </div>
+            <div class="cardBody">
+              <div class="p">${br(planet.Appearance || "")}</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Geography</div>
+              <div class="cardSub">Terrain & regions</div>
+            </div>
+            <div class="cardBody">
+              <div class="p">${br(planet.Geography || "")}</div>
+              ${loc.NearbyLandmarks && loc.NearbyLandmarks.length ? `<div class="hr"></div><div class="smallHead">Nearby / Landmarks</div>${bulletList(loc.NearbyLandmarks, x => br(x))}` : ``}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Inhabitants</div>
+              <div class="cardSub">People & society</div>
+            </div>
+            <div class="cardBody">
+              <div class="p">${br(planet.Inhabitants || "")}</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Weather</div>
+              <div class="cardSub">Climate & hazards</div>
+            </div>
+            <div class="cardBody">
+              ${kvHtml("Climate Type", weather.ClimateType || "")}
+              ${kvHtml("Seasonality", weather.Seasonality || "")}
+              ${kvHtml("Typical Conditions", weather.TypicalConditions || "")}
+              <div class="hr"></div>
+              <div class="smallHead">Hazards</div>
+              ${bulletList(weather.Hazards || [], x => br(x))}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Visitor Notes</div>
+              <div class="cardSub">Access & etiquette</div>
+            </div>
+            <div class="cardBody">
+              <div class="smallHead">Visitation</div>
+              <div class="p">${br(planet.Tourism || "")}</div>
+              <div class="hr"></div>
+              <div class="smallHead">Logistics</div>
+              <div class="p">${br(planet.Logistics || "")}</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">History</div>
+              <div class="cardSub">Eras & major events</div>
+            </div>
+            <div class="cardBody">
+              <div class="p">${br(history.Overview || "")}</div>
+              <div class="hr"></div>
+              <div class="smallHead">Key Eras</div>
+              ${bulletList(history.KeyEras || [], e => `<b>${esc(e.Era || "")}</b>${e.Summary ? ` — ${br(e.Summary)}` : ``}`)}
+              <div class="hr"></div>
+              <div class="smallHead">Major Events</div>
+              ${bulletList(history.MajorEvents || [], e => `${e.When ? `<b>${esc(e.When)}</b>: ` : ``}${br(e.Event || "")}`)}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Government</div>
+              <div class="cardSub">Polity & institutions</div>
+            </div>
+            <div class="cardBody">
+              ${kvHtml("Polity", gov.Polity || "")}
+              ${kvHtml("Capital", gov.Capital || "")}
+              <div class="hr"></div>
+              <div class="smallHead">Institutions</div>
+              ${bulletList(gov.Institutions || [], x => br(x))}
+              <div class="hr"></div>
+              <div class="smallHead">Visitor-impacting rules</div>
+              ${bulletList(gov.LawsAffectingVisitors || [], x => br(x))}
+              ${gov.Notes ? `<div class="hr"></div><div class="smallHead">Notes</div><div class="p">${br(gov.Notes)}</div>` : ``}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Economy</div>
+              <div class="cardSub">Industry & trade</div>
+            </div>
+            <div class="cardBody">
+              <div class="p">${br(econ.Overview || "")}</div>
+              <div class="hr"></div>
+              <div class="smallHead">Primary industries</div>
+              ${bulletList(econ.PrimaryIndustries || [], x => br(x))}
+              ${econ.TradeNotes ? `<div class="hr"></div><div class="smallHead">Trade notes</div><div class="p">${br(econ.TradeNotes)}</div>` : ``}
+              ${econ.LocalCommerceNotes ? `<div class="hr"></div><div class="smallHead">Local commerce</div><div class="p">${br(econ.LocalCommerceNotes)}</div>` : ``}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Culture</div>
+              <div class="cardSub">Customs & language</div>
+            </div>
+            <div class="cardBody">
+              <div class="p">${br(cult.Overview || "")}</div>
+              <div class="hr"></div>
+              <div class="smallHead">Social customs</div>
+              <div class="p">${br(cult.SocialCustoms || "")}</div>
+              ${cult.ReligiousLife ? `<div class="hr"></div><div class="smallHead">Religious life</div><div class="p">${br(cult.ReligiousLife)}</div>` : ``}
+              ${cult.Festivals ? `<div class="hr"></div><div class="smallHead">Festivals</div><div class="p">${br(cult.Festivals)}</div>` : ``}
+              ${cult.ArtsAndMedia ? `<div class="hr"></div><div class="smallHead">Arts & media</div><div class="p">${br(cult.ArtsAndMedia)}</div>` : ``}
+              ${cult.LanguageNotes ? `<div class="hr"></div><div class="smallHead">Language</div><div class="p">${br(cult.LanguageNotes)}</div>` : ``}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Environment</div>
+              <div class="cardSub">Seasons & risks</div>
+            </div>
+            <div class="cardBody">
+              <div class="p">${br(env.Overview || "")}</div>
+              ${env.Seasons ? `<div class="hr"></div><div class="smallHead">Seasons</div><div class="p">${br(env.Seasons)}</div>` : ``}
+              <div class="hr"></div>
+              <div class="smallHead">Natural hazards</div>
+              ${bulletList(env.NaturalHazards || [], x => br(x))}
+              ${env.NightSky ? `<div class="hr"></div><div class="smallHead">Night sky</div><div class="p">${br(env.NightSky)}</div>` : ``}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Places & Sites</div>
+              <div class="cardSub">Cities, regions, landmarks</div>
+            </div>
+            <div class="cardBody">
+              ${sites.length ? `
+                <ul class="ul">
+                  ${sites.map(s => `<li><b>${esc(s.Name || "")}</b>${s.Type ? ` <span class="muted">(${esc(s.Type)})</span>` : ``}${s.Description ? `<div class="small">${br(s.Description)}</div>` : ``}</li>`).join("")}
+                </ul>
+              ` : `<div class="muted">—</div>`}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Appearances</div>
+              <div class="cardSub">Canon presence</div>
+            </div>
+            <div class="cardBody">
+              ${app.Overview ? `<div class="p">${br(app.Overview)}</div><div class="hr"></div>` : ``}
+              ${bulletList(app.BySeriesOrFilm || [], a => `<b>${esc(a.Era || "")}</b>${a.Highlights && a.Highlights.length ? `<div class="small">${esc(a.Highlights.join(" • "))}</div>` : ``}`)}
+              <div class="hr"></div>
+              <div class="smallHead">Canon appearances list</div>
+              <div class="p"><b>Episodes</b></div>
+              ${bulletList(canon.Episodes || [], x => br(x))}
+              <div class="p"><b>Films</b></div>
+              ${bulletList(canon.Films || [], x => br(x))}
+              ${canon.Notes ? `<div class="hr"></div><div class="smallHead">Notes</div><div class="p">${br(canon.Notes)}</div>` : ``}
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardHead">
+              <div class="cardTitle">Data Notes</div>
+              <div class="cardSub">Completeness</div>
+            </div>
+            <div class="cardBody">
+              ${dq.Confidence ? kvHtml("Confidence", dq.Confidence) : ``}
+              ${dq.Coverage ? kvHtml("Coverage", dq.Coverage) : ``}
+              ${dq.KnownGaps ? `<div class="hr"></div><div class="smallHead">Known gaps</div>${bulletList(dq.KnownGaps, x => br(x))}` : ``}
+              ${dq.VerificationNotes ? `<div class="hr"></div><div class="smallHead">Verification notes</div><div class="p">${br(dq.VerificationNotes)}</div>` : ``}
+            </div>
+          </div>
+        </div>
+      `;
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    
 
     function selectPlanet(id, scrollIntoView){
       selectedId = id;
